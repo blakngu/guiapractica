@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 Dinámica de 2 loci | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 Dinámica de 2 loci | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 Dinámica de 2 loci | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="seleccion.html"/>
+<link rel="next" href="aparnoalazar.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dosloci" class="section level1" number="5">
+<h1><span class="header-section-number">Capítulo 5</span> Dinámica de 2 <em>loci</em></h1>
+<div id="ejercicio-5.1" class="section level3 unnumbered">
+<h3>Ejercicio 5.1</h3>
+<p>En un análisis genómico de dos <em>loci</em> (<strong>A</strong> y <strong>B</strong>) físicamente cercanos en el mismo cromosoma autosomal, ambos con dos alelos, de una especie diploide se encontraron los <strong>haplotipos</strong> posibles con las siguientes frecuencias</p>
+<p><span class="math display">\[\begin{equation}
+\bf{A_1B_1}=310\\
+\bf{A_1B_2}=140\\
+\bf{A_2B_1}=260\\
+\bf{A_2B_2}=270
+\end{equation}\]</span></p>
+<p>Calcular las frecuencias de los alelos. ¿Es la frecuencia de los haplotipos la esperada en base a estas frecuencias? ¿Hay <strong>desequilibrio de ligamiento</strong> entre estos <em>loci</em> y si es así cuánto vale? ¿Hay exceso o déficit de los gametos en fase de acomplamiento? ¿Cuánto es el <span class="math inline">\(D_{máx}\)</span> posible para este par de <em>loci</em>? (para evitar llevarse sorpresas por redondeos, se aconseja utilizar 5 cifras después de la coma).</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Llamemos <span class="math inline">\(x_1\)</span> a la frecuencia de <span class="math inline">\(A_1B_1\)</span>, <span class="math inline">\(x_2\)</span> a la de <span class="math inline">\(A_1B_2\)</span>, <span class="math inline">\(x_3\)</span> a la de <span class="math inline">\(A_2B_1\)</span> y <span class="math inline">\(x_4\)</span> a la de <span class="math inline">\(A_2B_2\)</span>, con <span class="math inline">\(x_i=N_i/N\)</span>. La frecuencia de <span class="math inline">\(A_1\)</span> (primer <em>locus</em>), <span class="math inline">\(p_1=x_1+x_2\)</span>, es decir</p>
+<p><span class="math display">\[\begin{equation}
+p_1=x_1+x_2=\frac{N_1}{N}+\frac{N_2}{N}=\frac{310}{980}+\frac{140}{980} = 0,45918
+\end{equation}\]</span></p>
+<p>Por lo tanto, <span class="math inline">\(q_1=1-p_1=1-0,45918=0,54082\)</span>. Para el alelo <span class="math inline">\(B_1\)</span> (segundo <em>locus</em> ) será</p>
+<p><span class="math display">\[\begin{equation}
+p_2=x_1+x_3=\frac{N_1}{N}+\frac{N_3}{N}=\frac{310}{980}+\frac{260}{980}=0,58163
+\end{equation}\]</span></p>
+<p>y entonces <span class="math inline">\(q_2=1-p_2=1-0,58163=0,41837\)</span>.</p>
+<p>Las frecuencias “reales” de los 4 gametos (haplotipos) posibles son</p>
+<p><span class="math display">\[\begin{equation}
+x_1=\frac{N_1}{N}=\frac{310}{980} = 0,31633\\
+x_2=\frac{N_2}{N}=\frac{140}{980} = 0,14286\\
+x_3=\frac{N_3}{N}=\frac{260}{980} = 0,26531\\
+x_4=\frac{N_4}{N}=\frac{270}{980} = 0,27551
+\end{equation}\]</span></p>
+<p>mientras que las esperadas si no existiese desequilibrio de ligamiento serían los productos de las frecuencias de los alelos que los forman, es decir</p>
+<p><span class="math display">\[\begin{equation}
+\mathbb{E}_1=p_1p_2=0,45918 \cdot 0,58163 = 0,26707\\
+\mathbb{E}_2=p_1q_2=0,45918 \cdot 0,41837 = 0,19211\\
+\mathbb{E}_3=q_1p_2=0,54082 \cdot 0,58163 = 0,31456\\
+\mathbb{E}_4=q_1q_2=0,54082 \cdot 0,41837 = 0,22626
+\end{equation}\]</span></p>
+<p>Un chequeo obvio es que tanto la suma <span class="math inline">\(\sum_i \mathbb{E}_i=1\)</span> (<span class="math inline">\(0,267+0,192+0,315+0,226=1\)</span>), así como <span class="math inline">\(\sum_i x_i=0,316+0,143+0,265+0,276=1\)</span>.</p>
+<p>Ahora, podemos armar un cuadro con las frecuencias esperadas y observadas<br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Gametos</th>
+<th align="center"><span class="math inline">\(\bf{A_1B_1}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_1B_2}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_2B_1}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_2B_2}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Frecuencia observada</td>
+<td align="center"><span class="math inline">\(0,31633\)</span></td>
+<td align="center"><span class="math inline">\(0,14286\)</span></td>
+<td align="center"><span class="math inline">\(0,26531\)</span></td>
+<td align="center"><span class="math inline">\(0,27551\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Frecuencia esperada</td>
+<td align="center"><span class="math inline">\(0,26707\)</span></td>
+<td align="center"><span class="math inline">\(0,19211\)</span></td>
+<td align="center"><span class="math inline">\(0,31456\)</span></td>
+<td align="center"><span class="math inline">\(0,22626\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Diferencia (<span class="math inline">\(D |-D\)</span>)</td>
+<td align="center"><span class="math inline">\(0,04925\)</span></td>
+<td align="center"><span class="math inline">\(-0,04925\)</span></td>
+<td align="center"><span class="math inline">\(-0,04925\)</span></td>
+<td align="center"><span class="math inline">\(0,04925\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>A partir de este cuadro vemos claramente las diferencias entre las frecuencias esperadas y las observadas, que se corresponden con un valor de <span class="math inline">\(D=0,04925\)</span>. Los gametos en <strong>fase de acoplamiento</strong>, es decir <span class="math inline">\(A_1B_1\)</span> y <span class="math inline">\(A_2B_2\)</span> <strong>están en exceso</strong> respecto a lo esperado.</p>
+<p>También se podría haber calculado a partir de <span class="math inline">\(D=P_{A_1B_1}P_{A_2B_2}-P_{A_1B_2}P_{A_2B_1}=0,04925\)</span>.</p>
+<p>De acuerdo a la ecuación <span class="math inline">\(D_{máx}=\text{mínimo}(p_1q_2,q_1p_2)\)</span>, en nuestro caso tenemos</p>
+<p><span class="math display">\[\begin{equation}
+D_{máx}=\text{mínimo}(p_1q_2;q_1p_2)= \text{mínimo}(0,459 \cdot 0,418 ; 0,541 \cdot 0,582) \\
+D_{máx}=\text{mínimo}(0,1918 ; 0,3149) = 0,1918
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-5.2" class="section level3 unnumbered">
+<h3>Ejercicio 5.2</h3>
+<p>Con los datos del <a href="dosloci.html#ejercicio-5.1">Ejercicio 5.1</a> determinar si el desequilibrio de ligamiento observado es estadísticamente significativo al valor de <span class="math inline">\(\alpha=1\%\)</span>.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Ordenando los haplotipos observados en una tabla tenemos<br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Gametos</th>
+<th align="center"><span class="math inline">\(\bf{B_1}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{B_2}\)</span></th>
+<th align="center"><strong>Marginal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{A_1}\)</span></td>
+<td align="center"><span class="math inline">\(300\)</span></td>
+<td align="center"><span class="math inline">\(140\)</span></td>
+<td align="center"><span class="math inline">\(440\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{A_2}\)</span></td>
+<td align="center"><span class="math inline">\(260\)</span></td>
+<td align="center"><span class="math inline">\(280\)</span></td>
+<td align="center"><span class="math inline">\(540\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Marginal</strong></td>
+<td align="center"><span class="math inline">\(560\)</span></td>
+<td align="center"><span class="math inline">\(420\)</span></td>
+<td align="center"><span class="math inline">\(980\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+El valor esperado para la celda <span class="math inline">\(i,j\)</span> podemos calcularlos de acuerdo a <span class="math inline">\(E_{i,j}=\frac{m_1*m_j}{N}\)</span>. Por ejemplo, para el haplotipo <span class="math inline">\(A_1B_1\)</span> sería <span class="math inline">\(E_{1,1}=\frac{440*560}{980}=251,43\)</span> Por lo tanto, si lo calculamos para las celdas restantes, los esperados serían</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Gametos</th>
+<th align="center"><span class="math inline">\(\bf{B_1}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{B_2}\)</span></th>
+<th align="center"><strong>Marginal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{A_1}\)</span></td>
+<td align="center"><span class="math inline">\(251,43\)</span></td>
+<td align="center"><span class="math inline">\(188,57\)</span></td>
+<td align="center"><span class="math inline">\(440\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{A_2}\)</span></td>
+<td align="center"><span class="math inline">\(308,57\)</span></td>
+<td align="center"><span class="math inline">\(231,43\)</span></td>
+<td align="center"><span class="math inline">\(540\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Marginal</strong></td>
+<td align="center"><span class="math inline">\(560\)</span></td>
+<td align="center"><span class="math inline">\(420\)</span></td>
+<td align="center"><span class="math inline">\(980\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Ahora, aplicando la ecuación <a href="#eq:chicuad2">(<strong>??</strong>)</a>,</p>
+<p><span class="math display">\[\begin{equation}
+\chi_{gl}^2=\sum_{i,j} \frac{(O_{i,j}-E_{i,j})^2}{E_{i,j}}
+\end{equation}\]</span></p>
+<p>por lo que tenemos que calcular primero los valores de <span class="math inline">\(\frac{(O_{i,j}-E_{i,j})^2}{E_{i,j}}\)</span> y luego sumarlos. Para <span class="math inline">\(i=1,j=1\)</span> tenemos <span class="math inline">\(\frac{(O_{1,1}-E_{1,1})^2}{E_{1,1}}=\frac{(300-251,43)^2}{251,43}=9,38\)</span>. Para <span class="math inline">\(i=1,j=2\)</span> tenemos <span class="math inline">\(\frac{(140-188,57)^2}{188,57}=12,51\)</span>. Para <span class="math inline">\(i=2,j=1\)</span> tenemos <span class="math inline">\(\frac{(260-308,57)^2}{308,57}=7,65\)</span>. Finalmente, para <span class="math inline">\(i=2,j=2\)</span> tenemos <span class="math inline">\(\frac{(280-231,43)^2}{231,43}=10,19\)</span>. Sumando estos valores, tenemos el valor del estadístico</p>
+<p><span class="math display">\[\begin{equation}
+\chi^2=9,38+12,51+7,65+10,19=39,73
+\end{equation}\]</span></p>
+<p>Si ahora entramos en una tabla de valores del estadístico <span class="math inline">\(\chi^2\)</span> con <span class="math inline">\(gl=1\)</span>, tenemos que el valor del estadístico correspondiente a <span class="math inline">\(\alpha=0,01\)</span> es <span class="math inline">\(6,635\)</span>. Como nuestro resultado es claramente superior a este valor, es decir está a la derecha de este punto de corte, la diferencia de frecuencias entre lo observado y lo esperado (bajo la hipótesis de independencia de los <em>loci</em>) es estadísticamente significativa y podemos rechazar la hipótesis nula.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-5.3" class="section level3 unnumbered">
+<h3>Ejercicio 5.3</h3>
+<p>A partir del resultado <span class="math inline">\(\chi^2=r^2N\)</span> calcular el valor de este estadístico con los datos del <a href="dosloci.html#ejercicio-5.1">Ejercicio 5.1</a>.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Usando las frecuencias calculadas para <span class="math inline">\(p_1,q_1, p_2, q_2\)</span> y el valor de <span class="math inline">\(D\)</span> del ejemplo, sustituyendo, tenemos</p>
+<p><span class="math display">\[\begin{equation}
+\chi^2=0,05^2/(0,551 \cdot 0,449 \cdot 0,571 \cdot 0,429) \approx 40,43
+\end{equation}\]</span></p>
+<p>que es un poco superior al resultado obtenido en el <a href="dosloci.html#ejercicio-5.2">Ejercicio 5.2</a>. Si en lugar de eso partimos directamente del hecho de que <span class="math inline">\(D=x_1x_4-x_2x_3\)</span>, usando los números</p>
+<p><span class="math display">\[\begin{equation}
+\chi^2=980 \cdot \frac{\left[\frac{(300 \cdot 280)}{980^2}-\frac{(140 \cdot 260)}{980^2}\right]^2}{\frac{440}{980} \cdot \left(1-\frac{440}{980}\right) \cdot \frac{560}{980} \cdot \left(1-\frac{560}{980}\right)}=39,73
+\end{equation}\]</span></p>
+<p>que es un valor idéntico al calculado usando el formato de tabla de 2x2, pero ahora por un procedimiento más abreviado.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-5.4" class="section level3 unnumbered">
+<h3>Ejercicio 5.4</h3>
+<p>En un estudio de una población de la mosca de la fruta (<em>Drosophila melanogaster</em>) enfocando en el análisis de la recombinación en esa especie, se determinaron los haplotipos de dos <em>loci</em> (<strong>A</strong> y <strong>B</strong>) físicamente cercanos en el mismo cromosoma autosomal, ambos con dos alelos. Las frecuencias de los haplotipos fueron las siguientes</p>
+<p><span class="math display">\[\begin{equation}
+\bf{A_1B_1}=280\\
+\bf{A_1B_2}=200\\
+\bf{A_2B_1}=250\\
+\bf{A_2B_2}=270
+\end{equation}\]</span></p>
+<p>Calcular las frecuencias de los alelos, el desequilibrio de ligamiento <span class="math inline">\(D\)</span>, el valor máximo posible del mismo, así como los estadísticos <span class="math inline">\(D&#39;\)</span> y <span class="math inline">\(r^2\)</span>. ¿Es estadísticamente significativo el desequilibrio observado?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>El total de gametos es <span class="math inline">\(N=280+200+250+270=1000\)</span>. Las frecuencias de los alelos son <span class="math inline">\(p_1=x_1+x_2=\frac{280+200}{1000}=0,48\)</span> (<span class="math inline">\(q_1=1-p_1=1-0,48=0,52\)</span>) y <span class="math inline">\(p_2=x_1+x_3=\frac{280+250}{1000}=0,53\)</span> (<span class="math inline">\(q_2=1-p_2=1-0,53=0,47\)</span>).</p>
+<p>Para calcular <span class="math inline">\(D\)</span> hacemos <span class="math inline">\(D=x_1x_4-x_2x_3=\frac{280 \cdot 270-200 \cdot 250}{1000 \cdot 1000}=0,0256\)</span>. Como <span class="math inline">\(D&gt;0\)</span>, entonces <span class="math inline">\(D&#39;=\frac{D}{D_{máx}}\)</span>.</p>
+<p>A su vez <span class="math inline">\(D_{máx}=mínimo(p_1q_2,q_1p_2)=\)</span> y <span class="math inline">\(p_1q_2=0,48 \cdot 0,47=0,2256\)</span>, <span class="math inline">\(q_1p_2=0,52 \cdot 0,53=0,2756\)</span>, por lo que <span class="math inline">\(D_{máx}=0,2256\)</span>.</p>
+<p>Juntando ambos resultados, <span class="math inline">\(D&#39;=\frac{D}{D_{máx}}=\frac{0,0256}{0,2256}=0,1135\)</span>. Al mismo tiempo, <span class="math inline">\(r^2=\frac{D^2}{p_1q_1p_2q_2}=\frac{0,0256^2}{0,48 \cdot 0,52 \cdot 0,53 \cdot 0,47}=0,0105\)</span> (que es menor a <span class="math inline">\((D&#39;)^2=0,1135^2=0,0129\)</span>).</p>
+<p>Como vimos antes, el valor del estadístico de <span class="math inline">\(\chi_1^2=r^2N=0,0105 \cdot 1000=10,54\)</span>, con un grado de libertad, por lo que si <span class="math inline">\(\alpha=0,01\)</span> entonces el umbral del test con <span class="math inline">\(gl=1\)</span> es <span class="math inline">\(\chi_1^2=6,63\)</span>, entonces como <span class="math inline">\(10,54&gt;6,63\)</span>, el desequilibrio de ligamiento es estadísticamente significativo (respecto a la hipótesis nula de independencia).</p>
+</div>
+<div id="ejercicio-5.5" class="section level3 unnumbered">
+<h3>Ejercicio 5.5</h3>
+<p>Dos <em>loci</em> en el mismo cromosoma de un organismo diploide presentan un desequilibrio de ligamiento con <span class="math inline">\(D=0,21\)</span>. A partir de diversos estudios de mapeo y de la distancia física se estima que la fracción de recombinación es de <span class="math inline">\(r=0,17\)</span> ¿Cuantas generaciones tardará en llegarse a un desequilibrio del <span class="math inline">\(0,1\%\)</span>?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>El número de generaciones <span class="math inline">\(t\)</span> está dado por</p>
+<p><span class="math display">\[\begin{equation}
+t=\frac{\ln f}{\ln (1-r)}
+\end{equation}\]</span></p>
+<p>Como <span class="math inline">\(D_t=D_0f \Leftrightarrow f=\frac{D_t}{D_0}\)</span>, en nuestro caso <span class="math inline">\(f=\frac{0,001}{0,21} \approx 0,0047619\)</span>. Sustituyendo en la ecuación anterior, tenemos</p>
+<p><span class="math display">\[\begin{equation}
+t=\frac{\ln 0,0047619}{\ln (1-0,17)}=\frac{\ln 0,0047619}{\ln 0,83} \approx 28,7 \text{ generaciones}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-5.6" class="section level3 unnumbered">
+<h3>Ejercicio 5.6</h3>
+<p>En una población de una especie diploide dos <em>loci</em> cercanos, cada uno con dos alelos, presentan un <strong>desequilibrio de ligamiento</strong> entre ambos <em>loci</em> de <span class="math inline">\(D=0,10\)</span>. El primer <em>locus</em> se encuentra sujeto a <strong>selección direccional</strong>, con parámetros <span class="math inline">\(h=0,5\)</span> y <span class="math inline">\(s=0,15\)</span> (el alelo <span class="math inline">\(A_1\)</span> es el favorecido). Las frecuencias actuales de los alelos en el primer <em>locus</em> están dadas por <span class="math inline">\(p_1=0,70\)</span>, mientras que las del segundo <em>locus</em> están dadas por <span class="math inline">\(p_2=0,3\)</span>.</p>
+<p>Calcular el <strong>cambio de frecuencia</strong> esperado en una generación <strong>para el segundo</strong> <em>loci</em> (<span class="math inline">\(\Delta p_2\)</span>) así como el valor de la <strong>frecuencia</strong> (<span class="math inline">\(p&#39;_2\)</span>) en la próxima generación.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Usando la ecuación</p>
+<p><span class="math display">\[\begin{equation}
+\Delta p_2=\frac{Ds[p_1h+q_1(1-h)]}{\bar{w}} 
+\end{equation}\]</span></p>
+<p>con <span class="math inline">\(\bar{w}=1-2p_1q_1hs-q_1^2s\)</span>, como <span class="math inline">\(q_1=1-p_1=1-0,70=0,30\)</span>, podemos esperar un cambio de</p>
+<p><span class="math display">\[\begin{equation}
+\Delta p_2=\frac{0,10 \cdot 0,15 [0,70 \cdot 0,5 + 0,30 (1-0,5)]}{1-2 \cdot 0,70 \cdot 0,30 \cdot 0,5 \cdot 0,15-0,30^2 \cdot 0,15} = 0,007853
+\end{equation}\]</span></p>
+<p>Como <span class="math inline">\(p_2=0,30\)</span>, entonces <span class="math inline">\(p&#39;_2=p_2+\Delta p_2=0,30+0,007853=0,307853\)</span>.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-5.7" class="section level3 unnumbered">
+<h3>Ejercicio 5.7</h3>
+<p>Para dos subpoblaciones de la misma especie se secuenciaron 1000 haplotipos de dos <em>loci</em> en el mismo cromosoma. Completar la tabla siguiente para las dos subpoblaciones <strong>Población 1</strong> y <strong>Población 2</strong>, así como para una <strong>Población mezcla</strong> constituida por el agrupamiento de todos los haplotipos de ambas. Determinar la significancia estadística de <span class="math inline">\(D\)</span> en cada caso. ¿Cuál es la razón del comportamiento llamativo de la <strong>Población mezcla</strong>?</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Gameto/estadístico</strong></th>
+<th align="center"><strong>Frecuencia</strong></th>
+<th align="center"><strong>Población 1</strong></th>
+<th align="center"><strong>Población 2</strong></th>
+<th align="center"><strong>Población mezcla</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{A_1B_1}\)</span></td>
+<td align="center"><span class="math inline">\(x_1N\)</span></td>
+<td align="center"><span class="math inline">\(700\)</span></td>
+<td align="center"><span class="math inline">\(30\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{A_1B_2}\)</span></td>
+<td align="center"><span class="math inline">\(x_2N\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(120\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{A_2B_1}\)</span></td>
+<td align="center"><span class="math inline">\(x_3N\)</span></td>
+<td align="center"><span class="math inline">\(150\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{A_2B_2}\)</span></td>
+<td align="center"><span class="math inline">\(x_4N\)</span></td>
+<td align="center"><span class="math inline">\(50\)</span></td>
+<td align="center"><span class="math inline">\(750\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{p_1}\)</span></td>
+<td align="center"><span class="math inline">\(x1+x_4\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{p_2}\)</span></td>
+<td align="center"><span class="math inline">\(x1+x_3\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{D}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{D_{máx}}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{D&#39;}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{r^2}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Gameto/estadístico</strong></th>
+<th align="center"><strong>Frecuencia</strong></th>
+<th align="center"><strong>Población 1</strong></th>
+<th align="center"><strong>Población 2</strong></th>
+<th align="center"><strong>Población mezcla</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{A_1B_1}\)</span></td>
+<td align="center"><span class="math inline">\(x_1N\)</span></td>
+<td align="center"><span class="math inline">\(700\)</span></td>
+<td align="center"><span class="math inline">\(30\)</span></td>
+<td align="center"><span class="math inline">\(730\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{A_1B_2}\)</span></td>
+<td align="center"><span class="math inline">\(x_2N\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(120\)</span></td>
+<td align="center"><span class="math inline">\(220\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{A_2B_1}\)</span></td>
+<td align="center"><span class="math inline">\(x_3N\)</span></td>
+<td align="center"><span class="math inline">\(150\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(250\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{A_2B_2}\)</span></td>
+<td align="center"><span class="math inline">\(x_4N\)</span></td>
+<td align="center"><span class="math inline">\(50\)</span></td>
+<td align="center"><span class="math inline">\(750\)</span></td>
+<td align="center"><span class="math inline">\(800\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{p_1}\)</span></td>
+<td align="center"><span class="math inline">\(x1+x_4\)</span></td>
+<td align="center"><span class="math inline">\(0,80\)</span></td>
+<td align="center"><span class="math inline">\(0,15\)</span></td>
+<td align="center"><span class="math inline">\(0,475\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{p_2}\)</span></td>
+<td align="center"><span class="math inline">\(x1+x_3\)</span></td>
+<td align="center"><span class="math inline">\(0,85\)</span></td>
+<td align="center"><span class="math inline">\(0,13\)</span></td>
+<td align="center"><span class="math inline">\(0,490\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{D}\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math inline">\(0,02\)</span></td>
+<td align="center"><span class="math inline">\(0,0105\)</span></td>
+<td align="center"><span class="math inline">\(0,1323\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{D_{máx}}\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math inline">\(0,1200\)</span></td>
+<td align="center"><span class="math inline">\(0,1105\)</span></td>
+<td align="center"><span class="math inline">\(0,2423\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\bf{D&#39;}\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math inline">\(0,1667\)</span></td>
+<td align="center"><span class="math inline">\(0,0950\)</span></td>
+<td align="center"><span class="math inline">\(0,5460\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(\bf{r^2}\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math inline">\(0,01961\)</span></td>
+<td align="center"><span class="math inline">\(0,00765\)</span></td>
+<td align="center"><span class="math inline">\(0,28087\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Haciendo uso del hecho que <span class="math inline">\(\chi_1^2=r^2N\)</span>, los estadísticos calculados son <span class="math inline">\(\chi_1^2=19,61\)</span> (<span class="math inline">\(N=1000\)</span>), <span class="math inline">\(\chi_1^2=7,65\)</span> (<span class="math inline">\(N=1000\)</span>) y <span class="math inline">\(\chi_1^2=561,74\)</span> (<span class="math inline">\(N=2000\)</span>) para las poblaciones 1, 2 y mezcla respectivamente. Como el umbral para <span class="math inline">\(\alpha=0,01\)</span> con 1 grado de libertad es <span class="math inline">\(\chi_1^2=6,635\)</span>, para todas las poblaciones el desequilibrio de ligamiento es significativo, aunque en la <strong>Población 2</strong> es por poco (el p-valor correspondiente a <span class="math inline">\(\chi_1^2=7,65\)</span> es igual a <span class="math inline">\(0,005677\)</span>). En la <strong>Población mezcla</strong> el desequilibrio es notorio, producto de combinar sub-poblaciones con frecuencias extremas (y opuestas) para ambos alelos.</p>
+<hr />
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="seleccion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aparnoalazar.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-GPdosloci.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

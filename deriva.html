@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 3 Deriva Genética | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 3 Deriva Genética | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 3 Deriva Genética | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="variación-y-equilibrio-de-hardy-weinberg.html"/>
+<link rel="next" href="seleccion.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="deriva" class="section level1" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> Deriva Genética</h1>
+<div id="ejercicio-3.1" class="section level3 unnumbered">
+<h3>Ejercicio 3.1</h3>
+<p>Dado un nivel de heterocigosidad inicial <span class="math inline">\(H_0\)</span>, determinar para una población de <span class="math inline">\(N\)</span> individuos diploides el tiempo requerido para que la misma caiga a <span class="math inline">\(1/4\)</span> del valor inicial. Si la población tiene 10 individuos y el intervalo generacional de la misma es de <span class="math inline">\(3,25\)</span> años, ¿cuántas generaciones y cuántos años serán necesarios para alcanzar esa reducción de <span class="math inline">\(\frac{3}{4}H_0\)</span>?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>La ecuación <span class="math inline">\(H_t \approx H_0 e^{\frac{-t}{2N}}\)</span> nos permite estimar fácilmente los tiempos hasta determinado nivel de reducción de la frecuencia inicial de heterocigotos. Por ejemplo, para alcanzar un cuarto del valor inicial (<span class="math inline">\(H_0\)</span>), con poblaciones de <span class="math inline">\(N\)</span> individuos puedo hacer
+<span class="math inline">\(H_t=\frac{H_0}{4}\)</span>. Luego, de acuerdo con dicha ecuación tenemos que</p>
+<p><span class="math display">\[\begin{equation*}
+H_t=\frac{H_0}{4}=H_0e^{\frac{-t}{2N}}\\
+\therefore \frac{1}{4}=e^{\frac{-t}{2N}}
+\end{equation*}\]</span></p>
+<p>Aplicando el logaritmo a ambos lados de la ecuación, tenemos</p>
+<p><span class="math display">\[\begin{equation*}
+\ln\left(\frac{1}{4}\right)=\ln\left(e^{\frac{-t}{2N}}\right)=\frac{-t}{2N}
+\end{equation*}\]</span></p>
+<p>y finalmente</p>
+<p><span class="math display">\[\begin{equation*}
+t=-2N \ln\left(\frac{1}{4}\right) \approx 2,77N
+\end{equation*}\]</span></p>
+<p>Es decir, en <span class="math inline">\(2,77N\)</span> generaciones. Si lo hubiésemos hecho sin la aproximación, el procedimiento es análogo y llegaríamos a</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{H_0}{4}=\left(1-\frac{1}{2N}\right)^t H_0 \therefore t=\frac{\ln{\left(\frac{1}{4}\right)}}{\ln{\left(1-\frac{1}{2N}\right)}}
+\end{equation*}\]</span></p>
+<p>que si bien es la solución exacta, no es lineal en el número de individuos en cada población.</p>
+<p>Si la población tiene 10 individuos, entonces <span class="math inline">\(N=10\)</span> y <span class="math inline">\(2,77N=2,77\times 10=27,7 \approx 28\)</span> generaciones. Como el intervalo generacional es de <span class="math inline">\(3,25\)</span> años, entonces <span class="math inline">\(27,7\text{ generaciones} \times 3,25 \text{ años/generación} \approx 90\)</span> años.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.2" class="section level3 unnumbered">
+<h3>Ejercicio 3.2</h3>
+<p>Un productor rural y exportador de “ovejas verdes” posee un rebaño de <span class="math inline">\(N=1000\)</span> animales (mitad machos, mitad hembras), cuando por razón de la crisis debe vender 800 de ellos (suponemos que 400 machos y 400 hembras). Una generación después ya cuenta con <span class="math inline">\(N=300\)</span> animales. Calcular el tamaño efectivo poblacional en esta última generación, asumiendo que la generación inicial era la de <span class="math inline">\(N=1000\)</span> animales.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>De acuerdo a la ecuación <span class="math inline">\(N_e=\frac{t}{\left(\frac{1}{N_0}+\frac{1}{N_1}+\frac{1}{N_2}+...\frac{1}{+N_{t-1}}\right)}\)</span>, debemos calcular la media armónica entre el <span class="math inline">\(N\)</span> de las <span class="math inline">\(t=3\)</span> generaciones, es decir<br />
+<span class="math display">\[\begin{equation}
+N_e=\frac{3}{\left(\frac{1}{N_0}+\frac{1}{N_1}+\frac{1}{N_2}\right)}\\
+N_e=\frac{3}{\left(\frac{1}{1000}+\frac{1}{200}+\frac{1}{300}\right)}=321,4 \sim 321 \text{ animales}\\
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.3" class="section level3 unnumbered">
+<h3>Ejercicio 3.3</h3>
+<p>Un productor de ovejas verdes decidió fundar un núcleo cerrado, con 2020 animales en total, 2000 ovejas y 20 carneros. a) Calcula el <strong>tamaño poblacional efectivo</strong> de la misma. b) ¿Cuál sería el <strong>tamaño poblacional efectivo</strong> si solo tuviese la mitad de hembras? Comente las diferencias.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>De acuerdo a la ecuación <span class="math inline">\(N_e=\frac{4N_mN_h}{N_m+N_h}\)</span>, el tamaño efectivo de esta población es<br />
+<span class="math display">\[\begin{equation}
+N_e=\frac{4 \cdot 20 \cdot 2000}{20+2000}=\frac{160000}{2020}=79,2 \sim 79 \text{ animales}\\
+\end{equation}\]</span></p></li>
+<li><p>Nuevamente, usando la ecuación <span class="math inline">\(N_e=\frac{4N_mN_h}{N_m+N_h}\)</span>, tenemos que</p></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+N_e=\frac{4 \cdot 20 \cdot 1000}{20+1000}=\frac{80000}{1020}=78,4 \sim 78 \text{ animales}\\
+\end{equation}\]</span></p>
+<p>Pese que el número de hembras es el doble en el primer caso que en el segundo, el tamaño efectivo apenas se reduce en 1 individuo debido a que el factor limitante son los machos (solo 20).</p>
+<p> </p>
+</div>
+<div id="ejercicio-3.4" class="section level3 unnumbered">
+<h3>Ejercicio 3.4</h3>
+<p>Como es bien sabido, el origen de las famosas “<strong>ovejas verdes</strong>” parece haber sido el resultado de una mutación en un gen, en un rebaño aislado de 1000 ovejas (igual cantidad de machos y hembras) de la raza <strong>Scottish Blackface</strong> (que existe en una isla remota de las Hébridas exteriores). Suponiendo que este alelo es neutro (es decir, no confiere ninguna ventaja ni demérito para la reproducción) y que la deriva genética es la única fuerza evolutiva en cuestión, ¿cuál es la probabilidad de que este alelo se fije en la población? ¿Cuánto tiempo tardaría en ocurrir eso (promedio), en la eventualidad de que ocurra teniendo en cuenta que el intervalo generacional para estas ovejas (tiempo promedio en el que nacen los hijos) es de 3 años, sin generaciones solapantes? ¿Cuál es la probabilidad de que se pierda el alelo y cuánto tardaría en promedio en ocurrir eso (en la eventualidad de que se pierda)? ¿Cuál sería el tiempo medio segregando este alelo?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>La probabilidad de que el nuevo alelo sobreviva es su frecuencia inicial, en este caso <span class="math inline">\(p=\frac{1}{2N}=\frac{1}{2 \cdot 1000}=0,0005=0,05\%\)</span>. El tiempo hasta la fijación esta dado por la ecuación <a href="#eq:TfixMax">(<strong>??</strong>)</a> y es aproximadamente <span class="math inline">\(4N\)</span> generaciones, es decir <span class="math inline">\(4 \cdot 1000=4000\)</span> generaciones. Considerando que cada generación lleva unos 3 años, se precisarían unos <span class="math inline">\(4000 \cdot 3=12000\)</span> años para que este alelo se fijase.</p>
+<p>La probabilidad de que el nuevo alelo se pierda es <span class="math inline">\(1-\frac{1}{2N}=1-\frac{1}{2000}=0,9995=99,95\%\)</span>. En la eventualidad de que esto ocurra (recordar que se trata del azar trabajando y no podemos determinar si ocurrirá o no), el tiempo medio a la pérdida esta dado por la ecuación <a href="#eq:TlossMin">(<strong>??</strong>)</a> y es aproximadamente de <span class="math inline">\(2\ln(2N)=2 \cdot \ln(2000) \sim 15,2\)</span> generaciones. Teniendo en cuenta el tiempo de 3 años por generación, eso sería <span class="math inline">\(3 \cdot 15,2=45,6\)</span> años.</p>
+<p>Por último, el tiempo medio segregando el alelo viene dado por la ecuación <a href="#eq:Tseg">(<strong>??</strong>)</a> y es <span class="math inline">\(\bar{t}(p)=-4N [p \ln(p) + (1-p) \ln(1-p)]=-4 \cdot 1000 [0,0005 \cdot \ln(0,0005) + 0,9995 \cdot \ln(0,9995)] \sim 17,2\)</span> generaciones, lo que teniendo en cuenta el intervalo de 3 años entre generaciones nos daría <span class="math inline">\(3 \cdot 17,2=51,6\)</span> años. También hubiésemos arribado a este resultado como promedio ponderado entre fijación y pérdida, es decir <span class="math inline">\(12000 \cdot 0,0005+45.6 \cdot 0,9995=51,5772 \sim 57,6\)</span> años.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.5" class="section level3 unnumbered">
+<h3>Ejercicio 3.5</h3>
+<p>¿Cuál es la probabilidad de que un alelo del que existe una sola copia
+entre todos los <span class="math inline">\(N\)</span> individuos diploides desaparezca en la siguiente
+generación? Grafica la función para N entre 1 y 20 individuos. (adaptado de Gillespie)</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Si asumimos el modelo de Wright-Fisher, la probabilidad de elegir este
+alelo en una extracción al azar es de <span class="math inline">\(\frac{1}{2N}\)</span> ya que hay una sola
+copia en un total de <span class="math inline">\(2N\)</span> alelos. Por lo tanto, la posibilidad de que no
+resulte elegido en una vez es igual a <span class="math inline">\(1-\frac{1}{2N}\)</span>. Como el modelo
+de Wright-Fisher implica reponer el alelo que se extrajo para volver a
+hacer el sorteo, la elección de los alelos que conformaran la próxima
+generación será el resultado de repetir este proceso en forma
+independiente <span class="math inline">\(2N\)</span> veces, es decir el resultado de multiplicar
+<span class="math inline">\(1-\frac{1}{2N}\)</span> por si mismo <span class="math inline">\(2N\)</span> veces, o lo que es lo mismo
+<span class="math inline">\((1-\frac{1}{2N})^{2N}\)</span>. A medida de que N crece este número se aproxima
+a <span class="math inline">\(1/e \sim 0,367879\)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ejercicio3p1"></span>
+<img src="GuiaPracticaGeneticaII_files/figure-html/ejercicio3p1-1.png" alt="Probabilidad de perder un alelo de copia única en función del número de individuos en la población. En rojo la probabilidad $1/e$." width="672" />
+<p class="caption">
+Figure 3.1: Probabilidad de perder un alelo de copia única en función del número de individuos en la población. En rojo la probabilidad <span class="math inline">\(1/e\)</span>.
+</p>
+</div>
+</div>
+<div id="ejercicio-3.6" class="section level3 unnumbered">
+<h3>Ejercicio 3.6</h3>
+<p>Un productor rural aficcionado a la conservación de razas caprinas posee un rodeo de la raza <strong>Finnish Landrace</strong>, que formó a partir de 400 hembras y 400 machos de distintas poblaciones en Finlandia Luego de 3 generaciones (asumimos que no solapantes, aunque no sea muy realista), debió vender el <span class="math inline">\(75\%\)</span> de los animales (misma cantidad de machos y hembras), a partir de los cuál volvió a expandirse lentamente hasta alcanzar el número anterior de animales. Le evolución del número de animales ha sido entonces, desde el comienzo: 800, 800, 800, 200, 300, 350, 550 y 800. ¿Cuál es el tamaño efectivo promedio de esta población? Desde el punto de vista genético, ¿se recuperó en la última generación la diversidad existente en la generación inicial?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>El tamaño efectivo promedio de una población que fluctúa en el número de individuos reproductivos lo calculamos a partir de la media armónica entre el número de individuos a cada generación. Es decir,</p>
+<p><span class="math display">\[\begin{equation}
+N_e=\frac{t}{\left(\frac{1}{N_0}+\frac{1}{N_1}+\frac{1}{N_2}+...+\frac{1}{N_{t-1}} \right)}
+\end{equation}\]</span></p>
+<p>con <span class="math inline">\(t\)</span> el número de generaciones, lo que en nuestro caso se transforma en:</p>
+<p><span class="math display">\[\begin{equation}
+N_e=\frac{8}{\left(\frac{1}{800}+\frac{1}{800}+\frac{1}{800}+\frac{1}{200}+\frac{1}{300}+\frac{1}{350}+\frac{1}{550}+\frac{1}{800}\right)} =\frac{8}{0,01800866}=444,23 \approx 444 \text{ animales}
+\end{equation}\]</span></p>
+<p>Es decir, el tamaño efectivo de la población es ahora de <span class="math inline">\(\approx 444\)</span> animales, pese a que el tamaño censal es de 800 (el tamaño efectivo al inicio era <span class="math inline">\((4*400*400)/800=800\)</span>). Claramente, no se recuperó la diversidad genética que se perdió por el cuello de botella experimentado.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.7" class="section level3 unnumbered">
+<h3>Ejercicio 3.7</h3>
+<p>La media armónica representa un buen indicador del tamaño efectivo poblacional cuando el número de individuos reproductivos fluctua entre generaciones, a diferencia de la media aritmética (el promedio usual). ¿Se comportan igual la media aritmética y la media armónica con respecto a los valores extremos (<strong>ouliers</strong>)? ¿Cuál es más sensible a los <strong>outliers</strong>? ¿Son ambas medias simétricas con respecto a desviaciones de un solo valor hacia arriba y hacia abajo del conjunto de los otros valores? Considera un conjunto de 7 valores iguales (100 cada uno) y uno distinto, primero con una desviación de 80 hacia arriba y luego de 80 hacia abajo. Es decir los dos juegos serán (100,100,100,100,100,100,100,180) y (100,100,100,100,100,100,100,20).</p>
+<p><strong><em>Solución</em></strong></p>
+<p>La media armónica es mucho menos sensible a valores extremos hacia arriba del promedio que hacia abajo. Es decir, su sensibilidad es mucho mayor a valores pequeños que a valores altos. En cambio, la media aritmética es simétrica en este respecto. Por ejemplo, en el primer juego,</p>
+<p><span class="math display">\[\begin{equation}
+H=\frac{n}{\sum_{i=1}^n \frac{1}{x_i}}=\frac{8}{7 \cdot \frac{1}{100} + \frac{1}{180}} \approx 105,9
+\end{equation}\]</span></p>
+<p>mientras que en el segundo</p>
+<p><span class="math display">\[\begin{equation}
+H=\frac{n}{\sum_{i=1}^n \frac{1}{x_i}}=\frac{8}{7 \cdot \frac{1}{100} + \frac{1}{20}} \approx 66,7
+\end{equation}\]</span></p>
+<p>Es decir, la media armónica <span class="math inline">\(H\)</span> se desvía <span class="math inline">\(5,9\)</span> unidades hacia arriba en el primer caso y <span class="math inline">\(33,7\)</span> unidades en el segundo, pese a que los datos <strong>outliers</strong> se desviaron en ambos caso 80 unidades (arriba primero, abajo en el segundo). Sin embargo, la media aritmética fue igual a <span class="math inline">\(\mu=\frac{\sum_{i=1}^n x_i}{n}=110\)</span> en el primer caso y <span class="math inline">\(\mu=\frac{\sum_{i=1}^n x_i}{n}=90\)</span> en el segundo, ambos desvíos de <span class="math inline">\(10\)</span> unidades hacia arriba o hacia abajo acompañando a los datos.</p>
+</div>
+<div id="ejercicio-3.8" class="section level3 unnumbered">
+<h3>Ejercicio 3.8</h3>
+<p>Para una población de 250 individuos diploides, ¿cuáles serán los tiempos sucesivos de coalescencia de 6 alelos (expresados en generaciones)? Si el intervalo generacional es de 20 años, ¿cuántos años se precisan para llegar a la coalescencia de todos los alelos?</p>
+<p><strong><em>Solución</em></strong>
+Utilizando la ecuación <span class="math inline">\(\mathbb{E}(u_k)=4N/[k(k-1)]\)</span> tenemos que para <span class="math inline">\(k=6\)</span> alelos y <span class="math inline">\(N=250\)</span> individuos, el número esperado de generaciones hasta el primer evento coalescente será</p>
+<p><span class="math display">\[\begin{equation}
+\mathbb{E}(u_k)=\frac{4N}{k(k-1)}=\frac{1000}{6 \cdot 5}=\frac{1000}{30} \approx 33,3 \text{ generaciones}
+\end{equation}\]</span></p>
+<p>Aplicando la misma ecuación y disminuyendo <span class="math inline">\(k\)</span> en <span class="math inline">\(1\)</span> alelo cada vez, tenemos la sucesión de intervalos, <span class="math inline">\((T_6;T_5;T_4;T_3;T_2)=(33,3; 50; 83,3; 166,7; 500)\)</span>. Si ahora sumamos esos intervalo tenemos en tiempo total al primer coalescente, es decir <span class="math inline">\(33,3+50+83,3+166,7+500=833,3\)</span> generaciones.</p>
+<p>Alternativamente, para el <strong>tiempo total</strong> podríamos haber aplicado la ecuación <span class="math inline">\(t=4N(1-\frac{1}{k})\)</span> para obtener</p>
+<p><span class="math display">\[\begin{equation}
+t=4N(1-\frac{1}{k})=1000 (1-\frac{1}{6})=1000 \frac{5}{6} \approx 833,3 \text{ generaciones}
+\end{equation}\]</span></p>
+<p>Para obtener el tiempo esperado en años basta multiplicar este número de generacions por el intervalo entre generacion, 20 años, para obtener que el mismo es igual a <span class="math inline">\(833,3 \text{ generaciones} \cdot 20 \text{ años/generación}=16667 \text{ años}\)</span>.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.9" class="section level3 unnumbered">
+<h3>Ejercicio 3.9</h3>
+<p>En una población de <strong>tamaño fijo</strong> constituida por solo 5 individuos que se aparean entre sí, en un <em>locus</em> con dos alelos (<span class="math inline">\(A_1\)</span> y <span class="math inline">\(A_2\)</span>), si partimos de que en la generación actual hay 5 copias del alelo <span class="math inline">\(A_1\)</span>, ¿cuáles son las probabilidades de que en la próxima generación hayan 6, 7, 8, 9 o 10 copias? ¿Cuál es la probabilidad de que la próxima generación tenga exactamente 5 alelos <span class="math inline">\(A_1\)</span>?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Las probabilidades de transición se calculan de acuerdo a</p>
+<p><span class="math display">\[\begin{equation}
+T_{ij}={2N \choose j}\left(\frac{i}{2N}\right)^{j}\left(\frac{2N-i}{2N}\right)^{2N-j}=\frac{(2N)!}{j!(2N-j)!}p^jq^{2N-j}
+\end{equation}\]</span></p>
+<p>Por ejemplo, para la probabilidad de que la siguiente generación tenga 6 alelos <span class="math inline">\(A_1\)</span> es</p>
+<p><span class="math display">\[\begin{equation}
+T_{5,6}={10 \choose 6}\left(\frac{5}{10}\right)^{6}\left(\frac{5}{10}\right)^{4}=\frac{(10)!}{6!(4)!}0,5^6\ 0,5^{4}=0,2051
+\end{equation}\]</span></p>
+<p>Haciendo lo mismo para <span class="math inline">\(j=7\)</span>, <span class="math inline">\(j=8\)</span>, <span class="math inline">\(j=9\)</span> y <span class="math inline">\(j=10\)</span> (además de <span class="math inline">\(j=5\)</span>, es decir que la siguiente generación tenga 5 alelos <span class="math inline">\(A_1\)</span>), tenemos</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><span class="math inline">\(j\)</span></th>
+<th align="left"><span class="math inline">\(T_{i,j}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left"><span class="math inline">\(T_{5,5}=0,2461\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left"><span class="math inline">\(T_{5,6}=0,2051\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left"><span class="math inline">\(T_{5,7}=0,1172\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left"><span class="math inline">\(T_{5,8}=0,0439\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left"><span class="math inline">\(T_{5,9}=0,0098\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="left"><span class="math inline">\(T_{5,10}=0,0010\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.10" class="section level3 unnumbered">
+<h3>Ejercicio 3.10</h3>
+<p>Una población inicial de tamaño enorme (asumamos infinito) de individuos diploides se divide en subpoblaciones de 5 individuos cada una. En un <em>locus</em> con dos alelos, <span class="math inline">\(A_1\)</span> y <span class="math inline">\(A_2\)</span>, cada una de las subpoblaciones está formada por 6 alelos del tipo <span class="math inline">\(A_1\)</span> y 4 alelos del tipo <span class="math inline">\(A_2\)</span>. Asumiendo el <strong>modelo de Wright-Fisher</strong>, calcular la varianza de las frecuencias alélicas entre poblaciones luego de una generación de reproducción al azar en cada población (asumiendo que el tamaño de las poblaciones es constante, es decir de 5 individuos).</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Al ser un proceso de Wright-Fisher, la varianza de frecuencias alélicas <strong>entre subpoblaciones</strong> en una generación se calcula como</p>
+<p><span class="math display">\[\begin{equation}
+\sigma^2(p)=\frac{pq}{2N_e}=\frac{p-p^2}{2N_e}
+\end{equation}\]</span></p>
+<p>Como <span class="math inline">\(p=\frac{6}{10}=0,6\)</span>, entonces</p>
+<p><span class="math display">\[\begin{equation}
+\sigma^2(p)=\frac{0,6-0,6^2}{2\times 5}=\frac{0,6-0,36}{10}=0,024
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-3.11" class="section level3 unnumbered">
+<h3>Ejercicio 3.11</h3>
+<p>En una <strong>población cerrada</strong> de una especie en peligro de extinción el número de individuos es 20, con la misma cantidad de machos que de hembras. Actualmente (generación 0) el <strong>coeficiente de fijación</strong> (también llamado de <strong>endocría</strong>) es <span class="math inline">\(F_0=0,18\)</span>. Dado que la capacidad del ambiente es de exactamente 20 individuos, siempre se seleccionan 10 machos y 10 hembras en cada generación (liberando el resto), pero debido a los hábitos de la especie se desconoce quiénes son progenitores de quiénes. Determinar el <strong>coeficiente de fijación</strong> que tendrá está población en 10 generaciones (<span class="math inline">\(F_{t=10}\)</span>) si los apareamientos se producen al azar dentro de la misma.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>La ecuación que relaciona el <strong>coeficiente de fijación</strong> en una generación futura con el actual y el tamaño de población es</p>
+<p><span class="math display">\[\begin{equation}
+1-F_t=\left(1-\frac{1}{2N}\right)^t(1-F_{0})
+\end{equation}\]</span></p>
+<p>Sustituyendo lo valores, tenemos</p>
+<p><span class="math display">\[\begin{equation}
+1-F_{t=10}=\left(1-\frac{1}{2\times 20}\right)^{10} (1-0,18) \therefore F_{t=10}=1-\left[0,82\ \left(\frac{39}{40}\right)^{10}\right] \therefore \\
+F_{t=10}=1-(0,82 \times 0,77633)=0,3634 
+\end{equation}\]</span></p>
+<p>es decir, se habrá duplicado en 10 generaciones.</p>
+<p><br />
+</p>
+<hr />
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="variación-y-equilibrio-de-hardy-weinberg.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="seleccion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-GPderiva.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

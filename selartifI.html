@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 11 Selección Artificial I | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 11 Selección Artificial I | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 11 Selección Artificial I | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pargen.html"/>
+<link rel="next" href="correlacionada.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="selartifI" class="section level1" number="11">
+<h1><span class="header-section-number">Capítulo 11</span> Selección Artificial I</h1>
+<div id="ejercicio-11.1" class="section level3 unnumbered">
+<h3>Ejercicio 11.1</h3>
+<p>Un rodeo vacuno que produce sus propios reemplazos posee las siguientes cantidades de machos y hembras en las distintas categorías de edades (en años, al nacimiento de los hijos)</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Edad en años (al nacimiento de los hijos)</th>
+<th align="center">Hembras</th>
+<th align="center">Machos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(250\)</span></td>
+<td align="center"><span class="math inline">\(15\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(220\)</span></td>
+<td align="center"><span class="math inline">\(10\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(200\)</span></td>
+<td align="center"><span class="math inline">\(5\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(170\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="center"><span class="math inline">\(160\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TOTAL</strong></td>
+<td align="center"><span class="math inline">\(1000\)</span></td>
+<td align="center"><span class="math inline">\(30\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Calcular el intervalo generacional de machos, el de hembras y el intervalo generacional promedio.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>En machos hay solo 3 categorías de edad, por lo que el número de machos será igual a</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{n_m=\sum_j n_{j_{m}}=15+10+5=30}\\
+\end{equation}\]</span></p>
+<p>y el intervalo generacional de machos sería</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{IG_m=\frac{1}{n_m}\sum_j n_{j_{m}}\cdot j=\frac{3 \times 15+4 \times 10 + 5 \times 5}{30}=\frac{110}{30}=3,6667} \text{ años}
+\end{equation}\]</span></p>
+<p>En hembras, usando el mismo razonamiento y las mismas ecuaciones, tenemos</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{n_h=\sum_j n_{j_{h}}=250+220+200+170+160=1000}\\
+\end{equation}\]</span></p>
+<p>y</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{IG_h=\frac{1}{n_h}\sum_j n_{j_{h}}\cdot j=\frac{3 \times 250+4 \times 220 + 5 \times 200+ 6 \times 170 + 7 \times 160}{1000}=\frac{4770}{1000}=4,77} \text{ años}
+\end{equation}\]</span></p>
+<p>Por lo tanto, tenemos que el intervalo generacional del rodeo será igual a</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{IG=\frac{IG_{m}+IG_{h}}{2}=\frac{3,6667+4,77}{2}=\frac{8,4367}{2} \sim 4,22} \text{ años}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-11.2" class="section level3 unnumbered">
+<h3>Ejercicio 11.2</h3>
+<p>Supongamos que tenemos un grupo de vacas lecheras, y queremos seleccionar como reproductora a la que produce mayor volumen de leche por lactancia.</p>
+<p>Como información sabemos que, a nivel poblacional para producción de leche, distintas
+subclases de lactancia presentan diferente media e igual varianza:<br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Lactancia (no.)</th>
+<th align="center">Media leche 305d <span class="math inline">\((litros)\)</span></th>
+<th align="center">Varianza leche 305d <span class="math inline">\((litros^2)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(3897\)</span></td>
+<td align="center"><span class="math inline">\(1,3\times 10^6\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(2\)</span></td>
+<td align="center"><span class="math inline">\(4481\)</span></td>
+<td align="center"><span class="math inline">\(1,3\times 10^6\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(4740\)</span></td>
+<td align="center"><span class="math inline">\(1,3\times 10^6\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>¿Cuál de las siguientes vacas seleccionaríamos? Calcula la producción de leche corregida para cada vaca, planteado como subclase de referencia a la lactancia 2.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Vaca</th>
+<th align="center">NºLactancia</th>
+<th align="center">Leche 305d <span class="math inline">\((litros)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(8001\)</span></td>
+<td align="center"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(4000\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(8005\)</span></td>
+<td align="center"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(3500\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(7009\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+<td align="center"><span class="math inline">\(4900\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(7013\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+<td align="center"><span class="math inline">\(6000\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(6007\)</span></td>
+<td align="center"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(5600\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<strong><em>Solución</em></strong><br />
+<span class="math display">\[\begin{equation}
+\mathbf{a_1}= \bar y_0 - \bar y_i= 4481 − 3897 = 584\\
+\mathbf{a_2}= \bar y_0 - \bar y_i= 4481 − 4481 = 0  \\
+\mathbf{a_3}= \bar y_0 - \bar y_i= 4481 − 4740 = −259\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\bar y_{8001}^*= \bar y_i - \bar a_i= 4000 + 584 = 4584  \text{ litros}\\
+\bar y_{8005}^*= \bar y_i - \bar a_i= 3500 + 584 = 4084  \text{ litros}\\
+\bar y_{7009}^*= \bar y_i - \bar a_i= 4900 + 0 = 4900  \text{ litros}\\
+\bar y_{7013}^*= \bar y_i - \bar a_i= 6000 + 0 = 6000  \text{ litros}\\
+\bar y_{6007}^*= \bar y_i - \bar a_i= 5600 + (−259) = 5341  \text{ litros}
+\end{equation}\]</span></p>
+<p>Seleccionaríamos a la vaca 7013, la cual presenta la mayor producción de leche corregida.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-11.3" class="section level3 unnumbered">
+<h3>Ejercicio 11.3</h3>
+<p>Supongamos que tenemos un grupo de terneros, y queremos seleccionar al de mayor peso al
+destete.</p>
+<p>Como información sabemos que, a nivel poblacional para peso al destete, distintas subclases
+de edad de la madre presentan diferente media y diferente varianza:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Edad de la madre <span class="math inline">\((años)\)</span></th>
+<th align="center">Media peso al destete <span class="math inline">\((kg)\)</span></th>
+<th align="center">Peso al destete<span class="math inline">\((kg)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(157\)</span></td>
+<td align="center"><span class="math inline">\(30\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(166\)</span></td>
+<td align="center"><span class="math inline">\(38\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(169\)</span></td>
+<td align="center"><span class="math inline">\(42\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de los siguientes terneros seleccionaríamos? Calcula el peso al destete corregido para
+cada ternero, planteado como subclase de referencia a la edad de la madre de 4 años.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Ternerop</th>
+<th align="center">Edad de la madre <span class="math inline">\((años)\)</span></th>
+<th align="center">Peso al destete<span class="math inline">\((kg)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(1001\)</span></td>
+<td align="center"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(132\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(1008\)</span></td>
+<td align="center"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(145\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(1014\)</span></td>
+<td align="center"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(140\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(1023\)</span> <span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(150\)</span></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+m_3=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{157}}= 1,06
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+m_4=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{166}}= 1,0
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+m_5=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{169}}= 0,98
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\bar y_{1001}^*= \bar y_i * \bar m_i= 132 \times 1,06 = 140  \text{ kg}\\
+\bar y_{1008}^*= \bar y_i * \bar m_i= 145 \times 1,06 = 154  \text{ kg}\\
+\bar y_{1014}^*= \bar y_i - \bar m_i= 140 \times 1 = 140  \text{ kg}\\
+\bar y_{1032}^*= \bar y_i - \bar m_i= 150 \times 0,98 = 147  \text{ kg}
+\end{equation}\]</span></p>
+<p>Seleccionaríamos al ternero 1008, el cual presenta el mayor peso al destete corregido.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-11.4" class="section level3 unnumbered">
+<h3>Ejercicio 11.4</h3>
+<p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
+siguiente estructura de edades:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Edad al parto</th>
+<th align="center">Número hembras</th>
+<th align="center">Número machos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(30\)</span></td>
+<td align="center"><span class="math inline">\(3\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(25\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(20\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(15\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="center"><span class="math inline">\(10\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(TOTAL\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Sabiendo que el porcentaje de parición es de <span class="math inline">\(68\%\)</span>, y suponiendo que todos los animales
+nacidos sobreviven durante su cría y recría, ¿Cuánto vale la proporción de selección en
+hembras? Y, ¿Cuánto vale la proporción de selección en machos?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-11.5" class="section level3 unnumbered">
+<h3>Ejercicio 11.5</h3>
+<p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
+siguiente estructura de edades:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Edad al parto</th>
+<th align="center">Número hembras</th>
+<th align="center">Número machos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(27\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(23\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(19\)</span></td>
+<td align="center"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(14\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="center"><span class="math inline">\(10\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(8\)</span></td>
+<td align="center"><span class="math inline">\(7\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(TOTAL\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Sabiendo que el porcentaje de parición es de 68%, y suponiendo que todos los animales
+nacidos sobreviven durante su cría y recría, ¿Cuánto vale la proporción de selección en
+hembras? Y, ¿Cuánto vale la proporción de selección en machos?<br />
+</p>
+<p><strong><em>Solución</em></strong><br />
+</p>
+<p><span class="math display">\[\begin{equation}
+No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-11.6" class="section level3 unnumbered">
+<h3>Ejercicio 11.6</h3>
+<p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
+siguiente estructura de edades:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Edad al parto</th>
+<th align="center">Número hembras</th>
+<th align="center">Número machos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(30\)</span></td>
+<td align="center"><span class="math inline">\(3\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(25\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(20\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(15\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="center"><span class="math inline">\(10\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(TOTAL\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Sabiendo que el porcentaje de parición es de <span class="math inline">\(68\%\)</span>, y suponiendo que todos los animales
+nacidos sobreviven durante su cría y recría, ¿Cuánto vale la intensidad de selección en
+hembras?, ¿Cuánto vale la intensidad de selección en machos?, y, ¿Cuánto vale la intensidad
+de selección de la población?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:</p>
+<p><span class="math inline">\(i_h\)</span>= 0,22429</p>
+<p><span class="math display">\[\begin{equation}
+No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:</p>
+<p><span class="math inline">\(i_m\)</span>= 1,80384</p>
+<p>Promediamos intensidad de macho e intensidad de hembras:</p>
+<p><span class="math display">\[\begin{equation}
+i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,80384 + 0,22429}}{\mathrm{2}}=1,01407
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-11.7" class="section level3 unnumbered">
+<h3>Ejercicio 11.7</h3>
+<p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
+siguiente estructura de edades:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Edad al parto</th>
+<th align="center">Número hembras</th>
+<th align="center">Número machos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(27\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(23\)</span></td>
+<td align="center"><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(19\)</span></td>
+<td align="center"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(14\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="center"><span class="math inline">\(10\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(8\)</span></td>
+<td align="center"><span class="math inline">\(7\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(TOTAL\)</span></td>
+<td align="center"><span class="math inline">\(100\)</span></td>
+<td align="center"><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Sabiendo que el porcentaje de parición es de 68%, y suponiendo que todos los animales
+nacidos sobreviven durante su cría y recría, ¿Cuánto vale la intensidad de selección en
+hembras?, ¿Cuánto vale la intensidad de selección en machos?, y, ¿Cuánto vale la intensidad
+de selección de la población?</p>
+<p><strong>Solución</strong></p>
+<p><span class="math display">\[\begin{equation}
+No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:</p>
+<p><span class="math inline">\(i_h\)</span>= 0,36487</p>
+<p><span class="math display">\[\begin{equation}
+No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:</p>
+<p><span class="math inline">\(i_m\)</span>= 1,98439</p>
+<p>Promediamos intensidad de macho e intensidad de hembras:</p>
+<p><span class="math display">\[\begin{equation}
+i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,98439 + 0,36487}}{\mathrm{2}}=1,17463
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-11.8" class="section level3 unnumbered">
+<h3>Ejercicio 11.8</h3>
+<p>Supongamos que tenemos un rodeo de bovinos de carne, y queremos mejorar la característica
+peso al destete. El peso al destete promedio de la población es 197 kg, el promedio de los
+machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209 kg.
+¿Cuánto vale el diferencial de selección de machos?, ¿Cuánto vale el diferencial de selección
+de hembras?, ¿Cuánto vale el diferencial de selección de la población?</p>
+<p><span class="math display">\[\begin{equation}
+S_{m}= \bar X_S{m} - \mu_0= 229 - 197= 32 \text { kg}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S_{h}= \bar X_S{h} - \mu_0= 209 - 197= 12 \text { kg}
+\end{equation}\]</span></p>
+<p>Una manera de calcular <span class="math inline">\((S_{p})\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+S_{p}=\frac{\mathrm{S_m + S_h }}{\mathrm{2}}=\frac{\mathrm{32 + 12}}{\mathrm{2}}=22 \text { kg}
+\end{equation}\]</span></p>
+<p>Otra manera de calcular <span class="math inline">\((S_{p})\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\bar X_S{p}=\frac{\mathrm{\bar X_Sm + \bar X_Sh }}{\mathrm{2}}=\frac{\mathrm{229 + 209}}{\mathrm{2}}=219 \text { kg}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S_{p}= \bar X_S{p} - 𝜇_0= 219 - 197= 22 \text { kg}
+\end{equation}\]</span><br />
+</p>
+<hr />
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pargen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="correlacionada.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/11-GPselartifI.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 1 Introducción a la Genómica | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 1 Introducción a la Genómica | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 1 Introducción a la Genómica | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="variación-y-equilibrio-de-hardy-weinberg.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">Capítulo 1</span> Introducción a la Genómica</h1>
+<div id="ejercicio-1.1" class="section level3 unnumbered">
+<h3>Ejercicio 1.1</h3>
+<p>Luego de un muestreo realizado a partir de <strong>metagenómica</strong> en dos ambientes diferentes, la distribución de especies (<strong>OTUs</strong>) en los mismos es la siguiente</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Especie</th>
+<th align="left">Ambiente 1</th>
+<th align="left">Ambiente 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>OTU 1</strong></td>
+<td align="left"><span class="math inline">\(400\)</span></td>
+<td align="left"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>OTU 2</strong></td>
+<td align="left"><span class="math inline">\(150\)</span></td>
+<td align="left"><span class="math inline">\(700\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>OTU 3</strong></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+<td align="left"><span class="math inline">\(297\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>OTU 4</strong></td>
+<td align="left"><span class="math inline">\(390\)</span></td>
+<td align="left"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>OTU 5</strong></td>
+<td align="left"><span class="math inline">\(60\)</span></td>
+<td align="left"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Total</strong></td>
+<td align="left"><span class="math inline">\(1000\)</span></td>
+<td align="left"><span class="math inline">\(1000\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Calcular los difentes índices de diversidad alfa para los dos ambientes (<strong>Shannon</strong>, <strong>Simpson</strong> y <strong>Good</strong>) y discutir los resultados.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Como el total de “individuos” (<strong>reads</strong>) obtenidos en ambas muestras es <span class="math inline">\(1000\)</span>, alcanza con dividir entre ese número para tener la frecuencia relativa. Por lo tanto, el índice de Shanon para el primer ambiente es igual a</p>
+<p><span class="math display">\[\begin{equation}
+H&#39;_1=-\sum^k_{i=1} p_i \ln p_i =\\
+=-[0,06 \times \ln 0,06 + 0,15 \times \ln 0,15 + 0,39 \times \ln 0,39 +\\
++ \ln 0,01 + 0,4 \times \ln 0,4] \therefore \\
+H&#39;_1=1,1871
+\end{equation}\]</span></p>
+<p>mientras que para el segundo ambiente el mismo es</p>
+<p><span class="math display">\[\begin{equation}
+H&#39;_2=-\sum^k_{i=1} p_i \ln p_i =\\
+=-[0,001 \times \ln 0,001 + 0,001 \times \ln 0,001 + 0,297 \times \ln 0,297 +\\
++0,001 \times \ln 0,001 + \ln 0,7 + 0,4 \times \ln 0,7] \therefore \\
+H&#39;_2=0,9855
+\end{equation}\]</span></p>
+<p>Notar que en el <strong>ambiente 1</strong> no se encontró la especie <strong>OTU 3</strong>, por lo que no se incluye en los cálculos (de hecho <span class="math inline">\(\ln 0=-\infty\)</span>). De acuerdo con esto, según el <strong>índice de Shanon</strong> el <strong>ambiente 1</strong> es más diverso que el <strong>ambiente 2</strong>. Para medir la uniformidad utilizando el índice propuesto por Pielou (1969), primero tenemos que calcular el máximo posible del índice de Shanon, que es igual al logaritmo del número de <strong>OTUs</strong>, es decir <span class="math inline">\(H_{max_1}=\ln k=\ln 4=1,3863\)</span> y <span class="math inline">\(H_{max_2}=\ln k=\ln 5=1,6094\)</span>. Por lo tanto, tenemos que el índice de uniformidad para los dos ambientes será</p>
+<p><span class="math display">\[\begin{equation}
+E_1=\frac{H&#39;_1}{H_{max_1}}=\frac{1,1871}{1,3863}= 0,8563 \\
+E_2=\frac{H&#39;_2}{H_{max_2}}=\frac{0,9855}{1,6094}= 0,6123
+\end{equation}\]</span></p>
+<p>lo que habla de una uniformidad mucho menor en el <strong>ambiente 2</strong>.</p>
+<p>Para el índice de Simpson vamos a utilizar la ecuación <span class="math inline">\(D=\sum^k_{i=1} \frac{n_i(n_i-1)}{N(N-1)}\)</span>, por lo que para el <strong>ambiente 1</strong> el mismo será</p>
+<p><span class="math display">\[\begin{equation}
+D_1=\sum^k_{i=1} \frac{n_i(n_i-1)}{N(N-1)}=\\
+=\left[\frac{60(59)+150(149)+390(389)+400(399)}{1000 \times 999}\right]=0,3375
+\end{equation}\]</span></p>
+<p>mientras que para el <strong>ambiente 2</strong> su valor será</p>
+<p><span class="math display">\[\begin{equation}
+D_2=\sum^k_{i=1} \frac{n_i(n_i-1)}{N(N-1)}=\\
+=\left[\frac{1(0)+1(0)+297(296)+1(0)+700(699)}{1000 \times 999}\right]=0,5778
+\end{equation}\]</span></p>
+<p>Si utilizamos el criterio de reportar <span class="math inline">\(1-D\)</span>, entonces <span class="math inline">\(1-D_1=1-0,6625\)</span>, mientras que <span class="math inline">\(1-D_2=1-0,4222\)</span>. Si utilizamos el criterio del recíproco, entonces <span class="math inline">\(1/D_1=2,9626\)</span> y <span class="math inline">\(1/D_2=1,7307\)</span>, por lo que se aprecia claramente que la diversidad en el <strong>ambiente 1</strong> es mayor que la del <strong>ambiente 2</strong> de acuerdo a este índice.</p>
+<p>Finalmente, de acuerdo a la ecuación <span class="math inline">\(C=1-\frac{F_1}{N}\)</span> (con <span class="math inline">\(F_1\)</span> el número de “singletons”), teniendo en cuenta que en el primer ambiente no hay ningún <strong>singleton</strong> mientras que en el segundo hay 3, el <strong>índice de cobertura de Good</strong> para los dos ambientes sería</p>
+<p><span class="math display">\[\begin{equation}
+C_1=1-\frac{0}{1000}=1\\
+C_2=1-\frac{3}{1000}=0,997
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-1.2" class="section level3 unnumbered">
+<h3>Ejercicio 1.2</h3>
+<p>A partir del ensamblado primario de una secuenciación de los transcriptos de una bacteria (<strong>RNAseq</strong>) se observó el siguiente conteo de codones para los aminoácidos <strong>Serina</strong> y <strong>Alanina</strong>:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Aminoácido</th>
+<th align="left">Codón</th>
+<th align="left">Conteo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Ser</strong> (<strong>S</strong>)</td>
+<td align="left"><strong>UCU</strong></td>
+<td align="left"><span class="math inline">\(666\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ser</strong> (<strong>S</strong>)</td>
+<td align="left"><strong>UCC</strong></td>
+<td align="left"><span class="math inline">\(1320\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ser</strong> (<strong>S</strong>)</td>
+<td align="left"><strong>UCA</strong></td>
+<td align="left"><span class="math inline">\(1457\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ser</strong> (<strong>S</strong>)</td>
+<td align="left"><strong>UCG</strong></td>
+<td align="left"><span class="math inline">\(1818\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ser</strong> (<strong>S</strong>)</td>
+<td align="left"><strong>AGU</strong></td>
+<td align="left"><span class="math inline">\(5913\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ser</strong> (<strong>S</strong>)</td>
+<td align="left"><strong>AGC</strong></td>
+<td align="left"><span class="math inline">\(5120\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ala</strong> (<strong>A</strong>)</td>
+<td align="left"><strong>GCU</strong></td>
+<td align="left"><span class="math inline">\(7123\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ala</strong> (<strong>A</strong>)</td>
+<td align="left"><strong>GCC</strong></td>
+<td align="left"><span class="math inline">\(2144\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ala</strong> (<strong>A</strong>)</td>
+<td align="left"><strong>GCA</strong></td>
+<td align="left"><span class="math inline">\(1125\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ala</strong> (<strong>A</strong>)</td>
+<td align="left"><strong>GCG</strong></td>
+<td align="left"><span class="math inline">\(8213\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Calcular el <strong>RSCU</strong> para cada codón y determinar cuáles son los más usados y si hay diferencias entre los aminoácidos en la forma en que usan los codones.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>El RSCU se calcula como</p>
+<p><span class="math display">\[\begin{equation}
+RSCU_{ij}=\frac{x_{ij}}{\frac{1}{n_i}\sum_{j=1}^{n_i}\ x_{ij}}
+\end{equation}\]</span></p>
+<p>donde <span class="math inline">\(x_{ij}\)</span> es el número de ocurrencias del codón <span class="math inline">\(j\)</span> para el aminoácido <span class="math inline">\(i\)</span>. Tenemos dos aminoácidos diferentes, por lo vamos a calcular el RSCU de cada codón dentro de cada aminoácido. Lo primero es obtener la suma de codones en cada aminoácido, por lo que tenemos que para <strong>Serina</strong> es igual a <span class="math inline">\(666+1320+1457+1818+5913+5120=16294\)</span>, mientras que para <strong>Alanina</strong> es de <span class="math inline">\(7123+2144+1125+8213=18605\)</span>. Este es el número total de codones para cada uno de los aminoácidos, o lo que es lo mismo, el número de veces que aparece dicho aminoácido en las secuencias codificantes de nuestra bacteria. Para calcular el RSCU alcanza con dividir el número de ocurrencias de cada codon entre el total de veces que se utiliza el aminoácido y multiplicarlo por el número de codones que tiene el aminoácido (<span class="math inline">\(n_i=6\)</span> en el caso de Arginina, <span class="math inline">\(n_i=4\)</span> en el caso de Valina, ver el código genético).</p>
+<p>Por lo tanto, tenemos que por ejemplo, para el codón <strong>UCU</strong> de la <strong>Serina</strong> su RSCU es igual a</p>
+<p><span class="math display">\[\begin{equation}
+RSCU_{S,UCU}=\frac{x_{UCU}}{\frac{1}{6}\sum_{j=1}^6\ x_{R,j}}=6 \times \frac{666}{16294}=0,2452
+\end{equation}\]</span></p>
+<p>Para el codón <strong>UCC</strong> la cuenta es igual a</p>
+<p><span class="math display">\[\begin{equation}
+RSCU_{S,UCC}=\frac{x_{UCC}}{\frac{1}{6}\sum_{j=1}^6\ x_{R,j}}=6 \times \frac{1320}{16294}=0,4861
+\end{equation}\]</span></p>
+<p>y así sucesivamente con todos los codones de este aminoácido, lo que nos deja con una tabla como la siguiente:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Codón</th>
+<th align="left">Conteo</th>
+<th align="left">RSCU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>UCU</strong></td>
+<td align="left"><span class="math inline">\(666\)</span></td>
+<td align="left"><span class="math inline">\(0,2452\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>UCC</strong></td>
+<td align="left"><span class="math inline">\(1320\)</span></td>
+<td align="left"><span class="math inline">\(0,4861\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>UCA</strong></td>
+<td align="left"><span class="math inline">\(1457\)</span></td>
+<td align="left"><span class="math inline">\(0,5365\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>UCG</strong></td>
+<td align="left"><span class="math inline">\(1818\)</span></td>
+<td align="left"><span class="math inline">\(0,6694\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>AGU</strong></td>
+<td align="left"><span class="math inline">\(5913\)</span></td>
+<td align="left"><span class="math inline">\(2,1774\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>AGC</strong></td>
+<td align="left"><span class="math inline">\(5120\)</span></td>
+<td align="left"><span class="math inline">\(1.8854\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Suma</strong></td>
+<td align="left"><span class="math inline">\(16294\)</span></td>
+<td align="left"><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>De la misma manera, para la Alanina, el RSCU del primer codón es igual a</p>
+<p><span class="math display">\[\begin{equation}
+RSCU_{A,GCU}=\frac{x_{GCU}}{\frac{1}{4}\sum_{j=1}^4\ x_{V,j}}=4 \times \frac{7123}{18605}=1,5314
+\end{equation}\]</span></p>
+<p>mientras que para el resto de los codones se calcula en forma análoga, hasta obtener la siguiente tabla:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Codón</th>
+<th align="left">Conteo</th>
+<th align="left">RSCU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>GCU</strong></td>
+<td align="left"><span class="math inline">\(7123\)</span></td>
+<td align="left"><span class="math inline">\(1,5314\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>GCC</strong></td>
+<td align="left"><span class="math inline">\(2144\)</span></td>
+<td align="left"><span class="math inline">\(0,4610\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>GCA</strong></td>
+<td align="left"><span class="math inline">\(1125\)</span></td>
+<td align="left"><span class="math inline">\(0,2419\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>GCG</strong></td>
+<td align="left"><span class="math inline">\(8213\)</span></td>
+<td align="left"><span class="math inline">\(1,7658\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Suma</strong></td>
+<td align="left"><span class="math inline">\(18605\)</span></td>
+<td align="left"><span class="math inline">\(4\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>En ambos aminoácidos se observa que el uso de codones se aparta bastante de la hipótesis de uso similar. Mientras que en el primer caso (Serina) los codones favorecidos son los codificados por el dueto (del sexteto), es decir <strong>AGU</strong> y <strong>AGC</strong>, en el segundo caso (Alanina) los codones favorecidos son los que terminan en <strong>U</strong> o en <strong>G</strong>.</p>
+</div>
+<div id="ejercicio-1.3" class="section level3 unnumbered">
+<h3>Ejercicio 1.3</h3>
+<p>Dada la siguiente secuencia “AUGGGAUUUCCGCCCAUUUACGUG,” a) determinar de que ácido nucléico se trata (ADN o ARN), b) si tiene sentido, traducirla a una secuencia de aminoácidos tomandola como hebra <strong>codificante</strong> y en marco de referencia y c) escribir en sentido 5’–&gt;3’ la hebra complementaria pero en ADN (hebra molde) d) calcular el contenido G+C</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li>se trata de ARN ya que entre sus bases aparece <strong>U</strong>racilo en lugar de <strong>T</strong>imina<br />
+</li>
+<li>en principio parece tener sentido, por lo que asumiendo que está en marco de referencia correcto y y que se trata de la hebra codificante, separamos en codones “AUG GGA UUU CCG CCC AUU UAC GUG,” que utilizando el código genético se traduce como MGFPPIYV<br />
+</li>
+<li>“CAC GTA AAT GGG CGG AAA TCC CAT”<br />
+</li>
+<li>6G + 6C= 12 G o C en un total de [8 codones x 3 bases c/u = 24 bases], por lo tanto 12/24=0.5 o 50%</li>
+</ol>
+</div>
+<div id="ejercicio-1.4" class="section level3 unnumbered">
+<h3>Ejercicio 1.4</h3>
+<p>A fin de diseñar un chip de genotipado para estudiar la variabilidad genética en <em>Paspalum dilatatum</em> se obtuvieron secuencias disponibles en la base de datos “Nucleotide” de GenBank (<a href="https://www.ncbi.nlm.nih.gov/nuccore/?term=Paspalum+dilatatum" class="uri">https://www.ncbi.nlm.nih.gov/nuccore/?term=Paspalum+dilatatum</a>), las que luego de alineadas nos dejaron con la siguiente selección de sitios (para los que había varias secuencias):</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Secuencia</th>
+<th align="left">S1</th>
+<th align="left">S2</th>
+<th align="left">S3</th>
+<th align="left">S4</th>
+<th align="left">S5</th>
+<th align="left">S6</th>
+<th align="left">S7</th>
+<th align="left">S8</th>
+<th align="left">S9</th>
+<th align="left">S10</th>
+<th align="left">S11</th>
+<th align="left">S12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Secuencia 1</td>
+<td align="left">A</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">A</td>
+<td align="left">A</td>
+</tr>
+<tr class="even">
+<td align="left">Secuencia 2</td>
+<td align="left">A</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">A</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">A</td>
+<td align="left">G</td>
+<td align="left">G</td>
+<td align="left">C</td>
+<td align="left">C</td>
+</tr>
+<tr class="odd">
+<td align="left">Secuencia 3</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">G</td>
+<td align="left">G</td>
+<td align="left">C</td>
+<td align="left">A</td>
+</tr>
+<tr class="even">
+<td align="left">Secuencia 4</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">C</td>
+<td align="left">A</td>
+</tr>
+<tr class="odd">
+<td align="left">Secuencia 5</td>
+<td align="left">A</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">C</td>
+<td align="left">A</td>
+</tr>
+<tr class="even">
+<td align="left">Secuencia 6</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">A</td>
+<td align="left">G</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">C</td>
+<td align="left">A</td>
+</tr>
+<tr class="odd">
+<td align="left">Secuencia 7</td>
+<td align="left">A</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">G</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">C</td>
+<td align="left">C</td>
+</tr>
+<tr class="even">
+<td align="left">Secuencia 8</td>
+<td align="left">A</td>
+<td align="left">C</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">A</td>
+<td align="left">T</td>
+<td align="left">C</td>
+<td align="left">A</td>
+<td align="left">C</td>
+<td align="left">G</td>
+<td align="left">A</td>
+<td align="left">A</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Teniendo en cuenta esta tabla,</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>¿Qué sitios son polimórficos (despreciando el criterio de la frecuencia mínima)?</p></li>
+<li><p>De estos sitios ¿Cuáles son bi-alélicos?</p></li>
+<li><p>Utilizando el criterio de diversidad de Shannon (el mismo <strong>índice de Shannon</strong> que se utiliza en ecología, pero que originalmente viene de la teoría matemática de comunicaciones), calcular qué sitio es más informativo (más “diverso”). ¿Existe alguna limitación en la práctica para incluirlo en los chips?</p></li>
+</ol>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>S1, S2, S4, S5, S8, S9, S11 y S12</p></li>
+<li><p>S1, S2, S5, S8, S9, S11 y S12</p></li>
+<li><p>Si realizamos una tabla de conteo de las bases que hay en cada sitio, tenemos:</p></li>
+</ol>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Base</th>
+<th align="left">S1</th>
+<th align="left">S2</th>
+<th align="left">S3</th>
+<th align="left">S4</th>
+<th align="left">S5</th>
+<th align="left">S6</th>
+<th align="left">S7</th>
+<th align="left">S8</th>
+<th align="left">S9</th>
+<th align="left">S10</th>
+<th align="left">S11</th>
+<th align="left">S12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">6</td>
+</tr>
+<tr class="even">
+<td align="left">C</td>
+<td align="left">1</td>
+<td align="left">6</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">G</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="left">T</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table>
+<p>Como el criterio que pedimos (<strong>índice de Shannon</strong>) no tiene en cuenta diferencias entre bases en el genoma (es decir, son intercambiables), no importa qué bases en particular tiene cada sitio sino cuántas diferentes y en qué frecuencias, por lo que solo hay 4 grupos:</p>
+<p>-1 Los sitios S3, S6, S7 y S10 no tienen variación, por lo que <span class="math inline">\(H&#39;=-\sum_i p_i \ln p_i=1 \ln 1=0\)</span>.</p>
+<p>-2 El sitio S1 tiene 7 de una base y 1 de otra, por lo que</p>
+<p><span class="math display">\[\begin{equation}
+H&#39;=-\sum_i p_i \ln p_i=-\left[\frac{7}{8} \ln \frac{7}{8} +  \frac{1}{8} \ln \frac{1}{8} \right]=0,3768
+\end{equation}\]</span></p>
+<p>-3 Los sitios S2, S5, S8, S9, S11 y S12 tienen 6 bases de un tipo y 2 de otro tipo, por lo que</p>
+<p><span class="math display">\[\begin{equation}
+H&#39;=-\sum_i p_i \ln p_i=-\left[\frac{6}{8} \ln \frac{6}{8} +  \frac{2}{8} \ln \frac{2}{8} \right]=0,5623
+\end{equation}\]</span></p>
+<p>-4 El sitio S4 tiene 4 de una base, 2 en otra y dos bases con un conteo de 1 en cada una, lo que nos deja con</p>
+<p><span class="math display">\[\begin{equation}
+H&#39;=-\sum_i p_i \ln p_i=-\left[\frac{4}{8} \ln \frac{4}{8} +  \frac{2}{8} \ln \frac{2}{8} + +  \frac{1}{8} \ln \frac{1}{8} + \frac{1}{8} \ln \frac{1}{8} \right]=1,2130
+\end{equation}\]</span></p>
+<p>Teniendo en cuenta estos resultados, el sitio S4 es el más informativo. Sin embargo, se trata de un marcador tetra-alélico (aparecen las 4 bases regularmente), por lo que no es práctico incluirlo en los chips, que por razones tecnológicas suelen trabajar con marcadores bi-alélicos.</p>
+</div>
+<div id="ejercicio-1.5" class="section level3 unnumbered">
+<h3>Ejercicio 1.5</h3>
+<p>La siguiente es la secuencia de nucleótidos correspondiente al CDS completo del gen “cinnamoyl CoA reductase” (CCR1-3) de <em>Paspalum dilatum</em>, una enzima que desempeña un papel fundamental en la formación de lignina, un proceso importante en las plantas tanto para el desarrollo estructural como para la respuesta de defensa:</p>
+<p>AAGATGACCGTCGTCGACGCCGTCTCGTCCGCCGCCGCCGTGGCGCAGCCGGCGGGGAAC
+GGGCAGACCGTGTGCGTCACCGGCGCGGCGGGGTACATCGCGTCGTGGCTCGTCAAGCTG
+CTGCTCGAGAAGGGGTACACTGTGAAGGGCACCGTGAGGAACCCAGATGACCCGAAGAAC
+GCGCACCTCAGGGCGCTGGAGGGCGCCGCCGAGCGGCTGATCCTCTGCAAGGCCGACCTG
+CTGGACTACGACGCCATCTGCCGCGCCGTGCAGGGCTGCCAGGGCGTCTTCCACACCGCC
+TCCCCCGTCACCGACGATCCCGAGCAAATGGTGGAGCCGGCGGTGCGCGGCACGGAGTAC
+GTGATCAGCGCGGCGGCGGAGGCCGGCACGGTGCGGCGGGTGGTGTTCACGTCCTCCATC
+GGCGCCGTCACCATGGACCCCAACCGCGGCCCCGACGTCGTCGTCGACGAGTCCTGCTGG
+AGCGACCTCGAGTTCTGCAAGAAAACCAGGAACTGGTACTGCTACGGCAAGGCGGTGGCG
+GAGCAGGCGGCGTGGGACGCGGCGCGGCACCGGGGCGTGGACCTGGTGGTGGTGAACCCG
+GTGCTGGTGGTGGGGCCGCTGCTGCAGCCGACGGTGAACGCCAGCATCGGGCACGTCCTC
+AAGTACCTGGACGGCTCCGCGCGCACCTTCGCCAACGCCGTGCAGGCGTACGTCGACGTC
+CGCGACGTCGCCGACGCGCACGTCCGCGTCTTCGAGAGCCCCCGCGCCGCCGGCCGCCAC
+CTCTGCGCCGAGCGCGTGCTCCACCGCGAGGACGTCGTCGACCTCGCCAAGCTCTTCCCC
+GAGTACCCCGTCCCGACCAGGTGCTCCGACGAGGTGAACCCGCGGAAGCAGCCGTACAAG
+TTCTCGAACCAGAAGCTCCGGGACCTGGGGCTGGAGTTTCGGTCGGTGAGCCAGTCGCTG
+TACGACACGGTGAAGTGCCTCCAGGAGAAGGGCCACCTGCCGGTGCCGGTGCCCGACGAG
+CAGACGGCGACGGAGGCCAAGAAGAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGA
+GGAATCGCCATCCGTGCGTGAGAGGCAGATAGATGCCACGCAGTC</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Traducir los 10 primero aminoácidos de dicha secuencia.</p></li>
+<li><p>Utilizando la función <strong>Reemplazar</strong> de OpenOffice, Word o cualquier programa similar contar cada una de las bases y calcular el contenido GC del gen.</p></li>
+<li><p>¿Qué largo tiene el mRNA? ¿Para cuántos aminoácidos codifica?</p></li>
+<li><p>A partir de la siguiente tabla de uso de codones determinar qué aminoácido de los que estos codifican se usa más en este gen.</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">aca</th>
+<th align="left">acc</th>
+<th align="left">acg</th>
+<th align="left">act</th>
+<th align="left">cca</th>
+<th align="left">ccc</th>
+<th align="left">ccg</th>
+<th align="left">cct</th>
+<th align="left">gca</th>
+<th align="left">gcc</th>
+<th align="left">gcg</th>
+<th align="left">gct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">10</td>
+<td align="left">7</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">9</td>
+<td align="left">11</td>
+<td align="left">0</td>
+<td align="left">2</td>
+<td align="left">25</td>
+<td align="left">22</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>“KMTVVDAVSS”</p></li>
+<li><p>A=189, C=384, G=403, T=149. Por lo tanto,</p></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+GC=\frac{(G+C)}{(A+C+G+T)}=\frac{403+384}{1125}=0,6996 \approx 70\%
+\end{equation}\]</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><p>189+384+403+149=1125 nucleótidos, que dividido entre 3 es igual a 375 aminoácidos</p></li>
+<li><p>Observando el código genético, los 4 primeros codones de la tabla corresponden a <strong>Thr</strong> (19), los siguientes 4 a <strong>Pro</strong> (21), y los últimos 4 a <strong>Ala</strong> (49), por lo que este último es el más usado de los tres.</p></li>
+</ol>
+</div>
+<div id="ejercicio-1.6" class="section level3 unnumbered">
+<h3>Ejercicio 1.6</h3>
+<p>Señala cuáles de las siguiente afirmaciones son verdaderas y cuáles falsas:</p>
+<ol style="list-style-type: decimal">
+<li><p>La <strong>metagenómica</strong> es el estudio mediante técnicas genómicas de los organismos productores de metano.</p></li>
+<li><p>La <strong>transcriptómica</strong> es el conjunto de técnicas y métodos para el estudio de los niveles de abundancia de transcriptos (RNAm) en diferentes muestras.</p></li>
+<li><p>El <strong>ARNr 16S</strong> es usado frecuentemente para estudiar la diversidad en <strong>eucariotas</strong> debido a que se trata de una molécula relativamente conservada.</p></li>
+<li><p>El contenido <strong>GC</strong> (o <strong>G+C</strong>) de un organismo en la proporción de los aminoácidos Glicina (<strong>G</strong>) y Cisteína (<strong>C</strong>) en las secuencias codificantes del mismo.</p></li>
+<li><p>Las <strong>proteínas integrales de membrana</strong> (<strong>IMPs</strong>) se distinguen de otras proteínas debido a que presentan un <strong>exceso de residuos hidrofílicos</strong>, lo que les permite ubicarse comodamente en la bicapa lipídica.</p></li>
+<li><p>Las proteínas <strong>solubles en agua</strong> suelen poseer los residuos <strong>hidrofóbicos</strong> (Leu, Ile, Val, Phe y Trp) <strong>escondidos</strong> en el medio de la proteína (en su estructura), mientras que los <strong>hidrofílicos</strong> se encuentran <strong>expuestos</strong> en la superficie.</p></li>
+<li><p>Usualmente las <strong>secuencias ortólogas</strong> son las más similares en las otras especies y esto ha llevado al criterio práctico del “Reciprocal Best Hit,” es decir, un par de secuencias se consideran ortólogas si cada una de ellas es la mejor “selección” (la más similar) en su correspondiente genoma, de la otra.</p></li>
+<li><p>Algunas variables biológicas asociadas a la variación en el <strong>uso de codones</strong> dentro de <strong>genomas procariotas</strong> son el contenido GC del gen, el nivel de expresión, la hidropatía promedio de la proteína, la hebra en que se encuentra el gen, el GCskew y la precisión en la traducción.</p></li>
+<li><p>La <strong>epigenética</strong> se centra en los procesos que regulan la <strong>activación y desactivación de genes</strong>, tanto en lo que hace a cómo y cuándo se produce esto.</p></li>
+<li><p>Las <strong>tecnologías de secuenciación masiva</strong> (Illumina, ION Torrent, Oxford Nanopore Technologies, PacBio) son las que se encuentran por detrás de los <strong>chips de genotipado</strong> que se usan comercialmente.</p></li>
+<li><p>En los <strong>chips de genotipado</strong> se suelen utilizar <strong>marcadores bi-alélicos</strong> porque son los más informativos.</p></li>
+<li><p>En el código genético hay 64 codones.</p></li>
+<li><p>El código genético universal hay 22 aminoácidos codificados directamente, además de 3 codones destinados a la señal de pare (codones <strong>STOP</strong>).</p></li>
+<li><p>Los 64 codones del código genético universal se corresponden a los 3 codones destinados a la señal de pare (codones <strong>STOP</strong>), además de para los 61 aminoácidos proteinogénicos.</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: decimal">
+<li><p>FALSO. La metagenómica es el estudio de la diversidad microbiana mediante técnicas genómicas, usualmente a partir de las muestras en su estado “natural.”</p></li>
+<li><p>VERDADERO.</p></li>
+<li><p>FALSO. El <strong>ARNr 16S</strong> es frecuentemente usado en <strong>procariotas</strong>. El equivalente para eucariotas sería el <strong>ARNr 18S</strong>, aunque depende del grupo de organismos a estudiar qué molécula se utiliza (por ejemplo, el “Internal transcribed spacer” <strong>ITS</strong> en plantas y hongos).</p></li>
+<li><p>FALSO. El contenido GC o G+C se refiere a la proporción de las <strong>bases</strong> nucleotídicas <strong>Guanina</strong> y <strong>Citosina</strong> en el mismo.</p></li>
+<li><p>FALSO. Presentan un exceso de residuos <strong>hidrofóbicos</strong>, ya que la bicapa que forma la membrana es lipídica.</p></li>
+<li><p>VERDADERO.</p></li>
+<li><p>VERDADERO.</p></li>
+<li><p>VERDADERO.</p></li>
+<li><p>VERDADERO.</p></li>
+<li><p>FALSO. Los chips de genotipado se basan en sondas de hibridación y son anteriores a las tecnologías de secuenciación masiva.</p></li>
+<li><p>FALSO. En los chips de genotipado se suelen utilizar marcadores bi-alélicos porque son los que las tecnologías más usadas a nivel comercial permiten acomodar mejor.</p></li>
+<li><p>VERDADERO</p></li>
+<li><p>FALSO. En el código genético estándar hay 20 aminoácidos codificados, además de 3 codones destinados a la señal de pare. Los otros dos aminoácidos, selenocisteína y pirrolisina no se codifican directamente.</p></li>
+<li><p>FALSO. No hay 61 aminoácidos proteinogénicos.</p></li>
+</ol>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-1.7" class="section level3 unnumbered">
+<h3>Ejercicio 1.7</h3>
+<p>Demostrar que para cualquier codón de cualquier aminoácido el RSCU esperado es de 1.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>La difinición que dimos de <strong>RSCU</strong> es</p>
+<p><span class="math display">\[\begin{equation}
+RSCU_{ij}=\frac{x_{ij}}{\frac{1}{n_i}\sum_{j=1}^{n_i}\ x_{ij}}=\frac{x_{ij}}{\sum_{j=1}^{n_i}\ x_{ij}}n_i
+\end{equation}\]</span></p>
+<p>por lo que haciendo el promedio (esperanza matemática) tenemos</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{E}(RSCU_{ij})=\frac{1}{n_i} \sum_{j=1}^{n_i}\left(\frac{x_{ij}}{\sum_{j=1}^{n_i}\ x_{ij}}n_i\right)=\sum_{j=1}^{n_i} \left(\frac{x_{ij}}{\sum_{j=1}^{n_i}\ x_{ij}}\right)= \frac{\sum_{j=1}^{n_i} x_{ij}}{\sum_{j=1}^{n_i}\ x_{ij}}=1
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-1.8" class="section level3 unnumbered">
+<h3>Ejercicio 1.8</h3>
+<p>Observando la tabla con el <strong>código genético universal</strong> agrupar los aminoácidos por el número de codones que los codifican y resumir el número de aminoácidos con cada multiplicidad. ¿Qué característica comparten la mayor parte de los duetos (los aminoácidos codificados por dos codones)?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>1 codon: <strong>Met</strong>, <strong>Trp</strong></p>
+<p>2 codones: <strong>Phe</strong>, <strong>Tyr</strong>, <strong>His</strong>, <strong>Gln</strong>, <strong>Asn</strong>, <strong>Lys</strong>, <strong>Asp</strong>, <strong>Glu</strong>, <strong>Cys</strong></p>
+<p>3 codones: <strong>Ile</strong></p>
+<p>4 codones: <strong>Val</strong>, <strong>Pro</strong>, <strong>Thr</strong>, <strong>Ala</strong>, <strong>Gly</strong></p>
+<p>6 codones: <strong>Leu</strong>, <strong>Arg</strong>, <strong>Ser</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Multiplicidad</th>
+<th align="left">Número de Aminoácidos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">9</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">6</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TOTAL</strong></td>
+<td align="left">20</td>
+</tr>
+</tbody>
+</table>
+<p>La característica que comparten 7 de 9 duetos es que se encuentran en la tercer columna de la tabla del código, es decir, tienen una <strong>A</strong> en segunda posición del codon.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-1.9" class="section level3 unnumbered">
+<h3>Ejercicio 1.9</h3>
+<p>En un planeta de otra galaxia existe vida con algunas similitudes a la que existe en nuestro planeta. En particular, también las proteínas parecen ser la base estructural y funcional de la vida, mientras que los ácidos nucléicos son los responsables del mantenimiento y duplicación de la información. Sin embargo, a diferencia de nuestro planeta, los aminoácidos proteinogénicos codificados son 24, mientras que las bases nucleótidicas análogas a las de nuestro <strong>ADN</strong> son 5.</p>
+<p>Suponiendo que los mecanismos moleculares en dicho planeta han sido seleccionados para ser altamente eficientes, ¿de qué largo mínimo deberían ser los codones? Si el código genético en ese planeta tuviese algún nivel de redundancia (más de un codón para el mismo aminoácido), ¿de qué largo mínimo serían los codones? En ese caso, ¿cuál sería el número promedio de codones por aminoácido? ¿Cómo se compara esa redundancia promedio con la existente en nuestro planeta? ¿Qué ventaja potencial tiene la redundancia en el código?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Si existen 5 bases nucleotídicas y 24 aminoácidos, entonces con codones de largo 2 tenemos <span class="math inline">\(5\times 5=5^2=25\)</span> combinaciones posibles. Si consideramos la existencia de un codón <strong>STOP</strong>, entonces el mínimos es <span class="math inline">\(24+1=25\)</span> codones, por lo que alcanza con largo de codón 2.</p>
+<p>Si queremos algo de redundancia vamos a precisar un código genético con largo mayor a dos. El siguiente largo es 3, por lo que ahora tenemos <span class="math inline">\(5 \times 5 \times 5=5^3=125\)</span> codones. Como hay <span class="math inline">\(24 \text{ AAs}+ 1 \text{ STOP}=25\)</span> “necesidades,” entonces la redundancia promedio será igual a <span class="math inline">\(\frac{125}{25}=5\)</span>.</p>
+<p>En nuestro planeta tenemos 20 aminoácidos proteinogénicos codificados directamente, por lo que equivale a <span class="math inline">\(20 \text{ AAs}+ 1 \text{ STOP}=21\)</span> “necesidades.” Sin embargo, al existir solo 4 bases nucleotídicas en nuestro código y el largo de nuestros codones ser de 3, entonces tenemos un total de <span class="math inline">\(4 \times 4 \times 4=4^3=64\)</span> posibilidades. Por lo tanto, en nuestro planeta, la redundancia promedio es de <span class="math inline">\(\frac{64}{21} \approx 3,05\)</span>.</p>
+<p>La redundancia en el código tiene como ventaja que es capaz de absorber determinadas mutaciones (cambio de bases) sin cambiar el aminoácido codificado, lo que lo hace un sistema con cierta robustez o tolerancia a los fallos en la duplicación de la información (mutaciones).</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-1.10" class="section level3 unnumbered">
+<h3>Ejercicio 1.10</h3>
+<p>Asumiendo que existen 20 aminoácidos (los estándar), ¿cuántas proteínas diferentes de largo 5 aminoácidos sería posible tener? ¿Cuántas serían posibles de largo <span class="math inline">\(n\)</span>? Considerando que una proteína de largo promedio en procariotas es del orden de los 300 aminoácidos, ¿cuántas proteínas diferentes, con ese largo se podrían codificar?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<hr />
+<p>Se podrían codificar <span class="math inline">\(20 \times 20 \times 20 \times 20 \times 20=20^5=3.200.000\)</span>. De largo <span class="math inline">\(n\)</span> se pueden codificar <span class="math inline">\(20^n\)</span>. En el caso de <span class="math inline">\(n=300\)</span>, tenemos <span class="math inline">\(20^{300} \approx +\infty\)</span> para los fines prácticos.</p>
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="variación-y-equilibrio-de-hardy-weinberg.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-GPintroGenomica.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

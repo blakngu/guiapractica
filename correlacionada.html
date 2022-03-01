@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 12 Correlaciones y Respuesta Correlacionada | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 12 Correlaciones y Respuesta Correlacionada | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 12 Correlaciones y Respuesta Correlacionada | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="selartifI.html"/>
+<link rel="next" href="selartifII.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="correlacionada" class="section level1" number="12">
+<h1><span class="header-section-number">Capítulo 12</span> Correlaciones y Respuesta Correlacionada</h1>
+<div id="ejercicio-12.1" class="section level3 unnumbered">
+<h3>Ejercicio 12.1</h3>
+<p>Demostrar que la condición para que las ponderaciones de las correlaciones genéticas y ambientales sean iguales es que la suma de las heredabilidades de las dos características sea igual a 1.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>De acuerdo a <span class="math inline">\(r_{P_{12}}=h_1h_2r_{A_{12}}+e_1e_2r_{E_{12}}\)</span>, el aporte de la correlación genética estará ponderado por <span class="math inline">\(h_1h_2=\sqrt{h^2_1h^2_2}\)</span>, mientras que el aporte de la correlación ambiental estará ponderado por <span class="math inline">\(\sqrt{1-h^2_1}\sqrt{1-h^2_2}\)</span>. La relación se aportes será entonces</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{rel_{A/E}}=\frac{\sqrt{h^2_1h^2_2}}{\sqrt{1-h^2_1}\sqrt{1-h^2_2}}=\sqrt{\frac{h^2_1h^2_2}{(1-h^2_1)(1-h^2_2)}}
+\end{equation}\]</span></p>
+<p>En general, para que las ponderaciones de lo genético y lo ambiental sean iguales alcanza con que</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{rel_{A/E}}=\sqrt{\frac{h^2_1h^2_2}{(1-h^2_1)(1-h^2_2)}}=1 \Leftrightarrow h^2_1h^2_2=(1-h^2_1)(1-h^2_2)\Leftrightarrow \\
+\Leftrightarrow h^2_1h^2_2=1-h^2_1-h^2_2+h^2_1h^2_2 \Leftrightarrow 1-h^2_1-h^2_2=0 \Leftrightarrow h^2_1+h^2_2=1 \Leftrightarrow \\
+\Leftrightarrow h^2_1=1-h^2_2
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-12.2" class="section level3 unnumbered">
+<h3>Ejercicio 12.2</h3>
+<p>En las ovejas verdes se observa una correlación (fenotípica) entre el Peso al Año de edad (PA) y el Peso de Vellón Sucio (PVS) de <span class="math inline">\(\mathrm{r_P}=0,70\)</span> (no vamos a usar los subíndices <span class="math inline">\(_{12}\)</span> en las correlaciones para simplificar la notación). Las heredabilidades de ambas características fueron estimadas en <span class="math inline">\(h^2_{PA}=0,49\)</span> y <span class="math inline">\(h^2_{PA}=0,36\)</span>. Por otra parte, un estudio reciente determinó que el mejor estimado de la correlación genética (aditiva) entre ambas características es de <span class="math inline">\(\mathrm{r_A}=0,55\)</span>. Estimar la correlación ambiental (en sentido amplio) y discutir los resultados.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>De acuerdo a la ecuación <a href="#eq:path15">(<strong>??</strong>)</a>, la relación entre las correlaciones fenotípica, genética (aditiva) y ambiental es</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{r_P=h_1\cdot h_2\cdot r_{A}+e_1\cdot e_2\cdot r_{E}}
+\end{equation}\]</span></p>
+<p>Por lo tanto, si despejamos la correlación ambiental, tenemos que</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{r_{E_{12}}=\frac{r_{P_{12}}-h_1\cdot h_2\cdot r_{A_{12}}}{e_1\cdot e_2}}
+\end{equation}\]</span></p>
+<p>Los coeficientes de paso genéticos se calculan directamente haciendo la raíz cuadrada de las correspondientes heredabilidades, es decir</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{h_{PA}=\sqrt{h^2_{PA}}=\sqrt{0,36}=0,6}\\
+\mathrm{h_{PVS}=\sqrt{h^2_{PVS}}=\sqrt{0,49}=0,7}
+\end{equation}\]</span></p>
+<p>Por otra parte, los coeficientes de paso ambientales se calculan utilizando los resultados de la ecuaciones <a href="#eq:path10">(<strong>??</strong>)</a> y <a href="#eq:path11">(<strong>??</strong>)</a></p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{e_{PA}=\sqrt{1-h^2_{PA}}=\sqrt{1-0,36}=\sqrt{0,64}=0,80} \\
+\mathrm{e_{PVS}=\sqrt{1-h^2_{PVS}}=\sqrt{1-0,49}=\sqrt{0,51} \approx 0,71}
+\end{equation}\]</span></p>
+<p>Ahora, poniendo estos valores en la ecuación para <span class="math inline">\(\mathrm{r_{E_{12}}}\)</span>, tenemos</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{r_{E}=\frac{r_{P}-h_{PA}\cdot h_{PVS}\cdot r_{A}}{e_{PA}\cdot e_{PVS}}=\frac{0,70-0,6 \cdot 0,7 \cdot 0,55}{0,80 \cdot 0,71} \approx 0,83}
+\end{equation}\]</span></p>
+<p>Por lo tanto, observamos que tanto la correlación fenotípica, como la genética (aditiva) y la ambiental son todas positivas y de carácter importante. La razón de la correlación genética entre las dos características consideradas es bastante esperable (dentro de la misma raza y población) ya que animales más pesados suelen ser más grandes y por lo tanto tener mayor superficie para generar lana. Se trata de una relación que estaría fundamentada, de alguna manera, en la pleiotropía, ya que los genes que regulan el crecimiento afectan a ambas características. Al mismo tiempo, la correlación ambiental también parece esperable, por similares razones a las de la correlación genética: animales que crecen más (por factores ambientales), van a producir medidas más altas en las dos características.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-12.3" class="section level3 unnumbered">
+<h3>Ejercicio 12.3</h3>
+<p>Las ovejas verdes tienen una tendencia importante a la esfericidad de sus cuerpos, lo que dificulta enormemente el esquilado, por lo que uno de los objetivos de selección planteados para mejorar la majada experimental es hacerlos más cilíndricos. Para ello se desarrolló un índice que es igual al diámetro de la panza en la zona media divida entre el largo del cuerpo y multiplicado por 100, es decir</p>
+<p><span class="math display">\[\begin{equation}
+I_e=100 \times \frac{D_{panza}}{L_{cuerpo}}
+\end{equation}\]</span></p>
+<p>Al mismo tiempo, se plantea incrementar la producción de lana verde, por lo que debemos mantener los dos objetivos en mente. Un estudio preliminar determinó que la matriz de varianza-covarianza genética estaría dada por</p>
+<p><span class="math display">\[\begin{equation}
+\mathbf{G}=\left(\begin{matrix}100 &amp; 0\\0 &amp; 800\end{matrix}\right)
+\end{equation}\]</span></p>
+<p>con sus correspondientes unidades (la varianza del índice en unidades de índice al cuadrado y la producción de lana en <span class="math inline">\(g^2\)</span>). Como se trata de una matrix diagonal, no existen en principio
+restricciones genéticas.</p>
+<ol style="list-style-type: lower-alpha">
+<li>¿Qué ocurre si elegimos un gradiente de selección como el siguiente?</li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+\mathbf{\beta}=\left(\begin{matrix}-0,09\\ 0,03 \end{matrix}\right)
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Un segundo estudio, sin embargo, con muchos más animales obtuvo un diferente estimado de la matriz de varianzas-covarianzas genéticas, la que fue ahora</li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+\mathbf{G}=\left(\begin{matrix}100 &amp; 282,8\\282,8 &amp; 800\end{matrix}\right)
+\end{equation}\]</span></p>
+<p>¿Qué ocurrirá ahora, de acuerdo a esta etimación de la matriz de varianzas-covarianzas?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p>La respuesta a la selección de acuerdo a la <strong>ecuación de Lande</strong> será</p>
+<p><span class="math display">\[\begin{equation}
+R=\mathbf{G \beta}=\left(\begin{matrix}100 &amp; 0\\0 &amp; 800\end{matrix}\right) \left(\begin{matrix}-0,09\\ 0,03 \end{matrix}\right)=\left(\begin{matrix}-9\\ 24 \end{matrix}\right)
+\end{equation}\]</span></p>
+<p>Si calculamos ahora el ángulo entre los dos vectores, usando la ecuación <a href="#eq:lande7">(<strong>??</strong>)</a> tenemos que</p>
+<p><span class="math display">\[\begin{equation}
+\theta=\mathrm{cos^{-1}}\left(\mathbf{\frac{R \cdot \beta}{||R|| \ ||\beta||}}\right)=\\
+=\mathrm{cos^{-1}}\left(\frac{1,53}{2,431666}\right)=51 ^{\circ}
+\end{equation}\]</span></p>
+<p>lo que pese a la inexistencia de correlación genética entre ambas características nos deja con un desfasaje importante entre la dirección de selección elegida y la favorecida por <span class="math inline">\(\mathbf{G}\)</span>. Esto se debe a que, pese a que no existe correlación genética entre las características la respuesta se encuentra rotada respecto a la dirección óptima para el incremento del <strong>fitness medio</strong>. La dirección de máxima variación es en peso del vellón, pero en términos relativos estamos haciendo mucha más presión de selección en una dirección (índice de esfericidad) con poca variación, por lo que no debería sorprendernos esta diferencia en las direcciones de gradiente de selección y de respuesta.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p>Ahora, si utilizamos el mismo gradiente de selección que antes, la respuesta a la selección predicha por la <strong>ecuación de Lande</strong> será</p>
+<p><span class="math display">\[\begin{equation}
+\mathbf{R}=\mathbf{G \beta}=\left(\begin{matrix}100 &amp; 282,8\\282,8 &amp; 800\end{matrix}\right) \left(\begin{matrix}-0,09\\ 0,03 \end{matrix}\right)=\left(\begin{matrix}-0,5151\\ -1.4547 \end{matrix}\right)
+\end{equation}\]</span></p>
+<p>Claramente, la respuesta a la selección en este caso no parece haber seguido siquiera cerca nuestros objetivos. Si calculamos el ángulo ahora entre los dos vectores, tenemos que el mismo es de</p>
+<p><span class="math display">\[\begin{equation}
+\theta=\mathrm{cos^{-1}}\left(\mathbf{\frac{R \cdot \beta}{||R|| \ ||\beta||}}\right)=\\
+=\mathrm{cos^{-1}}\left(\frac{0,002718}{0,1464012}\right)=88 ^{\circ} 93&#39;
+\end{equation}\]</span></p>
+<p>lo que indica una restricción casi total (cercana a <span class="math inline">\(\mathbf{\theta=90^{\circ}}\)</span>). La explicación de esto es muy sencilla, la matriz <span class="math inline">\(\mathbf{G}\)</span> posee uno de los valores propios muy cercanos a cero y cuyo vector propio es</p>
+<p><span class="math display">\[\begin{equation}
+\left(\begin{matrix}-0,9428\\ 0,3333 \end{matrix}\right)
+\end{equation}\]</span></p>
+<p>lo que coincide casi exactamente con la dirección elegida para la selección, por lo que esta no tendrá respuesta. Esto no debería sorprendernos, ya que en este caso, la correlación genética entre ambas características, de acuerdo a la ecuación <a href="#eq:corra1">(<strong>??</strong>)</a> es de</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{r_A=\frac{\sigma_{A_{i,j}}}{\sigma_{A_{i}}\sigma_{A_{j}}}=\frac{282,8}{\sqrt{100 \times 800}}=0,9999}
+\end{equation}\]</span></p>
+<p>es decir, queda muy poco espacio disponible para selección de ambas características en sentido opuesto.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-12.4" class="section level3 unnumbered">
+<h3>Ejercicio 12.4</h3>
+<p>El Grupo de Mejoramiento Genético Animal de Facultad de Agronomía te ha contratado para desarrollar un programa de mejoramiento genético en cabras. El objetivo es mejorar el largo y finura de la mecha de la lana, pero el aparato que mide diámetro (air flow) no está calibrado para esta especie. Revisando los datos disponibles en cabras se ha obtenido la siguiente información:</p>
+<ul>
+<li><span class="math inline">\(h^2_{LM}\)</span> = 0,30<br />
+</li>
+<li><span class="math inline">\(h^2_D\)</span> = 0,40<br />
+</li>
+<li>desvío fenotipico LM = 4 cm<br />
+</li>
+<li>desvío fenotípico D =: 3 µ<br />
+</li>
+<li>correlación genético-aditiva entre LM-D = -0,45</li>
+<li>correlación fenotípica LM-D = 0,30<br />
+</li>
+<li>correlación ambiental LM-D = 0,70</li>
+</ul>
+<p>Se sabe además que, en la población a mejorar la intensidad de selección en machos es 2,67 y en hembras 0,80. Considerando las correlaciones entre ambas características,</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>¿Qué esperaría que pase con el diámetro si seleccionamos por largo de mecha?</p></li>
+<li><p>¿Cuál es el progreso genético generacional para largo de mecha si selecciono por esa característica?</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+RC=\frac{2,67+0,80}{2} \times\sqrt{0,30} \times -0,45 \times \sqrt{0,40 \times 3^2}= -0,81\text{ µ}
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+RD=\frac{2,67+0,80}{2} \times \sqrt{0,40} \times \sqrt{0,40 \times 3^2}= 2,08\text{ µ}
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-12.5" class="section level3 unnumbered">
+<h3>Ejercicio 12.5</h3>
+<p>Usted esta encargado del plan de selección de una majada Merino Australiano de 1000 ovejas. Su objetivo de selección es exclusivamente peso de vellón (PV). Usted deberá seleccionar 3 carneros de 50 con los cuales hará inseminación artificial en toda la majada y el 50% de las hembras de reemplazo. Los parámetros estimados para esta población son:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Parámetro</th>
+<th align="center">PV (kg)</th>
+<th align="center">Diámetro(µ)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Promedio</td>
+<td align="center"><span class="math inline">\(5,6\)</span></td>
+<td align="center"><span class="math inline">\(28\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Varianza fenotípica</td>
+<td align="center"><span class="math inline">\(0,25\)</span></td>
+<td align="center"><span class="math inline">\(0,25\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Heredabilidad</td>
+<td align="center"><span class="math inline">\(0,3\)</span></td>
+<td align="center"><span class="math inline">\(0,2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Repetibilidad</td>
+<td align="center"><span class="math inline">\(0,6\)</span></td>
+<td align="center"><span class="math inline">\(0,4\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Correlación aditiva</td>
+<td align="center"><span class="math inline">\(0,45\)</span></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Si usted sabe que la intensidad de selección en machos es 2,06 y en hembras es 0,80.Calcule la respuesta a la selección de la población para peso de vellón en una generación de selección.</p></li>
+<li><p>Usted sabe que el carnero que se usa con solo haber producido un vellón tiene 2 años y el de 2 vellones tiene 3 años, y que la majada tiene fecha de parto promedio a los 6 meses de los servicios. Por otra parte, la majada tiene 250 ovejas de 3 años, 250 de 4, 250 de 5, y 250 de 6 años de edad. Calcule el intervalo generacional de la población.</p></li>
+<li><p>Calcule la respuesta anual a la selección en su plan de mejoramiento.</p></li>
+<li><p>Calcule la respuesta correlacionada que se obtiene en la población en la característica diámetro de la lana, por la selección practicada en los machos. Considere que no hay selección en hembras.</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong>
+a)</p>
+<p><strong>Solución 1</strong>
+<span class="math display">\[\begin{equation}
+S=\frac{2,06+0,80}{2} \times \sqrt{0,25} = 0,715\text{ Kg}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+PGG=0,3 \times 0,715 = 0,21\text{ Kg}
+\end{equation}\]</span></p>
+<p><strong>Solución 2</strong>
+<span class="math display">\[\begin{equation}
+PGG=\frac{2,06+0,80}{2} \times 0,3 \times \sqrt{0,25} = 0,21\text{ Kg}
+\end{equation}\]</span></p>
+<p><strong>Solución 3</strong>
+<span class="math display">\[\begin{equation}
+PGG=\frac{2,06+0,80}{2} \times \sqrt{0,3} \times \sqrt{0,3 \times 0,25} = 0,21\text{ Kg}
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+IG_m =\frac{2+3}{2} = 2,5\text{ años}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+IG_h =\frac{3,5 \times 250 + 4,5 \times 250 + 5,5 \times 250 + 6,5 \times 250}{1000} = 5\text{ años}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+IG_p =\frac{2,5+5}{2} = 3,75\text{ años}
+\end{equation}\]</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><strong>Solución 1</strong></p>
+<p><span class="math display">\[\begin{equation}
+PGA = \frac{0,21}{3,75} = 0,056\text{ Kg}
+\end{equation}\]</span></p>
+<p><strong>Solución 2</strong></p>
+<p><span class="math display">\[\begin{equation}
+PGA = \frac{\frac{2,06+0,80}{2} \times 0,3 \times \sqrt{0,25}}{3,75} = 0,056\text{ Kg}
+\end{equation}\]</span></p>
+<p><strong>Solución 3</strong></p>
+<p><span class="math display">\[\begin{equation}
+PGA = \frac{\frac{2,06+0,80}{2} \times \sqrt{0,3} \times \sqrt{0,3 \times 0,25}}{3,75} = 0,056\text{ Kg}
+\end{equation}\]</span></p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><strong>Solución </strong>
+<span class="math display">\[\begin{equation}
+RC=\frac{2,06+0}{2} \times\sqrt{0,30} \times 0,45 \times \sqrt{0,2 \times 0,25}= 0,056\text{ µ}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-12.6" class="section level3 unnumbered">
+<h3>Ejercicio 12.6</h3>
+<p>En ganado de carne el Peso al destete (PD) tiene una <span class="math inline">\(h^2_{PD}\)</span> = 0,35 y el Peso a los 18 meses (P18) una <span class="math inline">\(h^2_P18\)</span> = 0,30. suponiendo que los animales se aparean por primera vez a los 2 años y que la característica que a Ud. le interesa mejorar es P18; ¿Seleccionaría directa o indirectamente para mejorar P18? Fundamente su respuesta.</p>
+<p>Información adicional:</p>
+<ul>
+<li>Correlación fenotípica PD-P18 = 0,70<br />
+</li>
+<li>Correlación genético-aditiva entre PD-P18 = 0,5</li>
+<li>Correlación ambiental PD-P18 = 0,70</li>
+<li>Porcentaje de destete = <span class="math inline">\(80\%\)</span></li>
+</ul>
+<p><br />
+</p>
+<p><strong><em>Solución </em></strong></p>
+<p><span class="math display">\[\begin{equation}
+RC/RD = \frac{0,5 \times\sqrt{0,35}}{\sqrt{0,30}}= 0,54
+\end{equation}\]</span></p>
+<ul>
+<li>Es preferible seleccionar directamente para mejorar el P18</li>
+<li>Las heredabilidades son muy parecidas y además la correlación genética aditiva es intermedia.</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-12.7" class="section level3 unnumbered">
+<h3>Ejercicio 12.7</h3>
+<p>Si se buscara seleccionar por la característica A para mejorar la característica B, y se dispusiera de los siguientes valores para los parámetros de heredabilidad y correlaciones:</p>
+<ul>
+<li><span class="math inline">\(h^2_{A}\)</span> = 0,16<br />
+</li>
+<li><span class="math inline">\(h^2_{B}\)</span> = 0,12<br />
+</li>
+<li>correlación fenotípica A-B = -0,54<br />
+</li>
+<li>correlación ambiental A-B = -0,67</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>¿Qué grado de respuesta indirecta es dable esperar?</p></li>
+<li><p>¿Cómo haría para lograr un mayor progreso genético en B?</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución </em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p>Calculamos la correlación genético aditiva para tener una idea de que podemos esperar de la respuesta indirecta al seleccionar por A para mejorar B.</p>
+<p><span class="math display">\[\begin{equation}
+r_A= \frac{-0,54 \times\sqrt{0,16} \times\sqrt{0,12}}{-0,67 \times\sqrt{1-0,16}\times\sqrt{1-0,12}}= 0,25
+\end{equation}\]</span></p>
+<p>Es de esperar una respuesta indirecta positiva pero pequeña debido a que la heredabilidad de la característica criterio de selección es baja y la correlación aditiva entre las dos características es baja a media.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p>Seleccionando directamente por la característica B.</p>
+</div>
+<div id="ejercicio-12.8" class="section level3 unnumbered">
+<h3>Ejercicio 12.8</h3>
+<p>La industria textil está demandando lanas con mayor largo de mecha (LM) y menor diámetro de fibra (D). Ud. nota esta situación e intenta mejorar ambas características en su cabaña. Lamentablemente, el costo de la medición del diámetro hacen que esta medida no sea posible de tomar. Su plan de selección consiste, entonces, en medir únicamente largo de mecha en machos y hembras, logrando diferenciales se selección de 2,67 cm y 0,8 cm, respectivamente. Estudios poblacionales nos permiten saber que:</p>
+<ul>
+<li><span class="math inline">\(h^2_{LM}\)</span> = 0,30<br />
+</li>
+<li><span class="math inline">\(h^2_D\)</span> = 0,40<br />
+</li>
+<li>desvío fenotipico LM = 1 cm<br />
+</li>
+<li>desvío fenotípico D = 3 µ<br />
+</li>
+<li>correlación genético-aditiva entre LM-D = -0,40</li>
+<li>correlación fenotípica LM-D = 0,30<br />
+</li>
+<li>correlación ambiental LM-D = 0,60</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li><p>¿Qué sucederá con el diámetro si Ud. selecciona por largo de mecha?</p></li>
+<li><p>¿Cuál es el progreso genético generacional para largo de mecha? Muestre sus cálculos</p></li>
+<li><p>¿Cuál es la respuesta correlacionada (generacional) para diámetro de fibra? Muestre sus cálculos</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p>El diámetro disminuye porque la correlación genético-aditiva es negativa.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+PGG= 0,30 \times {\frac{2,67+0,8}{2}}= 0,5205
+\end{equation}\]</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+RC=\frac{2,67+0,8}{2} \times\sqrt{0,30} \times -0,40 \times \sqrt{0,4 \times 3^2}= -0,72\text{ µ}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-12.9" class="section level3 unnumbered">
+<h3>Ejercicio 12.9</h3>
+<p>Se dispone de un rodeo de bovinos de carne en donde se desea mejorar las características peso al destete (PD)(<span class="math inline">\(h^2 = 0,20\)</span>) y eficiencia de conversión (EC)(<span class="math inline">\(h^2 = 0,40\)</span>). La correlación genético-aditiva entre ambas es de <span class="math inline">\(0,65\)</span> y los desvíos estándar aditivos son de 8 kg para PD y 1 kg de materia seca/kg de ganancia de peso, respectivamente.</p>
+<p>Se sabe además, que la superioridad de las hembras seleccionadas sobre la media poblacional es de <span class="math inline">\(0,305\)</span> desvíos estándar fenotípicos y la de los machos de <span class="math inline">\(1,984\)</span>. Por otro lado, el intervalo generacional en hembras es de <span class="math inline">\(5,5\)</span> años, mientras que en machos es de <span class="math inline">\(3,5\)</span> años.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Estime el progreso genético anual PD</p></li>
+<li><p>La característica EC es muy difícil de medir en condiciones comerciales. Estime la respuesta correlacionada obtenida luego de una generación de selección por PD.</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+PGA = \frac {\frac{0,305 + 1,984}{2} \times\sqrt{0,20} \times 8}{\frac{5,5 + 3,5}{2}}= 0,910\text{ kg/año}
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+RC=\frac{0,305+1,984}{2} \times\sqrt{0,20} \times 0,65 \times 1= 0,333\text{ kg MS/kg ganancia}
+\end{equation}\]</span></p>
+<!-- c) ¿A qué causas atribuye Ud. la correlación genética aditiva positiva entre ambas características?         -->
+<!-- ### Ejercicio 5{-} -->
+<!-- a) ¿En que caos se prefiere el uso de la respuesta correlacionada a la selección directa? Mencione dos situaciones. -->
+<!-- b) ¿De que depende la magnitud y dirección de esa respuesta? -->
+<!-- c) ¿Cómo evalúa la conveniencia del uso de esta metodología para estructurar un programa de mejoramiento genético? -->
+<hr />
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="selartifI.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="selartifII.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/12-GPcorrelacionada.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

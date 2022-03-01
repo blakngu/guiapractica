@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Variación y equilibrio de Hardy-Weinberg | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Variación y equilibrio de Hardy-Weinberg | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Variación y equilibrio de Hardy-Weinberg | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="deriva.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="variación-y-equilibrio-de-hardy-weinberg" class="section level1" number="2">
+<h1><span class="header-section-number">Capítulo 2</span> Variación y equilibrio de Hardy-Weinberg</h1>
+<div id="ejercicio-2.1" class="section level3 unnumbered">
+<h3>Ejercicio 2.1</h3>
+<p>Usando un “chip” comercial para bovinos en 10.000 animales no emparentados de la raza
+“Chinese Xinjiang Brown” (resultado de la cruza de “Brown Swiss” con la raza autóctona “Kazakh”) se encontró que el SNP <strong>rs43375517</strong>, en la región 5’UTR del
+gen ARL4A y asociado a la producción de leche a 305 días en varios
+estudios presentaba las siguientes frecuencias de genotipos: CC 3720, CG
+4760, GG 1520. Calcular la frecuencia relativa de ambos alelos, así como
+la esperanza del número observado de cada genotipo si la población se
+encontrase en equilibrio de Hardy-Weinberg para este marcador.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Dado que tenemos 10.000 individuos genotipados (3720+4760+1520=10.000), el
+número total de alelos en genotipados es 20.000 (son individuos
+diploides). La frecuencia relativa del alelo ‘C,’ llamémosle <span class="math inline">\(p\)</span> es:</p>
+<p><span class="math display">\[\begin{equation}
+p=\frac{2*3720+1*4760}{20000}=\frac{7440+4760}{20000}=\frac{12200}{20000}=0,61
+\end{equation}\]</span></p>
+<p>por lo que, la frecuencia relativa del alelo ‘G’ es <span class="math inline">\(q=1-p=0,39\)</span>. Si la
+población se encontrase en equilibrio de Hardy-Weinberg, con 10.000
+individuos genotipados esperaríamos obtener las siguientes frecuencias:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+CC=p^2*10000=0,61^2*10000=0,3721*10000=3721\\
+CG=2pq*10000=2*0,61*0,39=0.4758*10000=4758\\
+GG=q^2*10000=0,39^2*10000=0,1521*10000=1521
+\end{split}
+\end{equation}\]</span></p>
+<p>lo que nos deja con un ajuste casi perfecto a las expectativas del equilibrio Hardy-Weinberg.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.2" class="section level3 unnumbered">
+<h3>Ejercicio 2.2</h3>
+<p>La fenilcetonuria (PKU) es un error innato del
+metabolismo que resulta en una disminución del metabolismo del
+aminoácido fenilalanina como resultado de una deficiencia en la enzima
+fenilalanina hidroxilasa. El resultado de esto es la acumulación de
+fenilalanina a niveles potencialmente tóxicos. Desde el punto de vista
+del modelo de herencia se comporta como autosómica recesiva, por lo que
+es necesario heredar dos copias “defectuosas” del gen PAH (a decir
+verdad, que tengan actividad seriamente disminuída) para que la
+enfermedad se manifieste. La incidencia es muy variable de población en
+población, pero dos casos extremos podrían ser la población de
+Finlandia, con 1 afectado en 200 mil nacimientos y la población de
+Turquía, con 1 afectado en 2600 nacimientos. Calcular para ambas
+poblaciones la frecuencia de “el” [^10] alelo defectuoso, así como la
+proporción de portadores (que no manifiestan la enfermedad), asumiendo
+que las poblaciones se encuentran en equilibrio de Hardy-Weinberg.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Utilizando la ecuación <span class="math inline">\(q=\sqrt{\frac{G_{22}}{n}}\)</span>, tenemos para los dos casos
+<span class="math display">\[\begin{equation}
+\begin{split}
+q_{Fin}=\sqrt{\frac{1}{200000}}=0,002236068 \sim 0,22\% \\
+q_{Tur}=\sqrt{\frac{1}{2600}}=0,01961161 \sim 1,96\%
+\end{split}
+\end{equation}\]</span></p>
+<p>Los portadores serán los heterocigotos, por lo que, si asumimos que las
+poblaciones se encuentran en equilibrio de Hardy-Weinberg, entonces
+tendremos</p>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+Het_{Fin}=2p_{Fin}q_{Fin}=2*(1-0,002236068)*0,002236068=0,004462136\sim 0,45\% \\
+Het_{Tur}=2p_{Tur}q_{Tur}=2*(1-0,01961161)*0,01961161=0,038454 \sim 3,85\%
+\end{split}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.3" class="section level3 unnumbered">
+<h3>Ejercicio 2.3</h3>
+<p>Con los datos del <a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2">Ejercicio 2.2</a>,
+calcular la relación entre el número de portadores y el número de
+individuos que padecerán la enfermedad, asumiendo que las poblaciones se
+encuentran en equilibrio de Hardy-Weinberg.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+q_{Fin}=\sqrt{\frac{1}{200000}}=0,002236068 \sim 0,22\% \\
+q_{Tur}=\sqrt{\frac{1}{2600}}=0,01961161 \sim 1,96\%
+\end{equation}\]</span></p>
+<p>Los portadores serán los heterocigotos, por lo que, si asumimos que las
+poblaciones se encuentran en equilibrio de Hardy-Weinberg, entonces
+tendremos</p>
+<p><span class="math display">\[\begin{equation}
+\frac{Het_{Fin}}{HomR_{Fin}}=\frac{2p_{Fin}}{q_{Fin}}=2*(1-0,002236068)/0,002236068=892,43 \\
+\frac{Het_{Tur}}{HomR_{Tur}}=\frac{2p_{Tur}}{q_{Tur}}=2*(1-0,01961161)/0,01961161=99,98
+\end{equation}\]</span></p>
+<p>Es decir, en la población de Turquía tenemos casi 100 portadores por
+cada enfermo, mientras que en la de Finlandia la relación es de
+aproximadamente 892 portadores por cada enfermo.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.4" class="section level3 unnumbered">
+<h3>Ejercicio 2.4</h3>
+<p>Entre donantes de sangre de la ciudad de Ankara
+(Turquía) se determinó que de 1500 donantes sanos se observaron 669 del
+grupo A, 484 del grupo O, 232 del grupo B y 115 del grupo AB. Utilizando
+los estimadores que propuso <span class="citation">(<a href="#ref-pmid6598211" role="doc-biblioref">Yasuda 1984</a>)</span> estimar las frecuencias de
+los alelos <span class="math inline">\(I^A\)</span>, <span class="math inline">\(I^B\)</span> e <span class="math inline">\(i\)</span>, así como el número esperado de los
+distintos fenotipos si la población estuviese en equilibrio de
+Hardy-Weinberg.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation*}
+\hat{p}=\frac{[(1/2)AB+A+O-\sqrt{O(A+O)}]}{T}=\\
+=\frac{((115/2)+669+484-\sqrt{(484(669+484))})}{1500}=0,3089808 \\
+\hat{q}=\frac{[(1/2)AB+B+O-\sqrt{O(B+O)}]}{T}=\\
+=\frac{((115/2)+232+484-\sqrt{(484(232+484))})}{1500}=0,1232134 \\
+\hat{r}=1-\hat{p}-\hat{q}=1-0,3089808-0,1232134=0,5678058
+\end{equation*}\]</span></p>
+<p>De acuerdo a las frecuencias estimadas previamente, el número esperado
+de cada fenotipo sería</p>
+<p><span class="math display">\[\begin{equation*}
+E(A)=(p^2+2pr)T=(0,3089808^2+2\cdot 0,3089808\cdot 0,5678058)\cdot 1500=669,527
+\sim 670\\
+E(B)=(q^2+2qr)T=(0,1232134^2+2\cdot 0,1232134\cdot 0,5678058)\cdot 1500=232,6562
+\sim 233\\
+E(AB)=2pqT=2\cdot 0,3089808\cdot 0,1232134\cdot 1500=114,2117 \sim 114 \\
+E(O)=r^2T=0,5678058^2\cdot 1500=483,6051=484,
+\end{equation*}\]</span></p>
+<p>lo que coincide estrechamente con los números observados, por lo que <strong>no podemos descartar que la población se encuentre en equilibrio Hardy-Weinberg</strong> (en general no podemos resolver a favor de una hipótesis alternativa basados en la estadística, a lo sumo podemos
+afirmar que la misma es completamente improbable dados los supuestos del
+test que aplicamos).</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.5" class="section level3 unnumbered">
+<h3>Ejercicio 2.5</h3>
+<p>En la especie <em>Antirrhinum majus</em>, conocida vulgarmente como “boca de
+dragón,” dos alelos en un gen que determina el color de las flores
+(<strong>R</strong> rojo y <strong>W</strong> blanco), cuando se encuentran en estado homocigoto
+producen (respectivamente) flores rojas y blancas, pero cuando se
+encuentran en estado heterocigoto producen flores rosadas; esto permite
+identificar claramente a los heterocigotos. En una población natural, en
+un área relativamente pequeña se contaron 1220 flores rojas, 1270 rosadas
+y 330 blancas. ¿Cuáles son las frecuencias estimadas de los alelos <strong>R</strong>
+y <strong>W</strong>? ¿Cuáles son las frecuencias esperadas para los distintos
+genotipos si la población estuviese en equilibrio de Hardy-Weinberg?
+¿Podemos afirmar (estadísticamente) que la población no se encuentra en
+equilibrio de Hardy-Weinberg?</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation*}
+\begin{split}
+fr(R)=\frac{(2*fr(RR)+fr(RW))}{2*(fr(RR)+fr(RW)+fr(WW))}=\frac{2*1220+1270}{2*(1220+1270+330)}=\frac{3710}{5640}=0,6578014\\ 
+fr(W)=1-0,6578014=0,3421986 &amp; \\
+E(fr(RR))_{HW}=Np^2=2820*(0,6578014)^2=0,4327027*2820=1220,222 \sim 1220\\
+E(fr(RW))_{HW}=2Npq=5640*(0,6578014*0,3421986)=1269,557 \sim 1270 \\
+E(fr(WW))_{HW}=Nq^2=2820*(0,3421986)^2=330,2217 \sim 330
+\end{split}
+\end{equation*}\]</span></p>
+<p>El ajuste, más allá del redondeo, es casi perfecto, por lo que dado el
+número relativamente bajo de individuos y los pocos grados de libertad
+implicados (3 genotipos - 2 alelos = 1 grado de libertad) hacen
+innecesario el test estadístico más usual (test de <span class="math inline">\(\chi^2\)</span>), pero el
+lector puede verificarlo fácilmente.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.6" class="section level3 unnumbered">
+<h3>Ejercicio 2.6</h3>
+<p>Estimaciones obtenidas en un trabajo previo realizado en una raza de
+gallinas en una población de otro país, la frecuencia del alelo <strong>R</strong>,
+en un locus autosomal con dos alelos (el otro es <strong>r</strong>) en una especie
+diploide es de <span class="math inline">\(p=0,20\)</span> (se desconoce el error estándar de los
+estimados, pero se asume muy bajo porque es el resultado de genotipar
+miles de individuos). Para determinar si la frecuencia del alelo <strong>R</strong>
+en nuestra población se realiza el genotipado de 20 animales y se
+observa un conteo de 5 alelos <strong>R</strong>. Calcular la probabilidad de
+observar exactamente ese conteo y luego calcular la de uno igual o menor
+si nuestra población tuviese las mismas frecuencias que la población del
+trabajo previo.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>La probabilidad de obtener un conteo de 5 alelos <strong>R</strong> es la
+<span acronym-label="fdp" acronym-form="singular+short">fdp</span> binomial, o sea</p>
+<p><span class="math display">\[\begin{equation}
+Pr(X=5)={40\choose 5} 0,2^{5} (1-0,2)^{40-5}={40\choose 5} 0,2^{5} (0,8)^{35}=0,08541432 \sim 8,54\%
+\end{equation}\]</span></p>
+<p>La probabilidad de obtener un conteo de 5 o menos alelos <strong>R</strong> es la
+<span acronym-label="fda" acronym-form="singular+short">fda</span> binomial, o
+sea, la suma de las probabilidades de obtener conteos de 0, 1, 2, 3, 4 y
+5</p>
+<p><span class="math display">\[\begin{equation}
+Pr(X \leq 5)=\sum_{x=0}^{5} {40\choose x} p^x (1-p)^{40-x}=0,1613288 \sim 16,13\%
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.7" class="section level3 unnumbered">
+<h3>Ejercicio 2.7</h3>
+<p>En un hospital se determinó que de 1000 pacientes, 350 eran del grupo
+sanguíneo A, 280 del grupo O, 180 del grupo B y 190 del grupo AB.
+Utilizando los estimadores que propuso <span class="citation"><a href="#ref-pmid6598211" role="doc-biblioref">Yasuda</a> (<a href="#ref-pmid6598211" role="doc-biblioref">1984</a>)</span> estimar las
+frecuencias de los alelos <span class="math inline">\(I^A\)</span>, <span class="math inline">\(I^B\)</span> e <span class="math inline">\(i\)</span>, así como el número
+esperado de los distintos fenotipos si la población estuviese en
+equilibrio de Hardy-Weinberg.</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation*}
+\begin{split}
+\hat{p}=\frac{[(1/2)AB+A+O-\sqrt{O(A+O)}]}{T}=\\
+=\frac{((190/2)+350+280-\sqrt{(280*(350+280))})}{1000} \sim 0,3050 \\
+\hat{q}=\frac{[(1/2)AB+B+O-\sqrt{O(B+O)}]}{T}=\\
+=\frac{((190/2)+180+280-\sqrt{(280*(180+280))})}{1000} \sim 0,1961 \\
+\hat{r}=1-\hat{p}-\hat{q}=1-0,3050-0,1961=0,4989
+\end{split}
+\end{equation*}\]</span></p>
+<p>De acuerdo a las frecuencias estimadas previamente, el número esperado
+de cada fenotipo sería</p>
+<p><span class="math display">\[\begin{equation*}
+\begin{split}
+E(A)=(p^2+2pr)T=(0,3050^2+2*0,3050*0,4989)*1000 \sim 397\\
+E(B)=(q^2+2qr)T=(0,1961^2+2*0,1961*0,4989)*1000 \sim 234\\
+E(AB)=2pqT=2*0,3050*0,1961*1000 \sim 120\\
+E(O)=r^2T=0,4989^2*1000=483,6051 \sim 249,
+\end{split}
+\end{equation*}\]</span></p>
+<p>Claramente, hay una diferencia importante entre lo observado y lo
+predicho, por lo que la validez de nuestras estimaciones es nula
+(<span class="math inline">\(\chi^2\)</span>=27,9, <span class="math inline">\(gl=3\)</span>, p-value= 3,811e-06).</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.8" class="section level3 unnumbered">
+<h3>Ejercicio 2.8</h3>
+<p>Asumiendo que las poblaciones en las que se va a aplicar se encuentran
+en equilibrio de Hardy-Weinberg, desarrollar un estimador de las
+frecuencias de los tres alelos del grupo sanguíneo ABO (<span class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span> y <span class="math inline">\(r\)</span>)
+basado en el conteo de los individuos O y AB (desambiguando <span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span> si
+fuese necesario a través de sus respectivos conteos). øQué problema
+obvio tiene este estimador? A partir de las siguentes frecuencias genotípicas
+estimar las frecuencias alélicas y fenotípicas y comentarlas en relación
+a los datos observados: 669 del grupo A, 484 del grupo O, 232 del grupo B y 115 del grupo AB.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Tanto el fenotipo O como el AB mapean cada uno a un solo genotipo, por
+lo que su conteo no implica suma de aportes de genotipos diferentes. Si
+asumimos equilibrio de Hardy-Weinberg y que <span class="math inline">\(T=A+B+O+AB\)</span>, <span class="math inline">\(p+q+r=1\)</span>,
+tenemos
+<span class="math display" id="eq:ejHWABOe1">\[\begin{equation*}
+\begin{split}
+AB=2pqT \\
+O=r^2T \Leftrightarrow r=\sqrt{\frac{O}{T}} \\
+p+q+r=1 \Rightarrow p+q+\sqrt{\frac{O}{T}}=1 \Leftrightarrow \\
+\end{split}
+\tag{2.1}
+\end{equation*}\]</span></p>
+<p><span class="math display" id="eq:ejHWABOe2">\[\begin{equation*}
+\begin{split}
+ \Leftrightarrow p=1-q-\sqrt{\frac{O}{T}}
+\end{split}
+\tag{2.2}
+\end{equation*}\]</span></p>
+<p>Sustituyendo <a href="variación-y-equilibrio-de-hardy-weinberg.html#eq:ejHWABOe2">(2.2)</a> en <a href="variación-y-equilibrio-de-hardy-weinberg.html#eq:ejHWABOe1">(2.1)</a> para quedarnos con una sola variable (<span class="math inline">\(q\)</span>),
+tenemos
+<span class="math display">\[\begin{equation*}
+\begin{split}
+2qT(1-q-\sqrt{\frac{O}{T}})=AB \Leftrightarrow 2q-2q^2-2q\sqrt{\frac{O}{T}}=\frac{AB}{T} \Leftrightarrow q^2+(\sqrt{\frac{O}{T}}-1)q+\frac{AB}{2T}=0 \\
+\end{split}
+\end{equation*}\]</span>
+Se trata de una ecuación de segundo grado, por lo que utilizando la
+fórmula clásica (atribuida al matemático indio Bhaskaracharya), tenemos
+que nuestro estimador de <span class="math inline">\(q\)</span> es
+<span class="math display">\[\begin{equation*}
+\hat{q}=\frac{(1-\sqrt{\frac{O}{T}}) \pm \sqrt{(\sqrt{\frac{O}{T}}-1)^2-\frac{2AB}{T}}}{2}
+\end{equation*}\]</span>
+Es de notar que esto nos deja con dos soluciones, pero como con la
+información que utilizamos <span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span> no son identificables (si
+hubiésemos cambiado <span class="math inline">\(p\)</span> por <span class="math inline">\(q\)</span> el resultado sería idéntico), debemos
+usar la información de conteo de A y B para desambiguar las dos
+soluciones de nuestro estimador (la solución mayor correponde al conteo
+mayor entre A y B). El defecto obvio es que nuestro estimador no hace
+uso de toda la información disponible, una propiedad indeseable de los
+estimadores que discutiremos en otro capítulo.</p>
+<p>Para determina la frecuencia de <span class="math inline">\(r\)</span> hacemos
+<span class="math inline">\(r=\sqrt{O/T}=\sqrt{484/1500}=0,5680376\)</span>, mientras que para las de <span class="math inline">\(p\)</span> y
+<span class="math inline">\(q\)</span> aplicamos la de nuestro estimador anterior
+<span class="math display">\[\begin{equation}
+\begin{split}
+\hat{q}=\frac{(1-\sqrt{\frac{O}{T}}) \pm \sqrt{(\sqrt{\frac{O}{T}}-1)^2-\frac{2AB}{T}}}{2}=\frac{(1-\sqrt{\frac{484}{1500}}) \pm \sqrt{(\sqrt{\frac{484}{1500}}-1)^2-\frac{2*115}{1500}}}{2}=\\
+=[0,3071654(+), 0,124797(-)]
+\end{split}
+\end{equation}\]</span>
+La primera correspondería a <span class="math inline">\(p\)</span> (por el mayor conteo de A respecto a B).
+Ahora, la frecuencias esperadas de los distintos fenotipos serían</p>
+<p><span class="math display">\[\begin{equation*}
+\begin{split}
+E(A)=(p^2+2pr)T=(0,3071654^2+2*0,3071654*0,5680376)*1500=664.9704
+\sim 665 (669)\\
+E(B)=(q^2+2qr)T=(0,124797^2+2*0,124797*0,5680376)*1500=236,0296
+\sim 236 (232)\\
+E(AB)=2pqT=2*0,3071654*0,124797*1500=114,2117 \sim 115 (115)\\
+E(O)=r^2T=0,5680376^2*1500=484,0001 \sim 484 (484),
+\end{split}
+\end{equation*}\]</span></p>
+<p>Por lo tanto, si bien existe un ajuste razonable en este caso
+particular, existen algunas diferencias respecto a los datos observados
+en los dos fenotipos de los cuales no usamos la información (excepto
+marginalmente para decidir cuál solución debería ser <span class="math inline">\(p\)</span> y cuál <span class="math inline">\(q\)</span>).</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.9" class="section level3 unnumbered">
+<h3>Ejercicio 2.9</h3>
+<p>Demostrar (a) que para un locus con dos alelos en una especie diploide
+en equilibrio Hardy-Weinberg, la diferencia de frecuencias alélicas es
+igual a la diferencia de frecuencia entre los homocigotos respectivos y
+(b) que esta diferencia es igual a <span class="math inline">\(2p -1\)</span>.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Supongamos que llamamos <span class="math inline">\(p\)</span> y <span class="math inline">\(q=1-p\)</span> a las frecuencias de los dos
+alelos. Para la parte (a) debemos demostrar que su diferencia es igual a
+la diferencia entre los genotipos homocigotos, es decir, <span class="math inline">\(p-q=p^2-q^2\)</span>.
+Para ellos utilizaremos el hecho de que multiplicar por 1 ambos lados de
+la ecuación y el hecho de que <span class="math inline">\(p+q=1\)</span>.</p>
+<p><span class="math display">\[\begin{equation}
+(p-q)=1*(p-q)=(p+q)(p-q)=p^2+pq-pq-q^2=p^2-q^2
+\end{equation}\]</span></p>
+<p>En tanto, para la parte (b) utilizaremos que <span class="math inline">\(q=1-p\)</span>, por lo que</p>
+<p><span class="math display">\[\begin{equation}
+p-q=p-(1-p)=p-1+p=2p-1
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.10" class="section level3 unnumbered">
+<h3>Ejercicio 2.10</h3>
+<p>En general, si bien en muchas enfermedades humanas y animales que se
+clasifican como de herencia mendeliana se considera que se trata de un
+solo alelo recesivo, a nivel molecular suelen co-existir varios alelos
+deletéreos que producen similar fenotipo. Demostrar que si en un locus
+existen dos alelos deletéreos recesivos respecto al alelo normal, bajo
+equilibrio de Hardy-Weinberg los resultados respecto al número de
+portadores y de enfermos son equivalentes a considerarlos como un solo
+alelo defectuoso.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Supongamos que llamamos <span class="math inline">\(A_1\)</span> al alelo normal y <span class="math inline">\(A_2\)</span> y <span class="math inline">\(A_3\)</span> a los
+alelos defectuosos, con frecuencias respectivas <span class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span> y <span class="math inline">\(r\)</span>,
+<span class="math inline">\(p+q+r=1\)</span>. Llamemos <span class="math inline">\(u=q+r\)</span> a la frecuencia de los dos alelos
+defectuosos sumados, o lo que es lo mismo, a la frecuencia de alelos
+defectuosos (como si fuera uno solo). De acuerdo a lo visto para más de
+un alelo, las frecuencias esperadas bajo equilibrio Hardy-Weinberg serán</p>
+<p><span class="math display">\[\begin{equation}
+(p+q+r)^2=p^2+q^2+r^2+2pq+2pr+2qr
+\end{equation}\]</span></p>
+<p>De estos genotipos, los
+enfermos serán aquellos que tengan 2 alelos defectuosos, sean cuales
+sean, o sea <span class="math inline">\(A_2A_2\)</span>, <span class="math inline">\(A_3A_3\)</span> y <span class="math inline">\(A_2A3\)</span>, y por lo tanto</p>
+<p><span class="math display">\[\begin{equation}
+q^2+r^2+2qr=(q+r)^2=u^2
+\end{equation}\]</span></p>
+<p>Es decir, demostramos que el número de enfermos esperados es equivalente a considerarlo como un solo
+alelo. Ahora, el número de portadores será la suma de los genotipos que
+tienen un solo alelo defectuoso y el otro normal, o sea <span class="math inline">\(A_1A_2\)</span> y
+<span class="math inline">\(A_1A_3\)</span>, es decir</p>
+<p><span class="math display">\[\begin{equation}
+2pq+2pr=2p(q+r)=2pu,
+\end{equation}\]</span></p>
+<p>con lo que queda demostrado que
+también la frecuencia de portadores es equivalente a considerarlo un
+solo alelo defectuoso.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.11" class="section level3 unnumbered">
+<h3>Ejercicio 2.11</h3>
+<p>En muchos casos las ecuaciones que derivamos se simplifican enormemente debido a la restricción <span class="math inline">\(p+q=1\)</span>. Demostrar que las siguientes relaciones son válidas (adaptado de <span class="citation"><a href="#ref-HartlClark2007" role="doc-biblioref">Hartl and Clark</a> (<a href="#ref-HartlClark2007" role="doc-biblioref">2007</a>)</span>)</p>
+<p><span class="math display">\[\begin{equation}
+p^2-q^2=p-q \\
+p^2+pq=p \\
+p-q=1-2q \\
+p^2+q^2=1-2pq \\
+(p-q)^2=1-4pq \\
+\end{equation}\]</span></p>
+<p><strong><em>Solución</em></strong></p>
+<p>Haciendo uso de que <span class="math inline">\(p+q=1\)</span>, por lo que también <span class="math inline">\((p+q)^2=p^2+2pq+q^2=1\)</span> (ya que lo que está dentro del paréntesis vale <span class="math inline">\(1\)</span> y <span class="math inline">\(1^2=1\)</span>), tenemos que</p>
+<p><span class="math display">\[\begin{equation}
+p^2-q^2=(p+q)(p-q)=(1)(p-q)=p-q \\
+p^2+pq=p(p+q)=p(1)=p \\
+p-q=(1-q)-q=1-q-q=1-2q \\
+p^2+q^2=1-2pq \Leftrightarrow p^2+q^2+2pq=1 \Leftrightarrow (p+q)^2=1 \Leftrightarrow 1^2=1\\
+(p-q)^2=p^2-2pq+q^2=p^2-2pq+q^2+2pq-2pq=p^2+2pq+q^2-2pq-2pq=(p+q)^2-4pq=1-4pq
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.12" class="section level3 unnumbered">
+<h3>Ejercicio 2.12</h3>
+<p>La papa (<em>Solanum tuberosum</em> L.) es un cultivo típicamente tretraploide (auto-tetraploide) a nivel comercial, aunque existen muchas variedades en Sudamérica (centro de origen) que son diploides (a menudo conocidas como “Landraces” o variedades autóctonas) y de importancia para la conservación de la diversidad y para el mejoramiento genético.</p>
+<p>Los marcadores de microsatélites, a veces conocidos como “Short Sequence Repeat” o “Short Tandem Repeat” (<strong>SSR</strong>) se han convertido en una de las alternativas más usadas para el análisis de la diversidad genética. El estudio de los mismos se basa en sencillos ensayos de <strong>PCR</strong>, con las ventajas de su alto polimorfismo, codominancia, especificidad, amplia distribución y bajo coste.</p>
+<p>En un estudio con marcadores moleculares del tipo <strong>SSR</strong> se encontraron las siguientes frecuencias para los distintos alelos (en general diferencias en el número de repetidos, tener en cuenta de que en cada marcador pueden existir más de dos alelos) en 4 marcadores en una de las variedad autóctonas:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alelo</th>
+<th align="left">SSR1</th>
+<th align="left">SSR2</th>
+<th align="left">SSR3</th>
+<th align="left">SSR4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Alelo 1</td>
+<td align="left"><span class="math inline">\(12\)</span></td>
+<td align="left"><span class="math inline">\(25\)</span></td>
+<td align="left"><span class="math inline">\(61\)</span></td>
+<td align="left"><span class="math inline">\(47\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Alelo 2</td>
+<td align="left"><span class="math inline">\(88\)</span></td>
+<td align="left"><span class="math inline">\(17\)</span></td>
+<td align="left"><span class="math inline">\(32\)</span></td>
+<td align="left"><span class="math inline">\(53\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Alelo 3</td>
+<td align="left"></td>
+<td align="left"><span class="math inline">\(58\)</span></td>
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">TOTAL</td>
+<td align="left"><span class="math inline">\(100\)</span></td>
+<td align="left"><span class="math inline">\(100\)</span></td>
+<td align="left"><span class="math inline">\(100\)</span></td>
+<td align="left"><span class="math inline">\(100\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Determinar las frecuencias relativas de cada uno de los alelos para cada marcador, así como las proporciones esperadas de cada genotipo si los marcadores estuviesen en equilibrio Hardy-Weinberg.</p>
+<p>¿Qué <em>locus</em> muestra el mayor nivel de heterocigosidad esperada?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Para SSR1, tenemos dos alelos, con frecuencia <span class="math inline">\(fr(A_1)=12/100=0,12\)</span> y <span class="math inline">\(fr(A_2)=88/100=0,88\)</span>. En equilibrio de Hardy-Weinberg esperamos:</p>
+<p><span class="math display">\[\begin{equation}
+fr(A_1A_1)=0,12^2=0,0144\\
+fr(A_1A_1)=2\times 0,12 \times 0,88=0,2112\\
+fr(A_2A_2)=0,88^2=0,7744
+\end{equation}\]</span></p>
+<p>Para SSR2, tenemos 3 alelos, con frecuencias <span class="math inline">\(fr(A_1)=25/100=0,25\)</span>, <span class="math inline">\(fr(A_2)=17/100=0,17\)</span> y <span class="math inline">\(fr(A_3)=58/100=0,58\)</span>. Existirán <span class="math inline">\(k(k+1)/2\)</span> genotipos y en equilibrio de Hardy-Weinberg esperamos que sus frecuencias sean</p>
+<p><span class="math display">\[\begin{equation}
+fr(A_1A_1)=0,25^2=0,0625\\
+fr(A_2A_2)=0,17^2=0,0289\\
+fr(A_3A_3)=0,58^2=0,3364\\
+fr(A_1A_2)=2 \times 0,25 \times 0,17=0,085\\
+fr(A_1A_3)=2 \times 0,25 \times 0,58=0,29\\
+fr(A_2A_3)=2 \times 0,17 \times 0,58=0,1972
+\end{equation}\]</span></p>
+<p>Por supuesto, <span class="math inline">\(0,0625+0,0289+0,3364+0,085+0,29+0,1972=1\)</span>.</p>
+<p>Para SSR3 tenemos 3 alelos también, con frecuencias <span class="math inline">\(fr(A_1)=61/100=0,61\)</span>, <span class="math inline">\(fr(A_2)=32/100=0,32\)</span> y <span class="math inline">\(fr(A_3)=7/100=0,07\)</span>. En equilibrio Hardy-Weinberg esperamos</p>
+<p><span class="math display">\[\begin{equation}
+fr(A_1A_1)=0,61^2=0,3721\\
+fr(A_2A_2)=0,32^2=0,1024\\
+fr(A_3A_3)=0,07^2=0,0049\\
+fr(A_1A_2)=2 \times 0,61 \times 0,32=0,3904\\
+fr(A_1A_3)=2 \times 0,61 \times 0,07=0,0854\\
+fr(A_2A_3)=2 \times 0,32 \times 0,07=0,0448
+\end{equation}\]</span></p>
+<p>con <span class="math inline">\(0,3721+0,1024+0,0049+0,3904+0,0854+0,0448=1\)</span></p>
+<p>Finalmente, para el <em>locus</em> SSR4, tenemos <span class="math inline">\(fr(A_1)=47/100=0,47\)</span> y <span class="math inline">\(fr(A_2)=53/100=0,53\)</span>, por lo que en equilibrio Hardy-Weinberg esperamos</p>
+<p><span class="math display">\[\begin{equation}
+fr(A_1A_1)=0,47^2=0,2209\\
+fr(A_1A_1)=2\times 0,47 \times 0,53=0,4982\\
+fr(A_2A_2)=0,53^2=0,2809
+\end{equation}\]</span></p>
+<p>con <span class="math inline">\(0,2209+0,2809+0,4982=1\)</span>.</p>
+<p>La frecuencia total esperada de <strong>homocigotos</strong> es <span class="math inline">\(G=\sum_i p^2_i\)</span> con <span class="math inline">\(p_i\)</span> la frecuencia de cada alelo, por lo que la frecuencia esperada de <strong>heterocigotos</strong> será</p>
+<p><span class="math display">\[\begin{equation}
+H=1-G=1-\sum_i p^2_i 
+\end{equation}\]</span></p>
+<p>Para SSR1, será entonces <span class="math inline">\(H_{SSR1}=1-(0.0144+0.7744)=0.2112\)</span>, que al haber solo dos alelos coincide con la frecuencia del único tipo de heterocigoto (<span class="math inline">\(A_1A_2\)</span>).</p>
+<p>Para SSR2, <span class="math inline">\(H_{SSR2}=1-(0,0625+0,0289+0,3364)=0,5722\)</span>.</p>
+<p>Para SSR3, <span class="math inline">\(H_{SSR3}=1-(0,3721+0,1024+0,0049)=0,5206\)</span></p>
+<p>Para SSR4, <span class="math inline">\(H_{SSR4}=1-(0,2209+0,2809)=0,4982\)</span>.</p>
+<p>Por lo tanto, teniendo en cuenta estos resultados, el <em>locus</em> SSR2 es en el que se espera mayor <strong>heterocigosidad</strong>.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.13" class="section level3 unnumbered">
+<h3>Ejercicio 2.13</h3>
+<p>En el modelo de un <em>locus</em> con dos alelos demostramos que el máximo esperado de heterocigotas ocurre cuando <span class="math inline">\(p=q=\frac{1}{2}\)</span>. Generalizar el resultado para <em>locus</em> con <strong>dos o más alelos</strong>. ¿Cuánto será la heterocigosidad máxima esperada en función del número de alelos? Calcular la heterocigosidad máxima esperada para un <em>locus</em> con 2, 3, 4…10 alelos y representarlo gráficamente. ¿Cuánto será la heterocigosidad máxima esperada en un modelo de alelos infinitos?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>El máximo ocurrirá cuando todas las frecuencias alélicas sean iguales, es decir que para un <em>locus</em> con <span class="math inline">\(k\)</span> alelos, <span class="math inline">\(p_i=p_j=1/k \ \forall \ i,j\leqslant k\)</span>. Por lo tanto, utilizando la definición de homocigosidad y heterocigosidad esperada, tenemos que</p>
+<p><span class="math display">\[\begin{equation}
+G=\sum_{i=1}^k p^2_i=k(\frac{1}{k})^2=\frac{k}{k^2}=\frac{1}{k}
+\end{equation}\]</span></p>
+<p>y por lo tanto</p>
+<p><span class="math display">\[\begin{equation}
+H=1-G=1-\frac{1}{k}=\frac{k-1}{k}
+\end{equation}\]</span></p>
+<p>Utilizando este resultado podemos hacer el cálculo para <span class="math inline">\(k=2, 3,...,10\)</span> lo que nos deja con la siguiente tabla:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alelos</th>
+<th align="left"><span class="math inline">\(H_{max}=(k-1)/k\)</span> esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(2\)</span></td>
+<td align="left"><span class="math inline">\(1/2=0,500\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="left"><span class="math inline">\(2/3=0,667\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="left"><span class="math inline">\(3/4=0,750\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="left"><span class="math inline">\(4/5=0,800\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="left"><span class="math inline">\(5/6=0,833\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(7\)</span></td>
+<td align="left"><span class="math inline">\(6/7=0,857\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(8\)</span></td>
+<td align="left"><span class="math inline">\(7/8=0,875\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(9\)</span></td>
+<td align="left"><span class="math inline">\(8/9=0,889\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(10\)</span></td>
+<td align="left"><span class="math inline">\(9/10=0,900\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>que si la representamos gráficamente obtenemos la figura <a href="variación-y-equilibrio-de-hardy-weinberg.html#fig:heteroesp">2.1</a>. En la misma se observa que la heterocigosidad máxima esperada se incrementa con el número de alelos que existen en el <em>locus</em>, valor que se aproxima asintóticamente a uno.</p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:heteroesp"></span>
+<img src="GuiaPracticaGeneticaII_files/figure-html/heteroesp-1.png" alt="Heterocigosidad máxima esperada en función del número de alelos en el locus." width="672" />
+<p class="caption">
+Figure 2.1: Heterocigosidad máxima esperada en función del número de alelos en el <em>locus</em>.
+</p>
+</div>
+<p><br />
+</p>
+<p>Finalmente, como debería resultar obvio de la gráfica anterior, <span class="math inline">\(\lim_{k \to +\infty}\frac{k-1}{k}=1\)</span>.</p>
+</div>
+<div id="ejercicio-2.14" class="section level3 unnumbered">
+<h3>Ejercicio 2.14</h3>
+<p>Supongamos que la ausencia o presencia de cuernos en bovinos (carácter cualitativo) está determinado por un solo locus, cuyos alelos son <span class="math inline">\(H\)</span> (efecto en el fenotipo: ausencia de cuernos) y <span class="math inline">\(h\)</span> (efecto en el fenotipo: presencia de cuernos), las frecuencias alélicas son <span class="math inline">\(p = 0,5\)</span>, <span class="math inline">\(q = 0,5\)</span> y la población se encuentra en equilibrio Hardy-Weinberg. La ausencia de cuernos es el carácter dominante (dominancia completa: tanto el homocigota dominante como el heterocigota carecen de cuernos), por lo que la presencia de cuernos se expresa cuando el animal es homocigota recesivo para ese gen:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alelo</th>
+<th align="center">Frecuencia génica (o alélica)</th>
+<th align="center">Efecto en el fenotipo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(H\)</span></td>
+<td align="center"><span class="math inline">\(p = 1/2\)</span></td>
+<td align="center">Ausencia</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(h\)</span></td>
+<td align="center"><span class="math inline">\(q = 1/2\)</span></td>
+<td align="center">Presencia</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li>¿Cuáles son los genotipos presentes en la población?</li>
+<li>¿Cuál es la frecuencia genotípica de cada uno de los genotipos presentes en la población? ¿Cómo se expresan fenotípicamente cada uno de estos genotipos?</li>
+</ol>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left"></th>
+<th align="center">Alelos provenientes del padre</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="center"><span class="math inline">\(H\)</span></td>
+<td align="center"><span class="math inline">\(h\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Alelos provenientes de la madre</strong></td>
+<td align="left"><span class="math inline">\(H\)</span></td>
+<td align="center"><span class="math inline">\(HH\)</span></td>
+<td align="center"><span class="math inline">\(Hh\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><span class="math inline">\(h\)</span></td>
+<td align="center"><span class="math inline">\(Hh\)</span></td>
+<td align="center"><span class="math inline">\(hh\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation}
+\begin{split}
+P=p^2=0,5^2=0,25=1/4\\
+H=2 \times p \times q=2 \times 0,5 \times 0,5=1/2\\
+Q=q^2=0,5^2=0,25=1/4
+\end{split}
+\end{equation}\]</span></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center">Frecuencia genotípica</th>
+<th align="center">Expresión fenotípica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(HH\)</span></td>
+<td align="center"><span class="math inline">\(P = 1/4\)</span></td>
+<td align="center">Ausencia</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(Hh\)</span></td>
+<td align="center"><span class="math inline">\(H = 1/2\)</span></td>
+<td align="center">Ausencia</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(hh\)</span></td>
+<td align="center"><span class="math inline">\(Q = 1/4\)</span></td>
+<td align="center">Presencia</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:1cuer"></span>
+<img src="figuras/1cuer.jpg" alt="Ausencia o presencia de cuernos en bovinos" width="443" />
+<p class="caption">
+Figure 2.2: Ausencia o presencia de cuernos en bovinos
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.15" class="section level3 unnumbered">
+<h3>Ejercicio 2.15</h3>
+<p>Supongamos que el color del pelaje en equinos (carácter cualitativo) está determinado por un solo locus, cuyos alelos son <span class="math inline">\(D\)</span> (efecto en el fenotipo: marrón) y <span class="math inline">\(d\)</span> (efecto en el fenotipo: casi blanco), las frecuencias alélicas son <span class="math inline">\(p = 0,5\)</span>, <span class="math inline">\(q = 0,5\)</span> y la población se encuentra en equilibrio Hardy-Weinberg. El color del pelaje está definido por la combinación de ambos alelos.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alelo</th>
+<th align="center">Frecuencia génica (o alélica)</th>
+<th align="center">Efecto en el fenotipo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(D\)</span></td>
+<td align="center"><span class="math inline">\(p = 1/2\)</span></td>
+<td align="center">Marrón</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(d\)</span></td>
+<td align="center"><span class="math inline">\(q = 1/2\)</span></td>
+<td align="center">Casi blanco</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li>¿Cuáles son los genotipos presentes en la población?</li>
+<li>¿Cuál es la frecuencia genotípica de cada uno de los genotipos presentes en la población? ¿Cómo se expresan fenotípicamente cada uno de estos genotipos?</li>
+</ol>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left"></th>
+<th align="center">Alelos provenientes del padre</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="center"><span class="math inline">\(D\)</span></td>
+<td align="center"><span class="math inline">\(d\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Alelos provenientes de la madre</strong></td>
+<td align="left"><span class="math inline">\(D\)</span></td>
+<td align="center"><span class="math inline">\(DD\)</span></td>
+<td align="center"><span class="math inline">\(Dd\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><span class="math inline">\(d\)</span></td>
+<td align="center"><span class="math inline">\(Dd\)</span></td>
+<td align="center"><span class="math inline">\(dd\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation}
+\begin{split}
+P=p^2=0,5^2=0,25=1/4\\
+H=2 \times p \times q=2 \times 0,5 \times 0,5=1/2\\
+Q=q^2=0,5^2=0,25=1/4
+\end{split}
+\end{equation}\]</span></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center">Frecuencia genotípica</th>
+<th align="center">Expresión fenotípica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(DD\)</span></td>
+<td align="center"><span class="math inline">\(P = 1/4\)</span></td>
+<td align="center">Marrón</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(Dd\)</span></td>
+<td align="center"><span class="math inline">\(H = 1/2\)</span></td>
+<td align="center">Castaño</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(dd\)</span></td>
+<td align="center"><span class="math inline">\(Q = 1/4\)</span></td>
+<td align="center">Casi blanco</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:2pel"></span>
+<img src="figuras/2pel.jpg" alt="Color del pelaje en equinos" width="496" />
+<p class="caption">
+Figure 2.3: Color del pelaje en equinos
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.16" class="section level3 unnumbered">
+<h3>Ejercicio 2.16</h3>
+<p>Supongamos que el color del pelaje en aves (Andalusian) (carácter cualitativo) está determinado por un solo locus, cuyos alelos son <span class="math inline">\(B\)</span> (efecto en el fenotipo: negro) y <span class="math inline">\(b\)</span> (efecto en el fenotipo: blanco). No conocemos las frecuencias alélicas (<span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span>), sino que conocemos el número de animales perteneciente a cada fenotipo. La población se encuentra en equilibrio Hardy-Weinberg. El color del pelaje está definido por la combinación de ambos alelos.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Fenotipo</th>
+<th align="center">Número de animales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Negro</td>
+<td align="center"><span class="math inline">\(54\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Gris</td>
+<td align="center"><span class="math inline">\(72\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Blanco</td>
+<td align="center"><span class="math inline">\(24\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:3pel"></span>
+<img src="figuras/3pel.jpg" alt="Color del pelaje en aves" width="443" />
+<p class="caption">
+Figure 2.4: Color del pelaje en aves
+</p>
+</div>
+<ol style="list-style-type: lower-alpha">
+<li>¿Cuál es la frecuencia genotípica de cada uno de los genotipos presentes en la población?</li>
+<li>¿Cuál es la frecuencia alélica de cada uno de los alelos presentes en la población?</li>
+</ol>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation}
+\begin{split}
+P=\frac{54}{54+72+24}=0,36\\
+\\
+H=\frac{72}{54+72+24}=0,48\\
+\\
+Q=\frac{24}{54+72+24}=0,16
+\end{split}
+\end{equation}\]</span></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center">Frecuencia genotípica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(BB\)</span></td>
+<td align="center"><span class="math inline">\(P = 0,36\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(Bb\)</span></td>
+<td align="center"><span class="math inline">\(H = 0,48\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(bb\)</span></td>
+<td align="center"><span class="math inline">\(Q = 0,16\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation}
+\begin{split}
+p=P+\frac{1}{2} \times H=0,36+\frac{1}{2} \times 0,48=0,6\\
+\\
+q=Q+\frac{1}{2} \times H=0,16+\frac{1}{2} \times 0,48=0,4
+\end{split}
+\end{equation}\]</span></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alelo</th>
+<th align="center">Frecuencia génica (o alélica)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(B\)</span></td>
+<td align="center"><span class="math inline">\(p = 0,6\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(b\)</span></td>
+<td align="center"><span class="math inline">\(q = 0,4\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.17" class="section level3 unnumbered">
+<h3>Ejercicio 2.17</h3>
+<p>Supongamos que el color del pelaje en suinos (Hampshire) (carácter cualitativo) está determinado por un solo locus, cuyos alelos son <span class="math inline">\(W\)</span> (efecto en el fenotipo: cinturón blanco) y <span class="math inline">\(w\)</span> (efecto en el fenotipo: color completo). No conocemos las frecuencias alélicas (<span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span>), sino que conocemos el número de animales perteneciente a cada fenotipo. La población se encuentra en equilibrio Hardy-Weinberg. El cinturón blanco es el carácter dominante (dominancia completa: tanto el homocigota dominante como el heterocigota presentan cinturón blanco), por lo que el color completo se expresa cuando el animal es homocigota recesivo para ese gen:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Fenotipo</th>
+<th align="center">Número de animales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Cinturón blanco</td>
+<td align="center"><span class="math inline">\(910\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Color completo</td>
+<td align="center"><span class="math inline">\(90\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:4pel"></span>
+<img src="figuras/4pel.jpg" alt="Color del pelaje en suinos" width="440" />
+<p class="caption">
+Figure 2.5: Color del pelaje en suinos
+</p>
+</div>
+<p>¿Cuál es la frecuencia genotípica de cada uno de los genotipos presentes en la población?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>A partir del número de animales por fenotipo, podemos calcular la frecuencia del genotipo homocigota recesivo <span class="math inline">\(ww\)</span> (<span class="math inline">\(Q\)</span>):
+<span class="math display">\[\begin{equation}
+Q=\frac{90}{910+90}=0,09
+\end{equation}\]</span></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center">Frecuencia genotípica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(WW\)</span></td>
+<td align="center"><span class="math inline">\(P = ¿?\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(Ww\)</span></td>
+<td align="center"><span class="math inline">\(H = ¿?\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(ww\)</span></td>
+<td align="center"><span class="math inline">\(Q = 0,09\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>A partir de la frecuencia del genotipo homocigota recesivo <span class="math inline">\(ww\)</span> ($Qv), podemos calcular la frecuencia alélica del alelo <span class="math inline">\(w\)</span> (<span class="math inline">\(q\)</span>):
+<span class="math display">\[\begin{equation}
+q=\sqrt{Q}=\sqrt{0,09}=0,3
+\end{equation}\]</span></p>
+<p>Conociendo <span class="math inline">\(q\)</span>, podemos calcular la frecuencia alélica del alelo <span class="math inline">\(W\)</span> (<span class="math inline">\(p\)</span>):
+<span class="math display">\[\begin{equation}
+p=1-q=1-0,3=0,7
+\end{equation}\]</span></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alelo</th>
+<th align="center">Frecuencia génica (o alélica)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(W\)</span></td>
+<td align="center"><span class="math inline">\(p = 0,7\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(w\)</span></td>
+<td align="center"><span class="math inline">\(q = 0,3\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Conociendo <span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span>, podemos calcular la frecuencia genotípica de cada uno de los genotipos presentes en la población:
+<span class="math display">\[\begin{equation}
+P=p^2=0,7^2=0,49\\
+H=2 \times p \times q=2 \times 0,7 \times 0,3=0,42
+\end{equation}\]</span></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center">Frecuencia genotípica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(WW\)</span></td>
+<td align="center"><span class="math inline">\(P = 0,49\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(Ww\)</span></td>
+<td align="center"><span class="math inline">\(H = 0,42\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(ww\)</span></td>
+<td align="center"><span class="math inline">\(Q = 0,09\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:5pel"></span>
+<img src="figuras/5pel.jpg" alt="Color del pelaje en suinos" width="496" />
+<p class="caption">
+Figure 2.6: Color del pelaje en suinos
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-2.18" class="section level3 unnumbered">
+<h3>Ejercicio 2.18</h3>
+<p>Una característica de interés productivo en mamíferos se encuentra determinada por un gen que se encuentra localizado en el cromosoma X. En una determinada población, la frecuencia en hembras del alelo que nos interesa es <span class="math inline">\(p_H=0,30\)</span> y queremos incrementarlo. Para acelerar el proceso, disponemos de machos obtenidos de otra población en la cuál la frecuencia (ya estabilizada) es de <span class="math inline">\(p_M=0,80\)</span> y que <strong>utilizaremos solo una vez</strong>. Obtener las frecuencias esperadas para machos y hembras descendientes de dicho apareamiento en la primera, segunda y tercera generación (el apareamiento ya es entre individuos de la población). ¿Cuál será la frecuencia de equilibrio para el alelo de interés? Realice una representación gráfica de la evolución de las frecuencias en ambos sexos y de la frecuencia de equilibrio.</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>De acuerdo a las reglas que vimos, la frecuencia en los machos de primera generación será igual a la de las hembras en la generación previa (ya que el único cromosoma X que tienen los machos viene de sus madres), por lo que <span class="math inline">\(p_{M1}=p_{H0}=0,30\)</span>. En las hembras, en la generación 1 será el promedio de las frecuencias de machos y hembras en la generación 0, por lo que <span class="math inline">\(p_{H1}=\frac{p_{M0}+p_{H0}}{2}=\frac{0,8+0,3}{2}=0,55\)</span>.</p>
+<p>Utilizando las mismas reglas, para la segunda generación tenemos que <span class="math inline">\(p_{M2}=p_{H1}=0,55\)</span> y <span class="math inline">\(p_{H2}=\frac{p_{M1}+p_{H1}}{2}=\frac{0,3+0,55}{2}=0,425\)</span>.</p>
+<p>Para la generación 3, tenemos que <span class="math inline">\(p_{M3}=p_{H2}=0,425\)</span> y <span class="math inline">\(p_{H3}=\frac{p_{M2}+p_{H2}}{2}=\frac{0,55+0,425}{2}=0,4875\)</span>.</p>
+<p>Finalmente, la frecuencia de equilibrio será igual a</p>
+<p><span class="math display">\[\begin{equation}
+p=\frac{p_M+2p_H}{3}=\frac{0,8+2 \times 0,3}{3}=0,4667
+\end{equation}\]</span></p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ligadoX"></span>
+<img src="GuiaPracticaGeneticaII_files/figure-html/ligadoX-1.png" alt="Representación gráfica de la evolución de las frecuencias del alelo de interés en los dos sexos para las primeras tres generaciones luego del apareamiento inicial." width="672" />
+<p class="caption">
+Figure 2.7: Representación gráfica de la evolución de las frecuencias del alelo de interés en los dos sexos para las primeras tres generaciones luego del apareamiento inicial.
+</p>
+</div>
+</div>
+<div id="ejercicio-2.19" class="section level3 unnumbered">
+<h3>Ejercicio 2.19</h3>
+<p>En ovinos pueden reconocerse 3 tipos de hemoglobina A,AB,B. Estos 3 fenotipos son causados respectivamente por los genotipos AA, Aa, aa. En dos majadas se encontraron las siguientes frecuencias genotípicas.</p>
+<p><strong>N° de ovejas de cada fenotipo</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Fenotipo</th>
+<th align="left">AA</th>
+<th align="left">AB</th>
+<th align="left">BB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Majada 1</td>
+<td align="left"><span class="math inline">\(32\)</span></td>
+<td align="left"><span class="math inline">\(96\)</span></td>
+<td align="left"><span class="math inline">\(72\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Majada 2</td>
+<td align="left"><span class="math inline">\(85\)</span></td>
+<td align="left"><span class="math inline">\(10\)</span></td>
+<td align="left"><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li><p>Calcula las frecuencias genotípicas para las dos majadas.</p></li>
+<li><p>Calcula las frecuencias alélicas para las dos majadas.</p></li>
+<li><p>¿Puede afirmarse que estas poblaciones están en equilibrio? Fundamenta</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li>En la majada 1 hay 200 animales mientras que en la 2 hay 100, por lo que las frecuencias genotípicas relativas serán</li>
+</ol>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Fenotipo</th>
+<th align="left">AA</th>
+<th align="left">AB</th>
+<th align="left">BB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Majada 1</td>
+<td align="left"><span class="math inline">\(\frac{32}{200}=0,16\)</span></td>
+<td align="left"><span class="math inline">\(\frac{96}{200}=0,48\)</span></td>
+<td align="left"><span class="math inline">\(\frac{72}{200}=0,36\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Majada 2</td>
+<td align="left"><span class="math inline">\(\frac{85}{100}=0,85\)</span></td>
+<td align="left"><span class="math inline">\(\frac{10}{100}=0,10\)</span></td>
+<td align="left"><span class="math inline">\(\frac{5}{100}=0,05\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Para la majada 1: <span class="math inline">\(\mathrm{fr(A)}=\frac{32+96/2}{200}=\frac{80}{200}=0,4\)</span> y por lo tanto <span class="math inline">\(\mathrm{fr(B)}=1-\mathrm{fr(A)}=1-0,40=0,60\)</span>. También se podía haber hecho directamente como <span class="math inline">\(\mathrm{fr(A)}=0,16+\frac{0,48}{2}=0,16+0,24=0,40\)</span>.</li>
+</ol>
+<p>Para la majada 2: <span class="math inline">\(\mathrm{fr(A)}=0,85+\frac{0,10}{2}=0,85+0,05=0,90\)</span> y por lo tanto <span class="math inline">\(\mathrm{fr(B)}=1-\mathrm{fr(A)}=1-0,90=0,10\)</span>.</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Las frecuencias esperadas para las dos majadas son</li>
+</ol>
+<p><br />
+</p>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="29%" />
+<col width="29%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Fenotipo</th>
+<th align="left">AA</th>
+<th align="left">AB</th>
+<th align="left">BB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Majada 1</td>
+<td align="left"><span class="math inline">\(200 \times 0,4^2=32\)</span></td>
+<td align="left"><span class="math inline">\(200 \times 2 \times 0,4 \times 0,6=96\)</span></td>
+<td align="left"><span class="math inline">\(200 \times 0,6^2=72\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Majada 1</td>
+<td align="left"><span class="math inline">\(100 \times 0,9^2=81\)</span></td>
+<td align="left"><span class="math inline">\(100 \times 2 \times 0,9 \times 0,1=18\)</span></td>
+<td align="left"><span class="math inline">\(100 \times 0,1^2=1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Para la majada 1 las frecuencias esperada y observada coinciden perfectamente, por lo que podemos decir de que se encuentra en equilibrio HW. En realidad, solo podemos decir que no podemos descartar que se encuentre en equilibrio HW. Para la majada 2 hay discrepancias, por lo que lo correcto es hacer un test, por ejemplo de <span class="math inline">\(\chi^2\)</span>. Usando la siguiente tabla podemos calcular el estadístico mediante la ecuación <span class="math inline">\(\chi^2=\sum_{i=1}^3 \frac{(o_i-e_i)^2}{e_i}\)</span></p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="left">Observado</th>
+<th align="left">Esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>AA</strong></td>
+<td align="left"><span class="math inline">\(85\)</span></td>
+<td align="left"><span class="math inline">\(81\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>AB</strong></td>
+<td align="left"><span class="math inline">\(10\)</span></td>
+<td align="left"><span class="math inline">\(18\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>BB</strong></td>
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="left"><span class="math inline">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>que es igual a</p>
+<p><span class="math display">\[\begin{equation}
+\frac{(85-81)^2}{81}+\frac{(10-18)^2}{18}+\frac{(5-1)^2}{1}=\frac{16}{81}+\frac{64}{18}+\frac{16}{1}=19,75
+\end{equation}\]</span></p>
+<p>Los grados de libertad son el número de columnas menos uno por número de filas menos uno, es decir <span class="math inline">\((2-1)\times(3-1)=2\)</span> y el valor umbral al <span class="math inline">\(1\%\)</span> para la distribución de <span class="math inline">\(\chi^2_{2}=9,21\)</span> por lo que la discrepancia es altamente significativa.</p>
+</div>
+<div id="ejercicio-2.20" class="section level3 unnumbered">
+<h3>Ejercicio 2.20</h3>
+<p>En una población de Labrador Retrievers se encontraron los siguientes números de los 2 fenotipos posibles de pelaje:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">fenotipo</th>
+<th align="left">negro</th>
+<th align="left">amarillo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">genotipo</td>
+<td align="left">EE+Ee</td>
+<td align="left">ee</td>
+</tr>
+<tr class="even">
+<td align="left">número</td>
+<td align="left"><span class="math inline">\(182\)</span></td>
+<td align="left"><span class="math inline">\(18\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Asumiendo que existe equilibrio HW, calcular las frecuencias alélicas y genotípicas. ¿Qué tipo de herencia muestra este <em>locus</em>?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p>El tipo de color negro representa tanto a homocigotos como heterocigotos. El método de recuento de genes implica que el fenotipo es igual al genotipo, pero este es solo el caso del amarillo. Para que una descendencia se vuelva amarilla, debe tener un gen e tanto de su padre como de su madre, cada uno con una probabilidad de q. Por lo tanto, la regla de la multiplicación de la probabilidad se puede aplicar para calcular la frecuencia de individuos <strong>ee</strong> que corresponde a <span class="math inline">\(q^2\)</span>.</p>
+<p>A partir de los datos se estima que es <span class="math inline">\(q^2=18/200 =0,09\)</span>, por lo que la raíz cuadrada es <span class="math inline">\(\sqrt{q^2}=\sqrt{0,09}=0,30=q\)</span>. Por lo tanto, la frecuencia <span class="math inline">\(p\)</span> del alelo negro en la población será <span class="math inline">\(p =1-q=0,7\)</span>.</p>
+<p>El tipo de herencia es <strong>Herencia con dominancia completa</strong>.</p>
+<p><br />
+</p>
+<!-- Ejercicio 2 -->
+<!-- En una población de ganado Shorthorn se observaron los siguientes fenotipos: -->
+<!-- Fenotipos  Genotipos   Frecuencia de genotipos -->
+<!-- Rojo   RR  0,6 -->
+<!-- Rosillo    Rr  0,4 -->
+<!-- Blanco rr  0,0 -->
+<!-- a) Calcula las frecuencias alélicas observadas (R y r). -->
+<!-- b). ¿Esta población está en equilibrio? Si no es así, calcula las frecuencias alélicas y genotípicas que tendrá en caso de  alcanzarlo.  -->
+<!-- Ejercicio 3 -->
+<!-- En  un estudio de los tipos de albúmina el suero de la raza galgo español a través de electroforesis, se encontró que hay un alelo de albúmina 'rápido' y un alelo 'lento' designado como alelos F y S, respectivamente. Se encontraron los siguientes números: 72 animales con el genotipo SS, 94 animales con genotipo SF y 46 con genotipo FF. -->
+<!-- Calcula las frecuencias alélicas y genotípicas (no se asume ningún tipo de equilibrio).  -->
+<!-- Ejercicio 4 -->
+<!-- En una población humana se muestrearon los grupos sanguíneos M-N, registrándose los siguientes números: -->
+<!-- MM: 1787 -->
+<!-- MN: 3039  -->
+<!-- NN:1303 -->
+<!-- a) Calcula las frecuencias alélicas y genotípicas en esta muestra -->
+<!-- b) Con las frecuencias alélicas observadas, ¿cuáles son las frecuencias genotípicas esperadas según el equilibrio HW? -->
+<!-- c) Las frecuencias observadas coinciden con las esperadas? Comenta. -->
+<!-- Ejercicio 5 -->
+<!-- En los gatos, el patrón de color del pelaje agutí, o en bandas, está controlado principalmente por un solo gen que codifica para una proteína de señalización en la pigmentación del pelo. Los gatos con pelaje agutí tienen por lo menos una copia del alelo dominante (A). Los gatos no agutíes tienen dos copias del alelo recesivo (a). -->
+<!-- En la siguiente tabla se muestra el número de gatos con pelaje agutí y no agutí en dos poblaciones distintas. -->
+<!-- Fenotipo   Población 1 Población 2 Total -->
+<!-- Pelaje agutí   140 168 308 -->
+<!-- Pelaje no agutí    60  42  102 -->
+<!-- Total  200 210 410 -->
+<!-- Si ambas poblaciones están en equilibrio H_W, en cuál de las siguientes opciones se muestran las frecuencias genotípicas correctas? -->
+<!-- Elige una respuesta -->
+<!-- 1-  -->
+<!-- Genotipo   Población 1 Población 2 -->
+<!-- AA 0.306   0.205 -->
+<!-- Aa 0.494   0.495 -->
+<!-- aa 0.200   0.300 -->
+<!-- 2- (correcta) -->
+<!-- Genotipo   Población 1 Población 2 -->
+<!-- AA 0.205   0.306 -->
+<!-- Aa 0.495   0.494 -->
+<!-- aa 0.300   0.200 -->
+<!-- ejemplo de cálculo Población 1:  -->
+<!-- q2=60/200=0.3;  -->
+<!-- q=√0.3=0.548;  -->
+<!-- p=1-q= 1-0.548=0.452;  -->
+<!-- p2=0.4522=0.205 -->
+<!-- 2pq=1-p2-q2= 1-0.205-0.3=0.495 -->
+<!-- 3- -->
+<!-- Genotipo   Población 1 Población 2 -->
+<!-- AA 0.205   0.251 -->
+<!-- Aa 0.495   0.250 -->
+<!-- aa 0.300   0.499 -->
+<!-- O armar gráficas..?. -->
+<!-- Ejercicio 7. Otro ejercicio similar con dominancia -->
+<!-- Considera una población de 1000 cerdos Hampshire, de los cuales 910 tienen banda blanca sobre fondo negro y  90 son completamente negros. El gen involucrado muestra dominancia completa. Calcula las frecuencias alélicas y genotípicas, asumiendo equilibrio H-W. -->
+<!-- q=0.3 -->
+<!-- p=1-0.3=0.7 -->
+<!-- P=0.7*0.7 = 0.49 -->
+<!-- H=2pq= 0.42 -->
+<!-- Ejercicio 8: Otro con dominancia -->
+<!-- En una población de dasypus septemcinctus (mulitas) en equilibrio HW, el alelo C para uñas largas es completamente dominante sobre el alelo c (uñas cortas). Una muestra amplia de esta población mostró que el 16% de las mulitas eran de uñas cortas. Calcula las frecuencias alélicas y genotípicas para el alelo C de estos animales. -->
+<!-- Ejercicio 9: Otro más -->
+<!-- En una población grande, para un carácter determinado por dos alelos (A y a) con dominancia total de A sobre a, se encontraron 25% de AA, 50% de Aa y 25% de aa. -->
+<!-- a).  Calcula las frecuencias alélicas. -->
+<!-- b).  Verifica si la población está en equilibrio H-W. -->
+<!-- c). ¿Cuáles son las propiedades que se derivan de una situación de equilibrio Hardy-Weinberg? -->
+<!-- d).  ¿Podrás diferenciar fenotípicamente los genotipos AA y Aa? Argumenta. -->
+<!-- Ejercicio 10: genes ligados al sexo -->
+<!-- El gen naranja en gatos es un ejemplo de genes ligados al sexo. En una población se encontró el siguiente número de los tres genotipos. El gen naranja (O) da un color de pelaje amarillo. El genotipo Oo da un color mixto, que es causado por la inactivación aleatoria del cromosoma X en individuos XX. El fenotipo oo no es amarillo. -->
+<!--    Hembras (XX)    Machos (XY) -->
+<!-- Genotipo   OO  Oo  oo  Total   O   o    -->
+<!-- Número 3   53  117 173 28  149 177 -->
+<!-- Calcula las frecuencias alélicas y genotípicas en machos y hembras. -->
+<!-- En los mamíferos, el gen ligado al sexo se muestra directamente en los machos, es decir, la frecuencia del genotipo es igual a la frecuencia del alelo. En las hembras, en cambio,  el cálculo de la frecuencia genética es idéntico al cálculo de los genes autosómicos. -->
+<!-- Ej: p(hembras)=(2*3 +53)/(2*173)= 0.17 ; p(machos)=(28/177)=0.16 -->
+<!-- Ejercicio 11: Ejemplo alelos múltiples (Libro Bourdon) -->
+<!-- Considera el color del pelaje en conejos. En el locus C hay 4 alelos: agutí (color pardo,c+) es completamente dominante sobre los otros 3 alelos: chinchilla,( grisáceo, cch), himalaya (blanco con puntas negras,ch), y albino, (blanco,  c). A su vez, el chinchilla es dominante sobre el himalaya y el albino, y el alelo por himalaya es dominante sobre el albino. -->
+<!-- En resumen, los posibles genotipos son: -->
+<!-- agutí: c+c+, c+cch, c+ch, c+c -->
+<!-- chinchilla: cchcch, cchch,chc -->
+<!-- himalaya: chch, chc -->
+<!-- albino: cc -->
+<!-- En una determinada población en equilibrio HW, 64% son agutí, 27% chinchilla, 8% himalayas y 1% albino. Calcula frecuencias alélicas y genotípicas. -->
+<!-- Fórmulas:  -->
+<!-- P=p2 -->
+<!-- H(c+cch)= 2pq -->
+<!-- H(c+ch)=2pr -->
+<!-- H(c+c)=2ps -->
+<!-- Q=q2 -->
+<!-- H(cchch)=2qr -->
+<!-- H(cchc) = 2qs -->
+<!-- R=r2 -->
+<!-- H(chc)=2rs -->
+<!-- S=s2 -->
+<!-- Solución: hacerlo por pasos, cada paso siendo un problema de "2 alelos" -->
+<!-- 1- calcula p (agutí  vs. el resto) -->
+<!-- Q1=9.27+0.08+0.01=0.36 -->
+<!-- q1=0.6 -->
+<!-- p=1-0.6=0.4 -->
+<p>–&gt;
+<!-- p=0.4 -->
+<!-- 2-calcula q sacando a los agutíes de consideración: chinchilla vs. resto (atención, frecuencia de alelos no suma 1!) -->
+<!-- Q2=0.08+0.01=0.09 -->
+<!-- q2=0.3 -->
+<!-- Suma de frecuencias (<>1!): 1-p= 1-0.4=0.6. -->
+<!-- q=0.6-q2= 06-0.3=0.3 -->
+<!-- q=0.3 -->
+<!-- 3- calcula r sacando agutíes y chinchillas -->
+<!-- Suma de frecuencias: 1 - p - q = 1-0.4-0.3=0.3 -->
+<!-- S=0.01 -->
+<!-- s=0.1 -->
+<!-- r= 0.3 - 0.1 =0.2 -->
+<!-- r= 0.2 -->
+<!-- Con estos datos, ahora puedo calcular las frecuencias genotípicas P, Q, R , S y las tres H. --></p>
+<!-- Ejercicio 12: alelos múltiples -->
+<!-- Tres variantes alélicas, A, B y C de una determinada enzima  fueron encontradas en una población de  152 individuos. Todos los genotipos fueron distinguibles a través del análisis genómico, y las frecuencias (en porcentaje) fueron -->
+<!-- AA: 9.6 -->
+<!-- AB: 48.3 -->
+<!-- AC: 34.3 -->
+<!-- BB: 2.8 -->
+<!-- BC: 5.0 -->
+<!-- CC: 0.0 -->
+<!-- a) Calcula las frecuencias alélicas en la  muestra. -->
+<!-- b) Porqué no fueron encontrados individuos CC? (pista: cuál es el valor esperado de CC si hubiera equilibrio HW? A cuántos individuos corresponde) -->
+<!-- Ejercicio 13: Prueba estadística para el equilibrio H-W -->
+<!-- del Curso Population Genetics, Knud Christensen, Dinamarca (http://www.husdyr.kvl.dk/htm/kc/popgen/genetics/genetik.htm) -->
+<!-- Se ejemplifica con los datos de los tipos de albúmina en la población danesa de pastores alemanes.  -->
+<!-- En una población danesa de pastores alemanes se estudiaron los tipos de albúmina en suero (alelo S: "Slow"; alelo F: "Fast") y se encontraron los siguientes números observados de los tres genotipos (obs), y los números esperados calculados bajo el equilibrio de Hardy Weinberg (exp) con frecuencias p(S)=0,56 y q(F)=0,44. -->
+<!-- --------- -->
+<!-- Genotipo   SS  SF  FF  Total -->
+<!-- Número (obs)   36  47  23  106=N -->
+<!-- Frecuencia (exp)   p2  2pq q2  1 -->
+<!-- Número (exp)   p2N 1pqN    q2N N -->
+<!-- Número (exp)   33.2    52.3    20.5    106 -->
+<!-- Desvío 2,8 -5.3    2.5  -->
+<!-- Chi cuadrado   0.24    0.54    0.31    1.09 -->
+<!-- Verifica a través del test de Chi cuadrado si dicha población está en equilibrio. -->
+<!-- Los números esperados para el equilibrio de Hardy Weinberg (exp) se calculan utilizando la regla de multiplicación de probabilidades. -->
+<!-- Para el genotipo SS hay que extraer un gen S de un padre y un gen S de una madre, que se repite 106 veces. Por tanto, la probabilidad de un genotipo SS es p*p*106. Los argumentos correspondientes para los otros dos genotipos conducen a los resultados mostrados en la tabla anterior. -->
+<!-- Ahora se puede calcular una prueba de Chi-cuadrado para el equilibrio H-W como la suma de las desviaciones al cuadrado, cada una dividida por el número esperado. -->
+<!-- La prueba tiene 1 grado de libertad, ya que hay tres clases, y hay que aplicar dos parámetros libres dados por el material, p y N, para calcular los números esperados. El último parámetro utilizado (q) no es libre, ya que puede calcularse como (1 - p). -->
+<!-- Mediante el uso de una tabla de chi-cuadrado, con DF=1 el valor 3,84 equivale a los límites del 5% para mantener la hipótesis H0, de que los datos tienen proporciones H-W. Por lo tanto, la desviación encontrada entre las cifras observadas y las esperadas tiene una probabilidad superior al 5%. Conclusión: No hay desviación estadística del equilibrio H-W. -->
+<hr />
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-HartlClark2007" class="csl-entry">
+Hartl, Daniel L, and Andrew G Clark. 2007. <em>Principles of Population Genetics</em>. 4th. ed. Sinauer.
+</div>
+<div id="ref-pmid6598211" class="csl-entry">
+Yasuda, N. 1984. <span>“<span class="nocase"><span>A</span> note on gene frequency estimation in the <span>A</span><span>B</span><span>O</span> and <span>A</span><span>B</span><span>O</span>-like system</span>.”</span> <em>Jinrui Idengaku Zasshi</em> 29 (3): 371–80.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deriva.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-GPHardyWeinberg.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

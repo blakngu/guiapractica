@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía Práctica</title>
+  <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía Práctica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/figuras/caratula1.png" />
+  <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="github-repo" content="blakngu.github.io/libro/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía Práctica" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Guía Práctica" />
+  <meta name="twitter:image" content="/figuras/caratula1.png" />
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
+<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="parentesco.html"/>
+<link rel="next" href="selartifI.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio a la Guía Práctica</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#bibliografía-recomendada-para-este-curso"><i class="fa fa-check"></i>Bibliografía recomendada para este curso</a></li>
+</ul></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.1"><i class="fa fa-check"></i>Ejercicio 1.1</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.2"><i class="fa fa-check"></i>Ejercicio 1.2</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.3"><i class="fa fa-check"></i>Ejercicio 1.3</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.4"><i class="fa fa-check"></i>Ejercicio 1.4</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.5"><i class="fa fa-check"></i>Ejercicio 1.5</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.6"><i class="fa fa-check"></i>Ejercicio 1.6</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.7"><i class="fa fa-check"></i>Ejercicio 1.7</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.1"><i class="fa fa-check"></i>Ejercicio 2.1</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.2"><i class="fa fa-check"></i>Ejercicio 2.2</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.3"><i class="fa fa-check"></i>Ejercicio 2.3</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.4"><i class="fa fa-check"></i>Ejercicio 2.4</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.5"><i class="fa fa-check"></i>Ejercicio 2.5</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.6"><i class="fa fa-check"></i>Ejercicio 2.6</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.7"><i class="fa fa-check"></i>Ejercicio 2.7</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.8"><i class="fa fa-check"></i>Ejercicio 2.8</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.9"><i class="fa fa-check"></i>Ejercicio 2.9</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.10"><i class="fa fa-check"></i>Ejercicio 2.10</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.11"><i class="fa fa-check"></i>Ejercicio 2.11</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.12"><i class="fa fa-check"></i>Ejercicio 2.12</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.13"><i class="fa fa-check"></i>Ejercicio 2.13</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.14"><i class="fa fa-check"></i>Ejercicio 2.14</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.15"><i class="fa fa-check"></i>Ejercicio 2.15</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.16"><i class="fa fa-check"></i>Ejercicio 2.16</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.17"><i class="fa fa-check"></i>Ejercicio 2.17</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.18"><i class="fa fa-check"></i>Ejercicio 2.18</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.19"><i class="fa fa-check"></i>Ejercicio 2.19</a></li>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#ejercicio-2.20"><i class="fa fa-check"></i>Ejercicio 2.20</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.1"><i class="fa fa-check"></i>Ejercicio 3.1</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.2"><i class="fa fa-check"></i>Ejercicio 3.2</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.3"><i class="fa fa-check"></i>Ejercicio 3.3</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.4"><i class="fa fa-check"></i>Ejercicio 3.4</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.5"><i class="fa fa-check"></i>Ejercicio 3.5</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.6"><i class="fa fa-check"></i>Ejercicio 3.6</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.7"><i class="fa fa-check"></i>Ejercicio 3.7</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.8"><i class="fa fa-check"></i>Ejercicio 3.8</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.9"><i class="fa fa-check"></i>Ejercicio 3.9</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.10"><i class="fa fa-check"></i>Ejercicio 3.10</a></li>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#ejercicio-3.11"><i class="fa fa-check"></i>Ejercicio 3.11</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.1"><i class="fa fa-check"></i>Ejercicio 4.1</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.2"><i class="fa fa-check"></i>Ejercicio 4.2</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.3"><i class="fa fa-check"></i>Ejercicio 4.3</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.4"><i class="fa fa-check"></i>Ejercicio 4.4</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.5"><i class="fa fa-check"></i>Ejercicio 4.5</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.6"><i class="fa fa-check"></i>Ejercicio 4.6</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.7"><i class="fa fa-check"></i>Ejercicio 4.7</a></li>
+<li class="chapter" data-level="" data-path="seleccion.html"><a href="seleccion.html#ejercicio-4.8"><i class="fa fa-check"></i>Ejercicio 4.8</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.1"><i class="fa fa-check"></i>Ejercicio 5.1</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.2"><i class="fa fa-check"></i>Ejercicio 5.2</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.3"><i class="fa fa-check"></i>Ejercicio 5.3</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.4"><i class="fa fa-check"></i>Ejercicio 5.4</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.5"><i class="fa fa-check"></i>Ejercicio 5.5</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.6"><i class="fa fa-check"></i>Ejercicio 5.6</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#ejercicio-5.7"><i class="fa fa-check"></i>Ejercicio 5.7</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="" data-path="aparnoalazar.html"><a href="aparnoalazar.html#ejercicio-6.1"><i class="fa fa-check"></i>Ejercicio 6.1</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.1"><i class="fa fa-check"></i>Ejercicio 8.1</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.2"><i class="fa fa-check"></i>Ejercicio 8.2</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.3"><i class="fa fa-check"></i>Ejercicio 8.3</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.4"><i class="fa fa-check"></i>Ejercicio 8.4</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.5"><i class="fa fa-check"></i>Ejercicio 8.5</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.6"><i class="fa fa-check"></i>Ejercicio 8.6</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.7"><i class="fa fa-check"></i>Ejercicio 8.7</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.8"><i class="fa fa-check"></i>Ejercicio 8.8</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.9"><i class="fa fa-check"></i>Ejercicio 8.9</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.10"><i class="fa fa-check"></i>Ejercicio 8.10</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.11"><i class="fa fa-check"></i>Ejercicio 8.11</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.12"><i class="fa fa-check"></i>Ejercicio 8.12</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.1"><i class="fa fa-check"></i>Ejercicio 9.1</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.2"><i class="fa fa-check"></i>Ejercicio 9.2</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.3"><i class="fa fa-check"></i>Ejercicio 9.3</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.4"><i class="fa fa-check"></i>Ejercicio 9.4</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.5"><i class="fa fa-check"></i>Ejercicio 9.5</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.6"><i class="fa fa-check"></i>Ejercicio 9.6</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.7"><i class="fa fa-check"></i>Ejercicio 9.7</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.1"><i class="fa fa-check"></i>Ejercicio 10.1</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.2"><i class="fa fa-check"></i>Ejercicio 10.2</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.3"><i class="fa fa-check"></i>Ejercicio 10.3</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.4"><i class="fa fa-check"></i>Ejercicio 10.4</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.5"><i class="fa fa-check"></i>Ejercicio 10.5</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.6"><i class="fa fa-check"></i>Ejercicio 10.6</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.7"><i class="fa fa-check"></i>Ejercicio 10.7</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.8"><i class="fa fa-check"></i>Ejercicio 10.8</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.9"><i class="fa fa-check"></i>Ejercicio 10.9</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.10"><i class="fa fa-check"></i>Ejercicio 10.10</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.11"><i class="fa fa-check"></i>Ejercicio 10.11</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.12"><i class="fa fa-check"></i>Ejercicio 10.12</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.1"><i class="fa fa-check"></i>Ejercicio 11.1</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.2"><i class="fa fa-check"></i>Ejercicio 11.2</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.3"><i class="fa fa-check"></i>Ejercicio 11.3</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.4"><i class="fa fa-check"></i>Ejercicio 11.4</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.5"><i class="fa fa-check"></i>Ejercicio 11.5</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.6"><i class="fa fa-check"></i>Ejercicio 11.6</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.7"><i class="fa fa-check"></i>Ejercicio 11.7</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.1"><i class="fa fa-check"></i>Ejercicio 12.1</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.2"><i class="fa fa-check"></i>Ejercicio 12.2</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.3"><i class="fa fa-check"></i>Ejercicio 12.3</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.4"><i class="fa fa-check"></i>Ejercicio 12.4</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.5"><i class="fa fa-check"></i>Ejercicio 12.5</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.6"><i class="fa fa-check"></i>Ejercicio 12.6</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.7"><i class="fa fa-check"></i>Ejercicio 12.7</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.1"><i class="fa fa-check"></i>Ejercicio 13.1</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.2"><i class="fa fa-check"></i>Ejercicio 13.2</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.3"><i class="fa fa-check"></i>Ejercicio 13.3</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.4"><i class="fa fa-check"></i>Ejercicio 13.4</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.5"><i class="fa fa-check"></i>Ejercicio 13.5</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.6"><i class="fa fa-check"></i>Ejercicio 13.6</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.7"><i class="fa fa-check"></i>Ejercicio 13.7</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.8"><i class="fa fa-check"></i>Ejercicio 13.8</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.9"><i class="fa fa-check"></i>Ejercicio 13.9</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#ejercicio-13.10"><i class="fa fa-check"></i>Ejercicio 13.10</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.1"><i class="fa fa-check"></i>Ejercicio 14.1</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.2"><i class="fa fa-check"></i>Ejercicio 14.2</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.3"><i class="fa fa-check"></i>Ejercicio 14.3</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.4"><i class="fa fa-check"></i>Ejercicio 14.4</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.5"><i class="fa fa-check"></i>Ejercicio 14.5</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.6"><i class="fa fa-check"></i>Ejercicio 14.6</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.7"><i class="fa fa-check"></i>Ejercicio 14.7</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.8"><i class="fa fa-check"></i>Ejercicio 14.8</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.9"><i class="fa fa-check"></i>Ejercicio 14.9</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.10"><i class="fa fa-check"></i>Ejercicio 14.10</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.11"><i class="fa fa-check"></i>Ejercicio 14.11</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.12"><i class="fa fa-check"></i>Ejercicio 14.12</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.13"><i class="fa fa-check"></i>Ejercicio 14.13</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.14"><i class="fa fa-check"></i>Ejercicio 14.14</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#ejercicio-14.15"><i class="fa fa-check"></i>Ejercicio 14.15</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía Práctica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pargen" class="section level1" number="10">
+<h1><span class="header-section-number">Capítulo 10</span> Parámetros Genéticos: Heredabilidad y Repetibilidad</h1>
+<div id="ejercicio-10.1" class="section level3 unnumbered">
+<h3>Ejercicio 10.1</h3>
+<p>En un estudio previo [Ejemplo 9.4] para determinar los componentes genéticos de la varianza en diámetro de fibras en ovejas verdes llegamos a que nuestro mejor estimador de la varianza aditiva era <span class="math inline">\(\hat \sigma^{2}_A =1,80\ \mu\text{m}^2\)</span>, mientras que para la varianza de dominancia era <span class="math inline">\(\hat \sigma^{2}_D=1,40\ \mu\text{m}^2\)</span>. Asumiendo que para la característica la varianza de epistasis es prácticamente cero y que la varianza ambiental es de <span class="math inline">\(\hat \sigma^{2}_E =0,80\ \mu\text{m}^2\)</span>, obtener una estimación puntual de la heredabilidad.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>De acuerdo a nuestra definición de la heredabilidad, la misma es igual a</p>
+<p><span class="math display">\[\begin{equation}
+h^2=\frac{\mathrm{V_A}}{\mathrm{V_P}}=\frac{\mathrm{V_A}}{\mathrm{V_A+V_D+V_I+V_E}}
+\end{equation}\]</span></p>
+<p>por lo que sustituyendo las varianzas por nuestros estimadores de las mismas tenemos</p>
+<p><span class="math display">\[\begin{equation}
+h^2=\frac{\hat \sigma^{2}_A}{\hat \sigma^{2}_A+\hat \sigma^{2}_D+\hat \sigma^{2}_I+\hat \sigma^{2}_E}=\frac{1,80}{1,80+1,40+0+0,80}=0,45
+\end{equation}\]</span></p>
+<p>Por lo tanto, nuestro estimador puntual de la heredabilidad de la característica diámetro de fibras en esta majada de ovejas verdes es <span class="math inline">\(h^2=0,45\)</span>, un valor intermedio.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-10.2" class="section level3 unnumbered">
+<h3>Ejercicio 10.2</h3>
+<p>Dada las estimación de la heredabilidad obtenida en el <a href="pargen.html#ejercicio-10.1">Ejercicio 10.1</a> para el diámetro de fibras (DF) en las ovejas verdes (<span class="math inline">\(h_{DF}^2=,45\)</span>) y sabiendo que la media de diámetro en la población de referencia es de <span class="math inline">\(17,2 \mu\text{m}\)</span>, estimar el valor de cría para dicha característica de los carneros con los siguientes fenotipos:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Carnero</th>
+<th align="center">Diámetro (<span class="math inline">\(\mu\text{m}\)</span>)</th>
+<th align="center">Peso Vellón Sucio (Kg)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Max Calzone</td>
+<td align="center"><span class="math inline">\(16,8\)</span></td>
+<td align="center"><span class="math inline">\(7,635\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Linyera</td>
+<td align="center"><span class="math inline">\(19,3\)</span></td>
+<td align="center"><span class="math inline">\(9,457\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Diógenes</td>
+<td align="center"><span class="math inline">\(17,2\)</span></td>
+<td align="center"><span class="math inline">\(6,356\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Eustaquio</td>
+<td align="center"><span class="math inline">\(16,1\)</span></td>
+<td align="center"><span class="math inline">\(7,574\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Paja Brava</td>
+<td align="center"><span class="math inline">\(14,7\)</span></td>
+<td align="center"><span class="math inline">\(11,574\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Conociendo que la heredabilidad de Peso del Vellón Sucio (PVL) en esta majada es de <span class="math inline">\(h_{PVL}^2=0,36\)</span> y la media fenotípica es de <span class="math inline">\(7,345\)</span> Kg, estimar los <strong>valores de cría</strong> de los carneros. Calcular las <strong>precisiones</strong> de las estimaciones de valor de cría para ambas características.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>En el caso de un registro fenotípico individual, el valor de cría es igual a</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{\hat A_i}=\mathrm{(P_i-\bar P)}\ h^2
+\end{equation}\]</span></p>
+<p>por lo que podemos transformar los valores en el cuadro anterior a</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Carnero</th>
+<th align="center"><span class="math inline">\(\hat A\)</span> Diámetro (<span class="math inline">\(\mu\text{m}\)</span>)</th>
+<th align="center"><span class="math inline">\(\hat A\)</span> Peso Vellón Sucio (Kg)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Max Calzone</td>
+<td align="center"><span class="math inline">\((16,8-17,2)\ 0,45=-0,180\)</span></td>
+<td align="center"><span class="math inline">\((7,635-7,345)\ 0,36=0,10440\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Linyera</td>
+<td align="center"><span class="math inline">\((19,3-17,2)\ 0,45=0,945\)</span></td>
+<td align="center"><span class="math inline">\((9,457-7,345)\ 0,36=0,76032\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Diógenes</td>
+<td align="center"><span class="math inline">\((17,2-17,2)\ 0,45=0,000\)</span></td>
+<td align="center"><span class="math inline">\((6,356-7,345)\ 0,36=-0,35604\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Eustaquio</td>
+<td align="center"><span class="math inline">\((16,1-17,2)\ 0,45=-0,495\)</span></td>
+<td align="center"><span class="math inline">\((7,574-7,345)\ 0,36=0,08244\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Paja Brava</td>
+<td align="center"><span class="math inline">\((14,7-17,2)\ 0,45=-1,125\)</span></td>
+<td align="center"><span class="math inline">\((11,574-7,345)\ 0,36=1,52244\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Por otra parte, la precisión de las estimaciones a partir del fenotipo individual viene dada por</p>
+<p><span class="math display">\[\begin{equation}
+r_{AP}=h=\sqrt{h^2}
+\end{equation}\]</span></p>
+<p>por lo que <span class="math inline">\(r_{DF}=\sqrt{h^2_{DF}}=\sqrt{0,45} \approx 0,671\)</span>, mientras que para PVL será <span class="math inline">\(r_{PVL}=\sqrt{h^2_{PVL}}=\sqrt{0,36} = 0,60\)</span>.</p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-10.3" class="section level3 unnumbered">
+<h3>Ejercicio 10.3</h3>
+<p>Dado de que las ovejas <strong>Scottish Blackface</strong> son bastante más activas que las famosas <strong>ovejas verdes</strong>, algunos estudios sugieren que la mejor alternativa es una cruza de <strong>Perro de montaña de los Pirineos</strong>, un perro de gran tamaño, rústico y extremadamente tranquilo, con el <strong>Pastor Maremmano</strong>, una raza grande pero más activa (<a href="pargen.html#fig:krok">10.1</a>). A estos fines y para simplificar la cría se desarrolló una raza sintética (que a nuestros fines es equivalente a cualquier otra raza) y que se denominó <strong>Pastor Pirommano</strong> (PIRinéo O mareMMANO). Sin embargo, dado el gran tamaño de las <strong>Scottish Blackface</strong>, es necesario seleccionar perros de gran altura, por lo que fue encargado un estudio sobre la <strong>heredabilidad</strong> de esta característica entre los criaderos de la nueva raza. Se seleccionaron 10 perros (machos) que habían sido criados en la mismas condiciones de alimentación y cuidados y para cada uno de ellos se eligió al azar un hijo (macho). Todos los animales se midieron a edad adulta (3 años).</p>
+<p><br />
+</p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:krok"></span>
+<img src="figuras/kroketten.jpeg" alt="Cruza de Perro de montaña de los Pirineos (3/8) y Pastor Maremmano (5/8) con 5 meses de edad." width="623" />
+<p class="caption">
+Figure 10.1: Cruza de <strong>Perro de montaña de los Pirineos</strong> (3/8) y <strong>Pastor Maremmano</strong> (5/8) con 5 meses de edad.
+</p>
+</div>
+<p><br />
+</p>
+<p>En el cuadro siguiente se presentan las alturas de padres e hijos.</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Padre</th>
+<th align="left">Altura (cm)</th>
+<th align="left">Altura hijo (cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Porter</td>
+<td align="left"><span class="math inline">\(67\)</span></td>
+<td align="left"><span class="math inline">\(73\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Stout</td>
+<td align="left"><span class="math inline">\(75\)</span></td>
+<td align="left"><span class="math inline">\(74\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">India Pale</td>
+<td align="left"><span class="math inline">\(80\)</span></td>
+<td align="left"><span class="math inline">\(75\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Bock</td>
+<td align="left"><span class="math inline">\(63\)</span></td>
+<td align="left"><span class="math inline">\(62\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Pilsner</td>
+<td align="left"><span class="math inline">\(62\)</span></td>
+<td align="left"><span class="math inline">\(70\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Altbier</td>
+<td align="left"><span class="math inline">\(69\)</span></td>
+<td align="left"><span class="math inline">\(70\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Kölsch</td>
+<td align="left"><span class="math inline">\(75\)</span></td>
+<td align="left"><span class="math inline">\(72\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Lambic</td>
+<td align="left"><span class="math inline">\(74\)</span></td>
+<td align="left"><span class="math inline">\(75\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Brown Ale</td>
+<td align="left"><span class="math inline">\(76\)</span></td>
+<td align="left"><span class="math inline">\(70\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Trapense</td>
+<td align="left"><span class="math inline">\(72\)</span></td>
+<td align="left"><span class="math inline">\(77\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>A partir de estos datos <strong>estimar la heredabilidad de la característica altura a la cruz</strong>.</p></li>
+<li><p>¿Cuál es la bebida oficial de la <strong>Asociación de Pastores Pirommanos</strong>?</p></li>
+<li><p>¿Por qué el máximo galardón otorgado en competencias por la asociación se llama “Trofeo Heróstrato?”</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
+<p>De acuerdo a lo que vimos previamente, la pendiente de la regresión lineal de progenie en progenitor es igual a la mitad de la heredabilidad (figura <a href="pargen.html#fig:figura10p2">10.2</a>), por lo que un buen estimador de esta última es <span class="math inline">\(\mathrm{\hat h^2=2\ b_{HP}}\)</span>. El estimador <strong>OLS</strong> de la pendiente es</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{b_{HP}=\frac{Cov_{HP}}{V_P}=\frac{\sum_{n=1}^N (x_i-\bar x)(y_i-\bar y)}{\sum_{n=1}^N (x_i-\bar x)^2}}
+\end{equation}\]</span></p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura10p2"></span>
+<img src="GuiaPracticaGeneticaII_files/figure-html/figura10p2-1.png" alt="Regresión de los hijos en los padres para la altura a la cruz. Las medias fenotípicas de padres e hijos se corresponden con las líneas azules a trazos, mientras que la recta de regresión se marca en rojo." width="672" />
+<p class="caption">
+Figure 10.2: Regresión de los hijos en los padres para la altura a la cruz. Las medias fenotípicas de padres e hijos se corresponden con las líneas azules a trazos, mientras que la recta de regresión se marca en rojo.
+</p>
+</div>
+<p><br />
+</p>
+<p>La media de los padres es <span class="math inline">\(\bar x=71,3 \text{ cm}\)</span>, mientras que la media de hijos es <span class="math inline">\(\bar y=71,8 \text{ cm}\)</span>. Restando a los valores originales la correspondiente media, haciendo el cuadrado de los desvíos en padres y el producto cruzado de los desvíos, tenemos el siguiente cuadro</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Padre</th>
+<th align="left"><span class="math inline">\((x_i-\bar x)\)</span></th>
+<th align="left"><span class="math inline">\((x_i-\bar x)^2\)</span></th>
+<th align="left"><span class="math inline">\((y_i-\bar y)\)</span></th>
+<th align="left"><span class="math inline">\((x_i-\bar x)(y_i-\bar y)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Porter</td>
+<td align="left"><span class="math inline">\(-4,3\)</span></td>
+<td align="left"><span class="math inline">\(18,49\)</span></td>
+<td align="left"><span class="math inline">\(1,14\)</span></td>
+<td align="left"><span class="math inline">\(-4,89\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Stout</td>
+<td align="left"><span class="math inline">\(3,7\)</span></td>
+<td align="left"><span class="math inline">\(13,69\)</span></td>
+<td align="left"><span class="math inline">\(2,06\)</span></td>
+<td align="left"><span class="math inline">\(7,61\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">India Pale</td>
+<td align="left"><span class="math inline">\(8,7\)</span></td>
+<td align="left"><span class="math inline">\(75,69\)</span></td>
+<td align="left"><span class="math inline">\(3,28\)</span></td>
+<td align="left"><span class="math inline">\(28,55\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Bock</td>
+<td align="left"><span class="math inline">\(-8,3\)</span></td>
+<td align="left"><span class="math inline">\(68,89\)</span></td>
+<td align="left"><span class="math inline">\(-10,07\)</span></td>
+<td align="left"><span class="math inline">\(83,55\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Pilsner</td>
+<td align="left"><span class="math inline">\(-9,3\)</span></td>
+<td align="left"><span class="math inline">\(86,49\)</span></td>
+<td align="left"><span class="math inline">\(-1,82\)</span></td>
+<td align="left"><span class="math inline">\(16,96\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Altbier</td>
+<td align="left"><span class="math inline">\(-2,3\)</span></td>
+<td align="left"><span class="math inline">\(5,29\)</span></td>
+<td align="left"><span class="math inline">\(-1,31\)</span></td>
+<td align="left"><span class="math inline">\(3,02\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Kölsch</td>
+<td align="left"><span class="math inline">\(3,7\)</span></td>
+<td align="left"><span class="math inline">\(13,69\)</span></td>
+<td align="left"><span class="math inline">\(0,20\)</span></td>
+<td align="left"><span class="math inline">\(0,73\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Lambic</td>
+<td align="left"><span class="math inline">\(2,7\)</span></td>
+<td align="left"><span class="math inline">\(7,29\)</span></td>
+<td align="left"><span class="math inline">\(2,89\)</span></td>
+<td align="left"><span class="math inline">\(7,79\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Brown Ale</td>
+<td align="left"><span class="math inline">\(4,7\)</span></td>
+<td align="left"><span class="math inline">\(22,09\)</span></td>
+<td align="left"><span class="math inline">\(-1,39\)</span></td>
+<td align="left"><span class="math inline">\(-6,53\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Trapense</td>
+<td align="left"><span class="math inline">\(0,7\)</span></td>
+<td align="left"><span class="math inline">\(0,49\)</span></td>
+<td align="left"><span class="math inline">\(5,03\)</span></td>
+<td align="left"><span class="math inline">\(3,52\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>SUMA</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"><span class="math inline">\(0,0\)</span></td>
+<td align="left"><span class="math inline">\(312,1\)</span></td>
+<td align="left"><span class="math inline">\(0,0\)</span></td>
+<td align="left"><span class="math inline">\(140,3\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Por lo tanto, usando estos valores en la ecuación del estimador <strong>OLS</strong> de la pendiente obtenemos</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{b_{HP}=\frac{\sum_{n=1}^N (x_i-\bar x)(y_i-\bar y)}{\sum_{n=1}^N (x_i-\bar x)^2}}=\frac{140,3 \text{ cm}^2}{312,1  \text{ cm}^2}=0,44954
+\end{equation}\]</span></p>
+<p>Como <span class="math inline">\(\mathrm{\hat h^2=2\ b_{HP}}\)</span>, entonces <span class="math inline">\(\mathrm{\hat h^2}=2 \times 0,44954 \approx 0,899\)</span>. Como referencia, el proyecto <strong>Framingham Heart Study</strong>, sobre una cohorte de más de 5.000 pacientes (humanos) con distintas mediciones en padres e hijos arrojó una estimación de la heredabilidad de la altura (HT, por height) de <span class="math inline">\(h_{HT}^2=0,84 \pm 0,01\)</span> (<span class="citation"><a href="#ref-Byarsetal2010" role="doc-biblioref">Byars et al.</a> (<a href="#ref-Byarsetal2010" role="doc-biblioref">2010</a>)</span>), por lo que no parece tan descabellado el valor obtenido en nuestra “prospección” ficticia en perros.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><p>Seriously? Parece gustarles la cerveza…</p></li>
+<li><p>Eróstrato o Heróstrato fue un pastor de Éfeso, responsable de la destrucción del templo de Artemisa de Éfeso, considerado una de las siete maravillas del mundo antiguo (en el año 356 a.C.). El objetivo declarado por el mismo fue alcanzar la fama, para lo que decidió incendiarlo, transformándose en el primer Pastor Pirómano famoso (pese a que un decreto prohibió utilizar su nombre a futuro).</p></li>
+</ol>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-10.4" class="section level3 unnumbered">
+<h3>Ejercicio 10.4</h3>
+<p>En un experimento para determinar la heredabilidad en sentido amplio del rendimiento en materia seca del maíz se cruzaron dos líneas puras contrastantes para rendimiento. En la <span class="math inline">\(\mathbf{F_1}\)</span> se observó una varianza fenotípica de <span class="math inline">\(\mathrm{200\ dt^2 ha^{−2}}\)</span>, mientras que en la <span class="math inline">\(\mathbf{F_2}\)</span> la varianza fenotípica observada fue de <span class="math inline">\(\mathrm{1200\ dt^2 ha^{−2}}\)</span>. Asumiendo que la característica se encuentra determinada por <em>loci</em> independientes, obtener un estimado de la heredabilidad en sentido amplio para la característica rendimiento de materia seca.</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Un estimador de la heredabilidad lograda sería</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{\hat H^2=\frac{V_{P_{F2}}-V_{P_{F1}}}{V_{P_{F2}}}}
+\end{equation}\]</span></p>
+<p>por lo que sustituyendo los valores correspondientes tenemos</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{\hat H^2=\frac{[1200-200]\ dt^2 ha^{−2}}{1200\ dt^2 ha^{−2}}=\frac{1000}{1200}=0,833}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-10.5" class="section level3 unnumbered">
+<h3>Ejercicio 10.5</h3>
+<p>Para estudiar la posibilidad de mejorar la producción de lana verde natural se condujo un estudio sobre la población original, separándola en mitades, una mitad bajo las condiciones normales de crecimiento y reproducción, la otra sujeta a selección direccional para aumentar la producción de lana. El cuadro siguiente contiene los resultados del experimento mantenido durante 7 generaciones parentales, en el cuál se seleccionaron los animales reproductores basados en el peso sucio del segundo vellón (corrigiendo previamente por diferencias entre sexos). La pendiente de la regresión de acumulados para la línea control fue de cero.</p>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="35%" />
+<col width="38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Generación Parental</strong></th>
+<th align="center"><strong>Diferencial Selección</strong> (<span class="math inline">\(S\)</span>, g)</th>
+<th align="center"><strong>Respuesta a la Selección</strong> (<span class="math inline">\(R\)</span>, g)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(0\)</span></td>
+<td align="center"><span class="math inline">\(715\)</span></td>
+<td align="center"><span class="math inline">\(475\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(770\)</span></td>
+<td align="center"><span class="math inline">\(485\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(2\)</span></td>
+<td align="center"><span class="math inline">\(745\)</span></td>
+<td align="center"><span class="math inline">\(410\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(815\)</span></td>
+<td align="center"><span class="math inline">\(405\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(790\)</span></td>
+<td align="center"><span class="math inline">\(375\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(766\)</span></td>
+<td align="center"><span class="math inline">\(395\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(825\)</span></td>
+<td align="center"><span class="math inline">\(325\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TOTAL</strong></td>
+<td align="center"><span class="math inline">\(5426\)</span></td>
+<td align="center"><span class="math inline">\(2870\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Graficar la respuesta a la selección acumulada, el diferencial de selección acumulado, calcular la pendiente de la línea de regresión y graficarla. ¿Cuanto vale la heredabilidad estimada para esta característica? ¿Qué podría representar que el intercepto sea distinto de cero? ¿Es razonable el supuesto de linealidad de los acumulados? ¿Que´podría estar indicando la forma de la curva de datos reales?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Para resolverlo primero calculamos los acumulados, básicamente sumando todos los datos correspondientes hasta cada punto, lo que nos deja con el siguiente cuadro</p>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="35%" />
+<col width="38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Gener.</strong></th>
+<th align="center"><strong>Dif.Sel. Acum.</strong> (<span class="math inline">\(\sum_{i=0} S_i\)</span>, g)</th>
+<th align="center"><strong>Respuesta Acum.</strong> (<span class="math inline">\(\sum_{i=0} R_i\)</span>, g)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(0\)</span></td>
+<td align="center"><span class="math inline">\(715\)</span></td>
+<td align="center"><span class="math inline">\(475\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(1485\)</span></td>
+<td align="center"><span class="math inline">\(960\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(2\)</span></td>
+<td align="center"><span class="math inline">\(2230\)</span></td>
+<td align="center"><span class="math inline">\(1370\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(3\)</span></td>
+<td align="center"><span class="math inline">\(3045\)</span></td>
+<td align="center"><span class="math inline">\(1775\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(4\)</span></td>
+<td align="center"><span class="math inline">\(3835\)</span></td>
+<td align="center"><span class="math inline">\(2150\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(5\)</span></td>
+<td align="center"><span class="math inline">\(4601\)</span></td>
+<td align="center"><span class="math inline">\(2545\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(6\)</span></td>
+<td align="center"><span class="math inline">\(5426\)</span></td>
+<td align="center"><span class="math inline">\(2870\)</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>La pendiente de la recta la calculamos a partir de los datos acumulados como</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{b=\frac{Cov(S_{acum},R_{acum})}{Var(S_{acum})}=\frac{1455487\text{ g}^2}{2873509\text{ g}^2}=0,50652}
+\end{equation}\]</span></p>
+<p>La gráfica de los resultados aparece en la figura <a href="pargen.html#fig:figura10p8">10.3</a>. Como la pendiente de la recta de regresión es nuestro estimado de heredabilidad, entonces tenemos que <span class="math inline">\(\mathrm{\hat h^2=b=0,50652}\)</span>. Claramente, en la gráfica siguiente se aprecia que el intercepto es distinto de cero. Asumiendo que la pendiente de regresión de la <strong>línea control</strong> fue de cero (como dice la letra), entonces no es de esperar que existan variaciones sistemáticas en el peso de vellón que no se deban a la selección, por lo que en principio descartaríamos ese factor. Al mirar el ajuste de la recta de regresión a los puntos podemos notar un leve pero consistente apartamiento hacia abajo de los puntos en los extremos. Eso pone en duda la linealidad de la curva y puede explicar el intercepto distinto de cero. Más aún, la forma de la curva real parece comenzar una tendencia hacia la horizontal a medida de que pasan lasa generaciones, es decir una reducción sostenida en la respuesta a la selección, lo que podría indicar problemas futuros para seguir por este camino (algo que discutiremos más adelante, en próximos capítulos).</p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura10p8"></span>
+<img src="GuiaPracticaGeneticaII_files/figure-html/figura10p8-1.png" alt="Estimación de la heredabilidad del peso de vellón (verde) sucio en ovejas verdes a través de la heredabilidad lograda. La línea roja a trazos representa la recta de regresión obtenida por mínimos cuadrados ordinarios." width="672" />
+<p class="caption">
+Figure 10.3: Estimación de la heredabilidad del peso de vellón (verde) sucio en ovejas verdes a través de la heredabilidad lograda. La línea roja a trazos representa la recta de regresión obtenida por mínimos cuadrados ordinarios.
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-10.6" class="section level3 unnumbered">
+<h3>Ejercicio 10.6</h3>
+<p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
+información:</p>
+<p>• Varianza aditiva <span class="math inline">\((𝜎_A^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(0,41\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>; </p>
+<p>• Varianza fenotípica <span class="math inline">\((𝜎_P^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(1,77\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>.</p>
+<p>¿Cuánto vale la <strong>heredabilidad</strong> de producción de leche por lactancia en esta población?</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{0,41\times 10^6} \text{ kg}^2}{\mathrm{1,77\times 10^6} \text{ kg}^2}=0,23
+\end{equation}\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="ejercicio-10.7" class="section level3 unnumbered">
+<h3>Ejercicio 10.7</h3>
+<p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
+información:</p>
+<p>• Varianza aditiva <span class="math inline">\((𝜎_A^2)\)</span> de producción de grasa por lactancia: 423 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza genético no aditiva <span class="math inline">\((𝜎_D^2 +𝜎_I^2)\)</span> de producción de grasa por lactancia: 219 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de grasa por lactancia: 1374 kg<span class="math inline">\(^2\)</span>.</p>
+<p>¿Cuánto vale la <strong>heredabilidad</strong> de producción de grasa por lactancia en esta población?</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 423 \text{ kg}^2+ 219 \text{ kg}^2+ 1374 \text{ kg}^2= 2016 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{423} \text{ kg}^2}{\mathrm{2016} \text{ kg}^2}=0,21
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-10.8" class="section level3 unnumbered">
+<h3>Ejercicio 10.8</h3>
+<p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
+información:</p>
+<p>• Covarianza dentro de padre e hijo <span class="math inline">\(𝑐𝑜𝑣_{P-H}\)</span> de producción de proteína por lactancia: 197
+kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza genético no aditiva <span class="math inline">\((𝜎_D^2 +𝜎_I^2)\)</span> de producción de proteína por lactancia: 210 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de proteína por lactancia: 1271 kg<span class="math inline">\(^2\)</span>.</p>
+<p>¿Cuánto vale la <strong>heredabilidad</strong> de producción de proteína por lactancia en esta población?</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_A^2= 2 *𝑐𝑜𝑣_{P-H}= 2 * 197 \text{ kg}^2= 394 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 394 \text{ kg}^2+ 210 \text{ kg}^2+ 1271 \text{ kg}^2= 1875 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{394}\text{ kg}^2}{\mathrm{1875}\text{ kg}^2}=0,21
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-10.9" class="section level3 unnumbered">
+<h3>Ejercicio 10.9</h3>
+<p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
+información:</p>
+<p>• Varianza de efectos permanentes <span class="math inline">\((𝜎_A^2 +𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(0,84\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza fenotípica <span class="math inline">\((𝜎_P^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(1,77\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>.</p>
+<p>¿Cuánto vale la <strong>repetibilidad</strong> de producción de leche por lactancia en esta población?</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+\rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{0.84\times 10^6}}{\mathrm{1.77\times 10^6}}=0,47
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-10.10" class="section level3 unnumbered">
+<h3>Ejercicio 10.10</h3>
+<p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
+información:</p>
+<p>• Varianza aditiva <span class="math inline">\((𝜎_A^2)\)</span> de producción de grasa por lactancia: 423 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza genético no aditiva <span class="math inline">\((𝜎_D^2 + 𝜎_I^2)\)</span> de producción de grasa por lactancia: 219 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de grasa por lactancia: 1374 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza ambiental temporal <span class="math inline">\((𝜎_{ET}^2)\)</span> de producción de grasa por lactancia: 1054 kg<span class="math inline">\(^2\)</span>.</p>
+<p>¿Cuánto vale la <strong>repetibilidad</strong> de producción de grasa por lactancia en esta población?</p>
+<p><br />
+</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 423 \text{ kg}^2+ 219 \text{ kg}^2+ 1374 \text{ kg}^2= 2016 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_{EP}^2= 𝜎_E^2 - 𝜎_{Et}^2= (1374-1050) \text{ kg}^2= 320 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{423 \text{ kg}^2+ 219 \text{ kg}^2+ 320 \text{ kg}^2}}{\mathrm{2016} \text{ kg}^2}=0,48
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-10.11" class="section level3 unnumbered">
+<h3>Ejercicio 10.11</h3>
+<p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
+información:</p>
+<p>• Covarianza dentro medio hermanos <span class="math inline">\((𝑐𝑜𝑣_{1/2H})\)</span> de producción de proteína por lactancia:
+98,5 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza genético no aditiva <span class="math inline">\((𝜎_D^2 + 𝜎_I^2)\)</span> de producción de proteína por lactancia: 210 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de proteína por lactancia: 1271 kg<span class="math inline">\(^2\)</span>;</p>
+<p>• Varianza ambiental temporal <span class="math inline">\((𝜎_{Et}^2)\)</span> de producción de proteína por lactancia: 940 kg<span class="math inline">\(^2\)</span>.</p>
+<p>¿Cuánto vale la <strong>repetibilidad</strong> de producción de proteína por lactancia en esta población?</p>
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_A^2= 4 *𝑐𝑜𝑣_{1/2H}= 4 \times 98,5 = 394 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 394 \text{ kg}^2+ 210 \text{ kg}^2+ 1271 \text{ kg}^2= 1875 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+𝜎_{EP}^2= 𝜎_E^2 - 𝜎_{Et}^2= (1271-940) \text{ kg}^2 = 331 \text{ kg}^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{(394 + 210 + 331)} \text{ kg}^2}{\mathrm{1875} \text{ kg}^2}=0,50
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-10.12" class="section level3 unnumbered">
+<h3>Ejercicio 10.12</h3>
+<p>Supongamos que tenemos una población de vacas lecheras y queremos mejorar la
+característica intervalo interparto (iip). La media de esta característica en la población es 438
+días, la heredabilidad es 0,09 y la repetibilidad es 0,15. Además, contamos con la siguiente
+información individual (días):</p>
+<p>• Vaca 001: iip lactancia 2 = 462; iip lactancia 3 = 451; iip lactancia 4 = 473</p>
+<p>• Vaca 002: iip lactancia 2 = 471; iip lactancia 3 = 422; iip lactancia 4 = 430</p>
+<p>• Vaca 003: iip lactancia 2 = 455; iip lactancia 3 = 419</p>
+<p>• Vaca 004: iip lactancia 2 = 428</p>
+<p>¿Cuál es el valor de cría y exactitud de estas vacas para intervalo interparto?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Vaca 001</p>
+<p><span class="math display">\[\begin{equation}
+x_{i}= \frac{(462+ 451 + 473) \text{ días}}{{3}} = 462 \text{ días}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{3 * 0,09}{1 + (3 - 1)* 0,15} * (462 - 438)= 4,98 \text{ días}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0,09}\sqrt{\frac{3}{1 + (3 - 1) * 0,15}}= 0,46
+\end{equation}\]</span></p>
+<p>Vaca 002</p>
+<p><span class="math display">\[\begin{equation}
+x_{i}= \frac{(471 + 422 + 430) \text{ días}}{{3}} = 441 \text{ días}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{3 * 0,09}{1 + (3 - 1)* 0,15} * (441 - 438) \text{ días}= 0,62  \text{ días}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0.09}\sqrt{\frac{3}{1 + (3 - 1) * 0,15}}= 0,46
+\end{equation}\]</span></p>
+<p>Vaca 003</p>
+<p><span class="math display">\[\begin{equation}
+x_{i}= \frac{(455 + 419)}{{2}} = 437 \text{ días}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{2 * 0,09}{1 + (2 - 1)* 0,15} * (437 - 438) \text{ días}= 0,16  \text{ días}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0.09}\sqrt{\frac{2}{1 + (2 - 1) * 0,15}}= 0,40
+\end{equation}\]</span></p>
+<p>Vaca 004</p>
+<p><span class="math display">\[\begin{equation*}
+\hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{1 * 0,09}{1 + (1 - 1)* 0,15} * (428 - 438) \text{ días}= - 0,90  \text{ días}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0,09}\sqrt{\frac{1}{1 + (1 - 1) * 0,15}}= 0,30
+\end{equation}\]</span></p>
+<p>Simplificando, por ser 1 sólo registro:</p>
+<p><span class="math display">\[\begin{equation*}
+\hat{VC}={h ^2}(\bar x_{i} - 𝜇) = 0,09 * (428 - 438) \text{ días}= -0,90 \text{ días}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+r_{A\hat A}= {h}= \sqrt {0,09}= 0,30
+\end{equation}\]</span></p>
+</div>
+<div id="ejercicio-10.13" class="section level3 unnumbered">
+<h3>Ejercicio 10.13</h3>
+<p>Supongamos que tenemos una población de vacas lecheras y queremos refugar animales por la característica intervalo interparto (iip). La media de esta característica en la población es 438 días y la repetibilidad es 0,15. Además, contamos con la siguiente información individual (días):</p>
+<p>• Vaca 001: iip lactancia 2 = 462; iip lactancia 3 = 451; iip lactancia 4 = 473</p>
+<p>• Vaca 002: iip lactancia 2 = 471; iip lactancia 3 = 422; iip lactancia 4 = 430</p>
+<p>• Vaca 003: iip lactancia 2 = 455; iip lactancia 3 = 419</p>
+<p>• Vaca 004: iip lactancia 2 = 428</p>
+<p>¿Cuál es la <strong>producción más probable</strong> de estas vacas para intervalo interparto?</p>
+<p><strong><em>Solución</em></strong></p>
+<p>Vaca 001</p>
+<p><span class="math display">\[\begin{equation}
+x_{i}= \frac{(462+ 451 + 473) \text{ días}}{{3}} = 462 \text{ días}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+{PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{3 * 0,15}{1 + (3 - 1)* 0,15} * (462 - 438) \text{ días}= 446  \text{ días}
+\end{equation*}\]</span></p>
+<p>Vaca 002</p>
+<p><span class="math display">\[\begin{equation}
+x_{i}= \frac{(471+ 422 + 430) \text{ días}}{{3}} = 441 \text{ días}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+{PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{3 * 0,15}{1 + (3 - 1)* 0,15} * (441 - 438) \text{ días}= 439  \text{ días}
+\end{equation*}\]</span></p>
+<p>Vaca 003</p>
+<p><span class="math display">\[\begin{equation}
+x_{i}= \frac{(455+419) \text{ días}}{{2}} = 437 \text{ días}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+{PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{2 * 0,15}{1 + (2 - 1)* 0,15} * (437 - 438) \text{ días}= 438  \text{ días}
+\end{equation*}\]</span></p>
+<p>Vaca 004</p>
+<p><span class="math display">\[\begin{equation*}
+{PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{1 * 0,15}{1 + (1 - 1)* 0,15} * (428 - 438) \text{ días}= 437  \text{ días}
+\end{equation*}\]</span></p>
+<p>Simplificando, por ser un sólo registro:</p>
+<p><span class="math display">\[\begin{equation}
+{PMP}= 𝜇 + R (\bar x_{i} - 𝜇)= 438 \text{ días}+0,15 * (428 - 438) \text{ días}= 437 \text{ días}
+\end{equation}\]</span></p>
+<p><br />
+</p>
+<hr />
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Byarsetal2010" class="csl-entry">
+Byars, S. G., D. Ewbank, D. R. Govindaraju, and S. C. Stearns. 2010. <span>“<span class="nocase"><span>C</span>olloquium papers: <span>N</span>atural selection in a contemporary human population</span>.”</span> <em>Proc Natl Acad Sci U S A</em> 107 Suppl 1 (January): 1787–92.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="parentesco.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="selartifI.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/10-GPpargen.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
