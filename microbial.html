@@ -196,6 +196,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.5"><i class="fa fa-check"></i>Ejercicio 7.5</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.6"><i class="fa fa-check"></i>Ejercicio 7.6</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.7"><i class="fa fa-check"></i>Ejercicio 7.7</a></li>
+<li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.8"><i class="fa fa-check"></i>Ejercicio 7.8</a></li>
 </ul></li>
 <li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
 <li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
@@ -508,6 +509,32 @@ div.csl-indent {
 <!-- 17) VERDADERO. -->
 <p><br />
 </p>
+</div>
+<div id="ejercicio-7.8" class="section level3 unnumbered">
+<h3>Ejercicio 7.8</h3>
+<p>Dada la siguiente gráfica para el factor reproductivo <span class="math inline">\(R(n)\)</span> en función del número de individuos en la población, determinar los parámetros correspondientes del modelo logístico discreto y estimar el cambio esperado entre generaciones (<span class="math inline">\(\Delta n\)</span>) cuando <span class="math inline">\(n(t)=95\)</span>.</p>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ortopara"></span>
+<img src="GuiaPracticaGeneticaII_files/figure-html/ortopara-1.png" alt="Factor reproductivo \(R(n)\) como función del tamaño poblacional.." width="80%" />
+<p class="caption">
+Figure 7.1: Factor reproductivo <span class="math inline">\(R(n)\)</span> como función del tamaño poblacional..
+</p>
+</div>
+<p><br />
+</p>
+<!-- ***Solución***  -->
+<!-- Como el corte de la recta $R(n)=(1+r_d)-\frac{r_d}{K}n(t)$ con el eje de la ordenadas ocurre cuando $n=0$, en cuyo caso $R(n)=1+r_d$, entonces en nuestro caso $1+r_d=2 \Leftrightarrow r_d=1$. Por otra parte, el corte de la recta $R(n)=1$ con la recta $R(n)=(1+r_d)-\frac{r_d}{K}n(t)$ ocurre cuando $1=(1+r_d)-\frac{r_d}{K}n(t) \Leftrightarrow 1+r_d=1+\frac{r_d}{K}n(t) \Leftrightarrow n(t)=K$, por lo que trazando esas rectas en el gráfico tenemos  -->
+<!-- (ref:orto78S) Factor reproductivo $R(n)$ como función del tamaño poblacional. La línea azul horizontal se corresponde a cuando $R(n)=1$, es decir que $n(t)=K$, por lo que bajando la línea vertical azul en ese punto tenemos $K$. Por otra parte, como el corte de $R(n)$ con el eje de las ordenadas se da en $n(t)=0$, en ese punto $R(0)=1+r_d \Leftrightarrow r_d=R(0)-1=1$ en nuestro caso. -->
+<!-- ```{r ortoparaS, fig.align="center",echo = FALSE, out.width="80%", fig.cap = '(ref:orto78S).'} -->
+<!-- plot(0:300,1+1-(1/100)*(0:300),type="l",col="red",ylim=c(0,2),ylab="R(n)",xlab="n(t)") -->
+<!-- abline(h=1,lty=2,col="blue") -->
+<!-- abline(v=100,lty=2,col="blue") -->
+<!-- abline(h=0,lty=2,col="darkgreen") -->
+<!-- abline(v=0,lty=2,col="darkgreen") -->
+<!-- ``` -->
+<!-- de donde se desprende que $K=100$.  -->
+<!-- De acuerdo a la ecuación $\Delta n=n(t)\ r_d\left(1-\frac{n(t)}{K}\right)$, por lo que sustituyendo los valores correspondientes para $K$ y $r_d$ tenemos -->
+<!-- $\Delta n=n(t)\ r_d\left(1-\frac{n(t)}{K}\right)=95 \times 1 \times \left(1-\frac{95}{100}\right)=4,75$ individuos por generación. -->
 <hr />
 
 </div>
