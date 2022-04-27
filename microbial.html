@@ -539,11 +539,16 @@ Figure 7.1: Factor reproductivo <span class="math inline">\(R(n)\)</span> como f
 </div>
 <div id="ejercicio-7.9" class="section level3 unnumbered">
 <h3>Ejercicio 7.9</h3>
-<p>Un reactor para la producción comercial de bacterias tiene una capacidad de carga <span class="math inline">\(K=5 \times 10^{12}\)</span> bacterias. La tasa neta de crecimiento del cultivo en tiempo continuo es <span class="math inline">\(r_c=4,1667 \times 10^{-4}s^{-1}\)</span>. El funcionamiento del reactor permite cosechar bacterias de forma continua. Determinar el punto óptimo (tamaño poblacional) en que el reactor permita retirar la mayor cantidad de bacterias por segundo y cuántas bacterias por segundo se retirarían en ese punto. ¿Cuantos gramos de bacterias se producirán por hora, considerando el peso aproximado de cada bacteria en <span class="math inline">\(1 \times 10^{-12} g\)</span>?</p>
+<p>Un reactor para la producción comercial de bacterias tiene una capacidad de carga <span class="math inline">\(K=5 \times 10^{12}\)</span> bacterias. La tasa neta de crecimiento del cultivo en tiempo continuo es <span class="math inline">\(r_c=4,1667 \times 10^{-4}s^{-1}\)</span>. El funcionamiento del reactor permite cosechar bacterias de forma continua.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Determinar el punto óptimo (tamaño poblacional) en que el reactor permita retirar la mayor cantidad de bacterias por segundo y cuántas bacterias por segundo se retirarían en ese punto.</p></li>
+<li><p>¿Cuantos gramos de bacterias se producirán por hora, considerando el peso aproximado de cada bacteria en <span class="math inline">\(1 \times 10^{-12} g\)</span>?</p></li>
+<li><p>Si el reactor se arranca a partir de un número inicial de <span class="math inline">\(1 \times 10^{6}\)</span> células ¿cuánto tiempo llevará llegar al punto óptimo si no se realiza cosecha de células hasta ese momento?</p></li>
+</ol>
 <p><br />
 </p>
 <!-- ***Solución***  -->
-<!-- Se trata del modelo logístico continuo. El máximo de $\frac{dn}{dt}=n(t)r_c\left(1-\frac{n(t)}{K}\right)$ se da en $n(t)=\frac{K}{2}$ y sustituyendo ese valor de $n(t)$ tenemos: -->
+<!-- a)  Se trata del modelo logístico continuo. El máximo de $\frac{dn}{dt}=n(t)r_c\left(1-\frac{n(t)}{K}\right)$ se da en $n(t)=\frac{K}{2}$ y sustituyendo ese valor de $n(t)$ tenemos: -->
 <!-- \begin{equation} -->
 <!-- \frac{dn}{dt}=\frac{K}{2}r_c\left(1-\frac{K}{2K}\right)=\frac{K}{2}r_c \frac{1}{2}=\frac{Kr_c}{4} -->
 <!-- \end{equation} -->
@@ -551,7 +556,13 @@ Figure 7.1: Factor reproductivo <span class="math inline">\(R(n)\)</span> como f
 <!-- \begin{equation} -->
 <!-- \frac{dn}{dt}=\frac{Kr_c}{4}=\frac{5 \times 10^{12} \times 4,1667 \times 10^{-4}s^{-1}}{4}=520.837.500 s^{-1} -->
 <!-- \end{equation} -->
-<!-- es decir, aproximadamente 520 millones de bacterias por segundo. En una hora se producirán $520.837.500 s^{-1} \times 3600 s=1,875015 \times 10^{12}$, que multiplicado por el peso de cada una será $1,875015 \times 10^{12} \times 1 \times 10^{-12}=1,875015 g$. -->
+<!-- es decir, aproximadamente 520 millones de bacterias por segundo.  -->
+<!-- b) En una hora se producirán $520.837.500 s^{-1} \times 3600 s=1,875015 \times 10^{12}$, que multiplicado por el peso de cada una será $1,875015 \times 10^{12} \times 1 \times 10^{-12}=1,875015 g$. -->
+<!-- c) El tiempo hasta alcanzar el punto $K/2$ está dado por  $t=\frac{\ln \left(\frac{K-n_0}{n_0}\right)}{r_c}$, por lo que sustituyendo por lo valores correspondientes tenemos -->
+<!-- \begin{equation} -->
+<!-- t=\frac{\ln \left(\frac{K-n_0}{n_0}\right)}{r_c}=\frac{\ln \left(\frac{5 \times 10^{12}-1 \times 10^{6}}{1 \times 10^{6}}\right)}{4,1667 \times 10^{-4}s^{-1}}=37019,58 s -->
+<!-- \end{equation} -->
+<!-- o, expresado en horas, aproximadamente 10 horas y 17 minutos. -->
 <hr />
 
 </div>
