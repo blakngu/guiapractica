@@ -27,7 +27,7 @@
 <meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
 
 
-<meta name="date" content="2022-04-25" />
+<meta name="date" content="2022-04-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -197,6 +197,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.6"><i class="fa fa-check"></i>Ejercicio 7.6</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.7"><i class="fa fa-check"></i>Ejercicio 7.7</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.8"><i class="fa fa-check"></i>Ejercicio 7.8</a></li>
+<li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.9"><i class="fa fa-check"></i>Ejercicio 7.9</a></li>
 </ul></li>
 <li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
 <li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
@@ -535,6 +536,22 @@ Figure 7.1: Factor reproductivo <span class="math inline">\(R(n)\)</span> como f
 <!-- de donde se desprende que $K=100$.  -->
 <!-- De acuerdo a la ecuación $\Delta n=n(t)\ r_d\left(1-\frac{n(t)}{K}\right)$, por lo que sustituyendo los valores correspondientes para $K$ y $r_d$ tenemos -->
 <!-- $\Delta n=n(t)\ r_d\left(1-\frac{n(t)}{K}\right)=95 \times 1 \times \left(1-\frac{95}{100}\right)=4,75$ individuos por generación. -->
+</div>
+<div id="ejercicio-7.9" class="section level3 unnumbered">
+<h3>Ejercicio 7.9</h3>
+<p>Un reactor para la producción comercial de bacterias tiene una capacidad de carga <span class="math inline">\(K=5 \times 10^{12}\)</span> bacterias. La tasa neta de crecimiento del cultivo en tiempo continuo es <span class="math inline">\(r_c=4,1667 \times 10^{-4}s^{-1}\)</span>. El funcionamiento del reactor permite cosechar bacterias de forma continua. Determinar el punto óptimo (tamaño poblacional) en que el reactor permita retirar la mayor cantidad de bacterias por segundo y cuántas bacterias por segundo se retirarían en ese punto. ¿Cuantos gramos de bacterias se producirán por hora, considerando el peso aproximado de cada bacteria en <span class="math inline">\(1 \times 10^{-12} g\)</span>?</p>
+<p><br />
+</p>
+<!-- ***Solución***  -->
+<!-- Se trata del modelo logístico continuo. El máximo de $\frac{dn}{dt}=n(t)r_c\left(1-\frac{n(t)}{K}\right)$ se da en $n(t)=\frac{K}{2}$ y sustituyendo ese valor de $n(t)$ tenemos: -->
+<!-- \begin{equation} -->
+<!-- \frac{dn}{dt}=\frac{K}{2}r_c\left(1-\frac{K}{2K}\right)=\frac{K}{2}r_c \frac{1}{2}=\frac{Kr_c}{4} -->
+<!-- \end{equation} -->
+<!-- por lo que sustituyendo valores, el punto óptimo será cuando $n(t)=\frac{K}{2}=\frac{5 \times 10^{12}}{2}=2,5 \times 10^{12}$ y en ese punto la tasa de producción de bacterias será: -->
+<!-- \begin{equation} -->
+<!-- \frac{dn}{dt}=\frac{Kr_c}{4}=\frac{5 \times 10^{12} \times 4,1667 \times 10^{-4}s^{-1}}{4}=520.837.500 s^{-1} -->
+<!-- \end{equation} -->
+<!-- es decir, aproximadamente 520 millones de bacterias por segundo. En una hora se producirán $520.837.500 s^{-1} \times 3600 s=1,875015 \times 10^{12}$, que multiplicado por el peso de cada una será $1,875015 \times 10^{12} \times 1 \times 10^{-12}=1,875015 g$. -->
 <hr />
 
 </div>
