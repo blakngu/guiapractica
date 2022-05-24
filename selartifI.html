@@ -27,7 +27,7 @@
 <meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
 
 
-<meta name="date" content="2022-03-05" />
+<meta name="date" content="2022-05-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -196,6 +196,8 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.5"><i class="fa fa-check"></i>Ejercicio 7.5</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.6"><i class="fa fa-check"></i>Ejercicio 7.6</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.7"><i class="fa fa-check"></i>Ejercicio 7.7</a></li>
+<li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.8"><i class="fa fa-check"></i>Ejercicio 7.8</a></li>
+<li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.9"><i class="fa fa-check"></i>Ejercicio 7.9</a></li>
 </ul></li>
 <li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
 <li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
@@ -386,27 +388,27 @@ div.csl-indent {
 <p><br />
 </p>
 <p>Calcular el intervalo generacional de machos, el de hembras y el intervalo generacional promedio.</p>
-<!-- ***Solución*** -->
-<!-- En machos hay solo 3 categorías de edad, por lo que el número de machos será igual a  -->
-<!-- \begin{equation} -->
-<!-- \mathrm{n_m=\sum_j n_{j_{m}}=15+10+5=30}\\ -->
-<!-- \end{equation} -->
-<!-- y el intervalo generacional de machos sería -->
-<!-- \begin{equation} -->
-<!-- \mathrm{IG_m=\frac{1}{n_m}\sum_j n_{j_{m}}\cdot j=\frac{3 \times 15+4 \times 10 + 5 \times 5}{30}=\frac{110}{30}=3,6667} \text{ años} -->
-<!-- \end{equation} -->
-<!-- En hembras, usando el mismo razonamiento y las mismas ecuaciones, tenemos -->
-<!-- \begin{equation} -->
-<!-- \mathrm{n_h=\sum_j n_{j_{h}}=250+220+200+170+160=1000}\\ -->
-<!-- \end{equation} -->
-<!-- y -->
-<!-- \begin{equation} -->
-<!-- \mathrm{IG_h=\frac{1}{n_h}\sum_j n_{j_{h}}\cdot j=\frac{3 \times 250+4 \times 220 + 5 \times 200+ 6 \times 170 + 7 \times 160}{1000}=\frac{4770}{1000}=4,77} \text{ años} -->
-<!-- \end{equation} -->
-<!-- Por lo tanto, tenemos que el intervalo generacional del rodeo será igual a -->
-<!-- \begin{equation} -->
-<!-- \mathrm{IG=\frac{IG_{m}+IG_{h}}{2}=\frac{3,6667+4,77}{2}=\frac{8,4367}{2} \sim 4,22} \text{ años} -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong></p>
+<p>En machos hay solo 3 categorías de edad, por lo que el número de machos será igual a</p>
+<p><span class="math display">\[\begin{equation} 
+\mathrm{n_m=\sum_j n_{j_{m}}=15+10+5=30}\\ 
+\end{equation}\]</span></p>
+<p>y el intervalo generacional de machos sería</p>
+<p><span class="math display">\[\begin{equation} 
+\mathrm{IG_m=\frac{1}{n_m}\sum_j n_{j_{m}}\cdot j=\frac{3 \times 15+4 \times 10 + 5 \times 5}{30}=\frac{110}{30}=3,6667} \text{ años} 
+\end{equation}\]</span></p>
+<p>En hembras, usando el mismo razonamiento y las mismas ecuaciones, tenemos</p>
+<p><span class="math display">\[\begin{equation} 
+\mathrm{n_h=\sum_j n_{j_{h}}=250+220+200+170+160=1000}\\ 
+\end{equation}\]</span></p>
+<p>y</p>
+<p><span class="math display">\[\begin{equation} 
+\mathrm{IG_h=\frac{1}{n_h}\sum_j n_{j_{h}}\cdot j=\frac{3 \times 250+4 \times 220 + 5 \times 200+ 6 \times 170 + 7 \times 160}{1000}=\frac{4770}{1000}=4,77} \text{ años} 
+\end{equation}\]</span></p>
+<p>Por lo tanto, tenemos que el intervalo generacional del rodeo será igual a</p>
+<p><span class="math display">\[\begin{equation} 
+\mathrm{IG=\frac{IG_{m}+IG_{h}}{2}=\frac{3,6667+4,77}{2}=\frac{8,4367}{2} \sim 4,22} \text{ años} 
+\end{equation}\]</span></p>
 <p><br />
 </p>
 </div>
@@ -482,21 +484,21 @@ subclases de lactancia presentan diferente media e igual varianza:<br />
 </tbody>
 </table>
 <p><br />
-<!-- ***Solución*** -->
-<!-- \ -->
-<!-- \begin{equation} -->
-<!-- \mathbf{a_1}= \bar y_0 - \bar y_i= 4481 − 3897 = 584\\ -->
-<!-- \mathbf{a_2}= \bar y_0 - \bar y_i= 4481 − 4481 = 0  \\ -->
-<!-- \mathbf{a_3}= \bar y_0 - \bar y_i= 4481 − 4740 = −259\\ -->
-<!-- \end{equation} --></p>
-<!-- \begin{equation} -->
-<!-- \bar y_{8001}^*= \bar y_i - \bar a_i= 4000 + 584 = 4584  \text{ litros}\\ -->
-<!-- \bar y_{8005}^*= \bar y_i - \bar a_i= 3500 + 584 = 4084  \text{ litros}\\ -->
-<!-- \bar y_{7009}^*= \bar y_i - \bar a_i= 4900 + 0 = 4900  \text{ litros}\\ -->
-<!-- \bar y_{7013}^*= \bar y_i - \bar a_i= 6000 + 0 = 6000  \text{ litros}\\ -->
-<!-- \bar y_{6007}^*= \bar y_i - \bar a_i= 5600 + (−259) = 5341  \text{ litros} -->
-<!-- \end{equation} -->
-<!-- Seleccionaríamos a la vaca 7013, la cual presenta la mayor producción de leche corregida. -->
+<strong><em>Solución</em></strong>
+ 
+<span class="math display">\[\begin{equation} 
+\mathbf{a_1}= \bar y_0 - \bar y_i= 4481 − 3897 = 584\\ 
+\mathbf{a_2}= \bar y_0 - \bar y_i= 4481 − 4481 = 0  \\ 
+\mathbf{a_3}= \bar y_0 - \bar y_i= 4481 − 4740 = −259\\ 
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\bar y_{8001}^*= \bar y_i - \bar a_i= 4000 + 584 = 4584  \text{ litros}\\ 
+\bar y_{8005}^*= \bar y_i - \bar a_i= 3500 + 584 = 4084  \text{ litros}\\ 
+\bar y_{7009}^*= \bar y_i - \bar a_i= 4900 + 0 = 4900  \text{ litros}\\ 
+\bar y_{7013}^*= \bar y_i - \bar a_i= 6000 + 0 = 6000  \text{ litros}\\ 
+\bar y_{6007}^*= \bar y_i - \bar a_i= 5600 + (−259) = 5341  \text{ litros} 
+\end{equation}\]</span></p>
+<p>Seleccionaríamos a la vaca 7013, la cual presenta la mayor producción de leche corregida.</p>
 <p><br />
 </p>
 </div>
@@ -567,23 +569,23 @@ cada ternero, planteado como subclase de referencia a la edad de la madre de 4 a
 </table>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- m_3=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{157}}= 1,06 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- m_4=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{166}}= 1,0 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- m_5=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{169}}= 0,98 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- \bar y_{1001}^*= \bar y_i * \bar m_i= 132 \times 1,06 = 140  \text{ kg}\\ -->
-<!-- \bar y_{1008}^*= \bar y_i * \bar m_i= 145 \times 1,06 = 154  \text{ kg}\\ -->
-<!-- \bar y_{1014}^*= \bar y_i - \bar m_i= 140 \times 1 = 140  \text{ kg}\\ -->
-<!-- \bar y_{1032}^*= \bar y_i - \bar m_i= 150 \times 0,98 = 147  \text{ kg} -->
-<!-- \end{equation} -->
-<!-- Seleccionaríamos al ternero 1008, el cual presenta el mayor peso al destete corregido. -->
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation} 
+m_3=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{157}}= 1,06 
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+m_4=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{166}}= 1,0 
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+m_5=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{169}}= 0,98 
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\bar y_{1001}^*= \bar y_i * \bar m_i= 132 \times 1,06 = 140  \text{ kg}\\ 
+\bar y_{1008}^*= \bar y_i * \bar m_i= 145 \times 1,06 = 154  \text{ kg}\\ 
+\bar y_{1014}^*= \bar y_i - \bar m_i= 140 \times 1 = 140  \text{ kg}\\ 
+\bar y_{1032}^*= \bar y_i - \bar m_i= 150 \times 0,98 = 147  \text{ kg} 
+\end{equation}\]</span></p>
+<p>Seleccionaríamos al ternero 1008, el cual presenta el mayor peso al destete corregido.</p>
 <p><br />
 </p>
 </div>
@@ -644,24 +646,26 @@ nacidos sobreviven durante su cría y recría:</p>
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88 -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088 -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation} 
+\text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 
+\end{equation}\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88 
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088 
+\end{equation}\]</span></p>
 <p><br />
 </p>
 </div>
@@ -726,25 +730,26 @@ nacidos sobreviven durante su cría y recría:</p>
 <li>¿Cuánto vale la proporción de selección en machos?<br />
 </li>
 </ol>
-<!-- ***Solución*** -->
-<!-- \ -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79 -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059 -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong>
+<span class="math display">\[\begin{equation} 
+\text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 
+\end{equation}\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79 
+\end{equation}\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059 
+\end{equation}\]</span></p>
 <p><br />
 </p>
 </div>
@@ -807,33 +812,36 @@ de selección de la población?</li>
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88 -->
-<!-- \end{equation} -->
-<!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_h$= 0,22429 -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088 -->
-<!-- \end{equation} -->
-<!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_m$= 1,80384 -->
-<!-- c) -->
-<!-- Promediamos intensidad de macho e intensidad de hembras: -->
-<!-- \begin{equation} -->
-<!-- i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,80384 + 0,22429}}{\mathrm{2}}=1,01407 -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong></p>
+<p><span class="math display">\[\begin{equation} 
+\text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 
+\end{equation}\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88 
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:
+<span class="math inline">\(i_h = 0,22429\)</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088 
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:
+<span class="math inline">\(i_m = 1,80384\)</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Promediamos intensidad de macho e intensidad de hembras:</li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,80384 + 0,22429}}{\mathrm{2}}=1,01407 
+\end{equation}\]</span></p>
 <p><br />
 </p>
 </div>
@@ -896,33 +904,36 @@ nacidos sobreviven durante su cría y recría:</p>
 <li>¿Cuánto vale la intensidad de selección en machos?</li>
 <li>¿Cuánto vale la intensidad de selección de la población?</li>
 </ol>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79 -->
-<!-- \end{equation} -->
-<!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_h$= 0,36487 -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059 -->
-<!-- \end{equation} -->
-<!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_m$= 1,98439 -->
-<!-- c) -->
-<!-- Promediamos intensidad de macho e intensidad de hembras: -->
-<!-- \begin{equation} -->
-<!-- i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,98439 + 0,36487}}{\mathrm{2}}=1,17463 -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong>
+<span class="math display">\[\begin{equation} 
+\text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 
+\end{equation}\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79 
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:
+<span class="math inline">\(i_h = 0,36487\)</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><span class="math display">\[\begin{equation} 
+\text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 
+\end{equation}\]</span></li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059 
+\end{equation}\]</span></p>
+<p>Vamos a la tabla de intensidad de selección según proporción de selección:
+<span class="math inline">\(i_m = 1,98439\)</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Promediamos intensidad de macho e intensidad de hembras:</li>
+</ol>
+<p><span class="math display">\[\begin{equation} 
+i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,98439 + 0,36487}}{\mathrm{2}}=1,17463 
+\end{equation}\]</span></p>
 </div>
 <div id="ejercicio-11.8" class="section level3 unnumbered">
 <h3>Ejercicio 11.8</h3>
@@ -934,27 +945,27 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
 <li>¿Cuánto vale el diferencial de selección de hembras?</li>
 <li>¿Cuánto vale el diferencial de selección de la población?</li>
 </ol>
-<!-- ***Solución*** -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- S_{m}= \bar X_S{m} - \mu_0= 229 - 197= 32 \text { kg} -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- S_{h}= \bar X_S{h} - \mu_0= 209 - 197= 12 \text { kg} -->
-<!-- \end{equation} -->
-<!-- c) -->
-<!-- Una manera de calcular $(S_{p})$: -->
-<!-- \begin{equation} -->
-<!-- S_{p}=\frac{\mathrm{S_m + S_h }}{\mathrm{2}}=\frac{\mathrm{32 + 12}}{\mathrm{2}}=22 \text { kg} -->
-<!-- \end{equation} -->
-<!-- Otra manera de calcular $(S_{p})$: -->
-<!-- \begin{equation} -->
-<!-- \bar X_S{p}=\frac{\mathrm{\bar X_Sm + \bar X_Sh }}{\mathrm{2}}=\frac{\mathrm{229 + 209}}{\mathrm{2}}=219 \text { kg} -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- S_{p}= \bar X_S{p} - \mu_0= 219 - 197= 22 \text { kg} -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math display">\[\begin{equation} 
+S_{m}= \bar X_S{m} - \mu_0= 229 - 197= 32 \text { kg} 
+\end{equation}\]</span></p></li>
+<li><p><span class="math display">\[\begin{equation} 
+S_{h}= \bar X_S{h} - \mu_0= 209 - 197= 12 \text { kg} 
+\end{equation}\]</span></p></li>
+<li></li>
+</ol>
+<p>Una manera de calcular <span class="math inline">\((S_{p})\)</span>:</p>
+<p><span class="math display">\[\begin{equation} 
+S_{p}=\frac{\mathrm{S_m + S_h }}{\mathrm{2}}=\frac{\mathrm{32 + 12}}{\mathrm{2}}=22 \text { kg} 
+\end{equation}\]</span></p>
+<p>Otra manera de calcular <span class="math inline">\((S_{p})\)</span>:</p>
+<p><span class="math display">\[\begin{equation} 
+\bar X_S{p}=\frac{\mathrm{\bar X_Sm + \bar X_Sh }}{\mathrm{2}}=\frac{\mathrm{229 + 209}}{\mathrm{2}}=219 \text { kg} 
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+S_{p}= \bar X_S{p} - \mu_0= 219 - 197= 22 \text { kg} 
+\end{equation}\]</span></p>
 <p><br />
 </p>
 </div>
@@ -974,16 +985,16 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- i=\frac{S}{\sigma_P}i=\frac{180-160}{\sqrt{1600}}=0,5 -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- c)  -->
-<!-- \begin{equation} -->
-<!-- PGG=h^2\times S=0,20\times (180-160)=4,0\text{ kg} -->
-<!-- \end{equation} -->
+<p><strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math display">\[\begin{equation} 
+i=\frac{S}{\sigma_P}=\frac{180-160}{\sqrt{1600}}=0,5 
+\end{equation}\]</span></p></li>
+<li></li>
+<li><p><span class="math display">\[\begin{equation} 
+PGG=h^2\times S=0,20\times (180-160)=4,0\text{ kg} 
+\end{equation}\]</span></p></li>
+</ol>
 <p><br />
 </p>
 </div>
@@ -1057,27 +1068,27 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
 <li>Discute comparativamente el efecto de las diferentes estructuras de edades y porcentaje de procreos en el intervalo generacional y las posibilidades de selección.</li>
 </ol>
 <p><br />
-<!-- ***Solución*** --></p>
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- IG_{RodeoA}=\frac{4\times 22+5\times 19+6\times 19+7\times 18+8\times 12+9\times 10}{100}=6,09\text{ años}\\ -->
-<!-- \\ -->
-<!-- IG_{RodeoB}=\frac{3\times 25+4\times 25+5\times 25+6\times 25}{100}=4,5\text{ años} -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \text{No. hembras disponibles}_{RodeoA}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,6}{2}=30\\ -->
-<!-- \\ -->
-<!-- p_{RodeoA}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{22}{30}=0,73\\ -->
-<!-- \\ -->
-<!-- \text{No. hembras disponibles}_{RodeoB}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,8}{2}=40\\ -->
-<!-- \\ -->
-<!-- p_{RodeoB}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{25}{40}=0,63 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
+<strong><em>Solución</em></strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math display">\[\begin{equation} 
+\begin{split} 
+IG_{RodeoA}=\frac{4\times 22+5\times 19+6\times 19+7\times 18+8\times 12+9\times 10}{100}=6,09\text{ años}\\ 
+\\ 
+IG_{RodeoB}=\frac{3\times 25+4\times 25+5\times 25+6\times 25}{100}=4,5\text{ años} 
+\end{split} 
+\end{equation}\]</span></p></li>
+<li><p><span class="math display">\[\begin{equation} 
+\begin{split} 
+\text{No. hembras disponibles}_{RodeoA}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,6}{2}=30\\ 
+\\ 
+p_{RodeoA}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{22}{30}=0,73\\ 
+\\ 
+\text{No. hembras disponibles}_{RodeoB}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,8}{2}=40\\ 
+\\ 
+p_{RodeoB}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{25}{40}=0,63 
+\end{split} 
+\end{equation}\]</span></p></li>
+</ol>
 <p><br />
 </p>
 <hr />
