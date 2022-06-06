@@ -27,7 +27,7 @@
 <meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
 
 
-<meta name="date" content="2022-03-05" />
+<meta name="date" content="2022-06-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -196,6 +196,8 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.5"><i class="fa fa-check"></i>Ejercicio 7.5</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.6"><i class="fa fa-check"></i>Ejercicio 7.6</a></li>
 <li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.7"><i class="fa fa-check"></i>Ejercicio 7.7</a></li>
+<li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.8"><i class="fa fa-check"></i>Ejercicio 7.8</a></li>
+<li class="chapter" data-level="" data-path="microbial.html"><a href="microbial.html#ejercicio-7.9"><i class="fa fa-check"></i>Ejercicio 7.9</a></li>
 </ul></li>
 <li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
 <li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
@@ -259,6 +261,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.9"><i class="fa fa-check"></i>Ejercicio 11.9</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.10"><i class="fa fa-check"></i>Ejercicio 11.10</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#tabla-intensidad-de-selección-en-función-de-la-proporción-distribución-normal"><i class="fa fa-check"></i>Tabla Intensidad de Selección en función de la proporción (distribución Normal)</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
 <ul>
@@ -272,6 +275,8 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.8"><i class="fa fa-check"></i>Ejercicio 12.8</a></li>
 <li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.9"><i class="fa fa-check"></i>Ejercicio 12.9</a></li>
 <li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejercicio-12.10"><i class="fa fa-check"></i>Ejercicio 12.10</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejemplo-12.11"><i class="fa fa-check"></i>Ejemplo 12.11</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#ejemplo-12.12"><i class="fa fa-check"></i>Ejemplo 12.12</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
 <ul>
@@ -540,11 +545,8 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <th align="left"></th>
 <th align="left">Proteína</th>
 <th align="left"></th>
-<th align="left">cs<span class="math inline">\(^1\)</span></th>
+<th align="left">SCS<span class="math inline">\(^1\)</span></th>
 <th align="left"></th>
-<th align="center">THP<span class="math inline">\(^2\)</span></th>
-<th align="left"></th>
-<th align="left">Índice de selección<span class="math inline">\(^3\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -558,9 +560,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left">r<span class="math inline">\(_{AC}\)</span></td>
 <td align="left">DEP<span class="math inline">\(^4\)</span></td>
 <td align="left">r<span class="math inline">\(_{AC}\)</span></td>
-<td align="center">DEP<span class="math inline">\(^4\)</span></td>
-<td align="left">r<span class="math inline">\(_{AC}\)</span></td>
-<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">HOLDNKM000000260548</td>
@@ -572,9 +571,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,57\)</span></td>
 <td align="left"><span class="math inline">\(-0,50\)</span></td>
 <td align="left"><span class="math inline">\(0,62\)</span></td>
-<td align="center"><span class="math inline">\(0,67\)</span></td>
-<td align="left"><span class="math inline">\(0,56\)</span></td>
-<td align="left"><span class="math inline">\(51,75\)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">HOL840M003147224052</td>
@@ -586,9 +582,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,57\)</span></td>
 <td align="left"><span class="math inline">\(-0,49\)</span></td>
 <td align="left"><span class="math inline">\(0,60\)</span></td>
-<td align="center"><span class="math inline">\(-0,42\)</span></td>
-<td align="left"><span class="math inline">\(0,58\)</span></td>
-<td align="left"><span class="math inline">\(50,30\)</span></td>
 </tr>
 <tr class="even">
 <td align="left">HOLNLDM000580616806</td>
@@ -600,9 +593,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,59\)</span></td>
 <td align="left"><span class="math inline">\(-0,62\)</span></td>
 <td align="left"><span class="math inline">\(0,63\)</span></td>
-<td align="center"><span class="math inline">\(-1,21\)</span></td>
-<td align="left"><span class="math inline">\(0,60\)</span></td>
-<td align="left"><span class="math inline">\(45,90\)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">HOLFRAM002933738576</td>
@@ -614,9 +604,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,62\)</span></td>
 <td align="left"><span class="math inline">\(-0,35\)</span></td>
 <td align="left"><span class="math inline">\(0,67\)</span></td>
-<td align="center"><span class="math inline">\(-0,82\)</span></td>
-<td align="left"><span class="math inline">\(0,64\)</span></td>
-<td align="left"><span class="math inline">\(36,42\)</span></td>
 </tr>
 <tr class="even">
 <td align="left">HOLNLDM000694388754</td>
@@ -628,9 +615,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,62\)</span></td>
 <td align="left"><span class="math inline">\(-0,36\)</span></td>
 <td align="left"><span class="math inline">\(0,67\)</span></td>
-<td align="center"><span class="math inline">\(-2,85\)</span></td>
-<td align="left"><span class="math inline">\(0,65\)</span></td>
-<td align="left"><span class="math inline">\(33,78\)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">HOL840M003150687270</td>
@@ -642,9 +626,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,55\)</span></td>
 <td align="left"><span class="math inline">\(-0,04\)</span></td>
 <td align="left"><span class="math inline">\(0,58\)</span></td>
-<td align="center"><span class="math inline">\(0,23\)</span></td>
-<td align="left"><span class="math inline">\(0,57\)</span></td>
-<td align="left"><span class="math inline">\(30,93\)</span></td>
 </tr>
 <tr class="even">
 <td align="left">HOLCANM000012529241</td>
@@ -656,13 +637,74 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <td align="left"><span class="math inline">\(0,59\)</span></td>
 <td align="left"><span class="math inline">\(-0,10\)</span></td>
 <td align="left"><span class="math inline">\(0,65\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Toro</th>
+<th align="center">THP<span class="math inline">\(^2\)</span></th>
+<th align="left"></th>
+<th align="left">Índice de selección<span class="math inline">\(^3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">DEP<span class="math inline">\(^4\)</span></td>
+<td align="left">r<span class="math inline">\(_{AC}\)</span></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">HOLDNKM000000260548</td>
+<td align="center"><span class="math inline">\(0,67\)</span></td>
+<td align="left"><span class="math inline">\(0,56\)</span></td>
+<td align="left"><span class="math inline">\(51,75\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">HOL840M003147224052</td>
+<td align="center"><span class="math inline">\(-0,42\)</span></td>
+<td align="left"><span class="math inline">\(0,58\)</span></td>
+<td align="left"><span class="math inline">\(50,30\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">HOLNLDM000580616806</td>
+<td align="center"><span class="math inline">\(-1,21\)</span></td>
+<td align="left"><span class="math inline">\(0,60\)</span></td>
+<td align="left"><span class="math inline">\(45,90\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">HOLFRAM002933738576</td>
+<td align="center"><span class="math inline">\(-0,82\)</span></td>
+<td align="left"><span class="math inline">\(0,64\)</span></td>
+<td align="left"><span class="math inline">\(36,42\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">HOLNLDM000694388754</td>
+<td align="center"><span class="math inline">\(-2,85\)</span></td>
+<td align="left"><span class="math inline">\(0,65\)</span></td>
+<td align="left"><span class="math inline">\(33,78\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">HOL840M003150687270</td>
+<td align="center"><span class="math inline">\(0,23\)</span></td>
+<td align="left"><span class="math inline">\(0,57\)</span></td>
+<td align="left"><span class="math inline">\(30,93\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">HOLCANM000012529241</td>
 <td align="center"><span class="math inline">\(-1,85\)</span></td>
 <td align="left"><span class="math inline">\(0,59\)</span></td>
 <td align="left"><span class="math inline">\(25,69\)</span></td>
 </tr>
 </tbody>
 </table>
-<p><span class="math inline">\(^1\)</span>células somáticas; <span class="math inline">\(^2\)</span>tasa de preñez en hijas; <span class="math inline">\(^3\)</span><span class="math inline">\(Índice\text{ }de\text{ } selección =-0,05\times DEP(L)+0,33\times DEP(G)+2,25\times DEP(P)+1,31\times DEP(TPH)-39,6\times DEP(SCS)\)</span>; <span class="math inline">\(^4\)</span><span class="math inline">\(DEP=1/2\times\hat A\)</span></p>
+<p><span class="math inline">\(^1\)</span>score células somáticas; <span class="math inline">\(^2\)</span>tasa de preñez en hijas;</p>
+<p><span class="math inline">\(^3\)</span> <span class="math inline">\(\small IEP =-0,05\times DEP(L)+0,33\times DEP(G)+2,25\times DEP(P)+1,31\times DEP(TPH)-39,6\times DEP(SCS)\)</span>;</p>
+<p><span class="math inline">\(^4\)</span><span class="math inline">\(DEP=1/2\times\hat A\)</span></p>
 <p><br />
 </p>
 <p>Para tomar la decisión de selección, nos planteamos los siguientes niveles de exigencia: leche: DEP menor a <span class="math inline">\(100\)</span> litros; grasa: DEP mayor a <span class="math inline">\(10\)</span> kg; proteína: DEP mayor a <span class="math inline">\(9\)</span> kg; células somáticas: DEP menor a <span class="math inline">\(-0,40\)</span>; tasa de preñez en hijas: DEP mayor a <span class="math inline">\(-1,5\)</span>.<br />
