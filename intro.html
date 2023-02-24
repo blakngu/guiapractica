@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 1 Introducción a la Genómica | Genética II: Guía Práctica</title>
   <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 1 Introducción a la Genómica | Genética II: Guía Práctica" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/figuras/caratula1.png" />
   <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
   <meta name="github-repo" content="blakngu.github.io/libro/" />
@@ -23,11 +22,10 @@
 
 <meta name="author" content="Hugo Naya" />
 <meta name="author" content="(Federica Marín)" />
-<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
-<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián, Washington Bell, Micaela Botta)" />
 
 
-<meta name="date" content="2022-06-13" />
+<meta name="date" content="2023-02-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,8 +34,8 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="variación-y-equilibrio-de-hardy-weinberg.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,9 +51,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -115,6 +113,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.11"><i class="fa fa-check"></i>Ejercicio 1.11</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.12"><i class="fa fa-check"></i>Ejercicio 1.12</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.13"><i class="fa fa-check"></i>Ejercicio 1.13</a></li>
 </ul></li>
 <li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
 <li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
@@ -340,12 +341,17 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1" number="1">
-<h1><span class="header-section-number">Capítulo 1</span> Introducción a la Genómica</h1>
-<div id="ejercicio-1.1" class="section level3 unnumbered">
-<h3>Ejercicio 1.1</h3>
+<div id="intro" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Capítulo 1</span> Introducción a la Genómica<a href="intro.html#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ejercicio-1.1" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.1<a href="intro.html#ejercicio-1.1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Luego de un muestreo realizado a partir de <strong>metagenómica</strong> en dos ambientes diferentes, la distribución de especies (<strong>OTUs</strong>) en los mismos es la siguiente</p>
 <table>
+<colgroup>
+<col width="28%" />
+<col width="35%" />
+<col width="35%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Especie</th>
@@ -425,8 +431,228 @@ div.csl-indent {
 <!-- C_2=1-\frac{3}{1000}=0,997 -->
 <!-- \end{equation} -->
 </div>
-<div id="ejercicio-1.2" class="section level3 unnumbered">
-<h3>Ejercicio 1.2</h3>
+<div id="ejercicio-1.2" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.2<a href="intro.html#ejercicio-1.2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Con la internacionalización del comercio, y en especial con la globalización, venimos observando una dramática degradación de la biodiversidad que ha llevado a la pérdida de decenas de razas adaptadas a las condiciones locales. El principal problema que enfrenta la conservación de dichas razas es mantener un número suficientemente elevado para reducir las pérdidas por endogamia, al tiempo de evitar la introgresión de material genético por parte de otras razas, todo esto en un contexto de viabilidad económica. En un esfuerzo por mantener la diversidad en bovinos, un gobierno lanzó un programa de subvenciones para las regiones que mostrasen un esfuerzo sostenido en tal sentido. El límite de animales a subvencionar se estableció en 10 mil para cada región.</p>
+<p>Tres regiones (subdivisión política aceptada por dicho gobierno) se presentaron al programa, cada con diferentes números para diferentes razas, como lo muestra la tabla siguiente:</p>
+<p><br />
+</p>
+<table>
+<colgroup>
+<col width="39%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Raza</th>
+<th align="left">Región 1</th>
+<th align="left">Región 2</th>
+<th align="left">Región 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Randall Lineback Cattle</strong></td>
+<td align="left"><span class="math inline">\(1400\)</span></td>
+<td align="left"><span class="math inline">\(520\)</span></td>
+<td align="left"><span class="math inline">\(2800\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Dutch Belted</strong></td>
+<td align="left"><span class="math inline">\(2250\)</span></td>
+<td align="left"><span class="math inline">\(700\)</span></td>
+<td align="left"><span class="math inline">\(3500\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Red Devon</strong></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+<td align="left"><span class="math inline">\(2970\)</span></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Galloway</strong></td>
+<td align="left"><span class="math inline">\(5800\)</span></td>
+<td align="left"><span class="math inline">\(3800\)</span></td>
+<td align="left"><span class="math inline">\(2600\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ankole-Watusi</strong></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+<td align="left"><span class="math inline">\(140\)</span></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Lincoln Red</strong></td>
+<td align="left"><span class="math inline">\(490\)</span></td>
+<td align="left"><span class="math inline">\(900\)</span></td>
+<td align="left"><span class="math inline">\(0\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Kerry</strong></td>
+<td align="left"><span class="math inline">\(60\)</span></td>
+<td align="left"><span class="math inline">\(970\)</span></td>
+<td align="left"><span class="math inline">\(1100\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Total</strong></td>
+<td align="left"><span class="math inline">\(10000\)</span></td>
+<td align="left"><span class="math inline">\(10000\)</span></td>
+<td align="left"><span class="math inline">\(10000\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>El responsable del programa de conservación debe decidir cuánto del “budget” anual destinado a subsidios (U$S 15 millones) se le debe destinar a cada región.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Teniendo en cuenta los índices de diversidad alfa <strong>Shannon</strong> y <strong>Pielou</strong>, realizar una propuesta (para cada índice) de pago razonable para los tres regiones y discutir los resultados. ¿Cuánto dinero por animal recibe cada región como subvención en cada una de las propuestas? ¿Resulta un mecanismo atractivo para la conservación de la diversidad <em>in-situ</em>?</p></li>
+<li><p>¿Qué diferencias y problemas se encontrarían asociados al pago por el índice de <strong>Pielou</strong>?</p></li>
+<li><p>¿Cuál podría ser un problema importante de considerar todas las razas en pie de igualdad (todas pesan de la misma manera en el programa) y cuál podría ser una solución a este problema?</p></li>
+</ol>
+<p><br />
+</p>
+<!-- ***Solución***  -->
+<!-- a) Como el total de individuos presentados por las regiones es en todos los casos de $10000$, alcanza con dividir entre ese número para tener la frecuencia relativa. Por lo tanto, el índice de Shannon para la primer región es igual a  -->
+<!-- \begin{equation}  -->
+<!-- H'_1=-\sum^k_{i=1} p_i \ln p_i =\\  -->
+<!-- =-[0,14 \times \ln 0,14 + 0,225 \times \ln 0,225 + 0,58 \times \ln 0,58 +\\  -->
+<!-- + 0,049 \times \ln 0,049 + 0,006 \times \ln 0,006] \therefore \\  -->
+<!-- H'_1=1,1053  -->
+<!-- \end{equation}  -->
+<!-- mientras que para la segunda región el mismo es  -->
+<!-- \begin{equation}  -->
+<!-- H'_2=-\sum^k_{i=1} p_i \ln p_i =\\  -->
+<!-- =-[0,052 \times \ln 0,052 + 0,070 \times \ln 0,070 + 0,297 \times \ln 0,297 +\\  -->
+<!-- +0,38 \times \ln 0,38 + 0,014 \times \ln 0,014 + 0,090 \times \ln 0,090 + 0,097 \times \ln 0,097] \therefore \\  -->
+<!-- H'_2=1,5709  -->
+<!-- \end{equation}  -->
+<!-- y para la tercera región es -->
+<!-- \begin{equation}  -->
+<!-- H'_3=-\sum^k_{i=1} p_i \ln p_i =\\  -->
+<!-- =-[0,28 \times \ln 0,28 + 0,35 \times \ln 0,35 + 0,26 \times \ln 0,26 +\\  -->
+<!-- +0,11 \times \ln 0,11] \therefore \\  -->
+<!-- H'_3=1,3169  -->
+<!-- \end{equation}  -->
+<!-- Notar que en la **región 1** no se encontraron las razas **Red Devon** y **Ankole-Watusi**, mientras que en la **región 3** no se encontraron las dos precedentes ni tampoco la **Lincoln Red**, por lo que no se incluye en los cálculos (de hecho $\ln 0=-\infty$). De acuerdo con esto, según el **índice de Shannon** la **región 2** es la más diversa de las tres.  -->
+<!-- Una forma "posible" de repartir el "budget" sería distribuirlo en forma proporcional a la diversidad de cada región. Es decir, a la **región 1** le tocaría una proporción de  -->
+<!-- \begin{equation}  -->
+<!-- Prop_1=\frac{H'_1}{H'_1+H'_2+H'_3}=\frac{1,1053}{1,1053+1,5709+1,3169}=0,2768025 \sim 27,68\% -->
+<!-- \end{equation}  -->
+<!-- a la **región 2** -->
+<!-- \begin{equation}  -->
+<!-- Prop_2=\frac{H'_2}{H'_1+H'_2+H'_3}=\frac{1,5709}{1,1053+1,5709+1,3169}=0,3934036 \sim 39,34\% -->
+<!-- \end{equation}  -->
+<!-- mientras que a la **región 3** le tocaría -->
+<!-- \begin{equation}  -->
+<!-- Prop_3=\frac{H'_3}{H'_1+H'_2+H'_3}=\frac{1,3169}{1,1053+1,5709+1,3169}=0,3297939 \sim 32,98\% -->
+<!-- \end{equation} -->
+<!-- \ -->
+<!-- Considerando el total del "budget" de U$S 15 millones, las regiones recibirían: -->
+<!-- \begin{equation} -->
+<!-- \text{región 1=U\$S }15000000 \times 0,2768025=\text{U\$S }4152037\\ -->
+<!-- \text{región 2=U\$S }15000000 \times 0,3934036=\text{U\$S }5901054\\ -->
+<!-- \text{región 3=U\$S }15000000 \times 0,3297939=\text{U\$S }4946908 -->
+<!-- \end{equation} -->
+<!-- Teniendo en cuenta que cada región presentó un total de 10 mil animales, alcanza con dividir el subsidio total recibido entre $10000$, es decir  -->
+<!-- \begin{equation} -->
+<!-- \text{región 1=U\$S }4152037/10000=415,20 \text{ U\$S/animal}\\ -->
+<!-- \text{región 2=U\$S }5901054/10000=590,11 \text{ U\$S/animal}\\ -->
+<!-- \text{región 3=U\$S }4946908/10000=494,69\text{ U\$S/animal} -->
+<!-- \end{equation} -->
+<!-- \ -->
+<!-- Para medir la uniformidad utilizando el índice propuesto por Pielou (1969), primero tenemos que calcular el máximo posible del índice de Shannon, que es igual al logaritmo del número de razas en cada una de las regiones, es decir $H_{max_1}=\ln k=\ln 5=1,6094$, $H_{max_2}=\ln k=\ln 7=1,9459$ y $H_{max_3}=\ln k=\ln 4=1,3863$. Por lo tanto, tenemos que el índice de uniformidad para los dos regiones será  -->
+<!-- \begin{equation}  -->
+<!-- E_1=\frac{H'_1}{H_{max_1}}=\frac{1,1053}{1,6094}= 0,6868 \\  -->
+<!-- E_2=\frac{H'_2}{H_{max_2}}=\frac{1,5709}{1,9459}= 0,8073 \\ -->
+<!-- E_3=\frac{H'_3}{H_{max_3}}=\frac{1,3169}{1,3863}= 0,9499  -->
+<!-- \end{equation}  -->
+<!-- lo que habla de una uniformidad mucho menor en la **región 3** (pocas razas pero muy uniforme su distribución. Si quisiésemos ver las proporciones del "budget" asignado a cada región de acuerdo con esto, tendríamos que a la **región 1** le tocaría una proporción de  -->
+<!-- \begin{equation}  -->
+<!-- Prop_1=\frac{E_1}{E_1+E_2+E_3}=\frac{0,6868}{0,6868+0,8073+0,9499}=0,2810147 \sim 28,10\% -->
+<!-- \end{equation}  -->
+<!-- a la **región 2** -->
+<!-- \begin{equation}  -->
+<!-- Prop_2=\frac{E_2}{E_1+E_2+E_3}=\frac{0,8073}{0,6868+0,8073+0,9499}=0,3303191 \sim 33,03\% -->
+<!-- \end{equation}  -->
+<!-- mientras que a la **región 3** le tocaría -->
+<!-- \begin{equation}  -->
+<!-- Prop_3=\frac{E_3}{E_1+E_2+E_3}=\frac{0,9499}{0,6868+0,8073+0,9499}=0,3886661 \sim 38,87\% -->
+<!-- \end{equation} -->
+<!-- lo que claramente favorecería a la **región 3**. -->
+<!-- Considerando el total del "budget" de U$S 15 millones, las regiones recibirían: -->
+<!-- \begin{equation} -->
+<!-- \text{región 1=U\$S }15000000 \times 0,2810147=\text{U\$S }4215221\\ -->
+<!-- \text{región 2=U\$S }15000000 \times 0,3303191=\text{U\$S }4954787\\ -->
+<!-- \text{región 3=U\$S }15000000 \times 0,3886661=\text{U\$S }5829992 -->
+<!-- \end{equation} -->
+<!-- Teniendo en cuenta que cada región presentó un total de 10 mil animales, alcanza con dividir el subsidio total recibido entre $10000$, es decir  -->
+<!-- \begin{equation} -->
+<!-- \text{región 1=U\$S }4215221/10000=421,52 \text{ U\$S/animal}\\ -->
+<!-- \text{región 2=U\$S }4954787/10000=495,48 \text{ U\$S/animal}\\ -->
+<!-- \text{región 3=U\$S }5829992/10000=583,00\text{ U\$S/animal} -->
+<!-- \end{equation} -->
+<!-- \ -->
+<!-- En cualquiera de los casos, parece una alternativa interesante tener un ingreso anual del orden de los 400 a 600 dólares por mantener rodeos de animales de razas comprometidas. Si a esto le agregamos los beneficios adicionales de la venta de los productos típicos de cada raza (leche, carne, terneros, etc.), parece un mecanismo relativamente interesante para mantener la diversidad genética en animales domésticos. La cuestión es de dónde salen eso aportes para subvencionar este programa de conservación. -->
+<!-- b) El índice de **Pielou** solo considera la uniformidad, es decir el balance entre los distintos componentes (razas en nuestro caso). Por lo tanto, para este índice es mejor presentar pocas razas con un buen equilibrio entre ellas. Por ejemplo, si en la **región 3** tuviesemos de la raza **Ankole-Watusi** 50 animales y presentamos $3450$ de la **Dutch Belted**, el denominador sería ahora de $H_{max_3}=\ln k=\ln 5=1,6094$ en lugar de $H_{max_3}=\ln k=\ln 4=1,3863$. El numerador pasaría a ser  -->
+<!-- \begin{equation}  -->
+<!-- H'_3=-\sum^k_{i=1} p_i \ln p_i =\\  -->
+<!-- =-[0,28 \times \ln 0,28 + 0,345 \times \ln 0,35 + 0,26 \times \ln 0,26 +\\  -->
+<!-- +0,11 \times \ln 0,11 + 0,005 \times \ln 0,005] \therefore \\  -->
+<!-- H'_3=1,343114  -->
+<!-- \end{equation}  -->
+<!-- y el nuevo índice de **Pielou** sería $E_3=1,343114/1,6094=0,8345433$, en lugar de $E_3=0,9499$. En este caso, la proporción del "budget" que le tocaría a la **región 3** sería -->
+<!-- \begin{equation}  -->
+<!-- Prop_3=\frac{E_3}{E_1+E_2+E_3}=\frac{0,8345433}{0,6868+0,8073+0,8345433}=0,3583818 \sim 35,84\% -->
+<!-- \end{equation} -->
+<!-- claramente menor que el $38,87\%$ que le hubiese tocado si no agregaba esta nueva raza a la propuesta. Por lo tanto, si la forma de pago se hace por el índice de **Pielou** las regiones tenderán a concentrar la propuesta en razas con números relativamente altos de individuos. -->
+<!-- c) No todas las razas presentan el mismo peligro de desaparecer; tanto por el número de individuos que las mismas tienen, por su distribución geográfica, como por las tendencias de mercado a las que se enfrentan. Por ejemplo, para las razas consideradas en este ejercicio, los "status" son los siguientes: -->
+<!-- | Raza                          | Status          |  -->
+<!-- | :---------------------------- | :-------------- |  -->
+<!-- | **Randall Lineback Cattle**   | Critical        |  -->
+<!-- | **Dutch Belted**              | Critical        |  -->
+<!-- | **Red Devon**                 | Recovering      |  -->
+<!-- | **Galloway**                  | Recovering      |  -->
+<!-- | **Ankole-Watusi**             | Recovering      |  -->
+<!-- | **Lincoln Red**               | Critical        |  -->
+<!-- | **Kerry**                     | Critical        |  -->
+<!-- Una forma fácil de solucionar esto es ponderar en forma diferente los índices de diversidad de acuerdo al "status" de la raza. Más aún, como veremos más adelante, a partir de datos genómicos es posible construir una matriz de "distancias genéticas" entre razas y un objetivo podría ser incluir en la conservación a las razas más distantes a las mayoritarias o predominantes, o buscar algún criterio de representatividad similar que apunte a preservar el "pangenoma" global. -->
+<!-- - Categorías de razas en peligro en EEUU: https://livestockconservancy.org/heritage-breeds/conservation-priority-list/ -->
+<!-- **Endangered Categories** -->
+<!-- **Critical**: Breeds with fewer than 200 annual registrations in the United States and an estimated global population of less than 500. For rabbits, fewer than 50 annual registrations in the U.S., estimated global population less than 500, fewer than 150 recorded at rabbit shows in the previous 5 years, and 10 or fewer breeders. For poultry, fewer than 500 birds in the U.S., with five or fewer primary breeding flocks (50 birds or more), and an estimated global population less than 1,000. -->
+<!-- **Threatened**: Breeds with fewer than 1,000 annual registrations in the United States and an estimated global population of less than 5,000. For rabbits, fewer than 100 annual registrations in the U.S., and estimated global population less than 1,000, fewer than 300 recorded at rabbit shows in the previous 5 years, and 11-30 breeders. For poultry, fewer than 1,000 breeding birds in the U.S., with seven or fewer primary breeding flocks, and an estimated global population less than 5,000. -->
+<!-- **Watch**: Breeds that present genetic or numerical concerns or have a limited geographic distribution, with fewer than 2,500 annual registrations in the United States, and an estimated global population less than 10,000. For rabbits, fewer than 200 annual registrations in the U.S., estimated global population less than 2,000, fewer than 500 recorded at rabbit shows in the previous 5 years, and 31-60 breeders. For poultry, fewer than 5,000 breeding birds in the U.S., with 10 or fewer primary breeding flocks, and an estimated global population less than 10,000. -->
+<!-- **Recovering**: Breeds once listed in another category, but have exceeded Watch category numbers and still need monitoring. For rabbits, more than 500 recorded at rabbit shows in the previous 5 years and more than 60 breeders. -->
+<!-- **Study**: Breeds that require further research to learn whether their history, genetic integrity, global status, and U.S. numbers merit listing on the Conservation Priority List. This step is necessary to clearly target The Livestock Conservancy’s conservation efforts toward breeds that not only require conservation, but can also benefit from our conservation efforts. Breeds in this category are only listed online. -->
+</div>
+<div id="ejercicio-1.3" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.3<a href="intro.html#ejercicio-1.3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En la gráfica siguiente se observa el comportamiento del índice de Shannon-Wiener a medida de que aumenta el número de especies (razas) en la muestra, todas ellas con el mismo número de individuos (por ejemplo, una muestra de 1000 individuos, con 10 especies, cada una de ellas con 100 individuos).</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Describir en términos cualitativos el comportamiento del índice en este caso.</p></li>
+<li><p>Dado de que en este caso la uniformidad es máxima, ¿qué representa el índice de Shannon-Wiener en este caso particular?</p></li>
+<li><p>Demostrar que en este caso particular, el valor del índice es <span class="math inline">\(H&#39;=ln(k)\)</span>, con <span class="math inline">\(k\)</span> el número de especies.</p></li>
+</ol>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:shan"></span>
+<img src="figuras/shannon_plano.jpeg" alt="Valor del Índice de Shannon-Wiener a medida de que aumenta el número de especies (o razas), todas con el mismo número de individuos." width="90%" />
+<p class="caption">
+Figure 1.1: Valor del Índice de Shannon-Wiener a medida de que aumenta el número de especies (o razas), todas con el mismo número de individuos.
+</p>
+</div>
+<!-- ***Solución***  -->
+<!-- a) En términos cualitativos, el valor del índice crece rápidamente cuando se trata de unas pocas especies y luego comienza a volverse relativamente "plano" su comportamiento (es decir, a partir de un número alto de especies, la aparición de una nueva especie en la muestra no cambia mayormente el valor del índice). -->
+<!-- b) El índice de Shannon-Wiener tiene en cuenta los dos factores relevantes de la diversidad, la riqueza y la uniformidad. Dado que en este ejercicio la uniformidad es la misma siempre (la máxima, todas las especies tienen el mismo número de individuos), el índice representa la riqueza de la muestra. -->
+<!-- c) Llamenos $N$ al total de individuos en la muestra. Como todas las especies (hay $k$ especies) tienen la misma cantidad de individuos ($n_i=N/k$), la proporción de cada especie será $n_i/N=\frac{N/k}{N}=\frac{1}{k}$. Por lo tanto, dado que se trata de una sumatoria de $k$ términos iguales (cada término $p_i \ln p_i$ es igual), tenemos  -->
+<!-- \begin{equation} -->
+<!-- H'=-\sum^k_{i=1} p_i \ln p_i = -\sum^k_{i=1} (1/k) \ln (1/k) = -k (1/k) \ln(1/k)=-\ln(1/k)=\ln(k) -->
+<!-- \end{equation} -->
+<!-- que es igual a $H'_{max}$ para ese número de especies, ya que la uniformidad es máxima. -->
+<!-- \ -->
+</div>
+<div id="ejercicio-1.4" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.4<a href="intro.html#ejercicio-1.4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A partir del ensamblado primario de una secuenciación de los transcriptos de una bacteria (<strong>RNAseq</strong>) se observó el siguiente conteo de codones para los aminoácidos <strong>Serina</strong> y <strong>Alanina</strong>:</p>
 <p><br />
 </p>
@@ -533,9 +759,9 @@ div.csl-indent {
 <!-- | **Suma**              | $18605$              | $4$            | -->
 <!-- En ambos aminoácidos se observa que el uso de codones se aparta bastante de la hipótesis de uso similar. Mientras que en el primer caso (Serina) los codones favorecidos son los codificados por el dueto (del sexteto), es decir **AGU** y **AGC**, en el segundo caso (Alanina) los codones favorecidos son los que terminan en **U** o en **G**. -->
 </div>
-<div id="ejercicio-1.3" class="section level3 unnumbered">
-<h3>Ejercicio 1.3</h3>
-<p>Dada la siguiente secuencia “AUGGGAUUUCCGCCCAUUUACGUG,”</p>
+<div id="ejercicio-1.5" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.5<a href="intro.html#ejercicio-1.5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Dada la siguiente secuencia “AUGGGAUUUCCGCCCAUUUACGUG”,</p>
 <ol style="list-style-type: lower-alpha">
 <li>determinar de que ácido nucléico se trata (ADN o ARN),</li>
 <li>si tiene sentido, traducirla a una secuencia de aminoácidos tomandola como hebra <strong>codificante</strong> y en marco de referencia, y</li>
@@ -547,12 +773,27 @@ div.csl-indent {
 <!-- c) "CAC GTA AAT GGG CGG AAA TCC CAT"\ -->
 <!-- d) 6G + 6C= 12 G o C en un total de [8 codones x 3 bases c/u = 24 bases], por lo tanto 12/24=0.5 o 50% -->
 </div>
-<div id="ejercicio-1.4" class="section level3 unnumbered">
-<h3>Ejercicio 1.4</h3>
+<div id="ejercicio-1.6" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.6<a href="intro.html#ejercicio-1.6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A fin de diseñar un chip de genotipado para estudiar la variabilidad genética en <em>Paspalum dilatatum</em> se extrajeron 8 secuencias de ADN disponibles en la base de datos “Nucleotide” de GenBank (<a href="https://www.ncbi.nlm.nih.gov/nuccore/?term=Paspalum+dilatatum" class="uri">https://www.ncbi.nlm.nih.gov/nuccore/?term=Paspalum+dilatatum</a>). Luego de alinear estas secuencias se detectaron en total 12 sitios (S) (algunos de los cuales son polimórficos en un sólo nucleótido, SNP) que se indican en la siguiente tabla:</p>
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="34%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Secuencia</th>
@@ -728,8 +969,8 @@ div.csl-indent {
 <!-- \end{equation} -->
 <!-- Teniendo en cuenta estos resultados, el sitio S4 es el más informativo. Sin embargo, se trata de un marcador tetra-alélico (aparecen las 4 bases regularmente), por lo que no es práctico incluirlo en los chips, que por razones tecnológicas suelen trabajar con marcadores bi-alélicos. -->
 </div>
-<div id="ejercicio-1.5" class="section level3 unnumbered">
-<h3>Ejercicio 1.5</h3>
+<div id="ejercicio-1.7" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.7<a href="intro.html#ejercicio-1.7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>La siguiente es la secuencia de nucleótidos correspondiente al CDS completo del gen “cinnamoyl CoA reductase” (CCR1-3) de <em>Paspalum dilatum</em>, una enzima que desempeña un papel fundamental en la formación de lignina, un proceso importante en las plantas tanto para el desarrollo estructural como para la respuesta de defensa:</p>
 <p>ATGACCGTCGTCGACGCCGTCTCGTCCGCCGCCGCCGTGGCGCAGCCGGCGGGGAACGGGCAGAC
 CGTGTGCGTCACCGGCGCGGCGGGGTACATCGCGTCGTGGCTCGTCAAGCTGCTGCTCGAGAAGG
@@ -756,6 +997,20 @@ GAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGAGGAATCGCCATCCGTGCGTGA</p>
 <li>A partir de la siguiente tabla de uso de codones, determinar qué aminoácido de los que estos codifican es el más frecuente en este gen.</li>
 </ol>
 <table>
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">aca</th>
@@ -800,8 +1055,151 @@ GAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGAGGAATCGCCATCCGTGCGTGA</p>
 <!-- d) 180+378+394+146=1098 nucleótidos, que dividido entre 3 es igual a 366 aminoácidos -->
 <!-- e) Observando el código genético, los 4 primeros codones de la tabla corresponden a **Thr** (19), los siguientes 4 a **Pro** (21), y los últimos 4 a **Ala** (47), por lo que este último es el más frecuente de los tres. -->
 </div>
-<div id="ejercicio-1.6" class="section level3 unnumbered">
-<h3>Ejercicio 1.6</h3>
+<div id="ejercicio-1.8" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.8<a href="intro.html#ejercicio-1.8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Un investigador obtuvo la siguiente secuencia (según él) de un nuevo gen que sería responsable de la generación de radiactividad por parte de una especie bacteriana que lo posee (presentamos la secuencia ordenada en tripletes y en marco de lectura correcto, para mayor facilidad de visualización):</p>
+<p><br />
+</p>
+<p>GTC TCT CGT GAT GCG GTT GTC ATA AGA GCT GGC TCT GAG CTG AAT TGA AGC ATA TCC TTC
+GCA GTC TTA AAA GGG TTG GGA TTA TCA ACC TCC CAC GCA ATA CCG GCG TTC AAC AGT TTA
+CCA TCA TCT ACT GAC GCG TGA TGT TGC GGA GCG ACG GGA AGT GAT AAA AGT TAC TTT ACA</p>
+<p><br />
+</p>
+<p>La especie bacteriana de la que supuestamente fue aislado el gen, posee un contenido GC del <span class="math inline">\(80\%\)</span>.</p>
+<p>Por otra parte, un estudiante de su grupo afirma que no solamente no se trata de la secuencia de un nuevo gen, sino que no se trata de la secuencia de ningún gen. Más aún, plantea que esta secuencia fue generada en forma aleatoria por una máquina y que posiblemente el investigador ha sido engañado por alguien. El conteo de bases dio lo siguiente:</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">A</th>
+<th align="left">C</th>
+<th align="left">G</th>
+<th align="left">T</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">46</td>
+<td align="left">40</td>
+<td align="left">45</td>
+<td align="left">49</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>mientras que el conteo de aminoácidos fue el siguiente:</p>
+<p><br />
+</p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">*</th>
+<th align="left">A</th>
+<th align="left">C</th>
+<th align="left">D</th>
+<th align="left">E</th>
+<th align="left">F</th>
+<th align="left">G</th>
+<th align="left">H</th>
+<th align="left">I</th>
+<th align="left">K</th>
+<th align="left">L</th>
+<th align="left">N</th>
+<th align="left">P</th>
+<th align="left">R</th>
+<th align="left">S</th>
+<th align="left">T</th>
+<th align="left">V</th>
+<th align="left">Y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">7</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">5</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">5</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">11</td>
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>¿Quién de los dos parece tener razón? Argumenta las razones que te llevan a esa conclusión.</p></li>
+<li><p>¿Cuántas Cisteínas hay codificadas en la secuencia y dónde se encuentran?</p></li>
+<li><p>¿Cuántas Serinas y cuántas Argininas serían de esperar en una secuencia de este largo <strong>si se tratase de una secuencia creada al azar</strong> y cuántas fueron observadas? ¿Y la suma de las dos (es decir, para los codones de los sextetos)?</p></li>
+<li><p>Determinar mediante un test estadístico si el número de Serinas y de Argininas observadas cae dentro de lo esperado, o si debemos rechazar dicha hipótesis nula.</p></li>
+</ol>
+<p><br />
+</p>
+<!-- ***Solución***  -->
+<!-- a) -->
+<!-- 1- El codón de iniciación no es ATG ni tampoco ninguna de las formas alternativas más usuales (esta argumento no es excluyente, pero es raro de observar) -->
+<!-- 2- En la posición 46, es decir el inicio del codón 16, corresponde con el codón TGA que es un codón terminación, lo que nos dejaría con una proteína de 15 aminoácidos de largo. Lo mismo ocurre en la posición 139, es decir el inicio del codón 47, por lo que tampoco parece mucho mejor la situación del fragmento interno entre ambos codones STOP. -->
+<!-- 3- La secuencia no termina en ninguno de los codones STOP conocidos. -->
+<!-- 4- La distribución de la frecuencia de bases no se aparta mucho de lo esperado para una secuencia obtenida al azar ($\frac{180}{4}=45$). En cambio, si el contenido del genoma bacteriano fuese de $80 \%$, entonces esperaríamos $\frac{180*0.80}{2}=72$ bases para G y lo mismo para C, mientras que esperaríamos $\frac{180*0.20}{2}=18$ bases para A y lo mismo para T. -->
+<!-- \ -->
+<!-- b) 2 Cisteínas y se encuentran codificadas por los codones 48 y 49 -->
+<!-- \ -->
+<!-- c) Serina está codificada por 6 codones y Arginina por otros 6 codones, de los 64 que hay en el código genético, o lo que es lo mismo, de $4^3=64$ posibles combinaciones de cada bases (A, C, G, T) en 3 posiciones. Como hay un total de 60 codones en la secuencia, esperamos: -->
+<!-- \begin{equation} -->
+<!-- \text{Ser}=60*\frac{6}{64}=5,625\\ -->
+<!-- \text{Arg}=60*\frac{6}{64}=5,625 -->
+<!-- \end{equation} -->
+<!-- Se observaron 11 y 2 respectivamente, lo que en ambos casos parece algo alejado del esperado. Sin embargo, la suma de ambos sextetos da 13, mientras que el esperado es $\text{Ser+Arg}=60*\frac{12}{64}=11,25$, lo que parece mucho más cercano. -->
+<!-- \ -->
+<!-- d) Un test de chi-cuadrado o un test de Fisher podrían ser adecuados en este caso. Armamos la tabla para Serina: -->
+<!-- |        | SER   | no SER | -->
+<!-- | :----- | :---- | :----- | -->
+<!-- | SER    | 11    | 49     | -->
+<!-- | no SER | 5.625 | 54.375 | -->
+<!-- y obtenemos p-value = 0,2477 y p-value = 0,295 respectivamente, por lo que no rechazamos la hipóteis nula. -->
+<!-- Para la Arginina tenemos: -->
+<!-- |        | ARG   | no ARG | -->
+<!-- | :----- | :---- | :----- | -->
+<!-- | ARG    | 2     | 58     | -->
+<!-- | no ARG | 5.625 | 54.375 | -->
+<!-- y obtenemos p-value = 0,3259 y p-value = 0,2722 respectivamente. -->
+<!-- \ -->
+</div>
+<div id="ejercicio-1.9" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.9<a href="intro.html#ejercicio-1.9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Señala cuáles de las siguiente afirmaciones son verdaderas y cuáles falsas:</p>
 <ol style="list-style-type: decimal">
 <li><p>La <strong>metagenómica</strong> es el estudio mediante técnicas genómicas de los organismos productores de metano.</p></li>
@@ -810,7 +1208,7 @@ GAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGAGGAATCGCCATCCGTGCGTGA</p>
 <li><p>El contenido <strong>GC</strong> (o <strong>G+C</strong>) de un organismo en la proporción de los aminoácidos Glicina (<strong>G</strong>) y Cisteína (<strong>C</strong>) en las secuencias codificantes del mismo.</p></li>
 <li><p>Las <strong>proteínas integrales de membrana</strong> (<strong>IMPs</strong>) se distinguen de otras proteínas debido a que presentan un <strong>exceso de residuos hidrofílicos</strong>, lo que les permite ubicarse comodamente en la bicapa lipídica.</p></li>
 <li><p>Las proteínas <strong>solubles en agua</strong> suelen poseer los residuos <strong>hidrofóbicos</strong> (Leu, Ile, Val, Phe y Trp) <strong>escondidos</strong> en el medio de la proteína (en su estructura), mientras que los <strong>hidrofílicos</strong> se encuentran <strong>expuestos</strong> en la superficie.</p></li>
-<li><p>Usualmente las <strong>secuencias ortólogas</strong> son las más similares en las otras especies y esto ha llevado al criterio práctico del “Reciprocal Best Hit,” es decir, un par de secuencias se consideran ortólogas si cada una de ellas es la mejor “selección” (la más similar) en su correspondiente genoma, de la otra.</p></li>
+<li><p>Usualmente las <strong>secuencias ortólogas</strong> son las más similares en las otras especies y esto ha llevado al criterio práctico del “Reciprocal Best Hit”, es decir, un par de secuencias se consideran ortólogas si cada una de ellas es la mejor “selección” (la más similar) en su correspondiente genoma, de la otra.</p></li>
 <li><p>Algunas variables biológicas asociadas a la variación en el <strong>uso de codones</strong> dentro de <strong>genomas procariotas</strong> son el contenido GC del gen, el nivel de expresión, la hidropatía promedio de la proteína, la hebra en que se encuentra el gen, el GCskew y la precisión en la traducción.</p></li>
 <li><p>La <strong>epigenética</strong> se centra en los procesos que regulan la <strong>activación y desactivación de genes</strong>, tanto en lo que hace a cómo y cuándo se produce esto.</p></li>
 <li><p>Las <strong>tecnologías de secuenciación masiva</strong> (Illumina, ION Torrent, Oxford Nanopore Technologies, PacBio) son las que se emplean en los <strong>chips de genotipado</strong> que se usan comercialmente.</p></li>
@@ -839,8 +1237,8 @@ GAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGAGGAATCGCCATCCGTGCGTGA</p>
 <p><br />
 </p>
 </div>
-<div id="ejercicio-1.7" class="section level3 unnumbered">
-<h3>Ejercicio 1.7</h3>
+<div id="ejercicio-1.10" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.10<a href="intro.html#ejercicio-1.10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Demostrar que para cualquier codón de cualquier aminoácido, el RSCU esperado es de 1.</p>
 <p><br />
 </p>
@@ -856,8 +1254,8 @@ GAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGAGGAATCGCCATCCGTGCGTGA</p>
 <p><br />
 </p>
 </div>
-<div id="ejercicio-1.8" class="section level3 unnumbered">
-<h3>Ejercicio 1.8</h3>
+<div id="ejercicio-1.11" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.11<a href="intro.html#ejercicio-1.11" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Observando la tabla con el <strong>código genético universal</strong> agrupar los aminoácidos por el número de codones que los codifican y resumir el número de aminoácidos con cada multiplicidad. ¿Qué característica comparten la mayor parte de los duetos (los aminoácidos codificados por dos codones)?</p>
 <p><br />
 </p>
@@ -879,8 +1277,8 @@ GAAGACAGTGGCCCCCGCCGCCGAGCTGCAGCAGGGAGGAATCGCCATCCGTGCGTGA</p>
 <p><br />
 </p>
 </div>
-<div id="ejercicio-1.9" class="section level3 unnumbered">
-<h3>Ejercicio 1.9</h3>
+<div id="ejercicio-1.12" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.12<a href="intro.html#ejercicio-1.12" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En un planeta de otra galaxia existe vida con algunas similitudes a la que existe en nuestro planeta. En particular, también las proteínas parecen ser la base estructural y funcional de la vida, mientras que los ácidos nucléicos son los responsables del mantenimiento y duplicación de la información. Sin embargo, a diferencia de nuestro planeta, los aminoácidos proteinogénicos codificados son 24, mientras que las bases nucleótidicas análogas a las de nuestro <strong>ADN</strong> son 5.</p>
 <p>Suponiendo que los mecanismos moleculares en dicho planeta han sido seleccionados para ser altamente eficientes,
 a) ¿de qué largo mínimo deberían ser los codones?
@@ -898,8 +1296,8 @@ d) ¿Qué ventaja potencial tiene la redundancia en el código?</p>
 <p><br />
 </p>
 </div>
-<div id="ejercicio-1.10" class="section level3 unnumbered">
-<h3>Ejercicio 1.10</h3>
+<div id="ejercicio-1.13" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1.13<a href="intro.html#ejercicio-1.13" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Asumiendo que existen 20 aminoácidos (los estándar),</p>
 <ol style="list-style-type: lower-alpha">
 <li>¿Cuántas proteínas diferentes de largo 5 aminoácidos sería posible tener?</li>
@@ -929,7 +1327,6 @@ d) ¿Qué ventaja potencial tiene la redundancia en el código?</p>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -970,7 +1367,7 @@ gitbook.start({
 },
 "download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -986,7 +1383,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
