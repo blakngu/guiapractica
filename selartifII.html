@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 13 Selección Artificial II | Genética II: Guía Práctica</title>
   <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 13 Selección Artificial II | Genética II: Guía Práctica" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/figuras/caratula1.png" />
   <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
   <meta name="github-repo" content="blakngu.github.io/libro/" />
@@ -23,11 +22,10 @@
 
 <meta name="author" content="Hugo Naya" />
 <meta name="author" content="(Federica Marín)" />
-<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
-<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián, Washington Bell, Micaela Botta)" />
 
 
-<meta name="date" content="2022-06-13" />
+<meta name="date" content="2023-06-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,8 +34,8 @@
   
 <link rel="prev" href="correlacionada.html"/>
 <link rel="next" href="endoexo.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,9 +51,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -115,6 +113,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.11"><i class="fa fa-check"></i>Ejercicio 1.11</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.12"><i class="fa fa-check"></i>Ejercicio 1.12</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.13"><i class="fa fa-check"></i>Ejercicio 1.13</a></li>
 </ul></li>
 <li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
 <li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
@@ -340,14 +341,20 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="selartifII" class="section level1" number="13">
-<h1><span class="header-section-number">Capítulo 13</span> Selección Artificial II</h1>
-<div id="ejercicio-13.1" class="section level3 unnumbered">
-<h3>Ejercicio 13.1</h3>
+<div id="selartifII" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">Capítulo 13</span> Selección Artificial II<a href="selartifII.html#selartifII" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ejercicio-13.1" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.1<a href="selartifII.html#ejercicio-13.1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En el rebaño experimental de ovejas verdes se están buscando los mejores carneros para mejorar el índice de esfericidad. Para ello se cuenta con la información de algunos borregos candidatos y la misma información de sus padres, cuando tenían la misma edad, de acuerdo a la siguiente tabla</p>
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="27%" />
+<col width="23%" />
+<col width="26%" />
+<col width="23%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Caravana Borrego</th>
@@ -407,8 +414,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.2" class="section level3 unnumbered">
-<h3>Ejercicio 13.2</h3>
+<div id="ejercicio-13.2" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.2<a href="selartifII.html#ejercicio-13.2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de leche, y queremos mejorar la característica producción de proteína por día. Se realiza prueba de progenie midiendo <span class="math inline">\(10\)</span> hijas por toro candidato a la selección (medio hermanas entre sí). El desvío estándar fenotípico es <span class="math inline">\(0,150\)</span> kg. La intensidad de selección de los machos es <span class="math inline">\(1,49\)</span> y no se realiza selección en hembras. La heredabilidad de la característica es <span class="math inline">\(0,21\)</span>.<br />
 </p>
 <p>¿Cuánto vale el progreso genético generacional de la población?</p>
@@ -430,9 +437,9 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.3" class="section level3 unnumbered">
-<h3>Ejercicio 13.3</h3>
-<p>Supongamos que tenemos un rodeo de bovinos de leche, y queremos mejorar la característica producción de grasa por día. Se realiza prueba de progenie midiendo <span class="math inline">\(15\)</span> medio-hermanas por toro candidato a la selección (medio-hermanas entre sí). El desvío estándar fenotípico es <span class="math inline">\(0,180\)</span> kg. La intensidad de selección de los machos es <span class="math inline">\(1,87\)</span> y no se realiza selección en hembras. El intervalo generacional de los machos es <span class="math inline">\(3,8\)</span> años y el intervalo generacional de las hembras es <span class="math inline">\(4,8\)</span> años. La heredabilidad de la característica es <span class="math inline">\(0,20\)</span>.<br />
+<div id="ejercicio-13.3" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.3<a href="selartifII.html#ejercicio-13.3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Supongamos que tenemos un rodeo de bovinos de leche, y queremos mejorar la característica producción de grasa por día. Se realiza una prueba midiendo <span class="math inline">\(15\)</span> medio-hermanas por toro candidato a la selección (medio-hermanas entre sí). El desvío estándar fenotípico es <span class="math inline">\(0,180\)</span> kg. La intensidad de selección de los machos es <span class="math inline">\(1,87\)</span> y no se realiza selección en hembras. El intervalo generacional de los machos es <span class="math inline">\(3,8\)</span> años y el intervalo generacional de las hembras es <span class="math inline">\(4,8\)</span> años. La heredabilidad de la característica es <span class="math inline">\(0,20\)</span>.<br />
 </p>
 <p>¿Cuánto vale el progreso genético anual de la población?</p>
 <!-- \ -->
@@ -456,8 +463,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.4" class="section level3 unnumbered">
-<h3>Ejercicio 13.4</h3>
+<div id="ejercicio-13.4" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.4<a href="selartifII.html#ejercicio-13.4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de leche, y queremos mejorar la característica producción de proteína por día mediante la selección de machos (no se realiza selección en hembras). La heredabilidad de la característica es <span class="math inline">\(0,21\)</span>.</p>
 <p>¿Cuál de las siguientes dos alternativas elegirías para maximizar el progreso genético anual de la población?:<br />
 </p>
@@ -497,8 +504,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.5" class="section level3 unnumbered">
-<h3>Ejercicio 13.5</h3>
+<div id="ejercicio-13.5" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.5<a href="selartifII.html#ejercicio-13.5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos rodeo lechero y queremos mejorar la característica intervalo interparto (iip). La media de esta característica en la población es <span class="math inline">\(438\)</span> días y la heredabilidad es <span class="math inline">\(0,09\)</span>.<br />
 </p>
 <p>¿Cuál de los siguientes toros elegirías como reproductor?:<br />
@@ -531,11 +538,22 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.6" class="section level3 unnumbered">
-<h3>Ejercicio 13.6</h3>
+<div id="ejercicio-13.6" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.6<a href="selartifII.html#ejercicio-13.6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos rodeo lechero y queremos mejorar simultáneamente las siguientes características: producción de leche, producción de grasa, producción de proteína, puntaje de células somáticas y tasa de preñez en hijas.
 Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</span> toros disponibles, con la siguiente información:</p>
 <table>
+<colgroup>
+<col width="22%" />
+<col width="8%" />
+<col width="11%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Toro</th>
@@ -729,8 +747,8 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.7" class="section level3 unnumbered">
-<h3>Ejercicio 13.7</h3>
+<div id="ejercicio-13.7" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.7<a href="selartifII.html#ejercicio-13.7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Tú tienes instalaciones con 600 lugares para hacer las mediciones de peso a los 4 meses (<span class="math inline">\(h^2=0,30\)</span>) en aquellos animales que serán fuente de información. Se necesitan producir 30 padrillos probados para uso en la población comercial.</p>
 <p>Tienes la posibilidad de usar dos métodos:</p>
 <ul>
@@ -757,8 +775,8 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.8" class="section level3 unnumbered">
-<h3>Ejercicio 13.8</h3>
+<div id="ejercicio-13.8" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.8<a href="selartifII.html#ejercicio-13.8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Tú deseas seleccionar 6 toros por la característica peso al año y medio cuya <span class="math inline">\(h^2=0,35\)</span>. La central de prueba para ganado de carne tiene la capacidad para evaluar 300 animales por crecimiento postdestete.</p>
 <p>Ante la posibilidad de evaluar los toros a partir de la información de sus medio hermanos, indica cuál de las siguientes opciones te parece mejor desde el punto de vista del progreso genético:</p>
 <p>Alternativas:</p>
@@ -803,8 +821,8 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.9" class="section level3 unnumbered">
-<h3>Ejercicio 13.9</h3>
+<div id="ejercicio-13.9" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.9<a href="selartifII.html#ejercicio-13.9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Tú deseas mejorar mediante selección el peso de jamón crudo de suinos, dado que esta característica determina en gran medida los ingresos de un grupo de productores de Rocha. Para ello cuentas con una central de prueba con una capacidad de testaje de 1000 animales. Se necesitan 12 verracos anualmente y no se realiza selección en hembras.</p>
 <p>Dispones además de la siguiente información:</p>
 <ul>
@@ -855,8 +873,8 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
 <p><br />
 </p>
 </div>
-<div id="ejercicio-13.10" class="section level3 unnumbered">
-<h3>Ejercicio 13.10</h3>
+<div id="ejercicio-13.10" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 13.10<a href="selartifII.html#ejercicio-13.10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Tú deseas seleccionar 6 verracos por la característica peso a los 6 meses cuya <span class="math inline">\(h^2=0,35\)</span>. La central de prueba para ganado porcino tiene la capacidad para evaluar 300 animales.</p>
 <p>Ante la posibilidad de evaluar los verracos a partir de la información de sus hijos (medio hermanos entre sí), indica cuál de las siguientes alternativas te parece mejor desde el punto de vista del progreso genético.</p>
 <p>Alternativas:</p>
@@ -913,7 +931,6 @@ Para esto, nos ofrecen a la venta el semen de <span class="math inline">\(7\)</s
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -954,7 +971,7 @@ gitbook.start({
 },
 "download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -970,7 +987,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
