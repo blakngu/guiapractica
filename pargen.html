@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía Práctica</title>
   <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía Práctica" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/figuras/caratula1.png" />
   <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
   <meta name="github-repo" content="blakngu.github.io/libro/" />
@@ -23,11 +22,10 @@
 
 <meta name="author" content="Hugo Naya" />
 <meta name="author" content="(Federica Marín)" />
-<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
-<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián, Washington Bell, Micaela Botta)" />
 
 
-<meta name="date" content="2022-06-13" />
+<meta name="date" content="2024-03-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,8 +34,8 @@
   
 <link rel="prev" href="parentesco.html"/>
 <link rel="next" href="selartifI.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,9 +51,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -115,6 +113,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.11"><i class="fa fa-check"></i>Ejercicio 1.11</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.12"><i class="fa fa-check"></i>Ejercicio 1.12</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.13"><i class="fa fa-check"></i>Ejercicio 1.13</a></li>
 </ul></li>
 <li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
 <li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
@@ -217,6 +218,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.16"><i class="fa fa-check"></i>Ejercicio 8.16</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.17"><i class="fa fa-check"></i>Ejercicio 8.17</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.18"><i class="fa fa-check"></i>Ejercicio 8.18</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
 <ul>
@@ -230,6 +234,11 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
 <li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
 <li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.11"><i class="fa fa-check"></i>Ejercicio 9.11</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.12"><i class="fa fa-check"></i>Ejercicio 9.12</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.13"><i class="fa fa-check"></i>Ejercicio 9.13</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.14"><i class="fa fa-check"></i>Ejercicio 9.14</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.15"><i class="fa fa-check"></i>Ejercicio 9.15</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
 <ul>
@@ -248,6 +257,11 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
 <li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.14"><i class="fa fa-check"></i>Ejercicio 10.14</a></li>
 <li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.15"><i class="fa fa-check"></i>Ejercicio 10.15</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.16"><i class="fa fa-check"></i>Ejercicio 10.16</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.17"><i class="fa fa-check"></i>Ejercicio 10.17</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.18"><i class="fa fa-check"></i>Ejercicio 10.18</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.19"><i class="fa fa-check"></i>Ejercicio 10.19</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.20"><i class="fa fa-check"></i>Ejercicio 10.20</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
 <ul>
@@ -261,6 +275,12 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.9"><i class="fa fa-check"></i>Ejercicio 11.9</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.10"><i class="fa fa-check"></i>Ejercicio 11.10</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.11"><i class="fa fa-check"></i>Ejercicio 11.11</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.12"><i class="fa fa-check"></i>Ejercicio 11.12</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.13"><i class="fa fa-check"></i>Ejercicio 11.13</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.14"><i class="fa fa-check"></i>Ejercicio 11.14</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.15"><i class="fa fa-check"></i>Ejercicio 11.15</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.16"><i class="fa fa-check"></i>Ejercicio 11.16</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#tabla-intensidad-de-selección-en-función-de-la-proporción-distribución-normal"><i class="fa fa-check"></i>Tabla Intensidad de Selección en función de la proporción (distribución Normal)</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
@@ -340,29 +360,33 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pargen" class="section level1" number="10">
-<h1><span class="header-section-number">Capítulo 10</span> Parámetros Genéticos: Heredabilidad y Repetibilidad</h1>
-<div id="ejercicio-10.1" class="section level3 unnumbered">
-<h3>Ejercicio 10.1</h3>
+<div id="pargen" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Capítulo 10</span> Parámetros Genéticos: Heredabilidad y Repetibilidad<a href="pargen.html#pargen" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ejercicio-10.1" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.1<a href="pargen.html#ejercicio-10.1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En un estudio previo [Ejemplo 9.4] para determinar los componentes genéticos de la varianza en diámetro de fibras en ovejas verdes llegamos a que nuestro mejor estimador de la varianza aditiva era <span class="math inline">\(\hat \sigma^{2}_A =1,80\ \mu\text{m}^2\)</span>, mientras que para la varianza de dominancia era <span class="math inline">\(\hat \sigma^{2}_D=1,40\ \mu\text{m}^2\)</span>.</p>
 <p>Asumiendo que para la característica la varianza de epistasis es prácticamente cero y que la varianza ambiental es de <span class="math inline">\(\hat \sigma^{2}_E =0,80\ \mu\text{m}^2\)</span>, obtener una estimación puntual de la heredabilidad.</p>
-<!-- ***Solución*** -->
-<!-- De acuerdo a nuestra definición de la heredabilidad, la misma es igual a -->
-<!-- \begin{equation} -->
-<!-- h^2=\frac{\mathrm{V_A}}{\mathrm{V_P}}=\frac{\mathrm{V_A}}{\mathrm{V_A+V_D+V_I+V_E}} -->
-<!-- \end{equation} -->
-<!-- por lo que sustituyendo las varianzas por nuestros estimadores de las mismas tenemos -->
-<!-- \begin{equation} -->
-<!-- h^2=\frac{\hat \sigma^{2}_A}{\hat \sigma^{2}_A+\hat \sigma^{2}_D+\hat \sigma^{2}_I+\hat \sigma^{2}_E}=\frac{1,80}{1,80+1,40+0+0,80}=0,45 -->
-<!-- \end{equation} -->
-<!-- Por lo tanto, nuestro estimador puntual de la heredabilidad de la característica diámetro de fibras en esta majada de ovejas verdes es $h^2=0,45$, un valor intermedio.  -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- De acuerdo a nuestra definición de la heredabilidad, la misma es igual a  -->
+<!-- \begin{equation}  -->
+<!-- h^2=\frac{\mathrm{V_A}}{\mathrm{V_P}}=\frac{\mathrm{V_A}}{\mathrm{V_A+V_D+V_I+V_E}}  -->
+<!-- \end{equation}  -->
+<!-- por lo que sustituyendo las varianzas por nuestros estimadores de las mismas tenemos  -->
+<!-- \begin{equation}  -->
+<!-- h^2=\frac{\hat \sigma^{2}_A}{\hat \sigma^{2}_A+\hat \sigma^{2}_D+\hat \sigma^{2}_I+\hat \sigma^{2}_E}=\frac{1,80}{1,80+1,40+0+0,80}=0,45  -->
+<!-- \end{equation}  -->
+<!-- Por lo tanto, nuestro estimador puntual de la heredabilidad de la característica diámetro de fibras en esta majada de ovejas verdes es $h^2=0,45$, un valor intermedio.   -->
+<!-- \ -->
 </div>
-<div id="ejercicio-10.2" class="section level3 unnumbered">
-<h3>Ejercicio 10.2</h3>
+<div id="ejercicio-10.2" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.2<a href="pargen.html#ejercicio-10.2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Dada las estimación de la heredabilidad obtenida en el <a href="pargen.html#ejercicio-10.1">Ejercicio 10.1</a> para el diámetro de fibras (DF) en las ovejas verdes (<span class="math inline">\(h_{DF}^2=,45\)</span>) y sabiendo que la media de diámetro en la población de referencia es de <span class="math inline">\(17,2 \mu\text{m}\)</span>, estimar el valor de cría para dicha característica de los carneros con los siguientes fenotipos:</p>
 <table>
+<colgroup>
+<col width="34%" />
+<col width="32%" />
+<col width="33%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Carnero</th>
@@ -399,30 +423,29 @@ div.csl-indent {
 </tbody>
 </table>
 <p>Conociendo que la heredabilidad de Peso del Vellón Sucio (PVL) en esta majada es de <span class="math inline">\(h_{PVL}^2=0,36\)</span> y la media fenotípica es de <span class="math inline">\(7,345\)</span> Kg, estimar los <strong>valores de cría</strong> de los carneros. Calcular las <strong>precisiones</strong> de las estimaciones de valor de cría para ambas características.</p>
-<!-- ***Solución*** -->
-<!-- En el caso de un registro fenotípico individual, el valor de cría es igual a -->
-<!-- \begin{equation} -->
-<!-- \mathrm{\hat A_i}=\mathrm{(P_i-\bar P)}\ h^2 -->
-<!-- \end{equation} -->
-<!-- por lo que podemos transformar los valores en el cuadro anterior a -->
-<!-- | Carnero       | $\hat A$ Diámetro ($\mu\text{m}$)    | $\hat A$ Peso Vellón Sucio (Kg)       | -->
-<!-- | :------------ | :----------------------------------: | :-----------------------------------: | -->
-<!-- | Max Calzone   |   $(16,8-17,2)\ 0,45=-0,180$         |   $(7,635-7,345)\ 0,36=0,10440$       | -->
-<!-- | Linyera       |   $(19,3-17,2)\ 0,45=0,945$          |   $(9,457-7,345)\ 0,36=0,76032$       | -->
-<!-- | Diógenes      |   $(17,2-17,2)\ 0,45=0,000$          |   $(6,356-7,345)\ 0,36=-0,35604$      | -->
-<!-- | Eustaquio     |   $(16,1-17,2)\ 0,45=-0,495$         |   $(7,574-7,345)\ 0,36=0,08244$       | -->
-<!-- | Paja Brava    |   $(14,7-17,2)\ 0,45=-1,125$         |   $(11,574-7,345)\ 0,36=1,52244$      | -->
+<!-- ***Solución***  -->
+<!-- En el caso de un registro fenotípico individual, el valor de cría es igual a  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{\hat A_i}=\mathrm{(P_i-\bar P)}\ h^2  -->
+<!-- \end{equation}  -->
+<!-- por lo que podemos transformar los valores en el cuadro anterior a  -->
+<!-- | Carnero       | $\hat A$ Diámetro ($\mu\text{m}$)    | $\hat A$ Peso Vellón Sucio (Kg)       |  -->
+<!-- | :------------ | :----------------------------------: | :-----------------------------------: |  -->
+<!-- | Max Calzone   |   $(16,8-17,2)\ 0,45=-0,180$         |   $(7,635-7,345)\ 0,36=0,10440$       |  -->
+<!-- | Linyera       |   $(19,3-17,2)\ 0,45=0,945$          |   $(9,457-7,345)\ 0,36=0,76032$       |  -->
+<!-- | Diógenes      |   $(17,2-17,2)\ 0,45=0,000$          |   $(6,356-7,345)\ 0,36=-0,35604$      |  -->
+<!-- | Eustaquio     |   $(16,1-17,2)\ 0,45=-0,495$         |   $(7,574-7,345)\ 0,36=0,08244$       |  -->
+<!-- | Paja Brava    |   $(14,7-17,2)\ 0,45=-1,125$         |   $(11,574-7,345)\ 0,36=1,52244$      |  -->
+<!-- \  -->
+<!-- Por otra parte, la precisión de las estimaciones a partir del fenotipo individual viene dada por   -->
+<!-- \begin{equation}  -->
+<!-- r_{AP}=h=\sqrt{h^2}  -->
+<!-- \end{equation}  -->
+<!-- por lo que $r_{DF}=\sqrt{h^2_{DF}}=\sqrt{0,45} \approx 0,671$, mientras que para PVL será $r_{PVL}=\sqrt{h^2_{PVL}}=\sqrt{0,36} = 0,60$.  -->
 <!-- \ -->
-<!-- Por otra parte, la precisión de las estimaciones a partir del fenotipo individual viene dada por  -->
-<!-- \begin{equation} -->
-<!-- r_{AP}=h=\sqrt{h^2} -->
-<!-- \end{equation} -->
-<!-- por lo que $r_{DF}=\sqrt{h^2_{DF}}=\sqrt{0,45} \approx 0,671$, mientras que para PVL será $r_{PVL}=\sqrt{h^2_{PVL}}=\sqrt{0,36} = 0,60$. -->
-<p><br />
-</p>
 </div>
-<div id="ejercicio-10.3" class="section level3 unnumbered">
-<h3>Ejercicio 10.3</h3>
+<div id="ejercicio-10.3" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.3<a href="pargen.html#ejercicio-10.3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Dado de que las ovejas <strong>Scottish Blackface</strong> son bastante más activas que las famosas <strong>ovejas verdes</strong>, algunos estudios sugieren que la mejor alternativa es una cruza de <strong>Perro de montaña de los Pirineos</strong>, un perro de gran tamaño, rústico y extremadamente tranquilo, con el <strong>Pastor Maremmano</strong>, una raza grande pero más activa (<a href="pargen.html#fig:krok">10.1</a>). A estos fines y para simplificar la cría se desarrolló una raza sintética (que a nuestros fines es equivalente a cualquier otra raza) y que se denominó <strong>Pastor Pirommano</strong> (PIRinéo O mareMMANO). Sin embargo, dado el gran tamaño de las <strong>Scottish Blackface</strong>, es necesario seleccionar perros de gran altura, por lo que fue encargado un estudio sobre la <strong>heredabilidad</strong> de esta característica entre los criaderos de la nueva raza. Se seleccionaron 10 perros (machos) que habían sido criados en la mismas condiciones de alimentación y cuidados y para cada uno de ellos se eligió al azar un hijo (macho). Todos los animales se midieron a edad adulta (3 años).</p>
 <p><br />
 </p>
@@ -439,6 +462,11 @@ Figure 10.1: Cruza de <strong>Perro de montaña de los Pirineos</strong> (3/8) y
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="37%" />
+<col width="32%" />
+<col width="29%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Padre</th>
@@ -504,73 +532,71 @@ Figure 10.1: Cruza de <strong>Perro de montaña de los Pirineos</strong> (3/8) y
 <ol style="list-style-type: lower-alpha">
 <li>A partir de estos datos <strong>estimar la heredabilidad de la característica altura a la cruz</strong>.</li>
 <li>¿Cuál es la bebida oficial de la <strong>Asociación de Pastores Pirommanos</strong>?</li>
-<li>¿Por qué el máximo galardón otorgado en competencias por la asociación se llama “Trofeo Heróstrato?”</li>
+<li>¿Por qué el máximo galardón otorgado en competencias por la asociación se llama “Trofeo Heróstrato”?</li>
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- a)  -->
-<!-- De acuerdo a lo que vimos previamente, la pendiente de la regresión lineal de progenie en progenitor es igual a la mitad de la heredabilidad (figura \@ref(fig:figura10p2)), por lo que un buen estimador de esta última es $\mathrm{\hat h^2=2\ b_{HP}}$. El estimador **OLS** de la pendiente es -->
-<!-- \begin{equation} -->
-<!-- \mathrm{b_{HP}=\frac{Cov_{HP}}{V_P}=\frac{\sum_{n=1}^N (x_i-\bar x)(y_i-\bar y)}{\sum_{n=1}^N (x_i-\bar x)^2}} -->
-<!-- \end{equation} -->
-<!-- (ref:padhij) Regresión de los hijos en los padres para la altura a la cruz. Las medias fenotípicas de padres e hijos se corresponden con las líneas azules a trazos, mientras que la recta de regresión se marca en rojo.  -->
-<!-- ```{r figura10p2, fig.align="center",echo = FALSE,out.width="90%", fig.cap = '(ref:padhij)'} -->
-<!-- nombres<-c("Brown Ale","Trapense","Porter","Stout","India Pale","Bock","Pilsner","Altbier","Kölsch","Lambic") -->
-<!-- padres<-c(76, 72, 67, 75, 80, 63, 62, 69, 75, 74) -->
-<!-- hijos<-c(70, 77, 73, 74, 75, 62, 70, 70, 72, 75) -->
-<!-- plot(padres,hijos,pch=21,col="darkblue",xlab="altura padres (cm)",ylab="altura hijos (cm)",cex=0.85,xlim=c(60,85)) -->
-<!-- abline(lm(hijos~padres),lty=2,col="red") -->
-<!-- abline(v=mean(padres),lty=2,col="blue") -->
-<!-- abline(h=mean(hijos),lty=2,col="blue") -->
-<!-- text(padres+1.25,hijos+0.3,nombres,cex=0.75,col="darkgreen") -->
-<!-- ``` -->
+<!-- ***Solución***  -->
+<!-- a)   -->
+<!-- De acuerdo a lo que vimos previamente, la pendiente de la regresión lineal de progenie en progenitor es igual a la mitad de la heredabilidad (figura \@ref(fig:figura10p2)), por lo que un buen estimador de esta última es $\mathrm{\hat h^2=2\ b_{HP}}$. El estimador **OLS** de la pendiente es  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{b_{HP}=\frac{Cov_{HP}}{V_P}=\frac{\sum_{n=1}^N (x_i-\bar x)(y_i-\bar y)}{\sum_{n=1}^N (x_i-\bar x)^2}}  -->
+<!-- \end{equation}  -->
+<!-- (ref:padhij) Regresión de los hijos en los padres para la altura a la cruz. Las medias fenotípicas de padres e hijos se corresponden con las líneas azules a trazos, mientras que la recta de regresión se marca en rojo.   -->
+<!-- ```{r figura10p2, fig.align="center",echo = FALSE,out.width="90%", fig.cap = '(ref:padhij)'}  -->
+<!-- nombres<-c("Brown Ale","Trapense","Porter","Stout","India Pale","Bock","Pilsner","Altbier","Kölsch","Lambic")  -->
+<!-- padres<-c(76, 72, 67, 75, 80, 63, 62, 69, 75, 74)  -->
+<!-- hijos<-c(70, 77, 73, 74, 75, 62, 70, 70, 72, 75)  -->
+<!-- plot(padres,hijos,pch=21,col="darkblue",xlab="altura padres (cm)",ylab="altura hijos (cm)",cex=0.85,xlim=c(60,85))  -->
+<!-- abline(lm(hijos~padres),lty=2,col="red")  -->
+<!-- abline(v=mean(padres),lty=2,col="blue")  -->
+<!-- abline(h=mean(hijos),lty=2,col="blue")  -->
+<!-- text(padres+1.25,hijos+0.3,nombres,cex=0.75,col="darkgreen")  -->
+<!-- ```  -->
+<!-- \  -->
+<!-- La media de los padres es $\bar x=71,3 \text{ cm}$, mientras que la media de hijos es $\bar y=71,8 \text{ cm}$. Restando a los valores originales la correspondiente media, haciendo el cuadrado de los desvíos en padres y el producto cruzado de los desvíos, tenemos el siguiente cuadro  -->
+<!-- \  -->
+<!-- | Padre      | $(x_i-\bar x)$ |  $(x_i-\bar x)^2$ |  $(y_i-\bar y)$  | $(x_i-\bar x)(y_i-\bar y)$ |  -->
+<!-- | :--------- | :------------- | :---------- | :--------------------- | :------------------------- |  -->
+<!-- | Porter     |  $-4,3$     |    $18,49$           |       $1,14$            |   $-4,89$           |  -->
+<!-- | Stout      |  $3,7$      |    $13,69$           |       $2,06$            |   $7,61$            |  -->
+<!-- | India Pale |  $8,7$      |    $75,69$           |       $3,28$            |   $28,55$           |  -->
+<!-- | Bock       |  $-8,3$     |    $68,89$           |     $-10,07$            |   $83,55$           |  -->
+<!-- | Pilsner    |  $-9,3$     |    $86,49$           |      $-1,82$            |   $16,96$           |  -->
+<!-- | Altbier    |  $-2,3$     |     $5,29$           |      $-1,31$            |   $3,02$            |  -->
+<!-- | Kölsch     |  $3,7$      |    $13,69$           |      $0,20$             |   $0,73$            |  -->
+<!-- | Lambic     |  $2,7$      |    $7,29$            |      $2,89$             |   $7,79$            |  -->
+<!-- | Brown Ale  |  $4,7$      |   $22,09$            |     $-1,39$             |  $-6,53$            |  -->
+<!-- | Trapense   |  $0,7$      |    $0,49$            |       $5,03$            |   $3,52$            |  -->
+<!-- | **SUMA**   |             |                      |                         |                     |  -->
+<!-- |            |  $0,0$      |    $312,1$           |     $0,0$               |  $140,3$            |  -->
+<!-- \  -->
+<!-- Por lo tanto, usando estos valores en la ecuación del estimador **OLS** de la pendiente obtenemos  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{b_{HP}=\frac{\sum_{n=1}^N (x_i-\bar x)(y_i-\bar y)}{\sum_{n=1}^N (x_i-\bar x)^2}}=\frac{140,3 \text{ cm}^2}{312,1  \text{ cm}^2}=0,44954  -->
+<!-- \end{equation}  -->
+<!-- Como $\mathrm{\hat h^2=2\ b_{HP}}$, entonces $\mathrm{\hat h^2}=2 \times 0,44954 \approx 0,899$. Como referencia, el proyecto **Framingham Heart Study**, sobre una cohorte de más de 5.000 pacientes (humanos) con distintas mediciones en padres e hijos arrojó una estimación de la heredabilidad de la altura (HT, por height) de $h_{HT}^2=0,84 \pm 0,01$ (@Byarsetal2010), por lo que no parece tan descabellado el valor obtenido en nuestra "prospección" ficticia en perros.  -->
+<!-- b) Seriously? Parece gustarles la cerveza...  -->
+<!-- c) Eróstrato o Heróstrato fue un pastor de Éfeso, responsable de la destrucción del templo de Artemisa de Éfeso, considerado una de las siete maravillas del mundo antiguo (en el año 356 a.C.). El objetivo declarado por el mismo fue alcanzar la fama, para lo que decidió incendiarlo, transformándose en el primer Pastor Pirómano famoso (pese a que un decreto prohibió utilizar su nombre a futuro).     -->
 <!-- \ -->
-<!-- La media de los padres es $\bar x=71,3 \text{ cm}$, mientras que la media de hijos es $\bar y=71,8 \text{ cm}$. Restando a los valores originales la correspondiente media, haciendo el cuadrado de los desvíos en padres y el producto cruzado de los desvíos, tenemos el siguiente cuadro -->
-<!-- \ -->
-<!-- | Padre      | $(x_i-\bar x)$ |  $(x_i-\bar x)^2$ |  $(y_i-\bar y)$  | $(x_i-\bar x)(y_i-\bar y)$ | -->
-<!-- | :--------- | :------------- | :---------- | :--------------------- | :------------------------- | -->
-<!-- | Porter     |  $-4,3$     |    $18,49$           |       $1,14$            |   $-4,89$           | -->
-<!-- | Stout      |  $3,7$      |    $13,69$           |       $2,06$            |   $7,61$            | -->
-<!-- | India Pale |  $8,7$      |    $75,69$           |       $3,28$            |   $28,55$           | -->
-<!-- | Bock       |  $-8,3$     |    $68,89$           |     $-10,07$            |   $83,55$           | -->
-<!-- | Pilsner    |  $-9,3$     |    $86,49$           |      $-1,82$            |   $16,96$           | -->
-<!-- | Altbier    |  $-2,3$     |     $5,29$           |      $-1,31$            |   $3,02$            | -->
-<!-- | Kölsch     |  $3,7$      |    $13,69$           |      $0,20$             |   $0,73$            | -->
-<!-- | Lambic     |  $2,7$      |    $7,29$            |      $2,89$             |   $7,79$            | -->
-<!-- | Brown Ale  |  $4,7$      |   $22,09$            |     $-1,39$             |  $-6,53$            | -->
-<!-- | Trapense   |  $0,7$      |    $0,49$            |       $5,03$            |   $3,52$            | -->
-<!-- | **SUMA**   |             |                      |                         |                     | -->
-<!-- |            |  $0,0$      |    $312,1$           |     $0,0$               |  $140,3$            | -->
-<!-- \ -->
-<!-- Por lo tanto, usando estos valores en la ecuación del estimador **OLS** de la pendiente obtenemos -->
-<!-- \begin{equation} -->
-<!-- \mathrm{b_{HP}=\frac{\sum_{n=1}^N (x_i-\bar x)(y_i-\bar y)}{\sum_{n=1}^N (x_i-\bar x)^2}}=\frac{140,3 \text{ cm}^2}{312,1  \text{ cm}^2}=0,44954 -->
-<!-- \end{equation} -->
-<!-- Como $\mathrm{\hat h^2=2\ b_{HP}}$, entonces $\mathrm{\hat h^2}=2 \times 0,44954 \approx 0,899$. Como referencia, el proyecto **Framingham Heart Study**, sobre una cohorte de más de 5.000 pacientes (humanos) con distintas mediciones en padres e hijos arrojó una estimación de la heredabilidad de la altura (HT, por height) de $h_{HT}^2=0,84 \pm 0,01$ (@Byarsetal2010), por lo que no parece tan descabellado el valor obtenido en nuestra "prospección" ficticia en perros. -->
-<!-- b) Seriously? Parece gustarles la cerveza... -->
-<!-- c) Eróstrato o Heróstrato fue un pastor de Éfeso, responsable de la destrucción del templo de Artemisa de Éfeso, considerado una de las siete maravillas del mundo antiguo (en el año 356 a.C.). El objetivo declarado por el mismo fue alcanzar la fama, para lo que decidió incendiarlo, transformándose en el primer Pastor Pirómano famoso (pese a que un decreto prohibió utilizar su nombre a futuro).    -->
-<p><br />
-</p>
 </div>
-<div id="ejercicio-10.4" class="section level3 unnumbered">
-<h3>Ejercicio 10.4</h3>
+<div id="ejercicio-10.4" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.4<a href="pargen.html#ejercicio-10.4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En un experimento para determinar la heredabilidad en sentido amplio del rendimiento en materia seca del maíz se cruzaron dos líneas puras contrastantes para rendimiento. En la <span class="math inline">\(\mathbf{F_1}\)</span> se observó una varianza fenotípica de <span class="math inline">\(\mathrm{200\ dt^2 ha^{−2}}\)</span>, mientras que en la <span class="math inline">\(\mathbf{F_2}\)</span> la varianza fenotípica observada fue de <span class="math inline">\(\mathrm{1200\ dt^2 ha^{−2}}\)</span>.</p>
 <p>Asumiendo que la característica se encuentra determinada por <em>loci</em> independientes, obtener un estimado de la heredabilidad en sentido amplio para la característica rendimiento de materia seca.</p>
-<!-- ***Solución*** -->
-<!-- Un estimador de la heredabilidad lograda sería  -->
-<!-- \begin{equation} -->
-<!-- \mathrm{\hat H^2=\frac{V_{P_{F2}}-V_{P_{F1}}}{V_{P_{F2}}}} -->
-<!-- \end{equation} -->
-<!-- por lo que sustituyendo los valores correspondientes tenemos -->
-<!-- \begin{equation} -->
-<!-- \mathrm{\hat H^2=\frac{[1200-200]\ dt^2 ha^{−2}}{1200\ dt^2 ha^{−2}}=\frac{1000}{1200}=0,833} -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- Un estimador de la heredabilidad lograda sería   -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{\hat H^2=\frac{V_{P_{F2}}-V_{P_{F1}}}{V_{P_{F2}}}}  -->
+<!-- \end{equation}  -->
+<!-- por lo que sustituyendo los valores correspondientes tenemos  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{\hat H^2=\frac{[1200-200]\ dt^2 ha^{−2}}{1200\ dt^2 ha^{−2}}=\frac{1000}{1200}=0,833}  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-10.5" class="section level3 unnumbered">
-<h3>Ejercicio 10.5</h3>
+<div id="ejercicio-10.5" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.5<a href="pargen.html#ejercicio-10.5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Para estudiar la posibilidad de mejorar la producción de lana verde natural se condujo un estudio sobre la población original, separándola en mitades, una mitad bajo las condiciones normales de crecimiento y reproducción, la otra sujeta a selección direccional para aumentar la producción de lana. El cuadro siguiente contiene los resultados del experimento mantenido durante 7 generaciones parentales, en el cuál se seleccionaron los animales reproductores basados en el peso sucio del segundo vellón (corrigiendo previamente por diferencias entre sexos). La pendiente de la regresión de acumulados para la línea control fue de cero.</p>
 <table>
 <colgroup>
@@ -631,67 +657,65 @@ Figure 10.1: Cruza de <strong>Perro de montaña de los Pirineos</strong> (3/8) y
 <p><br />
 </p>
 <p>Graficar la respuesta a la selección acumulada, el diferencial de selección acumulado, calcular la pendiente de la línea de regresión y graficarla. ¿Cuanto vale la heredabilidad estimada para esta característica? ¿Qué podría representar que el intercepto sea distinto de cero? ¿Es razonable el supuesto de linealidad de los acumulados? ¿Que´podría estar indicando la forma de la curva de datos reales?</p>
-<!-- ***Solución*** -->
-<!-- Para resolverlo primero calculamos los acumulados, básicamente sumando todos los datos correspondientes hasta cada punto, lo que nos deja con el siguiente cuadro -->
-<!-- | **Gener.** | **Dif.Sel. Acum.** ($\sum_{i=0} S_i$, g) | **Respuesta Acum.** ($\sum_{i=0} R_i$, g) | -->
-<!-- | :---------------------- | :-----------------------------: | :--------------------------------: | -->
-<!-- |      $0$                |         $715$                   |            $475$                   | -->
-<!-- |      $1$                |         $1485$                  |            $960$                   | -->
-<!-- |      $2$                |         $2230$                  |            $1370$                  | -->
-<!-- |      $3$                |         $3045$                  |            $1775$                  | -->
-<!-- |      $4$                |         $3835$                  |            $2150$                  | -->
-<!-- |      $5$                |         $4601$                  |            $2545$                  | -->
-<!-- |      $6$                |         $5426$                  |            $2870$                  | -->
-<!-- \  -->
-<!-- La pendiente de la recta la calculamos a partir de los datos acumulados como  -->
-<!-- \begin{equation} -->
-<!-- \mathrm{b=\frac{Cov(S_{acum},R_{acum})}{Var(S_{acum})}=\frac{1455487\text{ g}^2}{2873509\text{ g}^2}=0,50652} -->
-<!-- \end{equation} -->
-<!-- La gráfica de los resultados aparece en la figura \@ref(fig:figura10p8). Como la pendiente de la recta de regresión es nuestro estimado de heredabilidad, entonces tenemos que $\mathrm{\hat h^2=b=0,50652}$. Claramente, en la gráfica siguiente se aprecia que el intercepto es distinto de cero. Asumiendo que la pendiente de regresión de la **línea control** fue de cero (como dice la letra), entonces no es de esperar que existan variaciones sistemáticas en el peso de vellón que no se deban a la selección, por lo que en principio descartaríamos ese factor. Al mirar el ajuste de la recta de regresión a los puntos podemos notar un leve pero consistente apartamiento hacia abajo de los puntos en los extremos. Eso pone en duda la linealidad de la curva y puede explicar el intercepto distinto de cero. Más aún, la forma de la curva real parece comenzar una tendencia hacia la horizontal a medida de que pasan lasa generaciones, es decir una reducción sostenida en la respuesta a la selección, lo que podría indicar problemas futuros para seguir por este camino (algo que discutiremos más adelante, en próximos capítulos). -->
-<!-- (ref:h2logEje) Estimación de la heredabilidad del peso de vellón (verde) sucio en ovejas verdes a través de la heredabilidad lograda. La línea roja a trazos representa la recta de regresión obtenida por mínimos cuadrados ordinarios. -->
-<!-- ```{r figura10p8, fig.align="center",echo = FALSE, fig.cap = '(ref:h2logEje)'} -->
-<!-- set.seed(123456789) -->
-<!-- S<-c(715,770,745,815,790,766,825) -->
-<!-- R<-c(475,485,410,405,375,395,325) -->
-<!-- plot(cumsum(S),cumsum(R),type="b",xlim=c(0,6000),ylim=c(0,3000),xlab="Diferencial Acumulado (g)", ylab="Respuesta Acumulada (g)") -->
-<!-- abline(lm(cumsum(R)~cumsum(S)),lty=2,col="red") -->
-<!-- text(2000,2000,paste("h2=",round(cov(cumsum(S),cumsum(R))/var(cumsum(S)),4))) -->
-<!-- ``` -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- Para resolverlo primero calculamos los acumulados, básicamente sumando todos los datos correspondientes hasta cada punto, lo que nos deja con el siguiente cuadro  -->
+<!-- | **Gener.** | **Dif.Sel. Acum.** ($\sum_{i=0} S_i$, g) | **Respuesta Acum.** ($\sum_{i=0} R_i$, g) |  -->
+<!-- | :---------------------- | :-----------------------------: | :--------------------------------: |  -->
+<!-- |      $0$                |         $715$                   |            $475$                   |  -->
+<!-- |      $1$                |         $1485$                  |            $960$                   |  -->
+<!-- |      $2$                |         $2230$                  |            $1370$                  |  -->
+<!-- |      $3$                |         $3045$                  |            $1775$                  |  -->
+<!-- |      $4$                |         $3835$                  |            $2150$                  |  -->
+<!-- |      $5$                |         $4601$                  |            $2545$                  |  -->
+<!-- |      $6$                |         $5426$                  |            $2870$                  |  -->
+<!-- \   -->
+<!-- La pendiente de la recta la calculamos a partir de los datos acumulados como   -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{b=\frac{Cov(S_{acum},R_{acum})}{Var(S_{acum})}=\frac{1455487\text{ g}^2}{2873509\text{ g}^2}=0,50652}  -->
+<!-- \end{equation}  -->
+<!-- La gráfica de los resultados aparece en la figura \@ref(fig:figura10p8). Como la pendiente de la recta de regresión es nuestro estimado de heredabilidad, entonces tenemos que $\mathrm{\hat h^2=b=0,50652}$. Claramente, en la gráfica siguiente se aprecia que el intercepto es distinto de cero. Asumiendo que la pendiente de regresión de la **línea control** fue de cero (como dice la letra), entonces no es de esperar que existan variaciones sistemáticas en el peso de vellón que no se deban a la selección, por lo que en principio descartaríamos ese factor. Al mirar el ajuste de la recta de regresión a los puntos podemos notar un leve pero consistente apartamiento hacia abajo de los puntos en los extremos. Eso pone en duda la linealidad de la curva y puede explicar el intercepto distinto de cero. Más aún, la forma de la curva real parece comenzar una tendencia hacia la horizontal a medida de que pasan lasa generaciones, es decir una reducción sostenida en la respuesta a la selección, lo que podría indicar problemas futuros para seguir por este camino (algo que discutiremos más adelante, en próximos capítulos).  -->
+<!-- (ref:h2logEje) Estimación de la heredabilidad del peso de vellón (verde) sucio en ovejas verdes a través de la heredabilidad lograda. La línea roja a trazos representa la recta de regresión obtenida por mínimos cuadrados ordinarios.  -->
+<!-- ```{r figura10p8, fig.align="center",echo = FALSE, fig.cap = '(ref:h2logEje)'}  -->
+<!-- set.seed(123456789)  -->
+<!-- S<-c(715,770,745,815,790,766,825)  -->
+<!-- R<-c(475,485,410,405,375,395,325)  -->
+<!-- plot(cumsum(S),cumsum(R),type="b",xlim=c(0,6000),ylim=c(0,3000),xlab="Diferencial Acumulado (g)", ylab="Respuesta Acumulada (g)")  -->
+<!-- abline(lm(cumsum(R)~cumsum(S)),lty=2,col="red")  -->
+<!-- text(2000,2000,paste("h2=",round(cov(cumsum(S),cumsum(R))/var(cumsum(S)),4)))  -->
+<!-- ```  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-10.6" class="section level3 unnumbered">
-<h3>Ejercicio 10.6</h3>
+<div id="ejercicio-10.6" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.6<a href="pargen.html#ejercicio-10.6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
 información:</p>
 <p>• Varianza aditiva <span class="math inline">\((𝜎_A^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(0,41\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>; </p>
 <p>• Varianza fenotípica <span class="math inline">\((𝜎_P^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(1,77\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>.</p>
 <p>¿Cuánto vale la <strong>heredabilidad</strong> de producción de leche por lactancia en esta población?</p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{0,41\times 10^6} \text{ kg}^2}{\mathrm{1,77\times 10^6} \text{ kg}^2}=0,23 -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{0,41\times 10^6} \text{ kg}^2}{\mathrm{1,77\times 10^6} \text{ kg}^2}=0,23  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-10.7" class="section level3 unnumbered">
-<h3>Ejercicio 10.7</h3>
+<div id="ejercicio-10.7" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.7<a href="pargen.html#ejercicio-10.7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
 información:</p>
 <p>• Varianza aditiva <span class="math inline">\((𝜎_A^2)\)</span> de producción de grasa por lactancia: 423 kg<span class="math inline">\(^2\)</span>;</p>
 <p>• Varianza genético no aditiva <span class="math inline">\((𝜎_D^2 +𝜎_I^2)\)</span> de producción de grasa por lactancia: 219 kg<span class="math inline">\(^2\)</span>;</p>
 <p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de grasa por lactancia: 1374 kg<span class="math inline">\(^2\)</span>.</p>
 <p>¿Cuánto vale la <strong>heredabilidad</strong> de producción de grasa por lactancia en esta población?</p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 423 \text{ kg}^2+ 219 \text{ kg}^2+ 1374 \text{ kg}^2= 2016 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{423} \text{ kg}^2}{\mathrm{2016} \text{ kg}^2}=0,21 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 423 \text{ kg}^2+ 219 \text{ kg}^2+ 1374 \text{ kg}^2= 2016 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{423} \text{ kg}^2}{\mathrm{2016} \text{ kg}^2}=0,21  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-10.8" class="section level3 unnumbered">
-<h3>Ejercicio 10.8</h3>
+<div id="ejercicio-10.8" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.8<a href="pargen.html#ejercicio-10.8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
 información:</p>
 <p>• Covarianza dentro de padre e hijo <span class="math inline">\(𝑐𝑜𝑣_{P-H}\)</span> de producción de proteína por lactancia: 197
@@ -699,31 +723,31 @@ kg<span class="math inline">\(^2\)</span>;</p>
 <p>• Varianza genético no aditiva <span class="math inline">\((𝜎_D^2 +𝜎_I^2)\)</span> de producción de proteína por lactancia: 210 kg<span class="math inline">\(^2\)</span>;</p>
 <p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de proteína por lactancia: 1271 kg<span class="math inline">\(^2\)</span>.</p>
 <p>¿Cuánto vale la <strong>heredabilidad</strong> de producción de proteína por lactancia en esta población?</p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- 𝜎_A^2= 2 *𝑐𝑜𝑣_{P-H}= 2 * 197 \text{ kg}^2= 394 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 394 \text{ kg}^2+ 210 \text{ kg}^2+ 1271 \text{ kg}^2= 1875 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{394}\text{ kg}^2}{\mathrm{1875}\text{ kg}^2}=0,21 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_A^2= 2 *𝑐𝑜𝑣_{P-H}= 2 * 197 \text{ kg}^2= 394 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 394 \text{ kg}^2+ 210 \text{ kg}^2+ 1271 \text{ kg}^2= 1875 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- h^2=\frac{\mathrm{𝜎_A^2}}{\mathrm{𝜎_P^2}}=\frac{\mathrm{394}\text{ kg}^2}{\mathrm{1875}\text{ kg}^2}=0,21  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-10.9" class="section level3 unnumbered">
-<h3>Ejercicio 10.9</h3>
+<div id="ejercicio-10.9" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.9<a href="pargen.html#ejercicio-10.9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
 información:</p>
 <p>• Varianza de efectos permanentes <span class="math inline">\((𝜎_A^2 +𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(0,84\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>;</p>
 <p>• Varianza fenotípica <span class="math inline">\((𝜎_P^2)\)</span> de producción de leche por lactancia: <span class="math inline">\(1,77\times 10^6\)</span> kg<span class="math inline">\(^2\)</span>.</p>
 <p>¿Cuánto vale la <strong>repetibilidad</strong> de producción de leche por lactancia en esta población?</p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- \rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{0.84\times 10^6}}{\mathrm{1.77\times 10^6}}=0,47 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- \rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{0.84\times 10^6}}{\mathrm{1.77\times 10^6}}=0,47  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-10.10" class="section level3 unnumbered">
-<h3>Ejercicio 10.10</h3>
+<div id="ejercicio-10.10" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.10<a href="pargen.html#ejercicio-10.10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
 información:</p>
 <p>• Varianza aditiva <span class="math inline">\((𝜎_A^2)\)</span> de producción de grasa por lactancia: 423 kg<span class="math inline">\(^2\)</span>;</p>
@@ -733,19 +757,19 @@ información:</p>
 <p>¿Cuánto vale la <strong>repetibilidad</strong> de producción de grasa por lactancia en esta población?</p>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 423 \text{ kg}^2+ 219 \text{ kg}^2+ 1374 \text{ kg}^2= 2016 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- 𝜎_{EP}^2= 𝜎_E^2 - 𝜎_{Et}^2= (1374-1050) \text{ kg}^2= 320 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- \rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{423 \text{ kg}^2+ 219 \text{ kg}^2+ 320 \text{ kg}^2}}{\mathrm{2016} \text{ kg}^2}=0,48 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 423 \text{ kg}^2+ 219 \text{ kg}^2+ 1374 \text{ kg}^2= 2016 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_{EP}^2= 𝜎_E^2 - 𝜎_{Et}^2= (1374-1050) \text{ kg}^2= 320 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- \rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{423 \text{ kg}^2+ 219 \text{ kg}^2+ 320 \text{ kg}^2}}{\mathrm{2016} \text{ kg}^2}=0,48  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-10.11" class="section level3 unnumbered">
-<h3>Ejercicio 10.11</h3>
+<div id="ejercicio-10.11" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.11<a href="pargen.html#ejercicio-10.11" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de ganado lechero y contamos con la siguiente
 información:</p>
 <p>• Covarianza dentro medio hermanos <span class="math inline">\((𝑐𝑜𝑣_{1/2H})\)</span> de producción de proteína por lactancia:
@@ -754,22 +778,22 @@ información:</p>
 <p>• Varianza ambiental <span class="math inline">\((𝜎_E^2)\)</span> de producción de proteína por lactancia: 1271 kg<span class="math inline">\(^2\)</span>;</p>
 <p>• Varianza ambiental temporal <span class="math inline">\((𝜎_{Et}^2)\)</span> de producción de proteína por lactancia: 940 kg<span class="math inline">\(^2\)</span>.</p>
 <p>¿Cuánto vale la <strong>repetibilidad</strong> de producción de proteína por lactancia en esta población?</p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- 𝜎_A^2= 4 *𝑐𝑜𝑣_{1/2H}= 4 \times 98,5 = 394 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 394 \text{ kg}^2+ 210 \text{ kg}^2+ 1271 \text{ kg}^2= 1875 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- 𝜎_{EP}^2= 𝜎_E^2 - 𝜎_{Et}^2= (1271-940) \text{ kg}^2 = 331 \text{ kg}^2 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- \rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{(394 + 210 + 331)} \text{ kg}^2}{\mathrm{1875} \text{ kg}^2}=0,50 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_A^2= 4 *𝑐𝑜𝑣_{1/2H}= 4 \times 98,5 = 394 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_P^2= 𝜎_A^2 + 𝜎_D^2 +𝜎_I^2 + 𝜎_E^2 = 394 \text{ kg}^2+ 210 \text{ kg}^2+ 1271 \text{ kg}^2= 1875 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- 𝜎_{EP}^2= 𝜎_E^2 - 𝜎_{Et}^2= (1271-940) \text{ kg}^2 = 331 \text{ kg}^2  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- \rho=\frac{\mathrm{𝜎_A^2 + 𝜎_D^2 + 𝜎_I^2 +𝜎_{EP}^2 }}{\mathrm{𝜎_P^2}}=\frac{\mathrm{(394 + 210 + 331)} \text{ kg}^2}{\mathrm{1875} \text{ kg}^2}=0,50  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-10.12" class="section level3 unnumbered">
-<h3>Ejercicio 10.12</h3>
+<div id="ejercicio-10.12" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.12<a href="pargen.html#ejercicio-10.12" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de vacas lecheras y queremos mejorar la
 característica intervalo interparto (iip). La media de esta característica en la población es 438
 días, la heredabilidad es 0,09 y la repetibilidad es 0,15. Además, contamos con la siguiente
@@ -779,96 +803,95 @@ información individual (días):</p>
 <p>• Vaca 003: iip lactancia 2 = 455; iip lactancia 3 = 419</p>
 <p>• Vaca 004: iip lactancia 2 = 428</p>
 <p>¿Cuál es el valor de cría y exactitud de estas vacas para intervalo interparto?</p>
-<!-- ***Solución*** -->
-<!-- Vaca 001 -->
-<!-- \begin{equation} -->
-<!-- x_{i}= \frac{(462+ 451 + 473) \text{ días}}{{3}} = 462 \text{ días} -->
-<!-- \end{equation} -->
-<!-- \begin{equation*} -->
-<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{3 * 0,09}{1 + (3 - 1)* 0,15} * (462 - 438)= 4,98 \text{ días} -->
-<!-- \end{equation*} -->
-<!-- \begin{equation} -->
-<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0,09}\sqrt{\frac{3}{1 + (3 - 1) * 0,15}}= 0,46 -->
-<!-- \end{equation} -->
-<!-- Vaca 002 -->
-<!-- \begin{equation} -->
-<!-- x_{i}= \frac{(471 + 422 + 430) \text{ días}}{{3}} = 441 \text{ días} -->
-<!-- \end{equation} -->
-<!-- \begin{equation*} -->
-<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{3 * 0,09}{1 + (3 - 1)* 0,15} * (441 - 438) \text{ días}= 0,62  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- \begin{equation} -->
-<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0.09}\sqrt{\frac{3}{1 + (3 - 1) * 0,15}}= 0,46 -->
-<!-- \end{equation} -->
-<!-- Vaca 003 -->
-<!-- \begin{equation} -->
-<!-- x_{i}= \frac{(455 + 419)}{{2}} = 437 \text{ días} -->
-<!-- \end{equation} -->
-<!-- \begin{equation*} -->
-<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{2 * 0,09}{1 + (2 - 1)* 0,15} * (437 - 438) \text{ días}= 0,16  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- \begin{equation} -->
-<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0.09}\sqrt{\frac{2}{1 + (2 - 1) * 0,15}}= 0,40 -->
-<!-- \end{equation} -->
-<!-- Vaca 004 -->
-<!-- \begin{equation*} -->
-<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{1 * 0,09}{1 + (1 - 1)* 0,15} * (428 - 438) \text{ días}= - 0,90  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- \begin{equation} -->
-<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0,09}\sqrt{\frac{1}{1 + (1 - 1) * 0,15}}= 0,30 -->
-<!-- \end{equation} -->
-<!-- Simplificando, por ser 1 sólo registro:  -->
-<!-- \begin{equation*} -->
-<!-- \hat{VC}={h ^2}(\bar x_{i} - 𝜇) = 0,09 * (428 - 438) \text{ días}= -0,90 \text{ días} -->
-<!-- \end{equation*} -->
-<!-- \begin{equation} -->
-<!-- r_{A\hat A}= {h}= \sqrt {0,09}= 0,30 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- Vaca 001  -->
+<!-- \begin{equation}  -->
+<!-- x_{i}= \frac{(462+ 451 + 473) \text{ días}}{{3}} = 462 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation*}  -->
+<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{3 * 0,09}{1 + (3 - 1)* 0,15} * (462 - 438)= 4,98 \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- \begin{equation}  -->
+<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0,09}\sqrt{\frac{3}{1 + (3 - 1) * 0,15}}= 0,46  -->
+<!-- \end{equation}  -->
+<!-- Vaca 002  -->
+<!-- \begin{equation}  -->
+<!-- x_{i}= \frac{(471 + 422 + 430) \text{ días}}{{3}} = 441 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation*}  -->
+<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{3 * 0,09}{1 + (3 - 1)* 0,15} * (441 - 438) \text{ días}= 0,62  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- \begin{equation}  -->
+<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0.09}\sqrt{\frac{3}{1 + (3 - 1) * 0,15}}= 0,46  -->
+<!-- \end{equation}  -->
+<!-- Vaca 003  -->
+<!-- \begin{equation}  -->
+<!-- x_{i}= \frac{(455 + 419)}{{2}} = 437 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation*}  -->
+<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{2 * 0,09}{1 + (2 - 1)* 0,15} * (437 - 438) \text{ días}= 0,16  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- \begin{equation}  -->
+<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0.09}\sqrt{\frac{2}{1 + (2 - 1) * 0,15}}= 0,40  -->
+<!-- \end{equation}  -->
+<!-- Vaca 004  -->
+<!-- \begin{equation*}  -->
+<!-- \hat{VC}=\frac{nh ^2}{1 + (n-1)R}(\bar x_{i} - 𝜇) =\frac{1 * 0,09}{1 + (1 - 1)* 0,15} * (428 - 438) \text{ días}= - 0,90  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- \begin{equation}  -->
+<!-- r_{A\hat A}= {h} \sqrt{\frac{n}{1 + (n - 1) * R}} =\sqrt {0,09}\sqrt{\frac{1}{1 + (1 - 1) * 0,15}}= 0,30  -->
+<!-- \end{equation}  -->
+<!-- Simplificando, por ser 1 sólo registro:   -->
+<!-- \begin{equation*}  -->
+<!-- \hat{VC}={h ^2}(\bar x_{i} - 𝜇) = 0,09 * (428 - 438) \text{ días}= -0,90 \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- \begin{equation}  -->
+<!-- r_{A\hat A}= {h}= \sqrt {0,09}= 0,30  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-10.13" class="section level3 unnumbered">
-<h3>Ejercicio 10.13</h3>
+<div id="ejercicio-10.13" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.13<a href="pargen.html#ejercicio-10.13" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos una población de vacas lecheras y queremos refugar animales por la característica intervalo interparto (iip). La media de esta característica en la población es 438 días y la repetibilidad es 0,15. Además, contamos con la siguiente información individual (días):</p>
 <p>• Vaca 001: iip lactancia 2 = 462; iip lactancia 3 = 451; iip lactancia 4 = 473</p>
 <p>• Vaca 002: iip lactancia 2 = 471; iip lactancia 3 = 422; iip lactancia 4 = 430</p>
 <p>• Vaca 003: iip lactancia 2 = 455; iip lactancia 3 = 419</p>
 <p>• Vaca 004: iip lactancia 2 = 428</p>
 <p>¿Cuál es la <strong>producción más probable</strong> de estas vacas para intervalo interparto?</p>
-<!-- ***Solución*** -->
-<!-- Vaca 001 -->
-<!-- \begin{equation} -->
-<!-- x_{i}= \frac{(462+ 451 + 473) \text{ días}}{{3}} = 462 \text{ días} -->
-<!-- \end{equation} -->
-<!-- \begin{equation*} -->
-<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{3 * 0,15}{1 + (3 - 1)* 0,15} * (462 - 438) \text{ días}= 446  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- Vaca 002 -->
-<!-- \begin{equation} -->
-<!-- x_{i}= \frac{(471+ 422 + 430) \text{ días}}{{3}} = 441 \text{ días} -->
-<!-- \end{equation} -->
-<!-- \begin{equation*} -->
-<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{3 * 0,15}{1 + (3 - 1)* 0,15} * (441 - 438) \text{ días}= 439  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- Vaca 003 -->
-<!-- \begin{equation} -->
-<!-- x_{i}= \frac{(455+419) \text{ días}}{{2}} = 437 \text{ días} -->
-<!-- \end{equation} -->
-<!-- \begin{equation*} -->
-<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{2 * 0,15}{1 + (2 - 1)* 0,15} * (437 - 438) \text{ días}= 438  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- Vaca 004 -->
-<!-- \begin{equation*} -->
-<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{1 * 0,15}{1 + (1 - 1)* 0,15} * (428 - 438) \text{ días}= 437  \text{ días} -->
-<!-- \end{equation*} -->
-<!-- Simplificando, por ser un sólo registro: -->
-<!-- \begin{equation} -->
-<!-- {PMP}= 𝜇 + R (\bar x_{i} - 𝜇)= 438 \text{ días}+0,15 * (428 - 438) \text{ días}= 437 \text{ días} -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- Vaca 001  -->
+<!-- \begin{equation}  -->
+<!-- x_{i}= \frac{(462+ 451 + 473) \text{ días}}{{3}} = 462 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation*}  -->
+<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{3 * 0,15}{1 + (3 - 1)* 0,15} * (462 - 438) \text{ días}= 446  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- Vaca 002  -->
+<!-- \begin{equation}  -->
+<!-- x_{i}= \frac{(471+ 422 + 430) \text{ días}}{{3}} = 441 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation*}  -->
+<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{3 * 0,15}{1 + (3 - 1)* 0,15} * (441 - 438) \text{ días}= 439  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- Vaca 003  -->
+<!-- \begin{equation}  -->
+<!-- x_{i}= \frac{(455+419) \text{ días}}{{2}} = 437 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation*}  -->
+<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{2 * 0,15}{1 + (2 - 1)* 0,15} * (437 - 438) \text{ días}= 438  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- Vaca 004  -->
+<!-- \begin{equation*}  -->
+<!-- {PMP}= 𝜇 + \frac{nR}{1 + (n-1)R}(\bar x_{i} - 𝜇) = 438 \text{ días}+ \frac{1 * 0,15}{1 + (1 - 1)* 0,15} * (428 - 438) \text{ días}= 437  \text{ días}  -->
+<!-- \end{equation*}  -->
+<!-- Simplificando, por ser un sólo registro:  -->
+<!-- \begin{equation}  -->
+<!-- {PMP}= 𝜇 + R (\bar x_{i} - 𝜇)= 438 \text{ días}+0,15 * (428 - 438) \text{ días}= 437 \text{ días}  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-10.14" class="section level3 unnumbered">
-<h3>Ejercicio 10.14</h3>
-<p>En un estudio sobre prolificidad en cerdos se estudió la característica “número de lechones nacidos vivos.” Se obtuvieron <span class="math inline">\(1140\)</span> lechones hijos de <span class="math inline">\(228\)</span> cerdas apareadas con <span class="math inline">\(12\)</span> machos. Cada macho se aparea con el mismo número de hembras y tiene <span class="math inline">\(95\)</span> descendientes todos los años (<span class="math inline">\(5\)</span> descendientes por pareja).</p>
+<div id="ejercicio-10.14" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.14<a href="pargen.html#ejercicio-10.14" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En un estudio sobre prolificidad en cerdos se estudió la característica “número de lechones nacidos vivos”. Se obtuvieron <span class="math inline">\(1140\)</span> lechones hijos de <span class="math inline">\(228\)</span> cerdas apareadas con <span class="math inline">\(12\)</span> machos. Cada macho se aparea con el mismo número de hembras y tiene <span class="math inline">\(95\)</span> descendientes todos los años (<span class="math inline">\(5\)</span> descendientes por pareja).</p>
 <ol style="list-style-type: lower-alpha">
 <li>¿Cuántas hembras son apareadas por cada macho?</li>
 <li>¿Cuántos descendientes son medidos por cada hembra?, ¿Cuántos descendientes son medidos por cada macho?, ¿Cuántos descendientes son medidos por cada pareja?</li>
@@ -932,95 +955,94 @@ información individual (días):</p>
 <li>¿Cuál de las dos estimaciones es más precisa?, ¿por qué?</li>
 </ol>
 <p><br />
-<!-- ***Solución*** --></p>
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- s=\text{número de machos}=12\\ -->
-<!-- \\ -->
-<!-- d=\frac{\text{número de hembras}}{\text{número de machos}}=\frac{228}{12}=19 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- n_{hembras}=\frac{\text{número de lechones hijos}}{\text{número de hembras}}=\frac{1140}{228}=5\\ -->
-<!-- \\ -->
-<!-- n_{machos}=\frac{\text{número de lechones hijos}}{\text{número de machos}}=\frac{1140}{12}=95\\ -->
-<!-- \\ -->
-<!-- n_{parejas}=\frac{\text{número de lechones hijos}}{\text{número de parejas}}=\frac{1140}{228}=5 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- c) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- gl_{entreMachos}=s-1=12-1=11\\ -->
-<!-- gl_{entreHembras}=s\times (d-1)=12\times (19-1)=216\\ -->
-<!-- gl_{entreProgenie}=s\times d\times (n_{parejas}-1)=12\times 19\times (5-1)=912\\ -->
-<!-- gl_{total}=s\times d\times n_{parejas}-1=12\times 19\times 5-1=1139\\ -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
+<!-- ***Solución***  --></p>
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- s=\text{número de machos}=12\\  -->
+<!-- \\  -->
+<!-- d=\frac{\text{número de hembras}}{\text{número de machos}}=\frac{228}{12}=19  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- n_{hembras}=\frac{\text{número de lechones hijos}}{\text{número de hembras}}=\frac{1140}{228}=5\\  -->
+<!-- \\  -->
+<!-- n_{machos}=\frac{\text{número de lechones hijos}}{\text{número de machos}}=\frac{1140}{12}=95\\  -->
+<!-- \\  -->
+<!-- n_{parejas}=\frac{\text{número de lechones hijos}}{\text{número de parejas}}=\frac{1140}{228}=5  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- c)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- gl_{entreMachos}=s-1=12-1=11\\  -->
+<!-- gl_{entreHembras}=s\times (d-1)=12\times (19-1)=216\\  -->
+<!-- gl_{entreProgenie}=s\times d\times (n_{parejas}-1)=12\times 19\times (5-1)=912\\  -->
+<!-- gl_{total}=s\times d\times n_{parejas}-1=12\times 19\times 5-1=1139\\  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- \  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- CM_{entreMachos}=\frac{SC_{entreMachos}}{gl_{entreMachos}}=\frac{216,9}{11}=19,72\\  -->
+<!-- \\  -->
+<!-- CM_{entreHembras}=\frac{SC_{entreHembras}}{gl_{entreHembras}}=\frac{1751,04}{216}=8,11\\  -->
+<!-- \\  -->
+<!-- CM_{entreProgenie}=\frac{SC_{entreProgenie}}{gl_{entreProgenie}}=\frac{4453,60}{912}=4,88\\  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- |F. de V.      |g.l.     |S.C.     |C.M      |E(C.M.) |     -->
+<!-- |:-------------|:-------:|:-------:|:-------:|:-------:|  -->
+<!-- |entre machos  |$11$     |$216,9$  |$19,72$  |$\sigma^2_{residual} +n\sigma^2_{hembras} +nd\sigma^2_{machos}$|  -->
+<!-- |entre hembras |$216$    |$1751,04$|$8,11$   |$\sigma^2_{residual} +n\sigma^2_{hembras}$                     |  -->
+<!-- |entre progenie|$912$    |$4453,6$ |$4,88$   |$\sigma^2_{residual}$                                          |  -->
+<!-- |total         |$1139$   |$2413,54$|         |                                                               |  -->
+<!-- d)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \sigma^2_{machos}=\frac{CM_{entreMachos}-CM_{entreHembras}}{n_{machos}}=\frac{19,72-8,11}{95}=0,12\\  -->
+<!-- \\  -->
+<!-- \sigma^2_{hembras}=\frac{CM_{entreHembras}-CM_{entreProgenie}}{n_{hembras}}=\frac{8,11-4,88}{5}=0,65\\  -->
+<!-- \\  -->
+<!-- \sigma^2_{residual}=CM_{entreProgenie}=4,88  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- e)  -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A  -->
+<!-- \end{equation}  -->
+<!-- f)  -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_{hembras}=\frac{1}{2}\times \sigma^2_A+\frac{1}{4}\times \sigma^2_D+\sigma^2_{E_c}  -->
+<!-- \end{equation}  -->
+<!-- g)  -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_P=\sigma^2_{machos}+\sigma^2_{hembras}+\sigma^2_{residual}=0,12+0,65+4,88=5,65  -->
+<!-- \end{equation}  -->
+<!-- h)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{machos}\times 4=0,12\times 4=0,48\\  -->
+<!-- \\  -->
+<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{0,48}{5,65}=0,085  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- i)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \sigma^2_{hembras}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{hembras}\times 4=0,65\times 4=2,6\\  -->
+<!-- \\  -->
+<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{2,6}{5,65}=0,460  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- j)   -->
+<!-- La estimación de heredabilidad a partir del componente macho es la más precisa, ya que al no incluir la varianza de dominancia, no sobreestima a la heredabilidad.  -->
 <!-- \ -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- CM_{entreMachos}=\frac{SC_{entreMachos}}{gl_{entreMachos}}=\frac{216,9}{11}=19,72\\ -->
-<!-- \\ -->
-<!-- CM_{entreHembras}=\frac{SC_{entreHembras}}{gl_{entreHembras}}=\frac{1751,04}{216}=8,11\\ -->
-<!-- \\ -->
-<!-- CM_{entreProgenie}=\frac{SC_{entreProgenie}}{gl_{entreProgenie}}=\frac{4453,60}{912}=4,88\\ -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- |F. de V.      |g.l.     |S.C.     |C.M      |E(C.M.) |    -->
-<!-- |:-------------|:-------:|:-------:|:-------:|:-------:| -->
-<!-- |entre machos  |$11$     |$216,9$  |$19,72$  |$\sigma^2_{residual} +n\sigma^2_{hembras} +nd\sigma^2_{machos}$| -->
-<!-- |entre hembras |$216$    |$1751,04$|$8,11$   |$\sigma^2_{residual} +n\sigma^2_{hembras}$                     | -->
-<!-- |entre progenie|$912$    |$4453,6$ |$4,88$   |$\sigma^2_{residual}$                                          | -->
-<!-- |total         |$1139$   |$2413,54$|         |                                                               | -->
-<!-- d) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \sigma^2_{machos}=\frac{CM_{entreMachos}-CM_{entreHembras}}{n_{machos}}=\frac{19,72-8,11}{95}=0,12\\ -->
-<!-- \\ -->
-<!-- \sigma^2_{hembras}=\frac{CM_{entreHembras}-CM_{entreProgenie}}{n_{hembras}}=\frac{8,11-4,88}{5}=0,65\\ -->
-<!-- \\ -->
-<!-- \sigma^2_{residual}=CM_{entreProgenie}=4,88 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- e) -->
-<!-- \begin{equation} -->
-<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A -->
-<!-- \end{equation} -->
-<!-- f) -->
-<!-- \begin{equation} -->
-<!-- \sigma^2_{hembras}=\frac{1}{2}\times \sigma^2_A+\frac{1}{4}\times \sigma^2_D+\sigma^2_{E_c} -->
-<!-- \end{equation} -->
-<!-- g) -->
-<!-- \begin{equation} -->
-<!-- \sigma^2_P=\sigma^2_{machos}+\sigma^2_{hembras}+\sigma^2_{residual}=0,12+0,65+4,88=5,65 -->
-<!-- \end{equation} -->
-<!-- h) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{machos}\times 4=0,12\times 4=0,48\\ -->
-<!-- \\ -->
-<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{0,48}{5,65}=0,085 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- i) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \sigma^2_{hembras}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{hembras}\times 4=0,65\times 4=2,6\\ -->
-<!-- \\ -->
-<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{2,6}{5,65}=0,460 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- j)  -->
-<!-- La estimación de heredabilidad a partir del componente macho es la más precisa, ya que al no incluir la varianza de dominancia, no sobreestima a la heredabilidad. -->
-<p><br />
-</p>
 </div>
-<div id="ejercicio-10.15" class="section level3 unnumbered">
-<h3>Ejercicio 10.15</h3>
+<div id="ejercicio-10.15" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.15<a href="pargen.html#ejercicio-10.15" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En un estudio sobre la característica “cantidad de grasa de la leche” se obtuvieron los siguientes datos estableciéndose un modelo aleatorio jerárquico y equilibrado a 3 factores de variación que se muestran en el siguiente cuadro:</p>
 <table style="width:100%;">
 <colgroup>
@@ -1082,83 +1104,267 @@ información individual (días):</p>
 <li>Estima la heredabilidad (<span class="math inline">\(h^2\)</span>) a partir del componente hembra.</li>
 <li>¿Cuál de las dos estimaciones es más precisa?, ¿por qué?</li>
 </ol>
-<!-- \ -->
-<!-- ***Solución*** -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- gl_{entreMachos}=s-1 \implies s=gl_{entreMachos}+1=4+1=5\\ -->
-<!-- \\ -->
-<!-- gl_{dentroMachos}=gl_{entreHembras}=s\times (d-1) \implies d=\frac{gl_{entreHembras}}{s}+1=\frac{10}{5}+1=3\\ -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- gl_{entreProgenie}=s\times d\times (n-1) \implies n_{hembras}=\frac{gl_{entreProgenie}}{s\times d}+1=\frac{105}{5\times 3}+1=8\\ -->
-<!-- \\ -->
-<!-- n_{machos}=n_{hembras}\times d=8\times 3=24 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- c) -->
-<!-- \ -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- CM_{entreMachos}=\frac{SC_{entreMachos}}{gl_{entreMachos}}=\frac{4,96}{4}=1,24\\ -->
-<!-- \\ -->
-<!-- CM_{dentroMachos}=\frac{SC_{dentroMachos}}{gl_{dentroMachos}}=\frac{5,20}{10}=0,52\\ -->
-<!-- \\ -->
-<!-- CM_{entreProgenie}=\frac{SC_{entreProgenie}}{gl_{entreProgenie}}=\frac{21,0}{105}=0,20\\ -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- |F. de V.         |g.l.     |S.C.     |C.M      |E(C.M.) |    -->
-<!-- |:----------------|:-------:|:-------:|:-------:|:-------:| -->
-<!-- |entre machos     |$4$      |$4,96$   |$1,24$   |$\sigma^2_{residual} +n\sigma^2_{hembras} +nd\sigma^2_{machos}$| -->
-<!-- |dentro de machos |$10$     |$5,20$   |$0,52$   |$\sigma^2_{residual} +n\sigma^2_{hembras}$                     | -->
-<!-- |entre progenie   |$105$    |$21,0$   |$0,20$   |$\sigma^2_{residual}$                                          | -->
-<!-- |total            |$119$    |$31,16$  |         |                                                               | -->
-<!-- d) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \sigma^2_{machos}=\frac{CM_{entreMachos}-CM_{dentroMachos}}{n_{machos}}=\frac{1,24-0,52}{24}=0,03\\ -->
-<!-- \\ -->
-<!-- \sigma^2_{hembras}=\frac{CM_{dentroMachos}-CM_{entreProgenie}}{n_{hembras}}=\frac{0,52-0,20}{8}=0,04\\ -->
-<!-- \\ -->
-<!-- \sigma^2_{residual}=CM_{entreProgenie}=0,20 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- e) -->
-<!-- \begin{equation} -->
-<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A -->
-<!-- \end{equation} -->
-<!-- f) -->
-<!-- \begin{equation} -->
-<!-- \sigma^2_{hembras}=\frac{1}{2}\times \sigma^2_A+\frac{1}{4}\times \sigma^2_D+\sigma^2_{E_c} -->
-<!-- \end{equation} -->
-<!-- g) -->
-<!-- \begin{equation} -->
-<!-- \sigma^2_P=\sigma^2_{machos}+\sigma^2_{hembras}+\sigma^2_{residual}=0,03+0,04+0,20=0,27 -->
-<!-- \end{equation} -->
-<!-- h) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{machos}\times 4=0,03\times 4=0,12\\ -->
-<!-- \\ -->
-<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{0,12}{0,27}=0,44 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- i) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \sigma^2_{hembras}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{hembras}\times 4=0,04\times 4=0,16\\ -->
-<!-- \\ -->
-<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{0,16}{0,27}=0,59 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- j)  -->
-<!-- La estimación de heredabilidad a partir del componente macho es la más precisa, ya que al no incluir la varianza de dominancia, no sobreestima a la heredabilidad. -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- gl_{entreMachos}=s-1 \implies s=gl_{entreMachos}+1=4+1=5\\  -->
+<!-- \\  -->
+<!-- gl_{dentroMachos}=gl_{entreHembras}=s\times (d-1) \implies d=\frac{gl_{entreHembras}}{s}+1=\frac{10}{5}+1=3\\  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- gl_{entreProgenie}=s\times d\times (n-1) \implies n_{hembras}=\frac{gl_{entreProgenie}}{s\times d}+1=\frac{105}{5\times 3}+1=8\\  -->
+<!-- \\  -->
+<!-- n_{machos}=n_{hembras}\times d=8\times 3=24  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- c)  -->
+<!-- \  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- CM_{entreMachos}=\frac{SC_{entreMachos}}{gl_{entreMachos}}=\frac{4,96}{4}=1,24\\  -->
+<!-- \\  -->
+<!-- CM_{dentroMachos}=\frac{SC_{dentroMachos}}{gl_{dentroMachos}}=\frac{5,20}{10}=0,52\\  -->
+<!-- \\  -->
+<!-- CM_{entreProgenie}=\frac{SC_{entreProgenie}}{gl_{entreProgenie}}=\frac{21,0}{105}=0,20\\  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- |F. de V.         |g.l.     |S.C.     |C.M      |E(C.M.) |     -->
+<!-- |:----------------|:-------:|:-------:|:-------:|:-------:|  -->
+<!-- |entre machos     |$4$      |$4,96$   |$1,24$   |$\sigma^2_{residual} +n\sigma^2_{hembras} +nd\sigma^2_{machos}$|  -->
+<!-- |dentro de machos |$10$     |$5,20$   |$0,52$   |$\sigma^2_{residual} +n\sigma^2_{hembras}$                     |  -->
+<!-- |entre progenie   |$105$    |$21,0$   |$0,20$   |$\sigma^2_{residual}$                                          |  -->
+<!-- |total            |$119$    |$31,16$  |         |                                                               |  -->
+<!-- d)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \sigma^2_{machos}=\frac{CM_{entreMachos}-CM_{dentroMachos}}{n_{machos}}=\frac{1,24-0,52}{24}=0,03\\  -->
+<!-- \\  -->
+<!-- \sigma^2_{hembras}=\frac{CM_{dentroMachos}-CM_{entreProgenie}}{n_{hembras}}=\frac{0,52-0,20}{8}=0,04\\  -->
+<!-- \\  -->
+<!-- \sigma^2_{residual}=CM_{entreProgenie}=0,20  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- e)  -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A  -->
+<!-- \end{equation}  -->
+<!-- f)  -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_{hembras}=\frac{1}{2}\times \sigma^2_A+\frac{1}{4}\times \sigma^2_D+\sigma^2_{E_c}  -->
+<!-- \end{equation}  -->
+<!-- g)  -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_P=\sigma^2_{machos}+\sigma^2_{hembras}+\sigma^2_{residual}=0,03+0,04+0,20=0,27  -->
+<!-- \end{equation}  -->
+<!-- h)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \sigma^2_{machos}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{machos}\times 4=0,03\times 4=0,12\\  -->
+<!-- \\  -->
+<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{0,12}{0,27}=0,44  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- i)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \sigma^2_{hembras}=\frac{1}{4}\times \sigma^2_A \implies \sigma^2_A=\sigma^2_{hembras}\times 4=0,04\times 4=0,16\\  -->
+<!-- \\  -->
+<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P}=\frac{0,16}{0,27}=0,59  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- j)   -->
+<!-- La estimación de heredabilidad a partir del componente macho es la más precisa, ya que al no incluir la varianza de dominancia, no sobreestima a la heredabilidad.  -->
 <p><br />
 </p>
+</div>
+<div id="ejercicio-10.16" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.16<a href="pargen.html#ejercicio-10.16" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En una población de cerdos Pampa Rocha nacidos en el Centro Regional Sur, se han venido colectando registros, con los cuales se estimaron las siguientes varianzas para la característica peso al destete (PD) de los lechones.<br />
+<span class="math display">\[\begin{equation}
+{\sigma^2_P}=115 {kg^2} \\
+{\sigma^2_G}=40 {kg^2} \\
+{\sigma^2_D}+{\sigma^2_I}= 9 {kg^2} \\
+{\sigma^2_{E temporario}} = 62 {kg^2} \\
+\mu = 11 kg
+\end{equation}\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Calcula la heredabilidad de peso al destete de la población de cerdos.</li>
+<li>Calcula la repetibilidad de peso al destete.</li>
+<li>Una cerda tuvo en sus 3 partos lechones que pesaron en promedio 15 kg al destete ¿Cuánto esperas que pese un lechón de su siguiente parto?</li>
+<li>Estima el valor de cría de un lechón que pesó 13,5 kg.</li>
+</ol>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- h^2=\frac{{\sigma^2_A}}{\sigma^2_P}= \frac{(40-9)}{115}=0,27\\ -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \rho=\frac{{{\sigma^2_G+\sigma^2_{E permanente}}}}{\sigma^2_P}= \frac{(115-63)}{115}=0,46\\ -->
+<!-- \end{equation}  -->
+<!-- c)  -->
+<!-- \begin{equation}  -->
+<!-- {PMP}= 𝜇 + \frac{n\rho}{1 + (n-1)\rho}(\bar x_{i} - 𝜇) = 11 + \frac{3 \times 0,46}{1 + (3 - 1)\times 0,46} \times (15 - 11)= 13,88  \text{ kg}  -->
+<!-- \end{equation}   -->
+<!-- d) -->
+<!-- c)  -->
+<!-- \begin{equation}  -->
+<!-- {VC}= {h^2} (\bar x_{i} - 𝜇) = 0,27 \times (13,5-11)= 0,675  \text{ kg}  -->
+<!-- \end{equation}  -->
+</div>
+<div id="ejercicio-10.17" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.17<a href="pargen.html#ejercicio-10.17" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se dispone de dos estimaciones diferentes para la heredabilidad de una característica, 0,35 y 0,45. Se sabe que los métodos usados fueron “medios hermanos” y “hermanos enteros”.
+¿A cuál de los dos métodos le corresponde cada una de las estimaciones señaladas? Explique brevemente.</p>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- El valor de heredabilidad de 0,35 correspone al método de medios hermanos y el de 0,45 corresponde al método de estimación de hermanos enteros. -->
+<!-- El estimador de heredabilidad a partir de diseño de hermanos enteros es: -->
+<!-- \begin{equation}  -->
+<!-- \hat h^{2}={h^2} + \frac{{\frac{1}{2}}+{\sigma^2_D}+2{\sigma^2_{EC}}}{\sigma^2_P} -->
+<!-- \end{equation} lo que sesga el estimador hacia arriba dado que el último término es en general mayor a cero. -->
+</div>
+<div id="ejercicio-10.18" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.18<a href="pargen.html#ejercicio-10.18" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Dada la siguiente información para la característica peso al año y medio (PD18) en vacunos de carne:
+<span class="math display">\[\begin{equation}
+{\rho}=0,45 \\
+{h^2}=0,40 \\
+% de parición = 60 % \\
+{\sigma_P} = 10 {kg} \\
+\end{equation}\]</span>
+a) Calcula la magnitud de la covarianza enrtre medios hermanos.<br />
+b) Calcula la varianza total de los efectos permanentes (genéticos y no genéticos) y por comenta por cuáles está compuesta.<br />
+c) Calcula la varinaza de efectos temporarios.<br />
+</p>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- Cov_{{\frac{1}{2}}H}= \frac{1}{4} \sigma^2_A\\ -->
+<!-- h^2=\frac{{\sigma^2_A}}{\sigma^2_P} \because \sigma^2_A = h^2 \sigma^2_P = 0,40 \times 10^2 = 40\\ -->
+<!-- Cov_{{\frac{1}{2}}H}= \frac{1}{4}\times 40 = 10 -->
+<!-- \end{equation}  -->
+<!-- b) -->
+<!-- \begin{equation}  -->
+<!-- \rho=\frac{{{\sigma^2_G+\sigma^2_{E permanente}}}}{\sigma^2_P}\because {\sigma^2_G+\sigma^2_{E permanente}} =  \rho \sigma^2_P\\ -->
+<!-- {\sigma^2_G+\sigma^2_{E permanente}} = 0,45 \times 10^2= 45 -->
+<!-- \end{equation}  -->
+<!-- La varianza permanente incluye la varianza genetica aditiva, la varianza genética no aditiva (dominancia y epistasis) y la varianza ambiental permaentene. -->
+<!-- c) -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_P= {\sigma^2_{permanente} +\sigma^2_{E temporario}} \because \sigma^2_{E temporario}= \sigma^2_P - \sigma^2_{permanente}\\ -->
+<!-- \sigma^2_{E temporario}= 10^2 - 45 = 55 kg^2 -->
+<!-- \end{equation}  -->
+</div>
+<div id="ejercicio-10.19" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.19<a href="pargen.html#ejercicio-10.19" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En una población de pollos, se extraen 6 hembras al azar, se faenan a las 24 semanas de edad y de hacen por animal dos medidas de terneza de pechuga, los datos se muestran en la siguiente tabla.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Animales</th>
+<th align="center">Primer medida</th>
+<th align="center">Segunda medida</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="center">2,3</td>
+<td align="center">2,1</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="center">3,1</td>
+<td align="center">2,0</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="center">2,2</td>
+<td align="center">1,8</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="center">2,5</td>
+<td align="center">1,7</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="center">3,0</td>
+<td align="center">2,1</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="center">2,2</td>
+<td align="center">1,8</td>
+</tr>
+</tbody>
+</table>
+<p>Calcula la repetibilidad de la terneza de la pechuga.</p>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- \begin{equation}  -->
+<!-- \rho=\frac{{{Cov{X,Y}}}}{\sigma_X\sigma_Y} -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- Cov(X,Y)=\frac{1}{n-1}\sum (X_i - \hat X)(Y_i - \hat Y) = \frac{1}{6-1}(0,175)=0,035 -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- \sigma_X= 0,404 \ \sigma_Y= 0,172 \\ -->
+<!-- \rho=\frac{0,035}{0,404\times 0,172}= 0,50 -->
+<!-- \end{equation}  -->
+</div>
+<div id="ejercicio-10.20" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 10.20<a href="pargen.html#ejercicio-10.20" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En un programa de inseminación artificial en aves White Leghorn se tomaron muestras de semen de 45 gallos, durante 8 horas consecutivas, obteniéndose 8 medidas del volumen de semen por individuo.
+De este experimento se obtiene el siguiente analisis de varianza:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Fuente de variación</th>
+<th align="center">GL</th>
+<th align="center">CM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Entre gallos</td>
+<td align="center">44</td>
+<td align="center">0,636505</td>
+</tr>
+<tr class="even">
+<td align="left">Entre muestras dentro de gallos</td>
+<td align="center">315</td>
+<td align="center">0,043875</td>
+</tr>
+</tbody>
+</table>
+<p>Calcula la repetibilidad del volumen de semen.</p>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- |Fuente de variación |GL|CM|  E(CM) | -->
+<!-- |:----------------|:-------:|:-------:|:-------:| -->
+<!-- |Entre gallos|44|0,636505|\begin{equation} \sigma^2_{dentro \ individuos}+K\sigma^2_{entre\ individuos}\end{equation} | -->
+<!-- |Entre muestras dentro de gallos|315|0,043875|\begin{equation}\sigma^2_{dentro \ individuos}\end{equation}| -->
+<!-- \begin{equation}  -->
+<!-- \sigma^2_{dentro \ individuos}= CM_{dentro\ individuos}\\ -->
+<!-- \sigma^2_{entre \ individuos}= \frac {CM_{entre\ individuos}-CM_{dentro\ individuos}}{k} -->
+<!-- \end{equation} -->
+<!-- Desde el punto de vista genético: -->
+<!-- | |||   -->
+<!-- |:----------------|:-------:|:-------:| -->
+<!-- |Componente entre individuos|\begin{equation} \sigma^2_{entre \ individuos} = \sigma^2_G + \sigma^2_{E permanente} \end{equation} |Dif. permanente entre individuos| -->
+<!-- |Componente dentro individuos|\begin{equation} \sigma^2_{dentro \ individuos} =  \sigma^2_{E temporario} \end{equation} |Dif. temporaria entre registros individuales| -->
+<!-- |Suma de los Componente|\begin{equation} \sigma^2_{entre \ individuos}+\sigma^2_{dentro \ individuos} = \sigma^2_G + \sigma^2_{E permanente}+ \sigma^2_{E temporario} \end{equation} |Varinaza fenotípica total| -->
+<!-- \begin{equation}  -->
+<!-- \rho = \frac{\sigma^2_G + \sigma^2_{E permanente} }{\sigma^2_G + \sigma^2_{E permanente}+\sigma^2_{E temporario}} \because \frac{\sigma^2_{entre \ individuos}}{\sigma^2_{entre \ individuos}+\sigma^2_{dentro \ individuos}} \\ -->
+<!-- \sigma^2_{entre \ individuos}= \frac {CM_{entre\ individuos}-CM_{dentro\ individuos}}{k}= \frac {0,636505-0,043875}{8}=0,0741\\ -->
+<!-- \rho = \frac{0,0741}{0,0741+0,043875}=0,628 -->
+<!-- \end{equation} -->
 <hr />
 
 </div>
@@ -1173,7 +1379,6 @@ información individual (días):</p>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1214,7 +1419,7 @@ gitbook.start({
 },
 "download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -1230,7 +1435,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

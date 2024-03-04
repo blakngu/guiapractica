@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 11 Selección Artificial I | Genética II: Guía Práctica</title>
   <meta name="description" content="Apuntes del curso Genética II. Guía Práctica" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 11 Selección Artificial I | Genética II: Guía Práctica" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/figuras/caratula1.png" />
   <meta property="og:description" content="Apuntes del curso Genética II. Guía Práctica" />
   <meta name="github-repo" content="blakngu.github.io/libro/" />
@@ -23,11 +22,10 @@
 
 <meta name="author" content="Hugo Naya" />
 <meta name="author" content="(Federica Marín)" />
-<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián)" />
-<meta name="author" content="(Clara Pritsch, Paola Gaiero, Marianella Quezada)" />
+<meta name="author" content="(María André, Ana Laura Sanchez, Andrea Larracharte, Rodrigo Vivián, Washington Bell, Micaela Botta)" />
 
 
-<meta name="date" content="2022-06-13" />
+<meta name="date" content="2024-03-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,8 +34,8 @@
   
 <link rel="prev" href="pargen.html"/>
 <link rel="next" href="correlacionada.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,9 +51,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -115,6 +113,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.8"><i class="fa fa-check"></i>Ejercicio 1.8</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.9"><i class="fa fa-check"></i>Ejercicio 1.9</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.10"><i class="fa fa-check"></i>Ejercicio 1.10</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.11"><i class="fa fa-check"></i>Ejercicio 1.11</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.12"><i class="fa fa-check"></i>Ejercicio 1.12</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicio-1.13"><i class="fa fa-check"></i>Ejercicio 1.13</a></li>
 </ul></li>
 <li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
 <li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
@@ -217,6 +218,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.13"><i class="fa fa-check"></i>Ejercicio 8.13</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.14"><i class="fa fa-check"></i>Ejercicio 8.14</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.15"><i class="fa fa-check"></i>Ejercicio 8.15</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.16"><i class="fa fa-check"></i>Ejercicio 8.16</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.17"><i class="fa fa-check"></i>Ejercicio 8.17</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#ejercicio-8.18"><i class="fa fa-check"></i>Ejercicio 8.18</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
 <ul>
@@ -230,6 +234,11 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.8"><i class="fa fa-check"></i>Ejercicio 9.8</a></li>
 <li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.9"><i class="fa fa-check"></i>Ejercicio 9.9</a></li>
 <li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.10"><i class="fa fa-check"></i>Ejercicio 9.10</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.11"><i class="fa fa-check"></i>Ejercicio 9.11</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.12"><i class="fa fa-check"></i>Ejercicio 9.12</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.13"><i class="fa fa-check"></i>Ejercicio 9.13</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.14"><i class="fa fa-check"></i>Ejercicio 9.14</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#ejercicio-9.15"><i class="fa fa-check"></i>Ejercicio 9.15</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
 <ul>
@@ -248,6 +257,11 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.13"><i class="fa fa-check"></i>Ejercicio 10.13</a></li>
 <li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.14"><i class="fa fa-check"></i>Ejercicio 10.14</a></li>
 <li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.15"><i class="fa fa-check"></i>Ejercicio 10.15</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.16"><i class="fa fa-check"></i>Ejercicio 10.16</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.17"><i class="fa fa-check"></i>Ejercicio 10.17</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.18"><i class="fa fa-check"></i>Ejercicio 10.18</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.19"><i class="fa fa-check"></i>Ejercicio 10.19</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#ejercicio-10.20"><i class="fa fa-check"></i>Ejercicio 10.20</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
 <ul>
@@ -261,6 +275,12 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.8"><i class="fa fa-check"></i>Ejercicio 11.8</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.9"><i class="fa fa-check"></i>Ejercicio 11.9</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.10"><i class="fa fa-check"></i>Ejercicio 11.10</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.11"><i class="fa fa-check"></i>Ejercicio 11.11</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.12"><i class="fa fa-check"></i>Ejercicio 11.12</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.13"><i class="fa fa-check"></i>Ejercicio 11.13</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.14"><i class="fa fa-check"></i>Ejercicio 11.14</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.15"><i class="fa fa-check"></i>Ejercicio 11.15</a></li>
+<li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#ejercicio-11.16"><i class="fa fa-check"></i>Ejercicio 11.16</a></li>
 <li class="chapter" data-level="" data-path="selartifI.html"><a href="selartifI.html#tabla-intensidad-de-selección-en-función-de-la-proporción-distribución-normal"><i class="fa fa-check"></i>Tabla Intensidad de Selección en función de la proporción (distribución Normal)</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
@@ -340,14 +360,19 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="selartifI" class="section level1" number="11">
-<h1><span class="header-section-number">Capítulo 11</span> Selección Artificial I</h1>
-<div id="ejercicio-11.1" class="section level3 unnumbered">
-<h3>Ejercicio 11.1</h3>
+<div id="selartifI" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">Capítulo 11</span> Selección Artificial I<a href="selartifI.html#selartifI" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ejercicio-11.1" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.1<a href="selartifI.html#ejercicio-11.1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Un rodeo vacuno que produce sus propios reemplazos posee las siguientes cantidades de machos y hembras en las distintas categorías de edades (en años, al nacimiento de los hijos)</p>
 <p><br />
 </p>
-<table>
+<table style="width:100%;">
+<colgroup>
+<col width="57%" />
+<col width="20%" />
+<col width="21%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Edad en años (al nacimiento de los hijos)</th>
@@ -391,37 +416,41 @@ div.csl-indent {
 <p><br />
 </p>
 <p>Calcular el intervalo generacional de machos, el de hembras y el intervalo generacional promedio.</p>
-<!-- ***Solución*** -->
-<!-- En machos hay solo 3 categorías de edad, por lo que el número de machos será igual a  -->
-<!-- \begin{equation} -->
-<!-- \mathrm{n_m=\sum_j n_{j_{m}}=15+10+5=30}\\ -->
-<!-- \end{equation} -->
-<!-- y el intervalo generacional de machos sería -->
-<!-- \begin{equation} -->
-<!-- \mathrm{IG_m=\frac{1}{n_m}\sum_j n_{j_{m}}\cdot j=\frac{3 \times 15+4 \times 10 + 5 \times 5}{30}=\frac{110}{30}=3,6667} \text{ años} -->
-<!-- \end{equation} -->
-<!-- En hembras, usando el mismo razonamiento y las mismas ecuaciones, tenemos -->
-<!-- \begin{equation} -->
-<!-- \mathrm{n_h=\sum_j n_{j_{h}}=250+220+200+170+160=1000}\\ -->
-<!-- \end{equation} -->
-<!-- y -->
-<!-- \begin{equation} -->
-<!-- \mathrm{IG_h=\frac{1}{n_h}\sum_j n_{j_{h}}\cdot j=\frac{3 \times 250+4 \times 220 + 5 \times 200+ 6 \times 170 + 7 \times 160}{1000}=\frac{4770}{1000}=4,77} \text{ años} -->
-<!-- \end{equation} -->
-<!-- Por lo tanto, tenemos que el intervalo generacional del rodeo será igual a -->
-<!-- \begin{equation} -->
-<!-- \mathrm{IG=\frac{IG_{m}+IG_{h}}{2}=\frac{3,6667+4,77}{2}=\frac{8,4367}{2} \sim 4,22} \text{ años} -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- En machos hay solo 3 categorías de edad, por lo que el número de machos será igual a   -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{n_m=\sum_j n_{j_{m}}=15+10+5=30}\\  -->
+<!-- \end{equation}  -->
+<!-- y el intervalo generacional de machos sería  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{IG_m=\frac{1}{n_m}\sum_j n_{j_{m}}\cdot j=\frac{3 \times 15+4 \times 10 + 5 \times 5}{30}=\frac{110}{30}=3,6667} \text{ años}  -->
+<!-- \end{equation}  -->
+<!-- En hembras, usando el mismo razonamiento y las mismas ecuaciones, tenemos  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{n_h=\sum_j n_{j_{h}}=250+220+200+170+160=1000}\\  -->
+<!-- \end{equation}  -->
+<!-- y  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{IG_h=\frac{1}{n_h}\sum_j n_{j_{h}}\cdot j=\frac{3 \times 250+4 \times 220 + 5 \times 200+ 6 \times 170 + 7 \times 160}{1000}=\frac{4770}{1000}=4,77} \text{ años}  -->
+<!-- \end{equation}  -->
+<!-- Por lo tanto, tenemos que el intervalo generacional del rodeo será igual a  -->
+<!-- \begin{equation}  -->
+<!-- \mathrm{IG=\frac{IG_{m}+IG_{h}}{2}=\frac{3,6667+4,77}{2}=\frac{8,4367}{2} \sim 4,22} \text{ años}  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-11.2" class="section level3 unnumbered">
-<h3>Ejercicio 11.2</h3>
+<div id="ejercicio-11.2" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.2<a href="selartifI.html#ejercicio-11.2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un grupo de vacas lecheras, y queremos seleccionar como reproductora a la que produce mayor volumen de leche por lactancia.</p>
 <p>Como información sabemos que, a nivel poblacional para producción de leche, distintas
 subclases de lactancia presentan diferente media e igual varianza:<br />
 </p>
 <table>
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="40%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Lactancia (no.)</th>
@@ -451,6 +480,11 @@ subclases de lactancia presentan diferente media e igual varianza:<br />
 </p>
 <p>¿Cuál de las siguientes vacas seleccionaríamos? Calcula la producción de leche corregida para cada vaca, planteado como subclase de referencia a la lactancia 2.</p>
 <table>
+<colgroup>
+<col width="30%" />
+<col width="37%" />
+<col width="31%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Vaca</th>
@@ -487,26 +521,25 @@ subclases de lactancia presentan diferente media e igual varianza:<br />
 </tbody>
 </table>
 <p><br />
-<!-- ***Solución*** -->
+<!-- ***Solución***  -->
+<!-- \  -->
+<!-- \begin{equation}  -->
+<!-- \mathbf{a_1}= \bar y_0 - \bar y_i= 4481 − 3897 = 584\\  -->
+<!-- \mathbf{a_2}= \bar y_0 - \bar y_i= 4481 − 4481 = 0  \\  -->
+<!-- \mathbf{a_3}= \bar y_0 - \bar y_i= 4481 − 4740 = −259\\  -->
+<!-- \end{equation}  --></p>
+<!-- \begin{equation}  -->
+<!-- \bar y_{8001}^*= \bar y_i - \bar a_i= 4000 + 584 = 4584  \text{ litros}\\  -->
+<!-- \bar y_{8005}^*= \bar y_i - \bar a_i= 3500 + 584 = 4084  \text{ litros}\\  -->
+<!-- \bar y_{7009}^*= \bar y_i - \bar a_i= 4900 + 0 = 4900  \text{ litros}\\  -->
+<!-- \bar y_{7013}^*= \bar y_i - \bar a_i= 6000 + 0 = 6000  \text{ litros}\\  -->
+<!-- \bar y_{6007}^*= \bar y_i - \bar a_i= 5600 + (−259) = 5341  \text{ litros}  -->
+<!-- \end{equation}  -->
+<!-- Seleccionaríamos a la vaca 7013, la cual presenta la mayor producción de leche corregida.  -->
 <!-- \ -->
-<!-- \begin{equation} -->
-<!-- \mathbf{a_1}= \bar y_0 - \bar y_i= 4481 − 3897 = 584\\ -->
-<!-- \mathbf{a_2}= \bar y_0 - \bar y_i= 4481 − 4481 = 0  \\ -->
-<!-- \mathbf{a_3}= \bar y_0 - \bar y_i= 4481 − 4740 = −259\\ -->
-<!-- \end{equation} --></p>
-<!-- \begin{equation} -->
-<!-- \bar y_{8001}^*= \bar y_i - \bar a_i= 4000 + 584 = 4584  \text{ litros}\\ -->
-<!-- \bar y_{8005}^*= \bar y_i - \bar a_i= 3500 + 584 = 4084  \text{ litros}\\ -->
-<!-- \bar y_{7009}^*= \bar y_i - \bar a_i= 4900 + 0 = 4900  \text{ litros}\\ -->
-<!-- \bar y_{7013}^*= \bar y_i - \bar a_i= 6000 + 0 = 6000  \text{ litros}\\ -->
-<!-- \bar y_{6007}^*= \bar y_i - \bar a_i= 5600 + (−259) = 5341  \text{ litros} -->
-<!-- \end{equation} -->
-<!-- Seleccionaríamos a la vaca 7013, la cual presenta la mayor producción de leche corregida. -->
-<p><br />
-</p>
 </div>
-<div id="ejercicio-11.3" class="section level3 unnumbered">
-<h3>Ejercicio 11.3</h3>
+<div id="ejercicio-11.3" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.3<a href="selartifI.html#ejercicio-11.3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un grupo de terneros, y queremos seleccionar al de mayor peso al
 destete.</p>
 <p>Como información sabemos que, a nivel poblacional para peso al destete, distintas subclases
@@ -545,6 +578,11 @@ de edad de la madre presentan diferente media y diferente varianza:</p>
 <p>¿Cuál de los siguientes terneros seleccionaríamos? Calcula el peso al destete corregido para
 cada ternero, planteado como subclase de referencia a la edad de la madre de 4 años.</p>
 <table>
+<colgroup>
+<col width="38%" />
+<col width="33%" />
+<col width="28%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Ternero</th>
@@ -577,33 +615,37 @@ cada ternero, planteado como subclase de referencia a la edad de la madre de 4 a
 </table>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- m_3=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{157}}= 1,06 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- m_4=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{166}}= 1,0 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- m_5=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{169}}= 0,98 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- \bar y_{1001}^*= \bar y_i * \bar m_i= 132 \times 1,06 = 140  \text{ kg}\\ -->
-<!-- \bar y_{1008}^*= \bar y_i * \bar m_i= 145 \times 1,06 = 154  \text{ kg}\\ -->
-<!-- \bar y_{1014}^*= \bar y_i - \bar m_i= 140 \times 1 = 140  \text{ kg}\\ -->
-<!-- \bar y_{1032}^*= \bar y_i - \bar m_i= 150 \times 0,98 = 147  \text{ kg} -->
-<!-- \end{equation} -->
-<!-- Seleccionaríamos al ternero 1008, el cual presenta el mayor peso al destete corregido. -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- m_3=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{157}}= 1,06  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- m_4=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{166}}= 1,0  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- m_5=\frac{\mathrm{\bar y_0}}{\mathrm{\bar y_i}}=\frac{\mathrm{166}}{\mathrm{169}}= 0,98  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- \bar y_{1001}^*= \bar y_i * \bar m_i= 132 \times 1,06 = 140  \text{ kg}\\  -->
+<!-- \bar y_{1008}^*= \bar y_i * \bar m_i= 145 \times 1,06 = 154  \text{ kg}\\  -->
+<!-- \bar y_{1014}^*= \bar y_i - \bar m_i= 140 \times 1 = 140  \text{ kg}\\  -->
+<!-- \bar y_{1032}^*= \bar y_i - \bar m_i= 150 \times 0,98 = 147  \text{ kg}  -->
+<!-- \end{equation}  -->
+<!-- Seleccionaríamos al ternero 1008, el cual presenta el mayor peso al destete corregido.  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-11.4" class="section level3 unnumbered">
-<h3>Ejercicio 11.4</h3>
+<div id="ejercicio-11.4" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.4<a href="selartifI.html#ejercicio-11.4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
 siguiente estructura de edades:</p>
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="41%" />
+<col width="35%" />
+<col width="22%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Edad al parto</th>
@@ -654,34 +696,38 @@ nacidos sobreviven durante su cría y recría:</p>
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88 -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088 -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- \text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68  -->
+<!-- \end{equation}  -->
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-11.5" class="section level3 unnumbered">
-<h3>Ejercicio 11.5</h3>
+<div id="ejercicio-11.5" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.5<a href="selartifI.html#ejercicio-11.5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
 siguiente estructura de edades:</p>
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="41%" />
+<col width="35%" />
+<col width="22%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Edad al parto</th>
@@ -736,35 +782,38 @@ nacidos sobreviven durante su cría y recría:</p>
 <li>¿Cuánto vale la proporción de selección en machos?<br />
 </li>
 </ol>
-<!-- ***Solución*** -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- \text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68  -->
+<!-- \end{equation}  -->
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059  -->
+<!-- \end{equation}  -->
 <!-- \ -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79 -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059 -->
-<!-- \end{equation} -->
-<p><br />
-</p>
 </div>
-<div id="ejercicio-11.6" class="section level3 unnumbered">
-<h3>Ejercicio 11.6</h3>
+<div id="ejercicio-11.6" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.6<a href="selartifI.html#ejercicio-11.6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
 siguiente estructura de edades:</p>
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="41%" />
+<col width="35%" />
+<col width="22%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Edad al parto</th>
@@ -817,41 +866,45 @@ de selección de la población?</li>
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- \text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68  -->
+<!-- \end{equation}  -->
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{30}}{\mathrm{34}}= 0,88  -->
+<!-- \end{equation}  -->
 <!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_h$= 0,22429 -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088 -->
-<!-- \end{equation} -->
+<!-- $i_h = 0,22429$ -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{3}}{\mathrm{34}}= 0,088  -->
+<!-- \end{equation}  -->
 <!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_m$= 1,80384 -->
-<!-- c) -->
-<!-- Promediamos intensidad de macho e intensidad de hembras: -->
-<!-- \begin{equation} -->
-<!-- i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,80384 + 0,22429}}{\mathrm{2}}=1,01407 -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- $i_m = 1,80384$ -->
+<!-- c)  -->
+<!-- Promediamos intensidad de macho e intensidad de hembras:  -->
+<!-- \begin{equation}  -->
+<!-- i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,80384 + 0,22429}}{\mathrm{2}}=1,01407  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-11.7" class="section level3 unnumbered">
-<h3>Ejercicio 11.7</h3>
+<div id="ejercicio-11.7" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.7<a href="selartifI.html#ejercicio-11.7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de leche, el cual está compuesto por la
 siguiente estructura de edades:</p>
 <table>
+<colgroup>
+<col width="41%" />
+<col width="35%" />
+<col width="22%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Edad al parto</th>
@@ -906,36 +959,36 @@ nacidos sobreviven durante su cría y recría:</p>
 <li>¿Cuánto vale la intensidad de selección en machos?</li>
 <li>¿Cuánto vale la intensidad de selección de la población?</li>
 </ol>
-<!-- ***Solución*** -->
-<!-- \begin{equation} -->
-<!-- No. ternero/as \text{ nacidos}/as =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * No. hembras \text{ total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68 -->
-<!-- \end{equation} -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- No. hembras \text{ disponibles} =\frac{\mathrm{No. terneros/as\text{ nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. hembras\text{ a}/seleccionar}}{\mathrm{\ No. hembras\text{ disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79 -->
-<!-- \end{equation} -->
+<!-- ***Solución***  -->
+<!-- \begin{equation}  -->
+<!-- \text{ No. ternero/as nacidos/as} =\frac{\mathrm{\% parición}}{\mathrm{\ 100}} * \text{No. hembras  total}=\frac{\mathrm{68}}{\mathrm{100}} * 100= 68  -->
+<!-- \end{equation}  -->
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. hembras disponibles} =\frac{\mathrm{\text{No. terneros/as nacidos}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_h=\frac{\mathrm{\text{No. hembras a seleccionar}}}{\mathrm{\text{No. hembras disponibles}}} =\frac{\mathrm{27}}{\mathrm{34}}= 0,79  -->
+<!-- \end{equation}  -->
 <!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_h$= 0,36487 -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- No. machos \text{ disponibles} =\frac{\mathrm{No. ternero/as\text{ nacido}/as}}{\mathrm{\ 2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34 -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- p_h=\frac{\mathrm{No. machos\text{ a}/seleccionar}}{\mathrm{\ No. machos\text{ disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059 -->
-<!-- \end{equation} -->
+<!-- $i_h = 0,36487$ -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \text{No. machos disponibles} =\frac{\mathrm{\text{No. ternero/as nacido/as}}}{\mathrm{2}} =\frac{\mathrm{68}}{\mathrm{2}}= 34  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- p_m=\frac{\mathrm{\text{No. machos a seleccionar}}}{\mathrm{\text{No. machos disponibles}}} =\frac{\mathrm{2}}{\mathrm{34}}= 0,059  -->
+<!-- \end{equation}  -->
 <!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
-<!-- $i_m$= 1,98439 -->
-<!-- c) -->
-<!-- Promediamos intensidad de macho e intensidad de hembras: -->
-<!-- \begin{equation} -->
-<!-- i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,98439 + 0,36487}}{\mathrm{2}}=1,17463 -->
-<!-- \end{equation} -->
+<!-- $i_m = 1,98439$ -->
+<!-- c)  -->
+<!-- Promediamos intensidad de macho e intensidad de hembras:  -->
+<!-- \begin{equation}  -->
+<!-- i_{población}=\frac{\mathrm{i_m + i_h }}{\mathrm{2}}=\frac{\mathrm{1,98439 + 0,36487}}{\mathrm{2}}=1,17463  -->
+<!-- \end{equation}  -->
 </div>
-<div id="ejercicio-11.8" class="section level3 unnumbered">
-<h3>Ejercicio 11.8</h3>
+<div id="ejercicio-11.8" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.8<a href="selartifI.html#ejercicio-11.8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Supongamos que tenemos un rodeo de bovinos de carne, y queremos mejorar la característica
 peso al destete. El peso al destete promedio de la población es 197 kg, el promedio de los
 machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209 kg.</p>
@@ -944,32 +997,31 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
 <li>¿Cuánto vale el diferencial de selección de hembras?</li>
 <li>¿Cuánto vale el diferencial de selección de la población?</li>
 </ol>
-<!-- ***Solución*** -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- S_{m}= \bar X_S{m} - \mu_0= 229 - 197= 32 \text { kg} -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- S_{h}= \bar X_S{h} - \mu_0= 209 - 197= 12 \text { kg} -->
-<!-- \end{equation} -->
-<!-- c) -->
-<!-- Una manera de calcular $(S_{p})$: -->
-<!-- \begin{equation} -->
-<!-- S_{p}=\frac{\mathrm{S_m + S_h }}{\mathrm{2}}=\frac{\mathrm{32 + 12}}{\mathrm{2}}=22 \text { kg} -->
-<!-- \end{equation} -->
-<!-- Otra manera de calcular $(S_{p})$: -->
-<!-- \begin{equation} -->
-<!-- \bar X_S{p}=\frac{\mathrm{\bar X_Sm + \bar X_Sh }}{\mathrm{2}}=\frac{\mathrm{229 + 209}}{\mathrm{2}}=219 \text { kg} -->
-<!-- \end{equation} -->
-<!-- \begin{equation} -->
-<!-- S_{p}= \bar X_S{p} - \mu_0= 219 - 197= 22 \text { kg} -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- S_{m}= \bar X_S{m} - \mu_0= 229 - 197= 32 \text { kg}  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- S_{h}= \bar X_S{h} - \mu_0= 209 - 197= 12 \text { kg}  -->
+<!-- \end{equation}  -->
+<!-- c)  -->
+<!-- Una manera de calcular $(S_{p})$:  -->
+<!-- \begin{equation}  -->
+<!-- S_{p}=\frac{\mathrm{S_m + S_h }}{\mathrm{2}}=\frac{\mathrm{32 + 12}}{\mathrm{2}}=22 \text { kg}  -->
+<!-- \end{equation}  -->
+<!-- Otra manera de calcular $(S_{p})$:  -->
+<!-- \begin{equation}  -->
+<!-- \bar X_S{p}=\frac{\mathrm{\bar X_Sm + \bar X_Sh }}{\mathrm{2}}=\frac{\mathrm{229 + 209}}{\mathrm{2}}=219 \text { kg}  -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- S_{p}= \bar X_S{p} - \mu_0= 219 - 197= 22 \text { kg}  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-11.9" class="section level3 unnumbered">
-<h3>Ejercicio 11.9</h3>
+<div id="ejercicio-11.9" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.9<a href="selartifI.html#ejercicio-11.9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En un rodeo de cría se estimaron los siguientes valores para la característica peso al destete corregido de los terneros:</p>
 <ul>
 <li><p>Peso al destete promedio de la población: <span class="math inline">\(160\)</span> kg;</p></li>
@@ -984,21 +1036,20 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
 </ol>
 <p><br />
 </p>
-<!-- ***Solución*** -->
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- i=\frac{S}{\sigma_P}i=\frac{180-160}{\sqrt{1600}}=0,5 -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- c)  -->
-<!-- \begin{equation} -->
-<!-- PGG=h^2\times S=0,20\times (180-160)=4,0\text{ kg} -->
-<!-- \end{equation} -->
-<p><br />
-</p>
+<!-- ***Solución***  -->
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- i=\frac{S}{\sigma_P}=\frac{180-160}{\sqrt{1600}}=0,5  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- c)   -->
+<!-- \begin{equation}  -->
+<!-- PGG=h^2\times S=0,20\times (180-160)=4,0\text{ kg}  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="ejercicio-11.10" class="section level3 unnumbered">
-<h3>Ejercicio 11.10</h3>
+<div id="ejercicio-11.10" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.10<a href="selartifI.html#ejercicio-11.10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Tú tienes dos estructuras de rodeo distintas:</p>
 <table>
 <thead>
@@ -1067,40 +1118,459 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
 <li>Discute comparativamente el efecto de las diferentes estructuras de edades y porcentaje de procreos en el intervalo generacional y las posibilidades de selección.</li>
 </ol>
 <p><br />
-<!-- ***Solución*** --></p>
-<!-- a) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- IG_{RodeoA}=\frac{4\times 22+5\times 19+6\times 19+7\times 18+8\times 12+9\times 10}{100}=6,09\text{ años}\\ -->
-<!-- \\ -->
-<!-- IG_{RodeoB}=\frac{3\times 25+4\times 25+5\times 25+6\times 25}{100}=4,5\text{ años} -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<!-- b) -->
-<!-- \begin{equation} -->
-<!-- \begin{split} -->
-<!-- \text{No. hembras disponibles}_{RodeoA}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,6}{2}=30\\ -->
-<!-- \\ -->
-<!-- p_{RodeoA}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{22}{30}=0,73\\ -->
-<!-- \\ -->
-<!-- \text{No. hembras disponibles}_{RodeoB}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,8}{2}=40\\ -->
-<!-- \\ -->
-<!-- p_{RodeoB}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{25}{40}=0,63 -->
-<!-- \end{split} -->
-<!-- \end{equation} -->
-<p><br />
-</p>
-<hr />
+<!-- ***Solución***  --></p>
+<!-- a)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- IG_{RodeoA}=\frac{4\times 22+5\times 19+6\times 19+7\times 18+8\times 12+9\times 10}{100}=6,09\text{ años}\\  -->
+<!-- \\  -->
+<!-- IG_{RodeoB}=\frac{3\times 25+4\times 25+5\times 25+6\times 25}{100}=4,5\text{ años}  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- \begin{split}  -->
+<!-- \text{No. hembras disponibles}_{RodeoA}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,6}{2}=30\\  -->
+<!-- \\  -->
+<!-- p_{RodeoA}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{22}{30}=0,73\\  -->
+<!-- \\  -->
+<!-- \text{No. hembras disponibles}_{RodeoB}=\frac{\text{No. total vacas}\times \frac{\text{Porcentaje de procreo}}{100}}{2}=\frac{100\times 0,8}{2}=40\\  -->
+<!-- \\  -->
+<!-- p_{RodeoB}=\frac{\text{No. hembras a seleccionar}}{\text{No. hembras disponibles}}=\frac{25}{40}=0,63  -->
+<!-- \end{split}  -->
+<!-- \end{equation}  -->
+<!-- \ -->
 </div>
-<div id="tabla-intensidad-de-selección-en-función-de-la-proporción-distribución-normal" class="section level2 unnumbered">
-<h2>Tabla Intensidad de Selección en función de la proporción (distribución Normal)</h2>
+<div id="ejercicio-11.11" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.11<a href="selartifI.html#ejercicio-11.11" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En un predio ganadero, se dispone de 100 vacas de cría. El objetivo de selección es peso a los 540 días de edad (año y medio). Se realiza selección individual en machos y hembras.
+El rodeo está compuesto de la siguiente manera (se asume que se mantiene la misma estructura de hembras año a año):</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Edad al parto</th>
+<th align="center">N° de vacas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">30</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">22</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">20</td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="center">18</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">10</td>
+</tr>
+<tr class="even">
+<td align="center">Total</td>
+<td align="center">100</td>
+</tr>
+</tbody>
+</table>
+<p>La heredabilidad de la característica es 0,4 y el desvío fenotípico es 45 kg. Se asume un porcentaje de parición de 80 %, y no se tiene en cuenta la posible mortandad hasta el momento de la selección. El porcentaje de toros usados en el rodeo es de 4 %, se cambian todos los años y se usan por primera vez a los dos años, naciendo sus hijos a los tres años.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Calcula el porcentaje de animales seleccionados en los machos y hembras.</li>
+<li>Calcula la intensidad de selección de los toros, las vacas y de todo el rodeo.</li>
+<li>Define el concepto de diferencial de selección y calcúlalo para éste caso.</li>
+<li>Calcula el progreso genético anual</li>
+</ol>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- a) -->
+<!-- \begin{equation}  -->
+<!-- No.\ hembras\ disponibles=\frac{{No.\ total \ vacas}\times \frac{{Porcentaje \ de \ parición}}{100}}{2}=\frac{100\times 0,4}{2}=40\\  -->
+<!-- p_{hembras}=\frac{{No. \ hembras \ a \ seleccionar}}{{No. \ hembras \ disponibles}}=\frac{30}{40}=0,75\\  -->
+<!-- {No.\ machos \ disponibles}_{machos}=\frac{{No. \ total \ vacas}\times \frac{{Porcentaje \ de \ parición}}{100}}{2}=\frac{100\times 0,8}{2}=40\\  -->
+<!-- p_{machos}=\frac{{No. \ machos \ a \ seleccionar}}{{No.\  machos disponibles}}=\frac{4}{40}=0,10 -->
+<!-- \end{equation}  -->
+<!-- b) -->
+<!-- Vamos a la tabla de intensidad de selección según proporción de selección: -->
+<!-- \begin{equation}  -->
+<!-- p_{hembras}= 0,75 \because i_{hembras}= 0,4237\\  -->
+<!-- p_{machos}= 0,10 \because i_{machos}= 1,755\\  -->
+<!-- i_{población}=\frac{{i_{machos}+i_{hembras}}}{2}=1,089\\  -->
+<!-- \end{equation}  -->
+<!-- c)  -->
+<!-- \begin{equation}  -->
+<!-- i= \frac{S}{\sigma_P} \because S=i\times \sigma_P\\  -->
+<!-- S= 1,089 \times 45 = 49 -->
+<!-- \end{equation}  -->
+<!-- d)  -->
+<!-- \begin{equation}  -->
+<!-- IG_{hembras}=\frac{3\times 30 + 4\times 22 + 5 \times 20 + 6 \times 18 + 7\times 10}{100}=4,56 años\\ -->
+<!-- IG_{machos}= 3 años\\ -->
+<!-- PGA=\frac{h^2 \times S }{IG_{poblacional}}=\frac{0,4 \times 49 }{\frac{4,56 + 3}{2}}= 5,19\\ -->
+<!-- \end{equation}  -->
+</div>
+<div id="ejercicio-11.12" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.12<a href="selartifI.html#ejercicio-11.12" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Un productor posee un rodeo de 400 vacas, con el primer parto a los 3 años y 5 estratos de edades con 25, 22, 20, 18, 15 % de vacas en cada estrato, ordenados de mayor a menor. Se utilizaron 3 toros cada 100 vacas, entrando al servicio con 2 años y se utilizaron 2 años consecutivos. Se asume una parición de 60 % por año. El peso al destete promedio es de 150 kg, la varianza aditiva es de 100 kg<span class="math inline">\(^2\)</span>
+y la heredabilidad de 0,25.</p>
+<p>Calcula el progreso genético anual esperado en el rodeo.</p>
+<p><br />
+<!-- ***Solución***  -->
+<!-- La estructura del rodeo sería: --></p>
+<!-- Edad al parto|N° de vacas |N° de toros| -->
+<!-- |:-----------:|:-------------:|:-------------: -->
+<!-- |3        |100|6| -->
+<!-- |4          |88 |6| -->
+<!-- |5          |80 | | -->
+<!-- |6          |72 |   |   -->
+<!-- |7        |60 | |    -->
+<!-- |Total        |400 |12  |  -->
+<!-- \begin{equation}  -->
+<!-- No.\ hembras\ disponibles=\frac{{No.\ total \ vacas}\times \frac{{Porcentaje \ de \ parición}}{100}}{2}=\frac{400\times 0,6}{2}=120\\  -->
+<!-- p_{hembras}=\frac{{No. \ hembras \ a \ seleccionar}}{{No. \ hembras \ disponibles}}=\frac{100}{120}=0,85\\ -->
+<!-- p_{hembras}=0,85 \because i_{hembras}=0,3049\\ -->
+<!-- {No.\ machos \ disponibles}_{machos}=\frac{{No. \ total \ vacas}\times \frac{{Porcentaje \ de \ parición}}{100}}{2}=\frac{400\times 0,6}{2}=120\\  -->
+<!-- p_{machos}=\frac{{No. \ machos \ a \ seleccionar}}{{No.\  machos disponibles}}=\frac{6}{120}=0,05\\ -->
+<!-- p_{machos}=0,05 \because i_{machos}=2,0627\\ -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- i_{poblacional}=\frac{i_{machos}+i_{hembras}}{2}= \frac{0,3049+2,0627}{2}=1,1838\\ -->
+<!-- i=\frac{S}{\sigma_P} \because S= i \times \sigma_P \\ -->
+<!-- h^2=\frac{\sigma^2_A}{\sigma^2_P} \because \sigma_P = \sqrt{h^2 \times \sigma^2_A}\\ -->
+<!-- \sigma_P = \sqrt{0,25 \times 100}= 5\\ -->
+<!-- S = 1,1838 \times 5 = 5,919\\ -->
+<!-- \end{equation}  -->
+<!-- \begin{equation}  -->
+<!-- IG_{hembras}=\frac{3\times 100 + 4\times 88 + 5 \times 80 + 6 \times 72 + 7\times 60}{400}= 4,76 años\\ -->
+<!-- IG_{machos}=\frac{3\times 6 + 4\times 6}{12} 3,5 años\\ -->
+<!-- PGA=\frac{h^2 \times S }{IG_{poblacional}}=\frac{0,25 \times 5,919 }{\frac{4,76 + 3,5}{2}}= 0,358\\ -->
+<!-- \end{equation}  -->
+</div>
+<div id="ejercicio-11.13" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.13<a href="selartifI.html#ejercicio-11.13" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para seleccionar futuros reproductores de la raza Corriedale por peso al destete a los 90 días, se cuenta con los registros de los siguientes borregos:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Caravana</th>
+<th align="center">Edad de la madre</th>
+<th align="center">Peso al destete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0145</td>
+<td align="center">3</td>
+<td align="center">21</td>
+</tr>
+<tr class="even">
+<td align="center">0122</td>
+<td align="center">2</td>
+<td align="center">18</td>
+</tr>
+<tr class="odd">
+<td align="center">0195</td>
+<td align="center">4</td>
+<td align="center">17</td>
+</tr>
+</tbody>
+</table>
+<p>En cuanto a los factores ambientales que influyen sobre esta caracaterística, se conocen las siguientes medidas y curvas de distribución de peso al destete de acuerdo a la edad de la madre.</p>
+<p><img src="figuras/11_13%20seleccion%20artificial.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li>Calcula los factores de corrección para los efectos de edad de la madre, tomando la edad de 3 años como referencia.</li>
+<li>Corrige el peso al destete de los borregos por edad de la madre</li>
+</ol>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- a) -->
+<!-- Como las subclases tiene distina media y distina varianza se utilizan factores de corrección multiplicativos. -->
+<!-- \begin{equation}  -->
+<!-- m = \frac{subclase}{sublcase \ de \ referencia}\\ -->
+<!-- m_{2años}= \frac {subclase_{2años}}{subclase_{3años}}= \frac{16}{19}=0,84\\ -->
+<!-- m_{3años}= \frac {subclase_{3años}}{subclase_{3años}}= \frac{1}{1}=1\\ -->
+<!-- m_{4años}= \frac {subclase_{4años}}{subclase_{3años}}= \frac{24}{19}=1,26\\ -->
+<!-- \end{equation}  -->
+<!-- b) -->
+<!-- \begin{equation}  -->
+<!-- PDC=  PD \times factor de corrección\\ -->
+<!-- PDC_{0145} =  12 \times 1 = 21 kg\\ -->
+<!-- PDC_{0122} = 18 \times 0,84 = 15,1 kg\\ -->
+<!-- PDC_{0195} = 17 \times 1,26 = 21,4 kg\\ -->
+<!-- \end{equation}  -->
+</div>
+<div id="ejercicio-11.14" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.14<a href="selartifI.html#ejercicio-11.14" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En un lote de borregos se quiere seleccionar por peso al destete para cada uno de ellos se tiene la siguiente información: tipo de nacimiento (TN), tipo de crianza (TC), edad de la madre (EM), edad de los borregos al destete expresados en días (Edad) y el peso al destete (PD).</p>
+<p>Factores de corrección para PD:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Nacimiento y crianza</th>
+<th></th>
+<th></th>
+<th>Edad de la mdre</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>TN</strong></td>
+<td><strong>TC</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>EM</strong></td>
+<td><strong>Factor</strong></td>
+</tr>
+<tr class="even">
+<td>Único</td>
+<td>Único</td>
+<td>0,0</td>
+<td>2 años</td>
+<td>0,9</td>
+</tr>
+<tr class="odd">
+<td>Mellizo</td>
+<td>Único</td>
+<td>2,0</td>
+<td>3 años</td>
+<td>1,0</td>
+</tr>
+<tr class="even">
+<td>Mellizo</td>
+<td>Mellizo</td>
+<td>4,2</td>
+<td>+ de 4 años</td>
+<td>1,1</td>
+</tr>
+</tbody>
+</table>
+<p>Edad del borrego al destete (Edad promedio al destete es 90 días).
+Por cada día más joven que el promedio: + 0,15.
+Por cada día más viejo que el promedio: -0,15.</p>
+<style>
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+}
+</style>
+<table>
+<thead>
+<tr class="header">
+<th>N°caravana</th>
+<th>TN</th>
+<th>TC</th>
+<th>EM</th>
+<th>Edad</th>
+<th>PD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>001</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>88</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td>002</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>90</td>
+<td>27</td>
+</tr>
+<tr class="odd">
+<td>003</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>93</td>
+<td>28</td>
+</tr>
+<tr class="even">
+<td>004</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>89</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li>Si se ignoran los factores ambientales sistemáticos ¿cuál borrego seleccionaría?</li>
+<li>Selecciona el borrego con mayor peso al destete corregido.</li>
+</ol>
+<p><br />
+<!-- ***Solución***  --></p>
+<!-- a) -->
+<!--  El borrego 003 que tiene mayor peso al destete (28 kg) -->
+<!-- b)  -->
+<!-- \begin{equation}  -->
+<!-- PDC= (PD + factor \ TNyTC) \times factor \ EM + factor \ edad \ al \ destete \ 90 \\ -->
+<!-- PDC_{001}=(25 + 0,0)\times 1,1 + 2 \times 0,15 = 27,8\\ -->
+<!-- PDC_{002}=(27 + 2,0)\times 1 + 0 = 29\\ -->
+<!-- PDC_{003}=(28 + 4,2)\times 0,9 + 3 \times -0,15 = 28,5\\ -->
+<!-- PDC_{004}=(24 + 2,0)\times 1,1 +0,15 = 28,8\\ -->
+<!-- \end{equation}  -->
+<!-- El mejor PDC es el borrgo 002 -->
+</div>
+<div id="ejercicio-11.15" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.15<a href="selartifI.html#ejercicio-11.15" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A continuación se presentan datos de 4 terneros:</p>
 <table>
 <colgroup>
-<col width="32%" />
-<col width="14%" />
-<col width="5%" />
-<col width="32%" />
-<col width="14%" />
+<col width="18%" />
+<col width="21%" />
+<col width="21%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Caravana</th>
+<th align="center">Edad de la madre (días)</th>
+<th align="center">PN</th>
+<th align="left">PD</th>
+<th align="left">Edad de la madre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">18</td>
+<td align="center">180</td>
+<td align="center">34</td>
+<td align="left">150</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="center">21</td>
+<td align="center">170</td>
+<td align="center">36</td>
+<td align="left">150</td>
+<td align="left">7</td>
+</tr>
+<tr class="odd">
+<td align="center">42</td>
+<td align="center">160</td>
+<td align="center">31</td>
+<td align="left">145</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="center">65</td>
+<td align="center">140</td>
+<td align="center">28</td>
+<td align="left">132</td>
+<td align="left">4</td>
+</tr>
+</tbody>
+</table>
+<p>Si el objetivo es mejorar peso al destete ¿cuál de ellos seleccionaría en base a su peso al destete ajustado a 180 días?</p>
+<p><br />
+<!-- ***Solución*** --></p>
+<!-- \begin{equation}  -->
+<!-- PD_{180}=\frac {PD-PN}{Edad \ al \ destete}\times 180 + PN\\ -->
+<!-- Caravana N°18 \because PD_{180}= \frac {150-34}{180}\times 180 + 34 = 150\\ -->
+<!-- Caravana N°21 \because PD_{180}= \frac {150-36}{170}\times 180 + 36 = 156,7\\ -->
+<!-- Caravana N°42 \because PD_{180}= \frac {145-31}{160}\times 180 + 31 = 159,3\\ -->
+<!-- Caravana N°65 \because PD_{180}= \frac {132-28}{140}\times 180 + 28 = 161,7\\ -->
+<!-- \end{equation}  -->
+<!-- El que tiene mejor PD ajustado a los 180 días, es el animal N° 65 -->
+</div>
+<div id="ejercicio-11.16" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 11.16<a href="selartifI.html#ejercicio-11.16" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Se desea mejorar genéticamente la característica Diámetro de fibra (h<span class="math inline">\(^2\)</span>=0,67) en una majada de la raza Merino compuesta por 800 ovejas y 32 carneros. La distribución de edades al parto se detalla a continuación:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Edad al parto</th>
+<th align="center">N° de ovejas</th>
+<th align="center">N° de carneros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">2</td>
+<td align="center">190</td>
+<td align="center">18</td>
+</tr>
+<tr class="even">
+<td align="center">3</td>
+<td align="center">175</td>
+<td align="center">14</td>
+</tr>
+<tr class="odd">
+<td align="center">4</td>
+<td align="center">160</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">5</td>
+<td align="center">145</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">6</td>
+<td align="center">130</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha">
+<li>Considerando que el porcentaje de destete es del 70 %, calcula la porporción de machos y hembras seleccionados.</li>
+<li>Calcula el progreso genético generacional sabiendo que la varianza fenotípica para diámetro de fibra es igual a 3 µm<span class="math inline">\(^2\)</span></li>
+<li>Calcula el progreso genético anual.</li>
+</ol>
+<p><br />
+<!-- ***Solución*** --></p>
+<!-- a) -->
+<!-- \begin{equation}  -->
+<!-- No.\ hembras\ disponibles=\frac{{No.\ total \ ovejas}\times \frac{{Porcentaje \ de \ parición}}{100}}{2}=\frac{800\times 0,7}{2}=280\\  -->
+<!-- p_{hembras}=\frac{{No. \ hembras \ a \ seleccionar}}{{No. \ hembras \ disponibles}}=\frac{190}{280}=0,68\\ -->
+<!-- {No.\ machos \ disponibles}_{machos}=\frac{{No. \ total \ ovejas}\times \frac{{Porcentaje \ de \ parición}}{100}}{2}=\frac{800\times 0,7}{2}=280\\  -->
+<!-- p_{machos}=\frac{{No. \ machos \ a \ seleccionar}}{{No.\  machos disponibles}}=\frac{18}{280}=0,06\\ -->
+<!-- \end{equation}  -->
+<!-- b) -->
+<!-- \begin{equation}  -->
+<!-- p_{hembras}=0,68 \because i_{hembras}=0,5259\\ -->
+<!-- p_{machos}=0,06 \because i_{machos}=1,9854\\ -->
+<!-- PGG=\frac{i_{machos}+i_{hembras}}{2}\times h^2 \times \sigma_P\\ -->
+<!-- PGG=\frac{1,9854 + 0,5259}{2}\times 0,67 \times \sqrt 3 = 1,46\\ -->
+<!-- \end{equation}  -->
+<!-- Otra opción: -->
+<!-- \begin{equation} -->
+<!-- PGG=\frac{i_{machos}+i_{hembras}}{2}\times h \times \sigma_A\\ -->
+<!-- PGG=\frac{1,9854 + 0,5259}{2}\times \sqrt 0,67 \times \sqrt {0,67\times 3} = 1,46\\ -->
+<!-- \end{equation}  -->
+<!-- c) -->
+<!-- \begin{equation}  -->
+<!-- IG_{hembras}=\frac{2\times 190 + 3\times 175 + 4 \times 160 + 5 \times 145 + 6\times 130}{800}= 3,81 años\\ -->
+<!-- IG_{machos}=\frac{2\times 18 + 3\times 14}{32} 2,44 años\\ -->
+<!-- PGA=\frac{PGG }{IG_{poblacional}}=\frac{1,46 }{\frac{3,81 + 2,44}{2}}= 0,467\\ -->
+<!-- \end{equation}  -->
+<hr />
+</div>
+<div id="tabla-intensidad-de-selección-en-función-de-la-proporción-distribución-normal" class="section level2 unnumbered hasAnchor">
+<h2>Tabla Intensidad de Selección en función de la proporción (distribución Normal)<a href="selartifI.html#tabla-intensidad-de-selección-en-función-de-la-proporción-distribución-normal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="31%" />
+<col width="13%" />
+<col width="10%" />
+<col width="31%" />
+<col width="13%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1477,7 +1947,6 @@ machos seleccionados es 229 kg y el promedio de las hembras seleccionadas es 209
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1518,7 +1987,7 @@ gitbook.start({
 },
 "download": ["GuiaPracticaGeneticaII.pdf", "GuiaPracticaGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -1534,7 +2003,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
